@@ -19,4 +19,4 @@
 Также были разобраны универсальные атрибуты [`class`](http://htmlbook.ru/html/attr/class), [`id`](http://htmlbook.ru/html/attr/id) и [`style`](http://htmlbook.ru/html/attr/style).
 
 Примеры:
-1. [Базовые элементы HTML документа](https://github.com/Vladislav-Lyuminarskiy/Web-course/blob/master/01-HTML-1/01/index.html)
+1. [Базовые элементы HTML документа](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/01-HTML-1/01)
