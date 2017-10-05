@@ -1,4 +1,4 @@
-[Назад к оглавлению](https://github.com/Vladislav-Lyuminarskiy/Web-development)
+[Назад к оглавлению](https://github.com/Vladislav-Lyuminarskiy/Web-course)
 
 # Введение в HTML
 
