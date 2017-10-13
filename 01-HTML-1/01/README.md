@@ -3,3 +3,9 @@
 # Базовые элементы HTML документа
 
 [Посмотреть на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/gbqnbsha/)
+
+Элементы в этом примере:
+
+Элемент | Описание
+-|-
+[`<!DOCTYPE>`](http://htmlbook.ru/html/!doctype) | sd
