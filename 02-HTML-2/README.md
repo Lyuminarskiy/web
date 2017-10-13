@@ -8,7 +8,7 @@
 
 Примеры:
 1. [Текст и форматирование](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/text)
-2. Списки
+2. [Списки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/lists)
 3. Таблицы
 4. Ссылки
 5. Фреймы
