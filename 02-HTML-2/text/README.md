@@ -2,7 +2,7 @@
 
 [Посмотреть пример на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/4sgeu37s/)
 
-# Базовые элементы HTML документа
+# Текст и форматирование
 
 Элементы в этом примере:
 
