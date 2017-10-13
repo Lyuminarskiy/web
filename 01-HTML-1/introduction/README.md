@@ -1,6 +1,6 @@
 [Назад к описанию занятия](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/01-HTML-1)
 
-[Посмотреть пример на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/om1pz12r/)
+[Посмотреть пример на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/4jb1ujjx/)
 
 # Базовые элементы HTML документа
 
