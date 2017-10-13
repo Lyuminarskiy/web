@@ -7,11 +7,12 @@
 - Элементы списков: [`<dd>`](http://htmlbook.ru/html/dd), [`<dl>`](http://htmlbook.ru/html/dl), [`<dt>`](http://htmlbook.ru/html/dt), [`<li>`](http://htmlbook.ru/html/li), [`<ol>`](http://htmlbook.ru/html/ol), [`<ul>`](http://htmlbook.ru/html/ul).
 - Элементы таблиц: [`<caption>`](http://htmlbook.ru/html/caption), [`<col>`](http://htmlbook.ru/html/col), [`<colgroup>`](http://htmlbook.ru/html/colgroup), [`<table>`](http://htmlbook.ru/html/table), [`<tbody>`](http://htmlbook.ru/html/tbody), [`<td>`](http://htmlbook.ru/html/td), [`<tfoot>`](http://htmlbook.ru/html/tfoot), [`<th>`](http://htmlbook.ru/html/th), [`<thead>`](http://htmlbook.ru/html/thead), [`<tr>`](http://htmlbook.ru/html/tr).
 - Ссылки: [`<a>`](http://htmlbook.ru/html/a).
+- Фреймы: [`<iframe>`](http://htmlbook.ru/html/iframe).
 
 Примеры:
 1. [Текст и форматирование](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/text)
 2. [Списки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/lists)
 3. [Таблицы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/tables)
 4. [Ссылки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/links)
-5. Фреймы
+5. [Фреймы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/frames)
 6. Мультимедиа
