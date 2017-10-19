@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Мультимедиа</title>
+</head>
+
+<body>
+    <figure>
+        <figcaption>Изображение</figcaption>
+        <img src="images/cat.jpeg" alt="Котик" width="100%"/>
+    </figure>
+
+    <figure>
+        <figcaption>Аудиозапись</figcaption>
+        <audio controls>
+            <p>Ваш веб-браузер не поддерживает проигрывание аудио.</p>
+            <source src="assets/audio.mp3" type="audio/mpeg">
+        </audio>
+    </figure>
+
+    <figure>
+        <figcaption>Видеозапись</figcaption>
+        <video controls>
+            <p>Ваш веб-браузер не поддерживает проигрывание видео.</p>
+            <source src="assets/video.mp4" type="video/mp4">
+            <track kind="subtitles" src="assets/subtitles.en.wtt" srclang="en" label="English">
+            <track kind="subtitles" src="assets/subtitles.ru.wtt" srclang="ru" label="Русский">
+        </video>
+    </figure>
+</body>
+
+</html>

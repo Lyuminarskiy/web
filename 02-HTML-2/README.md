@@ -8,6 +8,7 @@
 - Элементы таблиц: [`<caption>`](http://htmlbook.ru/html/caption), [`<col>`](http://htmlbook.ru/html/col), [`<colgroup>`](http://htmlbook.ru/html/colgroup), [`<table>`](http://htmlbook.ru/html/table), [`<tbody>`](http://htmlbook.ru/html/tbody), [`<td>`](http://htmlbook.ru/html/td), [`<tfoot>`](http://htmlbook.ru/html/tfoot), [`<th>`](http://htmlbook.ru/html/th), [`<thead>`](http://htmlbook.ru/html/thead), [`<tr>`](http://htmlbook.ru/html/tr).
 - Ссылки: [`<a>`](http://htmlbook.ru/html/a).
 - Фреймы: [`<iframe>`](http://htmlbook.ru/html/iframe).
+- Мультимедиа: [`<audio>`](http://htmlbook.ru/html/audio), [`<figcaption>`](http://htmlbook.ru/html/figcaption), [`<figure>`](http://htmlbook.ru/html/figure), [`<img>`](http://htmlbook.ru/html/img), [`<source>`](http://htmlbook.ru/html/source), [`<track>`](http://htmlbook.ru/html/track), [`<video>`](http://htmlbook.ru/html/video).
 
 Примеры:
 1. [Текст и форматирование](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/text)
@@ -15,4 +16,4 @@
 3. [Таблицы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/tables)
 4. [Ссылки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/links)
 5. [Фреймы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/frames)
-6. Мультимедиа
+6. [Мультимедиа](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/multimedia)
