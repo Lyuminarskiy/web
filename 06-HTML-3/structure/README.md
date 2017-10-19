@@ -1,7 +1,5 @@
 [Назад к описанию занятия](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2)
 
-[Посмотреть пример на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/)
-
 # Структура
 
 Элементы в этом примере:
