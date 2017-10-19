@@ -7,6 +7,7 @@
 - Элементы списков: [`<dd>`](http://htmlbook.ru/html/dd), [`<dl>`](http://htmlbook.ru/html/dl), [`<dt>`](http://htmlbook.ru/html/dt), [`<li>`](http://htmlbook.ru/html/li), [`<ol>`](http://htmlbook.ru/html/ol), [`<ul>`](http://htmlbook.ru/html/ul).
 - Элементы таблиц: [`<caption>`](http://htmlbook.ru/html/caption), [`<col>`](http://htmlbook.ru/html/col), [`<colgroup>`](http://htmlbook.ru/html/colgroup), [`<table>`](http://htmlbook.ru/html/table), [`<tbody>`](http://htmlbook.ru/html/tbody), [`<td>`](http://htmlbook.ru/html/td), [`<tfoot>`](http://htmlbook.ru/html/tfoot), [`<th>`](http://htmlbook.ru/html/th), [`<thead>`](http://htmlbook.ru/html/thead), [`<tr>`](http://htmlbook.ru/html/tr).
 - Ссылки: [`<a>`](http://htmlbook.ru/html/a).
+- Метаинформация: [`<base>`](http://htmlbook.ru/html/base), [`<link>`](http://htmlbook.ru/html/link), [`<meta>`](http://htmlbook.ru/html/meta), [`<title>`](http://htmlbook.ru/html/title).
 - Фреймы: [`<iframe>`](http://htmlbook.ru/html/iframe).
 - Мультимедиа: [`<audio>`](http://htmlbook.ru/html/audio), [`<figcaption>`](http://htmlbook.ru/html/figcaption), [`<figure>`](http://htmlbook.ru/html/figure), [`<img>`](http://htmlbook.ru/html/img), [`<source>`](http://htmlbook.ru/html/source), [`<track>`](http://htmlbook.ru/html/track), [`<video>`](http://htmlbook.ru/html/video).
 
@@ -15,5 +16,6 @@
 2. [Списки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/lists)
 3. [Таблицы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/tables)
 4. [Ссылки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/links)
-5. [Фреймы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/frames)
-6. [Мультимедиа](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/multimedia)
+5. [Метаинформация](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/meta)
+6. [Фреймы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/frames)
+7. [Мультимедиа](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/multimedia)
