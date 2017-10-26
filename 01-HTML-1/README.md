@@ -1,6 +1,6 @@
 [Назад к оглавлению](https://github.com/Vladislav-Lyuminarskiy/Web-course)
 
-# HTML-1
+# Введение в HTML
 
 Темы занятия:
 - Что такое HTML?
