@@ -10,6 +10,7 @@
 - Метаинформация: [`<base>`](http://htmlbook.ru/html/base), [`<link>`](http://htmlbook.ru/html/link), [`<meta>`](http://htmlbook.ru/html/meta), [`<title>`](http://htmlbook.ru/html/title).
 - Фреймы: [`<iframe>`](http://htmlbook.ru/html/iframe).
 - Мультимедиа: [`<audio>`](http://htmlbook.ru/html/audio), [`<figcaption>`](http://htmlbook.ru/html/figcaption), [`<figure>`](http://htmlbook.ru/html/figure), [`<img>`](http://htmlbook.ru/html/img), [`<source>`](http://htmlbook.ru/html/source), [`<track>`](http://htmlbook.ru/html/track), [`<video>`](http://htmlbook.ru/html/video).
+- Формы: 
 
 Примеры:
 1. [Текст и форматирование](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/text)
@@ -19,3 +20,4 @@
 5. [Метаинформация](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/meta)
 6. [Фреймы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/frames)
 7. [Мультимедиа](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/multimedia)
+8. [Формы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/multimedia)

@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Формы</title>
+</head>
+
+<body>
+    <h1>Метод GET</h1>
+    <form method="GET" action="index.html">
+        <input type="text" name="value">
+        <input type="submit" value="Отправить">
+    </form>
+
+    <h1>Метод POST</h1>
+    <form method="POST" action="index.html">
+        <input type="text" name="value">
+        <input type="submit" value="Отправить">
+    </form>
+    
+    <h1>Кнопки</h1>
+    <form>
+        <input type="text" name="value">
+        <p>
+            <button type="submit">Отправить</button>
+            <button type="reset">Отмена</button>
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+            <input type="reset" value="Отмена">
+        </p>
+        <p>
+            <input type="search">
+            <input type="image" src="images/search.png" name="submit">
+        </p>
+    </form>
+
+    <h1>Текстовые поля и метки</h1>
+    <form autocomplete="off">
+        <p>
+            <label for="firstname">Имя:</label>
+            <input type="text" id="firstname" name="firstname" placeholder="Введите имя" size="15" autocomplete="on" autofocus>
+        </p>
+        <p>
+            <label for="lastname">Фамилия:</label>
+            <input type="text" id="lastname" name="lastname" value="Иванов" readonly>
+        </p>
+        <p><input type="password" name="password" placeholder="Введите пароль" required></p>
+    </form>
+    <form>
+        <p><input type="text" name="phone" placeholder="Введите номер телефона" list="phones" size="25" maxlength="10" pattern="[0-9]{10}" required></p>
+        <datalist id="phones">
+            <option value="9511256790" label="Сидоров А.М.">
+            <option value="9125520080" label="Петров Г.К.">
+            <option value="9227812518" label="Иванов И.И." disabled>
+        </datalist>
+    </form>
+    
+    <h1>Ввод чисел</h1>
+    <form>
+        <p><input type="number" step="1" min="1" max="100" value="10"></p>
+        <p><input type="range" step="1" min="1" max="100" value="10"></p>
+    </form>
+</body>
+
+</html>
