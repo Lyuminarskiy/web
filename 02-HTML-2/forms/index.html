@@ -18,10 +18,10 @@
         <input type="text" name="value">
         <input type="submit" value="Отправить">
     </form>
-    
+
     <h1>Кнопки</h1>
     <form>
-        <input type="text" name="value">
+        <input type="text" name="value" value="value">
         <p>
             <button type="submit">Отправить</button>
             <button type="reset">Отмена</button>
@@ -47,20 +47,120 @@
             <input type="text" id="lastname" name="lastname" value="Иванов" readonly>
         </p>
         <p><input type="password" name="password" placeholder="Введите пароль" required></p>
+        <p>
+            <label for="comment">Ваш комментарий:</label><br/>
+            <textarea name="comment" id="comment" cols="40" rows="10" placeholder="Не более 200 символов" maxlength="200"></textarea>
+        </p>
+        <button type="submit">Отправить</button>
+    </form>
+
+    <h1>Ввод чисел</h1>
+    <form>
+        <p><input type="number" step="1" min="1" max="100" value="10"></p>
+        <p><input type="range" step="1" min="1" max="100" value="10"></p>
+    </form>
+
+    <h1>Ввод времени и даты</h1>
+    <form>
+        <p>
+            <label for="date">Дата: </label>
+            <input type="date" id="date" name="date" />
+        </p>
+        <p>
+            <label for="week">Неделя: </label>
+            <input type="week" name="week" id="week" />
+        </p>
+        <p>
+            <label for="localdate">Дата и время: </label>
+            <input type="datetime-local" id="localdate" name="date" />
+        </p>
+        <p>
+            <label for="month">Месяц: </label>
+            <input type="month" id="month" name="month" />
+        </p>
+        <p>
+            <label for="time">Время: </label>
+            <input type="time" id="time" name="time" />
+        </p>
+        <p>
+            <button type="submit">Отправить</button>
+        </p>
+    </form>
+
+    <h1>Флажки и переключатели</h1>
+    <form>
+        <fieldset>
+            <legend>Флажки</legend>
+            <p><input type="checkbox" value="var1" checked>Вариант 1</p>
+            <p><input type="checkbox" value="var2">Вариант 2</p>
+            <p><input type="checkbox" value="var3">Вариант 3</p>
+        </fieldset>
+        <p><button type="submit">Отправить</button></p>
     </form>
     <form>
-        <p><input type="text" name="phone" placeholder="Введите номер телефона" list="phones" size="25" maxlength="10" pattern="[0-9]{10}" required></p>
+        <fieldset>
+            <legend>Переключатели</legend>
+            <p>Первая группа:</p>
+            <p><input type="radio" value="var1" name="list1" checked>Вариант 1</p>
+            <p><input type="radio" value="var2" name="list1">Вариант 2</p>
+            <p><input type="radio" value="var3" name="list1">Вариант 3</p>
+            <p>Вторая группа:</p>
+            <p><input type="radio" value="var1" name="list2" checked>Вариант 1</p>
+            <p><input type="radio" value="var2" name="list2">Вариант 2</p>
+            <p><input type="radio" value="var3" name="list2">Вариант 3</p>
+        </fieldset>
+        <p><button type="submit">Отправить</button></p>
+    </form>
+
+    <h1>Специальные элементы ввода</h1>
+    <form>
+        <label for="favcolor">Выберите цвет</label>
+        <input type="color" list="colors" id="favcolor" name="favcolor" />
+        <datalist id="colors">
+            <option value="#0000FF" label="blue">
+            <option value="#008000" label="green">
+            <option value="#ff0000" label="red">
+        </datalist>
+    </form>
+    <form>
+        <p>
+            <label for="email">Email: </label>
+            <input type="email" placeholder="user@gmail.com" id="email" name="email" />
+        </p>
+        <p>
+            <label for="url">URL: </label>
+            <input type="url" id="url" name="url" />
+        </p>
+        <p>
+            <label for="phone">Телефон: </label>
+            <input type="tel" name="phone" id="phone" name="phone" placeholder="Введите номер телефона" list="phones" size="25" maxlength="10"
+                pattern="[0-9]{10}" required>
+        </p>
         <datalist id="phones">
             <option value="9511256790" label="Сидоров А.М.">
             <option value="9125520080" label="Петров Г.К.">
             <option value="9227812518" label="Иванов И.И." disabled>
         </datalist>
+        <p><input type="file" accept="image/*" multiple>
+            <p><button type="submit">Отправить</button></p>
     </form>
-    
-    <h1>Ввод чисел</h1>
+
+    <h1>Выпадающий список</h1>
     <form>
-        <p><input type="number" step="1" min="1" max="100" value="10"></p>
-        <p><input type="range" step="1" min="1" max="100" value="10"></p>
+        <select multiple>
+            <optgroup label="Группа 1">
+                <option value="9511256790" label="Сидоров А.М.">
+                <option value="9125520080" label="Петров Г.К." selected>
+                <option value="9227812518" label="Иванов И.И." disabled>
+            </optgroup>
+            <optgroup label="Группа 2">
+                <option value="9511256790" label="Кузнецов А.А.">
+                <option value="9125520080" label="Сорокин В.В.">
+                <option value="9227812518" label="Сивцов А.Г.">
+            </optgroup>
+        </datalist>
+        <p>
+            <p><button type="submit">Отправить</button></p>
     </form>
 </body>
 
