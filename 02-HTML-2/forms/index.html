@@ -7,6 +7,17 @@
 </head>
 
 <body>
+    <h1>Содержание</h1>
+    <ul>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#"></a></li>
+        <li><a href="#details">Раскрывающийся элемент</a></li>
+        <li><a href="#progress">Полоса прогресса</a></li>
+        <li><a href="#meter">Шкала значений</a></li>
+    </ul>
+
     <h1>Метод GET</h1>
     <form method="GET" action="index.html">
         <input type="text" name="value">
@@ -161,6 +172,66 @@
         </select></p>
         <p><button type="submit">Отправить</button></p>
     </form>
+
+    <h1 id="details">Раскрывающийся элемент</h1>
+    <p>
+        <span>Без атрибутов</span>
+        <details>
+            <summary>Описание элемента &lt;details&gt;</summary>
+            <p>Элемент &lt;details&gt; используется для хранения информации, которую можно скрыть или показать по требованию пользователя. По умолчанию содержимое элемента не отображается, для изменения статуса применяется атрибут open.</p>
+        </details>
+    </p>
+    
+    <p>
+        <span>Атрибуты: open</span>
+        <details open>
+            <summary>Описание элемента &lt;summary&gt;</summary>
+            <p>Элемент &lt;summary&gt; указывает заголовок для элемента &lt;details&gt;, по которому можно щелкать для разворачивания/сворачивания информации. Элемент &lt;summary&gt; должен идти первым внутри &lt;details&gt;.</p>
+        </details>
+    </p>
+
+    <h1 id="progress">Полоса прогресса</h1>
+    <p>
+        <span>Без атрибутов</span><br>
+        <progress>Ваш браузер не поддерживает этот элемент</progress>
+    </p>
+    <p>
+        <span>Атрибуты: max="100", value="27"</span><br>
+        <progress max="100" value="27">Ваш браузер не поддерживает этот элемент</progress>
+    </p>
+    <p>
+        <span>Атрибуты: max="100", value="72"</span><br>
+        <progress max="100" value="72">Ваш браузер не поддерживает этот элемент</progress>
+    </p>
+
+    <h1 id="meter">Шкала значений</h1>
+    <p>Температура воды:</p>
+    <ul>
+        <li>
+            <span>Лёд</span><br>
+            <meter min="0" value="0" max="100" low="20" optimum="36.6" high="60"></meter>
+        </li>
+        <li>
+            <span>Прохладная</span><br>
+            <meter min="0" value="20" max="100" low="20" optimum="36.6" high="60"></meter>
+        </li>
+        <li>
+            <span>Тёплая</span><br>
+            <meter min="0" value="40" max="100" low="20" optimum="36.6" high="60"></meter>
+        </li>
+        <li>
+            <span>Горячая</span><br>
+            <meter min="0" value="60" max="100" low="20" optimum="36.6" high="60"></meter>
+        </li>
+        <li>
+            <span>Кипяток</span><br>
+            <meter min="0" value="80" max="100" low="20" optimum="36.6" high="60"></meter>
+        </li>
+        <li>
+            <span>Пар</span><br>
+            <meter min="0" value="100" max="100" low="20" optimum="36.6" high="60"></meter>
+        </li>
+    </ul>
 </body>
 
 </html>

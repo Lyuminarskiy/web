@@ -94,7 +94,8 @@
 
 Обязательные элементы:
 - Метаинформация: [`<link>`](http://htmlbook.ru/html/link), [`<meta>`](http://htmlbook.ru/html/meta), [`<title>`](http://htmlbook.ru/html/title).
-- Формы: [`<button>`](http://htmlbook.ru/html/button), [`<datalist>`](http://htmlbook.ru/html/datalist), [`<input>`](http://htmlbook.ru/html/input), [`<fieldset>`](http://htmlbook.ru/html/fieldset), [`<form>`](http://htmlbook.ru/html/form), [`<label>`](http://htmlbook.ru/html/label), [`<legend>`](http://htmlbook.ru/html/legend), [`<optgroup>`](http://htmlbook.ru/html/optgroup), [`<option>`](http://htmlbook.ru/html/option), [`<select>`](http://htmlbook.ru/html/select), [`<textarea>`](http://htmlbook.ru/html/textarea).
+- Формы: [`<button>`](http://htmlbook.ru/html/button), [`<datalist>`](http://htmlbook.ru/html/datalist), [`<input>`](http://htmlbook.ru/html/input), [`<form>`](http://htmlbook.ru/html/form), [`<label>`](http://htmlbook.ru/html/label), [`<optgroup>`](http://htmlbook.ru/html/optgroup), [`<option>`](http://htmlbook.ru/html/option), [`<select>`](http://htmlbook.ru/html/select), [`<textarea>`](http://htmlbook.ru/html/textarea).
 
 Опциональные элементы:
 - Метаинформация: [`<base>`](http://htmlbook.ru/html/base).
+- Формы: [`<details>`](http://htmlbook.ru/html/details), [`<fieldset>`](http://htmlbook.ru/html/fieldset), [`<legend>`](http://htmlbook.ru/html/legend), [`<meter>`](http://htmlbook.ru/html/meter), [`<progress>`](http://htmlbook.ru/html/progress), [`<summary>`](http://htmlbook.ru/html/summary).
