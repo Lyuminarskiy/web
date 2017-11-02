@@ -20,7 +20,9 @@
 
 Задание:
 
-> Найти фрагмент текста и оформить его в виде веб-страницы. Фрагмент текста должен иметь научно-публицистический или технический характер.
+> Найти фрагмент текста и оформить его в виде веб-страницы. Фрагмент текста должен носить научно-публицистический или технический характер и иметь целостную смысловую структуру.
+>
+> Объём текста: от 5000 слов.
 >
 > Веб-страница должна включать в себя:
 > - оглавление/содержание,
@@ -92,6 +94,7 @@
 
 Обязательные элементы:
 - Метаинформация: [`<link>`](http://htmlbook.ru/html/link), [`<meta>`](http://htmlbook.ru/html/meta), [`<title>`](http://htmlbook.ru/html/title).
+- Формы: [`<button>`](http://htmlbook.ru/html/button), [`<datalist>`](http://htmlbook.ru/html/datalist), [`<input>`](http://htmlbook.ru/html/input), [`<fieldset>`](http://htmlbook.ru/html/fieldset), [`<form>`](http://htmlbook.ru/html/form), [`<label>`](http://htmlbook.ru/html/label), [`<legend>`](http://htmlbook.ru/html/legend), [`<optgroup>`](http://htmlbook.ru/html/optgroup), [`<option>`](http://htmlbook.ru/html/option), [`<select>`](http://htmlbook.ru/html/select), [`<textarea>`](http://htmlbook.ru/html/textarea).
 
 Опциональные элементы:
 - Метаинформация: [`<base>`](http://htmlbook.ru/html/base).
