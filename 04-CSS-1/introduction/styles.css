@@ -1,0 +1,9 @@
+h2 { color:blue; }
+
+/* Селектор и блок объявления стиля */
+div {
+    /* Команда: свойство и значение */
+    background-color:red;
+    width: 100px;
+    height: 100px;
+}
