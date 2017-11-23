@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Селекторы в CSS3</title>
+        <style>
+            a:first-child{ color: red; }
+            a:last-child{ color: blue; }
+
+            p:only-child{ color:red; }
+            
+            table { color: white }
+            tr:nth-child(odd) { background-color: red; }
+            tr:nth-child(even) { background-color: blue; }
+            tr:nth-child(3) { background-color: green; }
+            tr:nth-child(3n+2) { background-color: black; }
+        </style>
+    </head>
+    <body>
+        <h3>Планшеты</h3>
+        <div>
+            <a>Microsoft Surface Pro 4</a><br/>
+            <a>Apple iPad Pro</a><br/>
+            <a>ASUS ZenPad Z380KL</a>
+        </div>
+        <h3>Смартфоны</h3>
+        <div>
+            <p>Топ-смартфоны 2016</p>
+            <a>Samsung Galaxy S7</a><br/>
+            <a>Apple iPhone SE</a><br/>
+            <a>Huawei P9</a>
+            <p>Данные за 2016</p>
+        </div>
+        
+        <h2>Заголовок</h2>
+        <div>
+            <p>Текст1</p>
+        </div>
+        <div>
+            <p>Текст2</p>
+            <p>Текст3</p>
+        </div>
+        <div>
+            <p>Текст4</p>
+        </div>
+
+        <h3>Смартфоны</h3>
+        <table>
+            <tr><td>Samsung</td><td>Galaxy S7 Edge</td><td>60000</td></tr>
+            <tr><td>Apple</td><td>iPhone SE</td><td>39000</td></tr>
+            <tr><td>Microsoft</td><td>Lumia 650</td><td>13500</td></tr>
+            <tr><td>Alcatel</td><td>Idol S4</td><td>30000</td></tr>
+            <tr><td>Huawei</td><td>P9</td><td>60000</td></tr>
+            <tr><td>HTC</td><td>HTC 10</td><td>50000</td></tr>
+            <tr><td>Meizu</td><td>Pro 6</td><td>40000</td></tr>
+            <tr><td>Xiaomi</td><td>Mi5</td><td>35000</td></tr>
+        </table>
+    </body>
+</html>
+
+<!-- Список доступных псевдоклассов:
+:first-child             представляет элемент, который является первым дочерним элементом
+:last-child              представляет элемент, который является последним дочерним элементом
+:only-child              представляет элемент, который является единственным дочерним элементом в каком-нибудь контейнере
+:only-of-type            выбирает элемент, который является единственным элементом определенного типа (тега) в каком-нибудь контейнере
+:nth-child(n)            представляет дочерний элемент, который имеет определенный номер n, например, второй дочерний элемент
+:nth-last-child(n)       представляет дочерний элемент, который имеет определенный номер n, начиная с конца
+:nth-of-type(n)          выбирает дочерний элемент определенного типа, который имеет определенный номер
+:nth-last-of-type(n)     выбирает дочерний элемент определенного типа, который имеет определенный номер, начиная с конца -->

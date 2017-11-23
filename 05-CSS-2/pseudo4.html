@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Псевдоклассы в CSS3</title>
+        <style>
+            .beauty::first-letter { color:red; font-size: 25px; }
+            .beauty::first-line { font-size: 20px; }
+
+            .warning::before { content: "Важно! "; font-weight: bold; }
+            .warning::after { content: " Будьте осторожны!"; font-weight: bold; }
+            
+            .beauty::selection {
+                color: white;
+                background-color: black;
+            }
+        </style>
+    </head>
+    <body>
+        <p class="beauty">Но он ничего не видал. Над ним не было ничего уже, кроме неба, — высокого неба, не ясного, но все-таки неизмеримо высокого, с тихо ползущими по нем серыми облаками.</p>
+        <hr>
+        <p><span class="warning">Не пытайтесь засунуть язык в электрическую розетку.</span></p>
+    </body>
+</html>
+
+<!-- Список доступных псевдоэлементов:
+::first-letter           позволяет выбрать первую букву из текста
+::first-line             стилизует первую строку текста
+::before                 добавляет сообщение до определенного элемента
+::after                  добавляет сообщение после определенного элемента
+::selection              выбирает выбранные пользователем элементы -->
