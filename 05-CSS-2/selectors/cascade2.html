@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Каскадность стилей в CSS3</title>
+        <style>
+            /* The following list of selector types is by increasing specificity:
+            1    = Type selectors (e.g., h1) and pseudo-elements (e.g., :before).
+            10   = Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+            100  = ID selectors (e.g., #example).
+            1000 = Inline styles
+            Universal selector (*), combinators (+, >, ~, ' ') and negation pseudo-class (:not()) have no effect on specificity.*/
+
+            a {font-size: 18px;} /* 1 */
+            .nav li a {color: red;}  /* 10 + 2 =12 */
+            #menu a {color: navy;}   /* 100 + 1 = 101 */
+            .nav .menuItem {color: green;}  /* 20 */
+            a.menuItem:not(.newsLink) {color: orange;}  /* 20 + 1 = 21 */
+            div ul li a {color: gray; } /* 4 */
+            a {font-size: 18px; color: red !important;}
+        </style>
+    </head>
+    <body>
+        <div id="menu">
+            <ul class="nav">
+                <li><a class="menuItem">Главная</a></li>
+                <li><a class="menuItem">Форум</a></li>
+                <li><a class="menuItem">Блог</a></li>
+                <li><a class="menuItem">О сайте</a></li>
+            </ul>
+        </div>
+    </body>
+</html>

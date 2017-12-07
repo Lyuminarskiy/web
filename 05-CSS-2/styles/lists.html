@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Свойства CSS3</title>
+        <style>
+            span {
+                /* Стиль нумерации */
+                list-style-type: decimal; /* 1, 2, ..., 98, 99 */
+                list-style-type: decimal-leading-zero; /* 01, 02, 03, ..., 98, 99 */
+                list-style-type: lower-roman; /* i, ii, iii, iv, v, ... */
+                list-style-type: upper-roman; /* I, II, III, IV, V, ... */
+                list-style-type: lower-alpha; /* a, b, c, ..., z */
+                list-style-type: upper-alpha; /* A, B, C, ..., Z */
+
+                /* Стиль маркеров */
+                list-style-type: disc;
+                list-style-type: circle;
+                list-style-type: square;
+
+                list-style-type: none;
+                
+                /* Позиция маркеров */
+                list-style-position: outside;
+                list-style-position: inside;
+
+                /* Изображение в качестве маркера */
+                list-style-image: url(marker.jpg);
+            }
+
+            ul.outside { list-style-position: outside; }
+            ul.inside { list-style-position: inside; }
+
+            ul.image { list-style-image: url(marker.jpg); }
+        </style>
+    </head>
+    <body>
+        <h3>Inside</h3>
+        <ul class="inside">
+            <li>Он стал прислушиваться и услыхал звуки приближающегося топота лошадей и звуки голосов...</li>
+            <li>Он стал прислушиваться и услыхал звуки приближающегося топота лошадей и звуки голосов...</li>
+        </ul>
+        <h3>Outside</h3>
+        <ul class="outside">
+            <li>Он стал прислушиваться и услыхал звуки приближающегося топота лошадей и звуки голосов...</li>
+            <li>Он стал прислушиваться и услыхал звуки приближающегося топота лошадей и звуки голосов...</li>
+        </ul>
+
+        <hr>
+        <ul class="image">
+            <li>Он стал прислушиваться и услыхал звуки приближающегося топота лошадей и звуки голосов...</li>
+            <li>Он стал прислушиваться и услыхал звуки приближающегося топота лошадей и звуки голосов...</li>
+        </ul>
+    </body>
+</html>
