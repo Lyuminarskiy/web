@@ -12,12 +12,12 @@
             Universal selector (*), combinators (+, >, ~, ' ') and negation pseudo-class (:not()) have no effect on specificity.*/
 
             a {font-size: 18px;} /* 1 */
-            .nav li a {color: red;}  /* 10 + 2 =12 */
+            .nav li a {color: red;}  /* 10 + 2 = 12 */
             #menu a {color: navy;}   /* 100 + 1 = 101 */
             .nav .menuItem {color: green;}  /* 20 */
             a.menuItem:not(.newsLink) {color: orange;}  /* 20 + 1 = 21 */
             div ul li a {color: gray; } /* 4 */
-            a {font-size: 18px; color: red !important;}
+            /* a { font-size: 18px; color: red !important; } */
         </style>
     </head>
     <body>
