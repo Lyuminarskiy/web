@@ -1,9 +1,13 @@
-h2 { color:blue; }
-
 /* Селектор и блок объявления стиля */
 div {
     /* Команда: свойство и значение */
-    background-color:red;
-    width: 100px;
-    height: 100px;
+    border: 2px solid black;
+    margin: 10px;
+    padding: 10px;
+    width: 200px;
+    height: 200px;
+}
+
+div.file {
+    background-color: green;
 }
