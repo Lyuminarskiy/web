@@ -1,8 +1,8 @@
 [Назад к описанию занятия](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2)
 
-[Посмотреть пример на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/8d6hdmf3/)
-
 # Таблицы
+
+[Посмотреть пример на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/8d6hdmf3/)
 
 Элементы в этом примере:
 

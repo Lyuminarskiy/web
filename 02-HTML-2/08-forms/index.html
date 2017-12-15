@@ -9,28 +9,33 @@
 <body>
     <h1>Содержание</h1>
     <ul>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
-        <li><a href="#"></a></li>
+        <li><a href="#get">Метод GET</a></li>
+        <li><a href="#post">Метод POST</a></li>
+        <li><a href="#buttons">Кнопки</a></li>
+        <li><a href="#text">Текстовые поля и метки</a></li>
+        <li><a href="#numbers">Ввод чисел</a></li>
+        <li><a href="#datetime">Ввод времени и даты</a></li>
+        <li><a href="#check">Флажки и переключатели</a></li>
+        <li><a href="#special">Специальные элементы ввода</a></li>
+        <li><a href="#select">Выпадающий список</a></li>
         <li><a href="#details">Раскрывающийся элемент</a></li>
         <li><a href="#progress">Полоса прогресса</a></li>
         <li><a href="#meter">Шкала значений</a></li>
     </ul>
 
-    <h1>Метод GET</h1>
+    <h1 id="get">Метод GET</h1>
     <form method="GET" action="index.html">
         <input type="text" name="value">
         <input type="submit" value="Отправить">
     </form>
 
-    <h1>Метод POST</h1>
+    <h1 id="post">Метод POST</h1>
     <form method="POST" action="index.html">
         <input type="text" name="value">
         <input type="submit" value="Отправить">
     </form>
 
-    <h1>Кнопки</h1>
+    <h1 id="buttons">Кнопки</h1>
     <form>
         <input type="text" name="value" value="value">
         <p>
@@ -47,7 +52,7 @@
         </p>
     </form>
 
-    <h1>Текстовые поля и метки</h1>
+    <h1 id="text">Текстовые поля и метки</h1>
     <form autocomplete="off">
         <p>
             <label for="firstname">Имя:</label>
@@ -65,13 +70,13 @@
         <button type="submit">Отправить</button>
     </form>
 
-    <h1>Ввод чисел</h1>
+    <h1 id="numbers">Ввод чисел</h1>
     <form>
         <p><input type="number" step="1" min="1" max="100" value="10"></p>
         <p><input type="range" step="1" min="1" max="100" value="10"></p>
     </form>
 
-    <h1>Ввод времени и даты</h1>
+    <h1 id="datetime">Ввод времени и даты</h1>
     <form>
         <p>
             <label for="date">Дата: </label>
@@ -98,7 +103,7 @@
         </p>
     </form>
 
-    <h1>Флажки и переключатели</h1>
+    <h1 id="check">Флажки и переключатели</h1>
     <form>
         <fieldset>
             <legend>Флажки</legend>
@@ -123,7 +128,7 @@
         <p><button type="submit">Отправить</button></p>
     </form>
 
-    <h1>Специальные элементы ввода</h1>
+    <h1 id="special">Специальные элементы ввода</h1>
     <form>
         <label for="favcolor">Выберите цвет</label>
         <input type="color" list="colors" id="favcolor" name="favcolor" />
@@ -156,7 +161,7 @@
             <p><button type="submit">Отправить</button></p>
     </form>
 
-    <h1>Выпадающий список</h1>
+    <h1 id="select">Выпадающий список</h1>
     <form>
         <p><select multiple>
             <optgroup label="Группа 1">

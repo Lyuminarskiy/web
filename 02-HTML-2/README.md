@@ -13,11 +13,11 @@
 - Формы: [`<button>`](http://htmlbook.ru/html/button), [`<datalist>`](http://htmlbook.ru/html/datalist), [`<details>`](http://htmlbook.ru/html/details), [`<input>`](http://htmlbook.ru/html/input), [`<fieldset>`](http://htmlbook.ru/html/fieldset), [`<form>`](http://htmlbook.ru/html/form), [`<label>`](http://htmlbook.ru/html/label), [`<legend>`](http://htmlbook.ru/html/legend), [`<meter>`](http://htmlbook.ru/html/meter), [`<optgroup>`](http://htmlbook.ru/html/optgroup), [`<option>`](http://htmlbook.ru/html/option), [`<progress>`](http://htmlbook.ru/html/progress), [`<select>`](http://htmlbook.ru/html/select), [`<summary>`](http://htmlbook.ru/html/summary), [`<textarea>`](http://htmlbook.ru/html/textarea).
 
 Примеры:
-1. [Текст и форматирование](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/text)
-2. [Списки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/lists)
-3. [Таблицы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/tables)
-4. [Ссылки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/links)
-5. [Метаинформация](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/meta)
-6. [Фреймы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/frames)
-7. [Мультимедиа](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/multimedia)
-8. [Формы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/forms)
+1. [Текст и форматирование](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/01-text)
+2. [Списки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/02-lists)
+3. [Таблицы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/03-tables)
+4. [Ссылки](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/04-links)
+5. [Метаинформация](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/05-meta)
+6. [Фреймы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/06-frames)
+7. [Мультимедиа](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/07-multimedia)
+8. [Формы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/08-forms)
