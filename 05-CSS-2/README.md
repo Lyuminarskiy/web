@@ -5,6 +5,7 @@
 Темы занятия:
 - Селекторы:
     - [Селекторы элементов](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/05-CSS-2/01-selectors/01-elements).
+    - [Селекторы классов](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/05-CSS-2/01-selectors/02-classes)
     - Потомков
     - Дочерних элементов
     - Смежных элементов
