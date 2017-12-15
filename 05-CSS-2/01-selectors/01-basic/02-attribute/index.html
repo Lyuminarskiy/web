@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Селектор атрибута</title>
+    <meta charset="utf-8">
+    <style>
+        /* Все элементы с атрибутом id. */
+        [id] {
+            color: darkcyan;
+        }
+
+        /* Все элементы типа <a> с атрибутом id. */
+        a[id] {
+            text-decoration: none;
+        }
+
+        /* Все элементы с атрибутом lang="ru". */
+        [lang="ru" i] {
+            background-color: yellow;
+        }
+
+        /* Все элементы, у которых значение атрибута href начинается с "https://". */
+        [href^="https://"] {
+            background-color: gold;
+        }
+
+        /* Все элементы, у которых значение атрибута href заканчивается на "ru". */
+        [href$="ru"] {
+            text-decoration: line-through red;
+        }
+
+        /* Все элементы, у которых значение атрибута href содержит "htmlbook". */
+        [href*="htmlbook"] {
+            color: red;
+        }
+
+        /* Все элементы, у которых в списке значений (слова, разделённые пробелами) атрибута class присутствует значение "link". */
+        [class~="link"] {
+            color: red;
+        }
+
+        /* Все элементы, у которых значение атрибута class или в точности совпадает с "another", или начинается с "another", после которого идёт дефис "-". */
+        [class|="another"] {
+            border: 1px solid red
+        }
+    </style>
+</head>
+
+<body>
+    <p id="caption" lang="ru">Ссылки:</p>
+    <ul>
+        <li>
+            <a href="https://ru.wikipedia.org/wiki/CSS" id="first" class="wiki">CSS</a>
+        </li>
+        <li>
+            <a href="https://en.wikipedia.org/wiki/HTML" class="wiki link">HTML</a>
+        </li>
+        <li>
+            <a href="http://htmlbook.ru" class="another-link">htmlbook.ru</a>
+        </li>
+    </ul>
+</body>
+
+</html>

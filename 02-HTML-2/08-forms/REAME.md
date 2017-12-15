@@ -2,7 +2,7 @@
 
 # Элементы форм
 
-[Посмотреть пример на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/ormanbq1/)
+[Посмотреть пример на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/354fmL3b/)
 
 Элементы в этом примере:
 
