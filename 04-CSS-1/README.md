@@ -8,3 +8,6 @@
 
 Примеры:
 1. [Добавление стилей на веб-страницу](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/04-CSS-1/introduction)
+
+Ссылки:
+1. [Справочник CSS](https://webref.ru/css)

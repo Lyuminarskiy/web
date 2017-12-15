@@ -11,3 +11,6 @@
 6. [Фреймы](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/06-frames).
 7. [Элементы мультимедиа](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/07-multimedia).
 8. [Элементы форм](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2/08-forms).
+
+Ссылки:
+1. [Справочник HTML](https://webref.ru/html)

@@ -9,3 +9,6 @@
 
 Примеры:
 1. [Базовые элементы HTML документа](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/01-HTML-1/introduction)
+
+Ссылки:
+1. [Справочник HTML](https://webref.ru/html)
