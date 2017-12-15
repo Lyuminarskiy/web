@@ -1,6 +1,6 @@
 [Назад к описанию занятия](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2)
 
-# Текст и форматирование
+# Текстовые элементы и элементы форматирования текста
 
 [Посмотреть пример на JSFiddle](https://jsfiddle.net/Vladislav_Lyuminarskiy/5d1fcvgm/)
 

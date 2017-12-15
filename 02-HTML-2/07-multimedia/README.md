@@ -1,6 +1,6 @@
 [Назад к описанию занятия](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/02-HTML-2)
 
-# Мультимедиа
+# Элементы мультимедиа
 
 Элементы в этом примере:
 

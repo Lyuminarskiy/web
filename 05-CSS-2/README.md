@@ -2,13 +2,9 @@
 
 # Стилизация веб-страниц с помощью CSS
 
-[Назад к оглавлению](https://github.com/Vladislav-Lyuminarskiy/Web-course)
-
-# Создание веб-страниц с помощью HTML
-
 Темы занятия:
 - Селекторы:
-    - Элементов
+    - [Селекторы элементов](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/05-CSS-2/01-selectors/01-elements).
     - Потомков
     - Дочерних элементов
     - Смежных элементов
@@ -27,6 +23,3 @@
     - Текст
     - Списки
     - Таблицы
-
-Примеры:
-1. []()
