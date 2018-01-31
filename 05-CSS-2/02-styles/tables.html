@@ -52,6 +52,45 @@
             /* Позиционирование заголовка снизу */
             caption-side: bottom;
         }
+
+        .auto {
+            /* Автоматический размер таблицы */
+            table-layout: auto;
+        }
+
+        .fixed {
+            /* Фиксированный размер таблицы */
+            table-layout: fixed;
+        }
+
+        .col1 {
+            width: 200px;
+        }
+
+        .coln {
+            width: 100px;
+        }
+
+        .vertical-align {
+            width: 200px;
+            height: 200px
+        }
+
+        .top {
+            vertical-align: top;
+        }
+
+        .bottom {
+            vertical-align: bottom;
+        }
+
+        .middle {
+            vertical-align: middle;
+        }
+
+        .baseline {
+            vertical-align: baseline;
+        }
     </style>
 </head>
 
@@ -196,6 +235,67 @@
             <td>iPhone SE</td>
             <td>Apple</td>
             <td>37000</td>
+        </tr>
+    </table>
+
+    <h3>table-layout: auto</h3>
+    <table class="auto">
+        <tr>
+            <th>Заголовок №1</th>
+            <th>Заголовок №2</th>
+            <th>Заголовок №3</th>
+        </tr>
+        <tr>
+            <td>Lumia 950</td>
+            <td>Microsoft</td>
+            <td>29900</td>
+        </tr>
+        <tr>
+            <td>iPhone 6S</td>
+            <td>Apple</td>
+            <td>52900</td>
+        </tr>
+        <tr>
+            <td>Nexus 6P</td>
+            <td>Huawei</td>
+            <td>49000</td>
+        </tr>
+    </table>
+    <h3>table-layout: fixed</h3>
+    <table class="fixed">
+        <col class="col1">
+        <col span="2" class="coln">
+        <tr>
+            <th>Заголовок №1</th>
+            <th>Заголовок №2</th>
+            <th>Заголовок №3</th>
+        </tr>
+        <tr>
+            <td>G 5</td>
+            <td>LG</td>
+            <td>44900</td>
+        </tr>
+        <tr>
+            <td>HTC 10</td>
+            <td>HTC</td>
+            <td>49900</td>
+        </tr>
+        <tr>
+            <td>Nexus 5X</td>
+            <td>Google/LG</td>
+            <td>25000</td>
+        </tr>
+    </table>
+
+    <h3>vertical-align</h3>
+    <table>
+        <tr>
+            <td class="vertical-align top">top</td>
+            <td class="vertical-align bottom">bottom</td>
+        </tr>
+        <tr>
+            <td class="vertical-align middle">middle</td>
+            <td class="vertical-align baseline">baseline</td>
         </tr>
     </table>
 </body>
