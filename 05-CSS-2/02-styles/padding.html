@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Свойства CSS3</title>
+    <style>
+        div.outer {
+            margin: 25px;
+
+            /* отступ сверху */
+            padding-top: 80px;
+            /* отступ слева */
+            padding-left: 40px;
+            /* отступ справа */
+            padding-right: 20px;
+            /* отступ снизу */
+            padding-bottom: 10px;
+
+            border: 2px solid red;
+        }
+
+        div.inner {
+            height: 50px;
+            background-color: blue;
+        }
+
+        .compact {
+            /* сверху справа снизу слева */
+            padding: 30px 20px 15px 25px;
+
+            /* сверху слева+справа снизу */
+            padding: 30px 20px 15px;
+
+            /* сверху+снизу слева+справа */
+            padding: 30px 20px;
+
+            /* сверху+справа+снизу+слева */
+            padding: 30px;
+
+            /* Автоматический размер */
+            padding: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="outer">
+        <div class="inner"></div>
+    </div>
+</body>
+
+</html>
