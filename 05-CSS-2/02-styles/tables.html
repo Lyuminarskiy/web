@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Свойства CSS3</title>
+    <style>
+        table {
+            /* Граница таблицы */
+            border: 1px solid red;
+
+            /* Расстояние между границами ячеек */
+            border-spacing: 3px;
+        }
+
+        td,
+        th {
+            /* Граница ячеек */
+            border: 1px solid blue;
+        }
+
+        caption {
+            font-weight: bold;
+        }
+
+        .collapsed {
+            /* Общая граница у смежных ячеек */
+            border-collapse: collapse;
+        }
+
+        .separated {
+            /* Раздельная граница у смежных ячеек */
+            border-collapse: separate;
+        }
+
+        .visible-empty-cells {
+            /* Отображение  пустых ячеек */
+            empty-cells: show;
+        }
+
+        .hidden-empty-cells {
+            /* Скрытие пустых ячеек */
+            empty-cells: hide;
+        }
+
+        .captionTop {
+            /* Позиционирование заголовка сверху */
+            caption-side: top;
+        }
+
+        .captionBottom {
+            /* Позиционирование заголовка снизу */
+            caption-side: bottom;
+        }
+    </style>
+</head>
+
+<body>
+    <h3>border-collapse: collapse</h3>
+    <table class="collapsed">
+        <tr>
+            <th>Заголовок №1</th>
+            <th>Заголовок №2</th>
+            <th>Заголовок №3</th>
+        </tr>
+        <tr>
+            <td>Lumia 950</td>
+            <td>Microsoft</td>
+            <td>29900</td>
+        </tr>
+        <tr>
+            <td>iPhone 6S</td>
+            <td>Apple</td>
+            <td>52900</td>
+        </tr>
+        <tr>
+            <td>Nexus 6P</td>
+            <td>Huawei</td>
+            <td>49000</td>
+        </tr>
+    </table>
+    <h3>border-collapse: separate</h3>
+    <table class="separated">
+        <tr>
+            <th>Заголовок №1</th>
+            <th>Заголовок №2</th>
+            <th>Заголовок №3</th>
+        </tr>
+        <tr>
+            <td>G 5</td>
+            <td>LG</td>
+            <td>44900</td>
+        </tr>
+        <tr>
+            <td>HTC 10</td>
+            <td>HTC</td>
+            <td>49900</td>
+        </tr>
+        <tr>
+            <td>Nexus 5X</td>
+            <td>Google/LG</td>
+            <td>25000</td>
+        </tr>
+    </table>
+
+    <h3>empty-cells: show</h3>
+    <table class="visible-empty-cells">
+        <tr>
+            <th>Заголовок №1</th>
+            <th>Заголовок №2</th>
+            <th>Заголовок №3</th>
+        </tr>
+        <tr>
+            <td>Lumia 950</td>
+            <td>Microsoft</td>
+            <td>29900</td>
+        </tr>
+        <tr>
+            <td>iPhone 6S</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Nexus 6P</td>
+            <td>Huawei</td>
+            <td>49000</td>
+        </tr>
+    </table>
+    <h3>empty-cells: hide</h3>
+    <table class="hidden-empty-cells">
+        <tr>
+            <th>Заголовок №1</th>
+            <th>Заголовок №2</th>
+            <th>Заголовок №3</th>
+        </tr>
+        <tr>
+            <td>G 5</td>
+            <td>LG</td>
+            <td>44900</td>
+        </tr>
+        <tr>
+            <td>HTC 10</td>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td>Nexus 5X</td>
+            <td>Google/LG</td>
+            <td>25000</td>
+        </tr>
+    </table>
+
+    <h3>caption-side: top</h3>
+    <table class="caprionTop">
+        <caption>Заголовок таблицы</caption>
+        <tr>
+            <th>Заголовок №1</th>
+            <th>Заголовок №2</th>
+            <th>Заголовок №3</th>
+        </tr>
+        <tr>
+            <td>Lumia 950</td>
+            <td>Microsoft</td>
+            <td>29900</td>
+        </tr>
+        <tr>
+            <td>iPhone 6S</td>
+            <td>Apple</td>
+            <td>52900</td>
+        </tr>
+        <tr>
+            <td>Nexus 6P</td>
+            <td>Huawei</td>
+            <td>49000</td>
+        </tr>
+    </table>
+    <h3>caption-side: bottom</h3>
+    <table class="captionBottom">
+        <caption>Заголовок таблицы</caption>
+        <tr>
+            <th>Заголовок №1</th>
+            <th>Заголовок №2</th>
+            <th>Заголовок №3</th>
+        </tr>
+        <tr>
+            <td>G 5</td>
+            <td>LG</td>
+            <td>44900</td>
+        </tr>
+        <tr>
+            <td>HTC 10</td>
+            <td>HTC</td>
+            <td>49900</td>
+        </tr>
+        <tr>
+            <td>iPhone SE</td>
+            <td>Apple</td>
+            <td>37000</td>
+        </tr>
+    </table>
+</body>
+
+</html>
