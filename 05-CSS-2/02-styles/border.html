@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Свойства CSS3</title>
+    <style>
+        a {
+            /* Стиль границы (none, solid, dashed, dotted, double, inset, outset, ridge, groove) */
+            border-style: solid;
+
+            /* Цвет границы */
+            border-color: red;
+
+            /* Ширина границы (1px, 3px, 5px) */
+            border-width: thin;
+            border-width: medium;
+            border-width: thick;
+            border-width: 3px;
+
+            /* ширина стиль цвет */
+            border: 3px solid red;
+
+            /* для верхней границы */
+            border-top-width: 3px;
+            border-top-style: solid;
+            border-top-color: red;
+
+            /* для нижней границы */
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+            border-bottom-color: red;
+
+            /* для левой границы */
+            border-left-width: 3px;
+            border-left-style: solid;
+            border-left-color: red;
+
+            /* для правой границы */
+            border-right-width: 3px;
+            border-right-style: solid;
+            border-right-color: red;
+
+            border-top: 3px solid red;
+            border-bottom: 3px solid red;
+            border-left: 3px solid red;
+            border-right: 3px solid red;
+
+            /* радиус для верхнего левого угла */
+            border-top-left-radius: 15px;   
+            /* радиус для верхнего правого угла */
+            border-top-right-radius: 30px;  
+            /* радиус для нижнего левого угла */
+            border-bottom-right-radius: 5px;    
+            /* радиус для нижнего правого угла */
+            border-bottom-left-radius: 40px;    
+
+            /* вл вп нп нл */
+            border-radius: 15px 30px 5px 40px;
+            /* вл вп+нл нп */
+            border-radius: 15px 30px 5px;
+            /* вл+нп вп+нл */
+            border-radius: 15px 30px;
+            /* вл+вп+нп+нл */
+            border-radius: 15px;
+        }
+
+        #styles div {
+            display: inline-block;
+            margin: 15px;
+            width: 50px;
+            height: 50px;
+            text-align: center;
+        }
+
+        .none {
+            border: none;
+        }
+
+        .solid {
+            border: 3px solid red;
+        }
+
+        .dashed {
+            border: 3px dashed red;
+        }
+
+        .dotted {
+            border: 3px dotted red;
+        }
+
+        .double {
+            border: 3px double red;
+        }
+
+        .inset {
+            border: 3px inset red;
+        }
+
+        .outset {
+            border: 3px outset red;
+        }
+
+        .ridge {
+            border: 3px solid red;
+        }
+
+        .groove {
+            border: 3px solid red;
+        }
+
+        .diff {
+            margin: 15px;
+            width: 100px;
+            height: 100px;
+            text-align: center;
+
+            border-top: 3px solid red;
+            border-bottom: 7px double green;
+            border-left: 5px dashed blue;
+            border-right: 5px dotted yellow;
+        }
+
+        .radius1 {
+            width: 100px !important;
+            height: 100px !important;
+            border: 3px solid red;
+            border-radius: 30px;
+        }
+
+        .radius2 {
+            width: 100px !important;
+            height: 100px !important;
+            border: 3px solid red;
+            border-radius: 15px 30px 5px 40px;
+        }
+
+        .radius3 {
+            width: 100px !important;
+            height: 100px !important;
+            border: 3px solid red;
+            border-radius: 40px/20px;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="styles">
+        <div class="none">none</div>
+        <div class="solid">solid</div>
+        <div class="dashed">dashed</div>
+        <div class="dotted">dotted</div>
+        <div class="double">double</div>
+        <div class="inset">inset</div>
+        <div class="outset">outset</div>
+        <div class="ridge">ridge</div>
+        <div class="groove">groove</div>
+    </div>
+
+    <hr>
+    <div class="diff">diff</div>
+
+    <hr>
+    <div id="styles">
+        <div class="radius1">Блок 1</div>
+        <div class="radius2">Блок 2</div>
+        <div class="radius3">Блок 3</div>
+    </div>
+</body>
+
+</html>
