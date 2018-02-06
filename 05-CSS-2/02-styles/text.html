@@ -1,73 +1,117 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <meta charset="utf-8">
-        <title>Свойства CSS3</title>
-        <style>
-            span {
-                /* Регистр текста */
-                text-transform: none;
-                text-transform: capitalize;
-                text-transform: uppercase;
-                text-transform: lowercase;
 
-                /* Декорирование */
-                text-decoration: none;
-                text-decoration: underline;
-                text-decoration: overline;
-                text-decoration: line-through;
+<head>
+    <meta charset="utf-8">
+    <title>Свойства CSS3</title>
+    <style>
+        span {
+            /* Регистр текста */
+            text-transform: none;
+            text-transform: capitalize;
+            text-transform: uppercase;
+            text-transform: lowercase;
 
-                /* Межсимвольный интервал */
-                letter-spacing: 2px;
-                word-spacing: 2px;
+            /* Декорирование */
+            text-decoration: none;
+            text-decoration: underline;
+            text-decoration: overline;
+            text-decoration: line-through;
 
-                /* Тени */
-                text-shadow: 5px 4px 3px red;
-                text-shadow: -5px -4px 3px green;
-            }
-            
-            p.lowercase { text-transform: lowercase; }
-            p.uppercase { text-transform: uppercase; }
-            p.capitalize { text-transform: capitalize; }
+            /* Межсимвольный интервал */
+            letter-spacing: 2px;
+            word-spacing: 2px;
 
-            p.under { text-decoration: underline; }
-            p.over { text-decoration: overline; }
-            p.line { text-decoration: line-through; }
-            p.mixed { text-decoration: underline line-through; }
-            a.none { text-decoration: none; }
+            /* Тени */
+            text-shadow: 5px 4px 3px red;
+            text-shadow: -5px -4px 3px green;
+        }
 
-            p.smallLetterSpace { letter-spacing: -3px; }
-            p.bigLetterSpace { letter-spacing: 3px; }
-            p.smallWordSpace { word-spacing: -3px; }
-            p.bidWordSpace { word-spacing: 3px; }
+        p.lowercase {
+            text-transform: lowercase;
+        }
 
-            p.shadow1 { text-shadow: 5px 4px 3px red; } 
-            p.shadow2 { text-shadow: -5px -4px 3px green; }
-        </style>
-    </head>
-    <body>
-            <p class="capitalize">Текст использует значение capitalize</p>
-            <p class="lowercase">Текст использует значение lowercase</p>
-            <p class="uppercase">Текст использует значение uppercase</p>
+        p.uppercase {
+            text-transform: uppercase;
+        }
 
-            <p class="under">Это подчеркнутый текст.</p>
-            <p class="over">Это надчеркнутый текст</p>
-            <p class="line">Это зачеркнутый текст</p>
-            <p class="mixed">Это подчеркнутый и зачеркнутый текст</p>
-            <p>Не подчеркнутая <a href="index.php" class="none">ссылка<a></p>
-            
-            <h3>Обычный текст</h3>
-            <p>Над ним не было ничего уже, кроме неба...</p>
-            <h3>letter-spacing: -3px;</h3>
-            <p class="smallLetterSpace">Над ним не было ничего уже, кроме неба...</p>
-            <h3>letter-spacing: 3px;</h3>
-            <p class="bigLetterSpace">Над ним не было ничего уже, кроме неба...</p>
-            <h3>word-spacing: -3px</h3>
-            <p class="smallWordSpace">Над ним не было ничего уже, кроме неба...</p>
-            <h3>word-spacing: 3px</h3>
-            <p class="bigWordSpace">Над ним не было ничего уже, кроме неба...</p>
+        p.capitalize {
+            text-transform: capitalize;
+        }
 
-            <p class="shadow1">Текстовые тени</p>
-            <p class="shadow2">Текстовые тени</p>
-    </body>
+        p.under {
+            text-decoration: underline;
+        }
+
+        p.over {
+            text-decoration: overline;
+        }
+
+        p.line {
+            text-decoration: line-through;
+        }
+
+        p.mixed {
+            text-decoration: underline line-through;
+        }
+
+        a.none {
+            text-decoration: none;
+        }
+
+        p.smallLetterSpace {
+            letter-spacing: -3px;
+        }
+
+        p.bigLetterSpace {
+            letter-spacing: 3px;
+        }
+
+        p.smallWordSpace {
+            word-spacing: -3px;
+        }
+
+        p.bidWordSpace {
+            word-spacing: 3px;
+        }
+
+        p.shadow1 {
+            text-shadow: 5px 4px 3px red;
+        }
+
+        p.shadow2 {
+            text-shadow: -5px -4px 3px green;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="capitalize">Текст использует значение capitalize</p>
+    <p class="lowercase">Текст использует значение lowercase</p>
+    <p class="uppercase">Текст использует значение uppercase</p>
+
+    <p class="under">Это подчеркнутый текст.</p>
+    <p class="over">Это надчеркнутый текст</p>
+    <p class="line">Это зачеркнутый текст</p>
+    <p class="mixed">Это подчеркнутый и зачеркнутый текст</p>
+    <p>Не подчеркнутая
+        <a href="index.php" class="none">ссылка
+            <a>
+    </p>
+
+    <h3>Обычный текст</h3>
+    <p>Над ним не было ничего уже, кроме неба...</p>
+    <h3>letter-spacing: -3px;</h3>
+    <p class="smallLetterSpace">Над ним не было ничего уже, кроме неба...</p>
+    <h3>letter-spacing: 3px;</h3>
+    <p class="bigLetterSpace">Над ним не было ничего уже, кроме неба...</p>
+    <h3>word-spacing: -3px</h3>
+    <p class="smallWordSpace">Над ним не было ничего уже, кроме неба...</p>
+    <h3>word-spacing: 3px</h3>
+    <p class="bigWordSpace">Над ним не было ничего уже, кроме неба...</p>
+
+    <p class="shadow1">Текстовые тени</p>
+    <p class="shadow2">Текстовые тени</p>
+</body>
+
 </html>
