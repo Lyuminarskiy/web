@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>Свойства CSS3</title>
+    <style>
+        a {
+            /* Ширина элемента (текущая, максимальная, минимальная) */
+            width: 200px;
+            min-width: 100px;
+            max-width: 300px;
+
+            /* Высота элемента (текущая, максимальная, минимальная) */
+            height: 200px;
+            min-height: 100px;
+            max-height: 300px;
+
+            /* Переопределение установленных размеров элементов */
+            /* width/height = width/height + border + padding */
+            box-sizing: content-box;
+            /* width/height = width/height - border - padding */
+            box-sizing: border-box;
+
+            /* Абсолютное значение в пикселях */
+            font-size: 1px;
+            /* Значение относительно размера шрифта текущего контекста */
+            font-size: 1em;
+            /* Значение относительно размера шрифта корневого элемента страницы */
+            font-size: 1rem;
+            /* Значение относительно аналогичного свойства текущего контекста */
+            font-size: 1%;
+            /* Количество процентов от текущей ширины окна */
+            font-size: 1vw;
+            /* Количество процентов от текущей высоты окна */
+            font-size: 1vh;
+            /* Количество процентов от наименьшей стороны (высоты или ширины) окна */
+            font-size: 1vmin;
+            /* Количество процентов от наибольшей стороны (высоты или ширины) окна */
+            font-size: 1vmax;
+        }
+
+        html {
+            font-size: 20px;
+        }
+
+        div {
+            border: 1px solid black;
+            height: 200px;
+            color: white;
+            display: inline-block;
+        }
+
+        .box-sizing-outer {
+            width: 200px;
+            height: 200px;
+            padding: 50px;
+            border: 10px solid orange;
+            background: lightgreen;
+        }
+
+        .box-sizing-inner {
+            border: none;
+            width: 100%;
+            height: 100%;
+            background: lightblue;
+        }
+
+        .content-box {
+            box-sizing: content-box;
+        }
+
+        .border-box {
+            box-sizing: border-box;
+        }
+
+        .px100 {
+            background-color: red;
+            width: 100px;
+        }
+
+        .px200 {
+            background-color: green;
+            width: 200px;
+        }
+
+        .px300 {
+            background-color: blue;
+            width: 300px;
+        }
+
+        .em-container {
+            border: none;
+            font-size: 10px;
+        }
+
+        .em5 {
+            background-color: red;
+            width: 5em;
+        }
+
+        .em10 {
+            background-color: green;
+            width: 10em;
+        }
+
+        .em15 {
+            background-color: blue;
+            width: 15em;
+        }
+
+        .rem5 {
+            background-color: red;
+            width: 5rem;
+        }
+
+        .rem10 {
+            background-color: green;
+            width: 10rem;
+        }
+
+        .rem15 {
+            background-color: blue;
+            width: 15rem;
+        }
+
+        .pct-container {
+            border: none;
+            width: 50%;
+        }
+
+        .pct10 {
+            background-color: red;
+            width: 10%;
+        }
+
+        .pct20 {
+            background-color: green;
+            width: 20%;
+        }
+
+        .pct30 {
+            background-color: blue;
+            width: 30%;
+        }
+
+        .vw10 {
+            background-color: red;
+            width: 10vw;
+        }
+
+        .vw20 {
+            background-color: green;
+            width: 20vw;
+        }
+
+        .vw30 {
+            background-color: blue;
+            width: 30vw;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>box-sizing</h1>
+    <div class="box-sizing-outer content-box">
+        <div class="box-sizing-inner"></div>
+    </div>
+    <div class="box-sizing-outer border-box">
+        <div class="box-sizing-inner"></div>
+    </div>
+
+    <hr>
+
+    <h1>px</h1>
+    <div class="px100">100px</div>
+    <div class="px200">200px</div>
+    <div class="px300">300px</div>
+
+    <hr>
+
+    <h1>em</h1>
+    <div class="em-container">
+        <div class="em5">5em</div>
+        <div class="em10">10em</div>
+        <div class="em15">15em</div>
+    </div>
+
+
+    <p>
+        <div class="em5">5em</div>
+        <div class="em10">10em</div>
+        <div class="em15">15em</div>
+    </p>
+
+    <hr>
+
+    <h1>rem</h1>
+    <div class="rem5">5rem</div>
+    <div class="rem10">10rem</div>
+    <div class="rem15">15rem</div>
+
+    <hr>
+
+    <h1>%</h1>
+    <div class="pct-container">
+        <div class="pct10">10%</div>
+        <div class="pct20">20%</div>
+        <div class="pct30">30%</div>
+    </div>
+
+    <p>
+        <div class="pct10">10%</div>
+        <div class="pct20">20%</div>
+        <div class="pct30">30%</div>
+    </p>
+
+    <hr>
+
+    <h1>vh</h1>
+    <div class="vw10">10vw</div>
+    <div class="vw20">20vw</div>
+    <div class="vw30">30vw</div>
+</body>
+
+</html>
