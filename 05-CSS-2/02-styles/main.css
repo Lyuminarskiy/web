@@ -1,0 +1,12 @@
+* {
+    font-family: monospace;
+}
+
+.info {
+    border: 5px solid red;
+    position: relative;
+    float: left;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}

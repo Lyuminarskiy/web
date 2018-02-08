@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>CSS: контур элемента</title>
+    <link rel="stylesheet" type="text/css" href="main.css"/>
+    <style>
+        /* В данном блоке CSS представлено описание свойств и их значений. */
+        example {
+            /* Контур элемента (outline-color, outline-style, outline-width) */
+            outline: red dashed 5px;
+
+            /* Цвет контура */
+            outline-color: red;
+
+            /* Стиль контура */
+            outline-style: solid;
+            outline-style: double;
+            outline-style: dashed;
+            outline-style: dotted;
+            outline-style: groove;
+            outline-style: ridge;
+            outline-style: inset;
+            outline-style: outset;
+
+            /* Ширина контура */
+            outline-width: 3px;
+            outline-width: thin;
+            outline-width: medium;
+            outline-width: thick;
+
+            /* Расстояние между границей элемента и рамкой */
+            outline-offset: 10px;
+            outline-offset: -3px;
+        }
+
+        div {
+            width: 200px;
+            height: 200px;
+            margin: 30px;
+            border: 5px solid orange;
+            background-color: lightgreen;
+            display: inline-block;
+        }
+
+        .static {
+            outline: red dashed 5px;
+        }
+
+        .dynamic:hover {
+            outline: red dashed 5px;
+        }
+
+        .without-offset {
+            outline: red dashed 5px;
+        }
+
+        .positive-offset {
+            outline: red dashed 5px;
+            outline-offset: 15px;
+        }
+
+        .negative-offset {
+            outline: red dashed 5px;
+            outline-offset: -15px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>outline</h1>
+    <div class="static"></div>
+    <div class="dynamic"></div>
+
+    <hr>
+
+    <h1>outline-offset</h1>
+    <div class="positive-offset">
+        <span class="info">outline-offset: 15px</span>
+    </div>
+    <div class="without-offset"></div>
+    <div class="negative-offset"></div>
+</body>
+
+</html>
