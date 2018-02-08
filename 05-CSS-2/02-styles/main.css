@@ -1,5 +1,8 @@
 * {
     font-family: monospace;
+
+    --border: 5px solid orange;
+    --background-color: lightgreen;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -11,8 +14,8 @@ div.block {
     width: 200px;
     height: 200px;
     margin: 30px;
-    border: 5px solid orange;
-    background-color: lightgreen;
+    border:  var(--border);
+    background-color: var(--background-color);
 }
 
 div > span.info {
