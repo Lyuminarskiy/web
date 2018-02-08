@@ -10,7 +10,7 @@
             background-color: red;
             background-color: transparent;
 
-            /* Положение фонового изобрвжения */
+            /* Положение фонового изображения */
             background-position: 100% 200px;
             background-position: 70%;
             background-position: 150px;
@@ -35,7 +35,6 @@
             /* Масштабирование с сохранением пропорций, фоновое изображение полностью помещается внутри элемента */
             background-size: contain;
 
-
             /* Повторение фона (по горизонтали, по вертикали) */
             background-repeat: no-repeat repeat;
             /* Не повторять */
@@ -54,7 +53,7 @@
             /* Область позиционирования фонового изображения */
             /* Фоновое изображения позиционируется относительно внутреннего края границы элемента */
             background-origin: padding-box;
-            /* Фоновое изображения позиционируется относительно внещнего края границы элемента */
+            /* Фоновое изображения позиционируется относительно внешнего края границы элемента */
             background-origin: border-box;
             /* Фоновое изображения позиционируется относительно области содержимого элемента */
             background-origin: content-box;
@@ -77,9 +76,9 @@
             /* Изображение в качестве фона элемента*/
             background-image: url(../../02-HTML-2/07-multimedia/images/cat.jpeg);
 
-
-            /* Комбинированное свойство фона элемента */
-            background: red;
+            /* Комбинированное свойство фона элемента (background-color, background-position, background-size, background-repeat, background-origin, background-clip, background-attachment, background-image)
+            */
+            background: red center cover repeat-x content-box border-box fixed url(../../02-HTML-2/07-multimedia/images/cat.jpeg);
         }
 
         div {
