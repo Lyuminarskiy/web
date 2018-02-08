@@ -3,176 +3,206 @@
 
 <head>
     <meta charset="utf-8">
-    <title>Свойства CSS3</title>
+    <link rel="stylesheet" type="text/css" href="main.css" />
+    <title>CSS: граница элемента</title>
     <style>
-        a {
-            /* Стиль границы (none, solid, dashed, dotted, double, inset, outset, ridge, groove) */
-            border-style: solid;
+        example {
+            /* Граница элемента (border-width, border-style, border-color) */
+            border: 3px solid red;
 
-            /* Цвет границы */
-            border-color: red;
-
-            /* Ширина границы (1px, 3px, 5px) */
+            /* Толщина границы */
             border-width: thin;
             border-width: medium;
             border-width: thick;
             border-width: 3px;
 
-            /* ширина стиль цвет */
-            border: 3px solid red;
+            /* Стиль границы */
+            border-style: solid;
+            border-style: double;
+            border-style: dashed;
+            border-style: dotted;
+            border-style: inset;
+            border-style: outset;
+            border-style: groove;
+            border-style: ridge;
 
-            /* для верхней границы */
+            /* Цвет границы */
+            border-color: red;
+
+            /* Верхняя граница элемента */
+            border-top: 3px solid red;
             border-top-width: 3px;
             border-top-style: solid;
             border-top-color: red;
 
-            /* для нижней границы */
-            border-bottom-width: 3px;
-            border-bottom-style: solid;
-            border-bottom-color: red;
-
-            /* для левой границы */
-            border-left-width: 3px;
-            border-left-style: solid;
-            border-left-color: red;
-
-            /* для правой границы */
+            /* Правая граница элемента */
+            border-right: 3px solid red;
             border-right-width: 3px;
             border-right-style: solid;
             border-right-color: red;
 
-            border-top: 3px solid red;
+            /* Нижняя граница элемента */
             border-bottom: 3px solid red;
+            border-bottom-width: 3px;
+            border-bottom-style: solid;
+            border-bottom-color: red;
+
+            /* Левая граница элемента */
             border-left: 3px solid red;
-            border-right: 3px solid red;
+            border-left-width: 3px;
+            border-left-style: solid;
+            border-left-color: red;
 
-            /* радиус для верхнего левого угла */
-            border-top-left-radius: 15px;   
-            /* радиус для верхнего правого угла */
-            border-top-right-radius: 30px;  
-            /* радиус для нижнего левого угла */
-            border-bottom-right-radius: 5px;    
-            /* радиус для нижнего правого угла */
-            border-bottom-left-radius: 40px;    
-
-            /* вл вп нп нл */
+            /* При указании значений через косую черту (большая полуось и малая полуось) получаются эллиптические углы, иначе получаются скруглённые углы (радиус) */
+            /* Углы: верхий левый, верхний правый, нижний правый, нижний левый */
             border-radius: 15px 30px 5px 40px;
-            /* вл вп+нл нп */
+            border-radius: 15px 30px 5px 40px / 30px 60px 10px 80px;
+            /* Углы: верхий левый, верхний правый и нижний левый, нижний правый */
             border-radius: 15px 30px 5px;
-            /* вл+нп вп+нл */
+            border-radius: 15px 30px 5px / 30px 60px 10px;
+            /* Углы: верхий левый и нижний правый, верхний правый и нижний левый*/
             border-radius: 15px 30px;
-            /* вл+вп+нп+нл */
+            border-radius: 15px 30px / 30px 60px;
+            /* Углы: все углы */
             border-radius: 15px;
+            border-radius: 15px / 30px;
+
+            /* Радиус скругления верхнего левого угла */
+            border-top-left-radius: 15px;
+            border-top-left-radius: 15px / 30px;
+            /* Радиус скругления верхнего правого угла */
+            border-top-right-radius: 30px;
+            border-top-right-radius: 30px / 60px;
+            /* Радиус скругления нижнего левого угла */
+            border-bottom-right-radius: 5px;
+            border-bottom-right-radius: 5px / 10px;
+            /* Радиус скругления нижнего правого угла */
+            border-bottom-left-radius: 40px;
+            border-bottom-left-radius: 40px / 80px;
         }
 
-        #styles div {
-            display: inline-block;
-            margin: 15px;
-            width: 50px;
-            height: 50px;
-            text-align: center;
+        div.example-border {
+            border-top: 10px solid red;
+            border-bottom: 10px double green;
+            border-left: 10px dashed blue;
+            border-right: 10px dotted yellow;
         }
 
-        .none {
-            border: none;
+        div.solid-border {
+            border-width: 10px;
+            border-style: solid;
         }
 
-        .solid {
-            border: 3px solid red;
+        div.double-border {
+            border-width: 10px;
+            border-style: double;
         }
 
-        .dashed {
-            border: 3px dashed red;
+        div.dashed-border {
+            border-width: 10px;
+            border-style: dashed;
         }
 
-        .dotted {
-            border: 3px dotted red;
+        div.dotted-border {
+            border-width: 10px;
+            border-style: dotted;
         }
 
-        .double {
-            border: 3px double red;
+        div.inset-border {
+            border-width: 10px;
+            border-style: inset;
         }
 
-        .inset {
-            border: 3px inset red;
+        div.outset-border {
+            border-width: 10px;
+            border-style: outset;
         }
 
-        .outset {
-            border: 3px outset red;
+        div.groove-border {
+            border-width: 10px;
+            border-style: groove;
         }
 
-        .ridge {
-            border: 3px solid red;
+        div.ridge-border {
+            border-width: 10px;
+            border-style: ridge;
         }
 
-        .groove {
-            border: 3px solid red;
+        div.border-radius1 {
+            border-radius: 20%;
         }
 
-        .diff {
-            margin: 15px;
-            width: 100px;
-            height: 100px;
-            text-align: center;
-
-            border-top: 3px solid red;
-            border-bottom: 7px double green;
-            border-left: 5px dashed blue;
-            border-right: 5px dotted yellow;
+        div.border-radius2 {
+            border-radius: 50%;
         }
 
-        .radius1 {
-            width: 100px !important;
-            height: 100px !important;
-            border: 3px solid red;
-            border-radius: 30px;
+        div.border-radius3 {
+            border-radius: 15% 30% 5% 40%;
         }
 
-        .radius2 {
-            width: 100px !important;
-            height: 100px !important;
-            border: 3px solid red;
-            border-radius: 15px 30px 5px 40px;
+        div.border-radius4 {
+            border-radius: 40% / 20%;
         }
 
-        .radius3 {
-            width: 100px !important;
-            height: 100px !important;
-            border: 3px solid red;
-            border-radius: 40px/20px;
-        }
-
-        .radius4 {
-            width: 100px !important;
-            height: 100px !important;
-            border: 3px solid red;
-            border-radius: 60px;
+        div.border-radius5 {
+            border-radius: 15% 30% 10% 40% / 25% 50% 15% 60%;
         }
     </style>
 </head>
 
 <body>
-    <div id="styles">
-        <div class="none">none</div>
-        <div class="solid">solid</div>
-        <div class="dashed">dashed</div>
-        <div class="dotted">dotted</div>
-        <div class="double">double</div>
-        <div class="inset">inset</div>
-        <div class="outset">outset</div>
-        <div class="ridge">ridge</div>
-        <div class="groove">groove</div>
+    <h1>border</h1>
+    <div class="block example-border">
+        <span class="info">border-top: 3px solid red; border-bottom: 7px double green; border-left: 5px dashed blue; border-right: 5px dotted
+            yellow;
+        </span>
     </div>
 
     <hr>
-    <div class="diff">diff</div>
+
+    <h1>border-style</h1>
+    <div class="block solid-border">
+        <span class="info">solid</span>
+    </div>
+    <div class="block double-border">
+        <span class="info">double</span>
+    </div>
+    <div class="block dashed-border">
+        <span class="info">dashed</span>
+    </div>
+    <div class="block dotted-border">
+        <span class="info">dotted</span>
+    </div>
+    <div class="block inset-border">
+        <span class="info">inset</span>
+    </div>
+    <div class="block outset-border">
+        <span class="info">outset</span>
+    </div>
+    <div class="block groove-border">
+        <span class="info">groove</span>
+    </div>
+    <div class="block ridge-border">
+        <span class="info">ridge</span>
+    </div>
 
     <hr>
-    <div id="styles">
-        <div class="radius1">Блок 1</div>
-        <div class="radius2">Блок 2</div>
-        <div class="radius3">Блок 3</div>
-        <div class="radius4">Блок 3</div>
+
+    <h1>border-radius</h1>
+    <div class="block border-radius1">
+        <span class="info">border-radius: 20%</span>
+    </div>
+    <div class="block border-radius2">
+        <span class="info">border-radius: 50%</span>
+    </div>
+    <div class="block border-radius3">
+        <span class="info">border-radius: 15% 30% 5% 40%</span>
+    </div>
+    <div class="block border-radius4">
+        <span class="info">border-radius: 40%/20%</span>
+    </div>
+    <div class="block border-radius5">
+        <span class="info">border-radius: 15% 30% 10% 40% / 25% 50% 15% 60%</span>
     </div>
 </body>
 
