@@ -2,8 +2,15 @@
     font-family: monospace;
 }
 
-.info {
-    border: 5px solid red;
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+}
+
+div > span.info {
+    width: 80%;
+    text-align: center;
+    
+    /* Поместить текст в центр контейнера */
     position: relative;
     float: left;
     top: 50%;

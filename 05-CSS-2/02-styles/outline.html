@@ -3,10 +3,9 @@
 
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="main.css" />
     <title>CSS: контур элемента</title>
-    <link rel="stylesheet" type="text/css" href="main.css"/>
     <style>
-        /* В данном блоке CSS представлено описание свойств и их значений. */
         example {
             /* Контур элемента (outline-color, outline-style, outline-width) */
             outline: red dashed 5px;
@@ -19,10 +18,10 @@
             outline-style: double;
             outline-style: dashed;
             outline-style: dotted;
-            outline-style: groove;
-            outline-style: ridge;
             outline-style: inset;
             outline-style: outset;
+            outline-style: groove;
+            outline-style: ridge;
 
             /* Ширина контура */
             outline-width: 3px;
@@ -35,34 +34,61 @@
             outline-offset: -3px;
         }
 
-        div {
+        div.block {
+            display: inline-block;
             width: 200px;
             height: 200px;
             margin: 30px;
             border: 5px solid orange;
+            outline: red dashed 5px;
             background-color: lightgreen;
-            display: inline-block;
         }
 
-        .static {
+        div.dynamic {
+            outline: none;
+        }
+
+        div.dynamic:hover {
             outline: red dashed 5px;
         }
 
-        .dynamic:hover {
-            outline: red dashed 5px;
+        div.solid-outline {
+            outline: red solid 10px;
         }
 
-        .without-offset {
-            outline: red dashed 5px;
+        div.double-outline {
+            outline: red double 10px;
         }
 
-        .positive-offset {
-            outline: red dashed 5px;
+        div.dashed-outline {
+            outline: red dashed 10px;
+        }
+
+        div.dotted-outline {
+            outline: red dotted 10px;
+        }
+
+        div.inset-outline {
+            outline: red inset 10px;
+        }
+
+        div.outset-outline {
+            outline: red outset 10px;
+        }
+
+        div.groove-outline {
+            outline: red groove 10px;
+        }
+
+        div.ridge-outline {
+            outline: red ridge 10px;
+        }
+
+        div.positive-offset {
             outline-offset: 15px;
         }
 
-        .negative-offset {
-            outline: red dashed 5px;
+        div.negative-offset {
             outline-offset: -15px;
         }
     </style>
@@ -70,17 +96,53 @@
 
 <body>
     <h1>outline</h1>
-    <div class="static"></div>
-    <div class="dynamic"></div>
+    <div class="block">
+        <span class="info">outline: red dashed 5px</span>
+    </div>
+    <div class="block dynamic">
+        <span class="info">:hover { outline: red dashed 5px; }</span>
+    </div>
+
+    <hr>
+
+    <h1>outline-style</h1>
+    <div class="block solid-outline">
+        <span class="info">solid</span>
+    </div>
+    <div class="block double-outline">
+        <span class="info">double</span>
+    </div>
+    <div class="block dashed-outline">
+        <span class="info">dashed</span>
+    </div>
+    <div class="block dotted-outline">
+        <span class="info">dotted</span>
+    </div>
+    <div class="block inset-outline">
+        <span class="info">inset</span>
+    </div>
+    <div class="block outset-outline">
+        <span class="info">outset</span>
+    </div>
+    <div class="block groove-outline">
+        <span class="info">groove</span>
+    </div>
+    <div class="block ridge-outline">
+        <span class="info">ridge</span>
+    </div>
 
     <hr>
 
     <h1>outline-offset</h1>
-    <div class="positive-offset">
+    <div class="block positive-offset">
         <span class="info">outline-offset: 15px</span>
     </div>
-    <div class="without-offset"></div>
-    <div class="negative-offset"></div>
+    <div class="block">
+        <span class="info">outline-offset: 0</span>
+    </div>
+    <div class="block negative-offset">
+        <span class="info">outline-offset: -15px</span>
+    </div>
 </body>
 
 </html>
