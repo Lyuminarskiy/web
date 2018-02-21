@@ -7,18 +7,312 @@
     <title>CSS: градиент</title>
     <style>
         example {
+            /* Линейный градиент (угол, список цветов) */
             background-image: linear-gradient(left, black, white);
+            background-image: -webkit-linear-gradient(left, black, white);
+            background-image: -moz-linear-gradient(left, black, white);
+
+            /* Углы градиента */
+            background-image: linear-gradient(top, black, white);
+            background-image: linear-gradient(right, black, white);
+            background-image: linear-gradient(bottom, black, white);
+            background-image: linear-gradient(left, black, white);
+            background-image: linear-gradient(top left, black, white);
+            background-image: linear-gradient(top right, black, white);
+            background-image: linear-gradient(bottom left, black, white);
+            background-image: linear-gradient(bottom right, black, white);
+            background-image: linear-gradient(30deg, black, white);
+            background-image: linear-gradient(270deg, black, white);
+
+            /* Цвета градиента */
+            background-image: linear-gradient(top, black, white);
+            background-image: linear-gradient(top, red, green, blue);
+            background-image: linear-gradient(top, red, orange, yellow, green, lightblue, blue, purple);
+
+            /* Опорные точки */
+            background-image: linear-gradient(top, red 20%, green 50%, blue 80%);
+
+            /* Повторяющийся линейный градиент (угол, список цветов) */
+            background-image: repeating-linear-gradient(left, black, white);
+            background-image: -webkit-repeating-linear-gradient(left, black, white);
+            background-image: -moz-repeating-linear-gradient(left, black, white);
+
+            /* Радиальный градиент (форма, радиус, позиция, список цветов, размер) */
+            background-image: radial-gradient(left, black, white);
+            background-image: -webkit-radial-gradient(left, black, white);
+            background-image: -moz-radial-gradient(left, black, white);
+
+            /* Повторяющийся радиальный градиент (форма, радиус, позиция, список цветов, размер) */
+            background-image: repeating-radial-gradient(left, black, white);
+            background-image: -webkit-repeating-radial-gradient(left, black, white);
+            background-image: -moz-repeating-radial-gradient(left, black, white);
         }
 
-        div.linear-gradient-1 {
-            background-image: -webkit-linear-gradient(left, lightgreen, white);
+        div.linear-gradient-top {
+            background-image: -webkit-linear-gradient(top, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-right {
+            background-image: -webkit-linear-gradient(right, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-bottom {
+            background-image: -webkit-linear-gradient(bottom, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-left {
+            background-image: -webkit-linear-gradient(left, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-top-left {
+            background-image: -webkit-linear-gradient(top left, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-top-right {
+            background-image: -webkit-linear-gradient(top right, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-bottom-left {
+            background-image: -webkit-linear-gradient(bottom left, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-bottom-right {
+            background-image: -webkit-linear-gradient(bottom right, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-15deg {
+            background-image: -webkit-linear-gradient(15deg, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-auto {
+            background-image: -webkit-linear-gradient(bottom right, lightgreen, yellow);
+        }
+
+        div.linear-gradient-20-80 {
+            background-image: -webkit-linear-gradient(bottom right, lightgreen 20%, yellow 80%);
+        }
+
+        div.linear-gradient-30-70 {
+            background-image: -webkit-linear-gradient(bottom right, lightgreen 30%, yellow 70%);
+        }
+
+        div.linear-gradient-40-60 {
+            background-image: -webkit-linear-gradient(bottom right, lightgreen 40%, yellow 60%);
+        }
+
+        div.linear-gradient-50-50 {
+            background-image: -webkit-linear-gradient(bottom right, lightgreen 50%, yellow 50%);
+        }
+
+        div.linear-gradient-rainbow-1 {
+            width: 600px;
+            background-image: -webkit-linear-gradient(left, red, orange, yellow, green, lightblue, blue, purple);
+        }
+
+        div.linear-gradient-rainbow-2 {
+            width: 600px;
+            background-image: -webkit-linear-gradient(left, red, orange 30%, yellow 40%, green 50%, lightblue 60%, blue 70%, purple);
+        }
+
+        div.repeating-linear-gradient-1 {
+            background-image: -webkit-repeating-linear-gradient(top left, lightgreen, yellow);
+        }
+
+        div.repeating-linear-gradient-2 {
+            background-image: -webkit-repeating-linear-gradient(top left, lightgreen, yellow 50px);
+        }
+
+        div.repeating-linear-gradient-3 {
+            background-image: -webkit-repeating-linear-gradient(top left, lightgreen, lightgreen 25px, yellow 25px, yellow 50px);
+        }
+
+        div.radial-gradient-center {
+            background-image: -webkit-radial-gradient(center, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-top {
+            background-image: -webkit-radial-gradient(top, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-right {
+            background-image: -webkit-radial-gradient(right, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-bottom {
+            background-image: -webkit-radial-gradient(bottom, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-left {
+            background-image: -webkit-radial-gradient(left, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-top-left {
+            background-image: -webkit-radial-gradient(top left, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-top-right {
+            background-image: -webkit-radial-gradient(top right, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-bottom-left {
+            background-image: -webkit-radial-gradient(bottom left, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-bottom-right {
+            background-image: -webkit-radial-gradient(bottom right, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-30-30 {
+            background-image: -webkit-radial-gradient(30% 30%, circle, lightgreen 40%, yellow 60%);
+        }
+
+        div.radial-gradient-rainbow-1 {
+            width: 600px;
+            background-image: -webkit-radial-gradient(circle, red, orange, yellow, green, lightblue, blue, purple);
+        }
+
+        div.radial-gradient-rainbow-2 {
+            width: 600px;
+            background-image: -webkit-radial-gradient(circle, red, orange 30%, yellow 40%, green 50%, lightblue 60%, blue 70%, purple);
+        }
+
+        div.repeating-radial-gradient-1 {
+            background-image: -webkit-repeating-radial-gradient(circle, lightgreen, yellow);
+        }
+
+        div.repeating-radial-gradient-2 {
+            background-image: -webkit-repeating-radial-gradient(circle, lightgreen, yellow 50px);
+        }
+
+        div.repeating-radial-gradient-3 {
+            background-image: -webkit-repeating-radial-gradient(circle, lightgreen, lightgreen 25px, yellow 25px, yellow 50px);
         }
     </style>
 </head>
 
 <body>
-    <div class="block linear-gradient-1">
-        <span class="info">background-image: linear-gradient(left, lightgreen, white)</span>
+    <h1>linear-gradient()</h1>
+    <h2>angle</h2>
+    <div class="block linear-gradient-top">
+        <span class="info">top, lightgreen 30%, yellow 70%</span>
+    </div>
+    <div class="block linear-gradient-right">
+        <span class="info">right, lightgreen 30%, yellow 70%</span>
+    </div>
+    <div class="block linear-gradient-left">
+        <span class="info">left, lightgreen 30%, yellow 70%</span>
+    </div>
+    <div class="block linear-gradient-left">
+        <span class="info">left, lightgreen 30%, yellow 70%</span>
+    </div>
+    <div class="block linear-gradient-top-left">
+        <span class="info">top left, lightgreen 30%, yellow 70%</span>
+    </div>
+    <div class="block linear-gradient-top-right">
+        <span class="info">top right, lightgreen 30%, yellow 70%</span>
+    </div>
+    <div class="block linear-gradient-bottom-left">
+        <span class="info">bottom left, lightgreen 30%, yellow 70%</span>
+    </div>
+    <div class="block linear-gradient-bottom-right">
+        <span class="info">bottom right, lightgreen 30%, yellow 70%</span>
+    </div>
+    <div class="block linear-gradient-15deg">
+        <span class="info">15deg, lightgreen 30%, yellow 70%</span>
+    </div>
+
+    <h2>position</h2>
+    <div class="block linear-gradient-auto">
+        <span class="info">bottom right, lightgreen, yellow</span>
+    </div>
+    <div class="block linear-gradient-20-80">
+        <span class="info">bottom right, lightgreen 20%, yellow 80%</span>
+    </div>
+    <div class="block linear-gradient-30-70">
+        <span class="info">bottom right, lightgreen 30%, yellow 70%</span>
+    </div>
+    <div class="block linear-gradient-40-60">
+        <span class="info">bottom right, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block linear-gradient-50-50">
+        <span class="info">bottom right, lightgreen 50%, yellow 50%</span>
+    </div>
+
+    <h2>color</h2>
+    <div class="block linear-gradient-rainbow-1">
+        <span class="info">left, red, orange, yellow, green, lightblue, blue, purple</span>
+    </div>
+    <div class="block linear-gradient-rainbow-2">
+        <span class="info">left, red, orange 30%, yellow 40%, green 50%, lightblue 60%, blue 70%, purple</span>
+    </div>
+
+    <hr>
+
+    <h1>repeating-linear-gradient()</h1>
+    <div class="block repeating-linear-gradient-1">
+        <span class="info">top left, lightgreen, yellow</span>
+    </div>
+    <div class="block repeating-linear-gradient-2">
+        <span class="info">top left, lightgreen, yellow 50px</span>
+    </div>
+    <div class="block repeating-linear-gradient-3">
+        <span class="info">top left, lightgreen, lightgreen 25px, yellow 25px, yellow 50px</span>
+    </div>
+
+    <hr>
+
+    <h1>radial-gradient()</h1>
+    <h2>position</h2>
+    <div class="block radial-gradient-center">
+        <span class="info">center, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block radial-gradient-top">
+        <span class="info">top, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block radial-gradient-right">
+        <span class="info">right, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block radial-gradient-bottom">
+        <span class="info">bottom, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block radial-gradient-left">
+        <span class="info">left, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block radial-gradient-top-left">
+        <span class="info">top left, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block radial-gradient-top-right">
+        <span class="info">top right, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block radial-gradient-bottom-left">
+        <span class="info">bottom left, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block radial-gradient-bottom-right">
+        <span class="info">bottom right, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+    <div class="block radial-gradient-30-30">
+        <span class="info">30% 30%, circle, lightgreen 40%, yellow 60%</span>
+    </div>
+
+    <h2>color</h2>
+    <div class="block radial-gradient-rainbow-1">
+        <span class="info">circle, red, orange, yellow, green, lightblue, blue, purple</span>
+    </div>
+    <div class="block radial-gradient-rainbow-2">
+        <span class="info">circle, red, orange 30%, yellow 40%, green 50%, lightblue 60%, blue 70%, purple</span>
+    </div>
+
+    <hr>
+
+    <h1>repeating-radial-gradient()</h1>
+    <div class="block repeating-radial-gradient-1">
+        <span class="info">circle, lightgreen, yellow</span>
+    </div>
+    <div class="block repeating-radial-gradient-2">
+        <span class="info">circle, lightgreen, yellow 50px</span>
+    </div>
+    <div class="block repeating-radial-gradient-3">
+        <span class="info">circle, lightgreen, lightgreen 25px, yellow 25px, yellow 50px</span>
     </div>
 </body>
 
