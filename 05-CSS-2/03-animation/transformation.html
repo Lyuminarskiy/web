@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../02-styles/main.css" />
+    <title>CSS: трансформация</title>
+    <style>
+        example {
+            /* Поворот */
+            transform: rotate(30deg);
+            transform: rotate3d(1, 0.5, -0.2, 30deg);
+            transform: rotateX(1.5turn);
+            transform: rotateY(30rad);
+            transform: rotateZ(30grad);
+
+            /* Масштабирование */
+            transform: scale(0.5);
+            transform: scale3d(1, 0.5, 0.2);
+            transform: scaleX(2);
+            transform: scaleY(1.5);
+            transform: scaleZ(0.2);
+
+            /* Перемещение */
+            transform: translate(20px, 30px);
+            transform: translate3d(42px, -62px, -135px);
+            transform: translateX(-10px);
+            transform: translateY(50px);
+            transform: translateZ(30px);
+
+            /* Наклон */
+            transform: skew(30deg, -15deg);
+            transform: skewX(2rad);
+            transform: skewY(1.2turn);
+
+            /* Координаты точки, относительно которой будут происходить преобразования (x, y, z) */
+            transform-origin: center center 0;
+            transform-origin: left top 30px;
+            transform-origin: right bottom -20px;
+            transform-origin: 30px 20% 80px;
+        }
+
+        div.rotate-none {
+            transform: rotate(0);
+        }
+
+        div.rotate-10deg {
+            transform: rotate(10deg);
+        }
+
+        div.rotate-20deg {
+            transform: rotate(20deg);
+        }
+
+        div.rotate-30deg {
+            transform: rotate(30deg);
+        }
+
+        div.scale-none {
+            transform: scale(1);
+        }
+
+        div.scale-90pct {
+            transform: scale(0.9);
+        }
+
+        div.scale-110pct {
+            transform: scale(1.1);
+        }
+
+        div.skew-none {
+            transform: skew(0, 0);
+        }
+
+        div.skew-x-5deg {
+            transform: skewX(5deg);
+        }
+
+        div.skew-x-10deg {
+            transform: skewX(10deg);
+        }
+
+        div.skew-y-5deg {
+            transform: skewY(5deg);
+        }
+
+        div.skew-y-10deg {
+            transform: skewY(10deg);
+        }
+    </style>
+</head>
+
+<body>
+    <h1>rotate()</h1>
+    <div class="block rotate-none">
+        <span class="info">rotate(0)</span>
+    </div>
+    <div class="block rotate-10deg">
+        <span class="info">rotate(10deg)</span>
+    </div>
+    <div class="block rotate-20deg">
+        <span class="info">rotate(20deg)</span>
+    </div>
+    <div class="block rotate-30deg">
+        <span class="info">rotate(30deg)</span>
+    </div>
+
+    <hr>
+
+    <h1>scale()</h1>
+    <div class="block scale-none">
+        <span class="info">scale(1)</span>
+    </div>
+    <div class="block scale-90pct">
+        <span class="info">scale(0.9)</span>
+    </div>
+    <div class="block scale-110pct">
+        <span class="info">scale(1.1)</span>
+    </div>
+
+    <hr>
+
+    <h1>skew()</h1>
+    <div class="block skew-none">
+        <span class="info">skew(0, 0)</span>
+    </div>
+    <div class="block skew-x-5deg">
+        <span class="info">skewX(5deg)</span>
+    </div>
+    <div class="block skew-x-10deg">
+        <span class="info">skewX(10deg)</span>
+    </div>
+    <div class="block skew-y-5deg">
+        <span class="info">skewY(5deg)</span>
+    </div>
+    <div class="block skew-y-10deg">
+        <span class="info">skewY(10deg)</span>
+    </div>
+</body>
+
+</html>
