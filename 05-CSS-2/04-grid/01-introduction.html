@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="../02-styles/main.css" />
+    <title>CSS Grid</title>
+    <style>
+        .grid-container {
+            display: grid;
+            border: 3px solid black;
+            margin: 1em;
+        }
+
+        .grid-container-inline {
+            display: inline-grid;
+            border: 3px solid black;
+            margin: 1em;
+        }
+
+        .grid-item {
+            text-align: center;
+            color: white;
+            font-size: 1.3em;
+            padding: 1.3em;
+        }
+
+        .color1 {
+            background-color: rgb(60, 186, 84);
+        }
+
+        .color2 {
+            background-color: rgb(244, 194, 13);
+        }
+
+        .color3 {
+            background-color: rgb(219, 50, 54);
+        }
+
+        .color4 {
+            background-color: rgb(72, 133, 237);
+        }
+        
+        .two-columns {
+            grid-template-columns: 40% 40%;
+        }
+
+        .three-columns {
+            grid-template-columns: 30% 30% 30%;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>display</h1>
+    <h2>display: grid</h2>
+    <div class="grid-container">
+        <div class="grid-item color1">Item 1</div>
+        <div class="grid-item color2">Item 2</div>
+        <div class="grid-item color3">Item 3</div>
+        <div class="grid-item color4">Item 4</div>
+        <div class="grid-item color1">Item 5</div>
+        <div class="grid-item color2">Item 6</div>
+        <div class="grid-item color3">Item 7</div>
+    </div>
+
+    <h2>display: inline-grid</h2>
+    <div class="grid-container-inline">
+        <div class="grid-item color1">Item 1</div>
+        <div class="grid-item color2">Item 2</div>
+        <div class="grid-item color3">Item 3</div>
+        <div class="grid-item color4">Item 4</div>
+        <div class="grid-item color1">Item 5</div>
+        <div class="grid-item color2">Item 6</div>
+        <div class="grid-item color3">Item 7</div>
+    </div>
+
+    <hr>
+
+    <h1>rows & columns</h1>
+    <h2>grid-template-columns: 40% 40%</h2>
+    <div class="grid-container two-columns">
+        <div class="grid-item color1">Item 1</div>
+        <div class="grid-item color2">Item 2</div>
+        <div class="grid-item color3">Item 3</div>
+        <div class="grid-item color4">Item 4</div>
+        <div class="grid-item color1">Item 5</div>
+        <div class="grid-item color2">Item 6</div>
+        <div class="grid-item color3">Item 7</div>
+    </div>
+    
+    <h2>grid-template-columns: 30% 30% 30%</h2>
+    <div class="grid-container three-columns">
+        <div class="grid-item color1">Item 1</div>
+        <div class="grid-item color2">Item 2</div>
+        <div class="grid-item color3">Item 3</div>
+        <div class="grid-item color4">Item 4</div>
+        <div class="grid-item color1">Item 5</div>
+        <div class="grid-item color2">Item 6</div>
+        <div class="grid-item color3">Item 7</div>
+    </div>
+</body>
+
+</html>
