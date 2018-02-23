@@ -1,0 +1,42 @@
+.grid-container {
+    display: grid;
+    border: 3px solid black;
+    margin: 1em;
+}
+
+.grid-container-inline {
+    display: inline-grid;
+    border: 3px solid black;
+    margin: 1em;
+}
+
+.grid-item {
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    padding: 1.3em;
+}
+
+.color1 {
+    background-color: rgb(60, 186, 84);
+}
+
+.color2 {
+    background-color: rgb(244, 194, 13);
+}
+
+.color3 {
+    background-color: rgb(219, 50, 54);
+}
+
+.color4 {
+    background-color: rgb(72, 133, 237);
+}
+
+.two-columns {
+    grid-template-columns: 40% 40%;
+}
+
+.three-columns {
+    grid-template-columns: 30% 30% 30%;
+}
