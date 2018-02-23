@@ -1,0 +1,166 @@
+div {
+    width: 300px;
+    height: 300px;
+    background-size: 120px;
+    border: 3px solid black;
+    display: inline-block;
+}
+
+.default {
+    border-color: red !important;
+}
+
+.background-image {
+    background-image: url(../../../02-HTML-2/07-multimedia/images/cat.jpeg);
+}
+
+.background-position-100px-30pct {
+    background-position: 30px 70%;
+}
+
+.background-position-auto {
+    background-position: auto;
+}
+
+.background-position-center {
+    background-position: center;
+}
+
+.background-position-right-center {
+    background-position: right center;
+}
+
+.background-position-right-bottom {
+    background-position: right bottom;
+}
+
+.background-size-50pct-100pct {
+    background-size: 50% 100%;
+}
+
+.background-size-500px-200px {
+    background-size: 500px 200px;
+}
+
+.background-size-auto-80pct {
+    background-size: auto 80%;
+}
+
+.background-size-auto {
+    background-size: auto;
+}
+
+.background-size-cover {
+    background-size: cover;
+}
+
+.background-size-contain {
+    background-size: contain;
+}
+
+.background-repeat-no-repeat {
+    background-repeat: no-repeat;
+}
+
+.background-repeat-repeat {
+    background-repeat: repeat;
+}
+
+.background-repeat-repeat-x {
+    background-repeat: repeat-x;
+}
+
+.background-repeat-repeat-y {
+    background-repeat: repeat-y;
+}
+
+.background-repeat-space {
+    background-repeat: space;
+}
+
+.background-repeat-round {
+    background-repeat: round;
+}
+
+.background-repeat-repeat-space {
+    background-repeat: repeat space;
+}
+
+.background-repeat-space-repeat {
+    background-repeat: space repeat;
+}
+
+.background-repeat-no-repeat-round {
+    background-repeat: no-repeat round;
+}
+
+.background-repeat-round-no-repeat {
+    background-repeat: round no-repeat;
+}
+
+.background-origin {
+    padding: 20px;
+    background-color: lightgreen;
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    border: 20px dotted black;
+}
+
+.background-origin-padding-box {
+    background-origin: padding-box;
+}
+
+.background-origin-border-box {
+    background-origin: border-box;
+}
+
+.background-origin-content-box {
+    background-origin: content-box;
+}
+
+.background-clip {
+    padding: 20px;
+    background-color: lightgreen;
+    background-size: auto 90%;
+    background-repeat: no-repeat;
+    border: 20px dotted black;
+}
+
+.background-clip-padding-box {
+    background-clip: padding-box;
+}
+
+.background-clip-border-box {
+    background-clip: border-box;
+}
+
+.background-clip-content-box {
+    background-clip: content-box;
+}
+
+.background-attachment-container {
+    max-width: 300px;
+    max-height: 300px;
+    background-size: 120px;
+    overflow-y: scroll;
+}
+
+.background-attachment {
+    height: 1000px;
+    width: 250px;
+    border: none;
+    background-size: 500px auto;
+    background-repeat: repeat-y;
+}
+
+.background-attachment-fixed {
+    background-attachment: fixed;
+}
+
+.background-attachment-scroll {
+    background-attachment: scroll;
+}
+
+.background-attachment-local {
+    background-attachment: local;
+}

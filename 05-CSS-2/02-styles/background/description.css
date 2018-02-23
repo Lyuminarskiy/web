@@ -1,0 +1,67 @@
+* {
+    /* Цвет фона элемента */
+    background-color: red;
+    background-color: transparent;
+    /* Положение фонового изображения */
+    background-position: 100% 200px;
+    background-position: 70%;
+    background-position: 150px;
+    background-position: left;
+    background-position: right;
+    background-position: top;
+    background-position: bottom;
+    background-position: center;
+    background-position: left top;
+    background-position: right bottom;
+    background-position: center top;
+    background-position: right center;
+    /* Масштабирование фонового изображения (ширина и высота) */
+    background-size: 100% 200px;
+    background-size: auto 70%;
+    background-size: 50%;
+    background-size: 300px;
+    background-size: auto;
+    /* Масштабирование с сохранением пропорций, ширина/высота фонового изображения приравнивается к ширине/высоте элемента */
+    background-size: cover;
+    /* Масштабирование с сохранением пропорций, фоновое изображение полностью помещается внутри элемента */
+    background-size: contain;
+    /* Повторение фона (по горизонтали, по вертикали) */
+    background-repeat: no-repeat repeat;
+    /* Не повторять */
+    background-repeat: no-repeat;
+    /* Повторяить и по горизонтали, и по вертикали (по умолчанию) */
+    background-repeat: repeat;
+    /* Повторять по горизонтали */
+    background-repeat: repeat-x;
+    /* Повторять по вертикали  */
+    background-repeat: repeat-y;
+    /* Повторять и по горизонтали, и по вертикали, заполнить область за счёт пустого пространства */
+    background-repeat: space;
+    /* Повторять и по горизонтали, и по вертикали, заполнить область за счёт масштабирования */
+    background-repeat: round;
+    /* Область позиционирования фонового изображения */
+    /* Фоновое изображения позиционируется относительно внутреннего края границы элемента */
+    background-origin: padding-box;
+    /* Фоновое изображения позиционируется относительно внешнего края границы элемента */
+    background-origin: border-box;
+    /* Фоновое изображения позиционируется относительно области содержимого элемента */
+    background-origin: content-box;
+    /* Область отображения фонового изображения */
+    /* Фоновое изображения отображается в области элемента, исключая границу элемента */
+    background-clip: padding-box;
+    /* Фоновое изображения отображается в области элемента */
+    background-clip: border-box;
+    /* Фоновое изображения отображается в области содержимого элемента */
+    background-clip: content-box;
+    /* Управление поведения фонового изображения при прокрутке содержимого элемента */
+    /* Фоновое изображение неподвижно */
+    background-attachment: fixed;
+    /* Фоновое изображение прокручивается вместе с содержимым */
+    background-attachment: scroll;
+    background-attachment: local;
+    /* Изображение в качестве фона элемента*/
+    background-image: url(../../02-HTML-2/07-multimedia/images/cat.jpeg);
+    /* Комбинированное свойство фона элемента (background-color, background-position, background-size, background-repeat, background-origin, background-clip, background-attachment, background-image)
+            */
+    background: red center cover repeat-x content-box border-box fixed url(../../02-HTML-2/07-multimedia/images/cat.jpeg);
+}
