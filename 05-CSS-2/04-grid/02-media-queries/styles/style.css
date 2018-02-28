@@ -1,11 +1,11 @@
 /*
-@import url(styles/mobile.css) (max-device-width: 767px);
-@import url(styles/tablet.css) (min-device-width: 768px) and (max-device-width: 1023px);
-@import url(styles/desktop.css) (min-device-width: 1024px);
+@import url(mobile.css) (max-width: 767px);
+@import url(tablet.css) (min-width: 768px) and (max-width: 1023px);
+@import url(desktop.css) (min-width: 1024px);
 */
 
 /* Mobile */
-@media (max-device-width: 767px) {
+@media (max-width: 767px) {
     .grid-container {
         grid-template-columns: 1fr;
         grid-template-rows: 1fr 1fr 6fr 1fr 1fr;
@@ -19,7 +19,7 @@
 }
 
 /* Tablet */
-@media (min-device-width: 768px) and (max-device-width: 1023px) {
+@media (min-width: 768px) and (max-width: 1023px) {
     .grid-container {
         grid-template-columns: 3fr 1fr;
         grid-template-rows: 1fr 1fr 4fr 1fr;
@@ -31,7 +31,7 @@
 }
 
 /* Desktop */
-@media (min-device-width: 1024px) {
+@media (min-width: 1024px) {
     .grid-container {
         grid-template-columns: 1fr 3fr 1fr;
         grid-template-rows: 1fr 4fr 1fr 1fr 1fr;

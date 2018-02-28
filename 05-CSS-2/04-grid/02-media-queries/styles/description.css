@@ -1,0 +1,46 @@
+@import url("path/to/css/file");
+
+/* Media types (тип устройства) */
+/* Любые устройства */
+@media all {}
+/* Предпросмотр перед печатью */
+@media print {}
+/* Устройство с экраном */
+@media screen {}
+/* Устройство для чтения с экрана */
+@media speech {}
+
+/* Media features */
+/* Ширина экрана */
+@media (width: 360px) {}
+@media (min-width: 240px) {}
+@media (max-width: 480px) {}
+
+/* Высота экрана */
+@media (height: 360px) {}
+@media (min-height: 240px) {}
+@media (max-height: 480px) {}
+
+/* Соотношение сторон экрана */
+@media (aspect-ratio: 16/10) {}
+@media (min-aspect-ratio: 16/9) {}
+@media (max-aspect-ratio: 21/9) {}
+
+/* Ориентация экрана */
+@media (orientation: portrait) {}
+@media (orientation: landscape) {}
+
+/* Разрешение экрана */
+@media (resolution: 320dpi) {}
+@media (max-resolution: 150dpi) {}
+@media (min-resolution: 400dpi) {}
+
+/* Logical operations */
+/* И */
+@media (min-width: 240px) and (max-width: 480px) {}
+/* ИЛИ */
+@media (orientation: portrait), (resolution: 320dpi) {}
+/* НЕ */
+@media not print and (orientation: landscape) {}
+/* ТОЛЬКО */
+@media only screen and (aspect-ratio: 16/10) {}
