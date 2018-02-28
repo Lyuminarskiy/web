@@ -1,0 +1,62 @@
+.grid-container {
+    display: grid;
+    height: 100vh;
+    margin: 0;
+}
+
+.grid-container {
+    grid-template-columns: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 4fr 1fr 1fr 1fr;
+    grid-template-areas: "header header header"
+                         "menu content sidebar"
+                         ". content sidebar"
+                         ". content ."
+                         "footer footer footer";
+}
+
+.grid-container {
+
+}
+
+.grid-item {
+    text-align: center;
+    color: white;
+    font-size: 1.3em;
+    padding: 1.3em;
+}
+
+.header {
+    grid-area: header;
+}
+
+.sidebar {
+    grid-area: sidebar;
+}
+
+.content {
+    grid-area: content;
+}
+
+.menu {
+    grid-area: menu;
+}
+
+.footer {
+    grid-area: footer;
+}
+
+.color1 {
+    background-color: rgb(60, 186, 84);
+}
+
+.color2 {
+    background-color: rgb(244, 194, 13);
+}
+
+.color3 {
+    background-color: rgb(219, 50, 54);
+}
+
+.color4 {
+    background-color: rgb(72, 133, 237);
+}
