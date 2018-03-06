@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="stylesheet" type="text/css" href="../02-styles/main.css" />
+  <link rel="stylesheet" type="text/css" href="style.css" />
+  <title>Flexible Box Layout</title>
+</head>
+
+<body>
+  <img src="flexbox.png" width="100%">
+
+  <h1>display</h1>
+  <h2>display: flex</h2>
+  <div class="flex-container">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h2>display: inline-flex</h2>
+  <div class="flex-container-inline">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <hr>
+
+  <h1>flex-direction</h1>
+  <h2>flex-direction: row</h2>
+  <div class="flex-container row default">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h2>flex-direction: row-reverse</h2>
+  <div class="flex-container row-reverse">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h2>flex-direction: column</h2>
+  <div class="flex-container column">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h2>flex-direction: column-reverse</h2>
+  <div class="flex-container column-reverse">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <hr>
+
+  <h1>flex-wrap</h1>
+  <h2>flex-wrap: nowrap</h2>
+  <h3>flex-direction: row</h3>
+  <div class="flex-container nowrap limited-size row default">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>flex-direction: row-reverse</h3>
+  <div class="flex-container nowrap limited-size row-reverse">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>flex-direction: column</h3>
+  <div class="flex-container nowrap limited-size column margin-bottom">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>flex-direction: column-reverse</h3>
+  <div class="flex-container nowrap limited-size column-reverse margin-top">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h2>flex-wrap: wrap</h2>
+  <h3>flex-direction: row</h3>
+  <div class="flex-container wrap limited-size row">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>flex-direction: row-reverse</h3>
+  <div class="flex-container wrap limited-size row-reverse">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>flex-direction: column</h3>
+  <div class="flex-container wrap limited-size column">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>flex-direction: column-reverse</h3>
+  <div class="flex-container wrap limited-size column-reverse">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h2>flex-wrap: wrap-reverse</h2>
+  <h3>flex-direction: row</h3>
+  <div class="flex-container wrap-reverse limited-size row">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>flex-direction: row-reverse</h3>
+  <div class="flex-container wrap-reverse limited-size row-reverse">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>flex-direction: column</h3>
+  <div class="flex-container wrap-reverse limited-size column">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>flex-direction: column-reverse</h3>
+  <div class="flex-container wrap-reverse limited-size column-reverse">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <hr>
+
+  <h1>order</h1>
+  <div class="flex-container column">
+    <div class="flex-item color1 last-item">Item 1 (order: 1)</div>
+    <div class="flex-item color2 last-item">Item 2 (order: 1)</div>
+    <div class="flex-item color3">Item 3 (order: 0)</div>
+    <div class="flex-item color4">Item 4 (order: 0)</div>
+    <div class="flex-item color1">Item 5 (order: 0)</div>
+    <div class="flex-item color2 first-item">Item 6 (order: -1)</div>
+    <div class="flex-item color3 first-item">Item 7 (order: -1)</div>
+  </div>
+
+  <hr>
+
+  <h1>justify-content</h1>
+  <h2>flex-direction: row</h2>
+  <h3>justify-content: flex-start</h3>
+  <div class="flex-container flex-start row default">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>justify-content: flex-end</h3>
+  <div class="flex-container flex-end row">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>justify-content: center</h3>
+  <div class="flex-container center row">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>justify-content: space-between</h3>
+  <div class="flex-container space-between row">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>justify-content: space-around</h3>
+  <div class="flex-container space-around row">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h2>flex-direction: column</h2>
+  <h3>justify-content: flex-start</h3>
+  <div class="flex-container flex-start column high1">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>justify-content: flex-end</h3>
+  <div class="flex-container flex-end column high1">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>justify-content: center</h3>
+  <div class="flex-container center column high1">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>justify-content: space-between</h3>
+  <div class="flex-container space-between column high1">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <h3>justify-content: space-around</h3>
+  <div class="flex-container space-around column high1">
+    <div class="flex-item color1">Item 1</div>
+    <div class="flex-item color2">Item 2</div>
+    <div class="flex-item color3">Item 3</div>
+    <div class="flex-item color4">Item 4</div>
+  </div>
+
+  <hr>
+
+  <h1>align-items</h1>
+  <h2>flex-direction: row</h2>
+  <h3>align-items: stretch</h3>
+  <div class="flex-container stretch row high2">
+    <div class="flex-item color1 size1">Item 1</div>
+    <div class="flex-item color2 size2">Item 2</div>
+    <div class="flex-item color3 size3">Item 3</div>
+    <div class="flex-item color4 size4">Item 4</div>
+  </div>
+
+  <h3>align-items: flex-start</h3>
+  <div class="flex-container flex-start-a row high2">
+    <div class="flex-item color1 size1">Item 1</div>
+    <div class="flex-item color2 size2">Item 2</div>
+    <div class="flex-item color3 size3">Item 3</div>
+    <div class="flex-item color4 size4">Item 4</div>
+  </div>
+
+  <h3>align-items: flex-end</h3>
+  <div class="flex-container flex-end-a row high2">
+    <div class="flex-item color1 size1">Item 1</div>
+    <div class="flex-item color2 size2">Item 2</div>
+    <div class="flex-item color3 size3">Item 3</div>
+    <div class="flex-item color4 size4">Item 4</div>
+  </div>
+
+  <h3>align-items: center</h3>
+  <div class="flex-container center-a row high2">
+    <div class="flex-item color1 size1">Item 1</div>
+    <div class="flex-item color2 size2">Item 2</div>
+    <div class="flex-item color3 size3">Item 3</div>
+    <div class="flex-item color4 size4">Item 4</div>
+  </div>
+
+  <h3>align-items: baseline</h3>
+  <div class="flex-container baseline row high2">
+    <div class="flex-item color1 size1">Item 1</div>
+    <div class="flex-item color2 size2">Item 2</div>
+    <div class="flex-item color3 size3">Item 3</div>
+    <div class="flex-item color4 size4">Item 4</div>
+  </div>
+
+  <h2>flex-direction: column</h2>
+  <h3>align-items: stretch</h3>
+  <div class="flex-container stretch column">
+    <div class="flex-item color1 size1-a">Item 1</div>
+    <div class="flex-item color2 size2-a">Item 2</div>
+    <div class="flex-item color3 size3-a">Item 3</div>
+    <div class="flex-item color4 size4-a">Item 4</div>
+  </div>
+
+  <h3>align-items: flex-start</h3>
+  <div class="flex-container flex-start-a column">
+    <div class="flex-item color1 size1-a">Item 1</div>
+    <div class="flex-item color2 size2-a">Item 2</div>
+    <div class="flex-item color3 size3-a">Item 3</div>
+    <div class="flex-item color4 size4-a">Item 4</div>
+  </div>
+
+  <h3>align-items: flex-end</h3>
+  <div class="flex-container flex-end-a column">
+    <div class="flex-item color1 size1-a">Item 1</div>
+    <div class="flex-item color2 size2-a">Item 2</div>
+    <div class="flex-item color3 size3-a">Item 3</div>
+    <div class="flex-item color4 size4-a">Item 4</div>
+  </div>
+
+  <h3>align-items: center</h3>
+  <div class="flex-container center-a column">
+    <div class="flex-item color1 size1-a">Item 1</div>
+    <div class="flex-item color2 size2-a">Item 2</div>
+    <div class="flex-item color3 size3-a">Item 3</div>
+    <div class="flex-item color4 size4-a">Item 4</div>
+  </div>
+
+  <h3>align-items: baseline</h3>
+  <div class="flex-container baseline column">
+    <div class="flex-item color1 size1-a">Item 1</div>
+    <div class="flex-item color2 size2-a">Item 2</div>
+    <div class="flex-item color3 size3-a">Item 3</div>
+    <div class="flex-item color4 size4-a">Item 4</div>
+  </div>
+</body>
+
+</html>
