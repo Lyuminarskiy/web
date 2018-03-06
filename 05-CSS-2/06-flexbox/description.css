@@ -10,7 +10,7 @@
   /* Поведение контейнера при переполнении (по умолчанию nowrap) */
   flex-wrap: nowrap;
   flex-wrap: wrap;
-  flex-wrap: nowrap;
+  flex-wrap: wrap-reverse;
   /* Комбинированное свойство (flex-direction, flex-wrap) */
   flex-flow: row nowrap;
   /* Порядок элемента (по умолчанию 0) */
@@ -27,4 +27,30 @@
   align-items: flex-end;
   align-items: center;
   align-items: baseline;
+  /* Переопределить значение align-items для элемента (по умолчанию auto) */
+  align-self: auto;
+  align-self: stretch;
+  align-self: flex-start;
+  align-self: flex-end;
+  align-self: center;
+  align-self: baseline;
+  /* Начальный размер элемента (по умолчанию auto) */
+  flex-basis: auto;
+  flex-basis: content;
+  flex-basis: 200px;
+  /* Коэффициент сжатия (по умолчанию 1) */
+  flex-shrink: 1;
+  flex-shrink: 2;
+  flex-shrink: 3;
+  /* Коэффициент расширения (по умолчанию 0) */
+  flex-grow: 1;
+  flex-grow: 2;
+  flex-grow: 3;
+  /* Комбинированное свойство (flex-grow, flex-shrink, flex-basis) */
+  flex: none;
+  flex: 0 0 auto;
+  flex: auto;
+  flex: 1 1 auto;
+  flex: initial;
+  flex: 0 1 auto;
 }
