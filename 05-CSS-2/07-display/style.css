@@ -1,0 +1,42 @@
+img {
+    width: 40%;
+    margin: 1em;
+}
+
+.float-none {
+    float: none;
+}
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.display-block {
+    height: 2em;
+    display: block;
+}
+
+.display-inline {
+    display: inline;
+}
+
+.display-inline-block {
+    height: 2em;
+    display: inline-block;
+}
+
+.display-none:hover {
+    display: none;
+}
+
+.hidden:hover {
+    visibility: hidden;
+}
+
+.border {
+    border: 1px solid black;
+}

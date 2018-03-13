@@ -1,0 +1,21 @@
+* {
+    /* Способ позиционирования элемента */
+    /* По умолчанию */
+    position: static;
+    /* Относительно исходного места */
+    position: relative;
+    /* Относительно окна браузера */
+    position: fixed;
+    /* Аналогично fixed (если у родителя static) или relative (если у родителя fixed, relative или absolute) */
+    position: absolute;
+
+    /* Указание позиции элемента */
+    top: 20px;
+    right: 10%;
+    bottom: 2em;
+    left: 3vh;
+
+    /* Указание порядка следования элементов при их наложении */
+    z-index: auto;
+    z-index: 3;
+}

@@ -1,0 +1,22 @@
+* {
+    /* Создать плавающий элемент (по умолчанию none) */
+    float: none;
+    float: left;
+    float: right;
+
+    /* Запретить обтекание элемента плавающими элементами (по умолчанию none) */
+    clear: none;
+    clear: left;
+    clear: right;
+    clear: both;
+
+    /* Способ отображения элемента */
+    display: block;
+    display: inline;
+    display: inline-block;
+    display: none;
+
+    /* Видимость элемента (по умолчанию visible) */
+    visibility: visible;
+    visibility: hidden;
+}
