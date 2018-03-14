@@ -29,11 +29,11 @@ img {
     display: inline-block;
 }
 
-.display-none:hover {
+p:hover > .display-none {
     display: none;
 }
 
-.hidden:hover {
+p:hover > .hidden {
     visibility: hidden;
 }
 
