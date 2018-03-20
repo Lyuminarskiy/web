@@ -9,7 +9,7 @@
 4. [Стилизация веб-страниц с помощью CSS](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/05-CSS-2)
 
 Список лабораторных работ:
-1. [Создание веб-страниц с помощью HTML](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/03-LAB-1)
-2. [Создание веб-сайта с помощью HTML и CSS](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/07-LAB-2)
+1. [Создание веб-страниц с помощью HTML](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/03-LAB-1/README.md)
+2. [Создание веб-сайта с помощью HTML и CSS](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/07-LAB-2/README.md)
 
 Также доступны [упражнения](https://github.com/Vladislav-Lyuminarskiy/Web-course/tree/master/Exercises)
