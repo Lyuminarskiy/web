@@ -41,7 +41,7 @@ alert( '' === false ); // false, т.к. типы различны
 // Это особенность JavaScript, надо запомнить.
 alert( null > 0 ); // false
 alert( null == 0 ); // false
-alert(null >= 0); // true
+alert( null >= 0); // true
 
 
 // Особенности сравнения с undefined.

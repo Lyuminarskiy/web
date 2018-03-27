@@ -8,9 +8,9 @@ typeof "foo"; // "string"
 
 typeof {}; // "object"
 
-typeof null; // "object"  (1)
+typeof null; // "object" (1)
 
-typeof function(){}; // "function"  (2)
+typeof function(){}; // "function" (2)
 
 /*
 1. Это официально признанная ошибка в языке, которая сохраняется для совместимости. На самом деле null – это не объект, а отдельный тип данных.
