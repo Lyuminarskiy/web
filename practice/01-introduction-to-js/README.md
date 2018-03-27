@@ -1,4 +1,4 @@
-# Введение в JavaScript (JS)
+# Введение в JavaScript
 
 ## Подключение кода JS
 
@@ -29,7 +29,7 @@ JS можно вставить в любое место HTML при помощи
 Вот так не сработает:
 
 ```html
-<script src="/path/to/script.js">
+<script src='/path/to/script.js'>
   alert('Привет, мир!');
 </script>
 ```
@@ -37,7 +37,7 @@ JS можно вставить в любое место HTML при помощи
 ### Ссылки
 
 - [Документация по тегу `<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
-- [Документация по функции `alert()`](https://developer.mozilla.org/ru/docs/Web/API/Window/alert)
+- [Документация по встроенной функции `alert()`](https://developer.mozilla.org/ru/docs/Web/API/Window/alert)
 
 ### Задачи
 
@@ -48,7 +48,8 @@ JS можно вставить в любое место HTML при помощи
 2. откройте страницу в браузере и убедитесь, что всё работает.
 
 <details>
-<summary>Решение</summary>
+<summary>Посмотреть решение</summary>
+<hr>
 
 Содержимое `index.html`:
 
@@ -57,7 +58,7 @@ JS можно вставить в любое место HTML при помощи
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
 </head>
 
 <body>
@@ -69,6 +70,7 @@ JS можно вставить в любое место HTML при помощи
 </html>
 ```
 
+<hr>
 </details>
 
 #### Внешний скрипт
@@ -77,8 +79,9 @@ JS можно вставить в любое место HTML при помощи
 1. возьмите решение предыдущей задачи и вынесите JS во внешний файл `alert.js`,
 2. откройте страницу в браузере и убедитесь, что всё работает.
 
-<details open>
-<summary>Решение</summary>
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
 
 Содержимое `index.html`:
 
@@ -87,13 +90,11 @@ JS можно вставить в любое место HTML при помощи
 <html>
 
 <head>
-  <meta charset="utf-8">
+  <meta charset='utf-8'>
 </head>
 
 <body>
-  <script>
-    alert('Я изучаю JavaScript!');
-  </script>
+  <script src='alert.js'></script>
 </body>
 
 </html>
@@ -101,7 +102,11 @@ JS можно вставить в любое место HTML при помощи
 
 Содержимое `alert.js`:
 
+```js
+alert('Я изучаю JavaScript!');
+```
 
+<hr>
 </details>
 
 
