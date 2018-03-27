@@ -1,10 +1,13 @@
-// Цикл, длительностью 3000 мс.
-let start = new Date().getTime(), end;
-while ((end = new Date().getTime() - start) < 3000);
+var start = new Date().getTime();
+var end;
 
-// Добавляем на страницу параграф с указанием времени загрузки скрипта.
-let message = document.createElement('p');
-message.style.color = 'red';
-message.innerText = 'Скрипт загрузился за ' + end / 1000 + ' с';
+// Цикл с длительностью в 1 секунду.
+while ((end = new Date().getTime() - start) < 1000);
 
+// Создать параграф с указанием времени загрузки скрипта.
+var message = document.createElement('p');
+message.style.color = 'green';
+message.innerText = 'Скрипт выполнился за ' + end / 1000 + ' с';
+
+// Добавить параграф на страницу.
 document.body.appendChild(message);
