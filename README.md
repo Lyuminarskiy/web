@@ -11,7 +11,7 @@
 ## Практические занятия
 
 Список практических занятий:
-1. [Введение в JavaScript (JS)](practice/lesson1/README.md)
+1. [Введение в JavaScript (JS)](practice/01-introduction-to-js/README.md)
 
 ## Лабораторные работы
 
