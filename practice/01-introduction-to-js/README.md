@@ -19,6 +19,10 @@
     - [Проверка диапазона](#Проверка-диапазона)
 5. [Типы данных](#Типы-данных)
     - [Преобразование типов в операциях](#Преобразование-типов-в-операциях)
+6. [Условные операторы](#Условные-операторы)
+    - [Получить знак числа](#Получить-знак-числа)
+    - [Проверка логина и пароля](#Проверка-логина-и-пароля)
+    - [Замена условного оператора](#Замена-условного-оператора)
 
 ## Подключение скриптов
 
@@ -901,4 +905,232 @@ ans = +null == +"\n0\n"; // true
 <hr>
 </details>
 
-### Ветвления и циклы
+## Условные операторы
+
+### Ссылки
+
+- [Условный оператор `?`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Условный_оператор)
+- [Инструкция `if`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else)
+- [Инструкция `switch`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
+
+### Задачи
+
+#### Получить знак числа
+
+Используя оператор `if`, создать скрипт `main.js`, который получает значение с помощью встроенной функции `prompt()`, а затем вызывает встроенную функцию `alert()` со строкой:
+- `Значение больше нуля`, если значение больше нуля,
+- `Значение меньше нуля`, если значение меньше нуля,
+- `Значение равно нулю`, если значение равно нулю.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Содержимое `main.js`:
+
+```js
+var value = prompt('Введите число', 0);
+
+if (value > 0) {
+  alert('Значение больше нуля');
+}
+else if (value < 0) {
+  alert('Значение меньше нуля');
+}
+else {
+  alert('Значение равно нулю');
+}
+```
+
+<hr>
+</details>
+
+#### Проверка логина и пароля
+
+Используя оператор `if` и встроенные функции `prompt()` и `alert()`, создать скрипт `main.js`, который будет проверять логин и пароль пользователя.
+
+В начале скрипта вывести диалог с заголовком `Введите логин`.
+
+Алгоритм проверки логина:
+- если пользователь вводит `Администратор`, то запрашивать пароль,
+- если пользователь вводит другое значение, то выводить сообщение `Пользователь с таким именем не существует`,
+- если пользователь отменил ввод логина, то выводить значение `Вход отменён`.
+
+Для проверки пароля вывести диалог с заголовком `Введите пароль`.
+
+Алгоритм проверки пароля:
+- если посетитель вводит `пароль`, то выводить сообщение `Вход выполнен`,
+- если пользователь вводит другое значение, то выводить сообщение `Неверный пароль`,
+- если пользователь отменил ввод пароля, то выводить значение `Вход отменён`.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Содержимое `main.js`:
+
+```js
+var userName = prompt(`Введите логин`, '');
+
+if (userName == `Администратор`) {
+  var password = prompt(`Введите пароль`, '');
+
+  if (password == `пароль`) {
+    alert(`Вход выполнен`);
+  }
+  else if (password == null) {
+    alert(`Вход отменён`);
+  }
+  else {
+    alert(`Неверный пароль`);
+  }
+}
+else if (userName == null) {
+  alert(`Вход отменён`);
+}
+else {
+  alert(`Пользователь с таким именем не существует`);
+}
+```
+
+<hr>
+</details>
+
+#### Замена условного оператора
+
+Задание:
+1. создать скрипт `first.js` со следующим содержимым:
+
+```js
+var a = 2, b = 3, result;
+
+if (a + b < 4) {
+  result = 'Верно';
+}
+else {
+  result = 'Неверно';
+}
+```
+
+2. в скрипте `first.js` заменить инструкцию `if` на условный оператор `?`,
+3. создать скрипт `second.js` со следующим содержимым:
+
+```js
+var login = '', message;
+
+if (login == 'Иван') {
+  message = 'Привет';
+}
+else if (login == 'Директор') {
+  message = 'Здравствуйте';
+}
+else if (login == '') {
+  message = 'Логин не указан';
+}
+else {
+  message = '';
+}
+```
+
+4. в скрипте `second.js` заменить инструкцию `if` на условный оператор `?`,
+5. в скрипте `second.js` заменить инструкцию `if` на инструкцию `switch`,
+6. создать скрипт `third.js` со следующим содержимым:
+
+```js
+var browser = 'Chrome', message;
+
+switch (browser) {
+  case 'IE':
+    message = 'Давай, до свидания!';
+    break;
+
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    message = 'Эти браузеры поддерживаются';
+    break;
+
+  default:
+    message = 'Браузер неизвествен';
+}
+```
+
+7. в скрипте `third.js` заменить инструкцию `switch` на инструкцию `if`.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Содержимое `first.js` после замены инструкции `if` на условный оператор `?`:
+
+```js
+var a = 2, b = 3, result;
+result = (a + b < 4) ? 'Верно' : 'Неверно';
+```
+
+Содержимое `second.js` после замены инструкции `if` на условный оператор `?`:
+
+```js
+var login = '', message;
+
+message = (login == 'Иван') ? 'Привет' :
+          (login == 'Директор') ? 'Здравствуйте' :
+          (login == '') ? 'Логин не указан' : '';
+```
+
+Содержимое `second.js` после замены инструкции `if` на инструкцию `switch`:
+
+```js
+var login = '', message;
+
+switch(login) {
+case 'Иван':
+  message = 'Привет';
+  break;
+
+case 'Директор':
+  message = 'Здравствуйте';
+  break;
+  
+case '':
+  message = 'Логин не указан';
+  break;
+
+default:
+  message = '';
+}
+```
+
+Содержимое `third.js` после замены инструкции `if` на инструкцию `switch`:
+
+```js
+var browser = 'Chrome', message;
+
+if(browser == 'IE') {
+  message = 'Давай, до свидания!';
+}
+else if (browser == 'Chrome' || browser == 'Firefox'
+|| browser == 'Safari' || browser == 'Opera') {
+  message = 'Эти браузеры поддерживаются';
+}
+else {
+  message = 'Браузер неизвествен';
+}
+```
+
+<hr>
+</details>
+
+## Операторы циклов
+
+### Ссылки
+
+- [Инструкция `while`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while)
+- [Инструкция `do...while`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while)
+- [Инструкция `for`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for)
+- [Инструкция `break`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/break)
+- [Инструкция `continue`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/continue)
+
+### Задачи
+
