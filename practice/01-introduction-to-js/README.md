@@ -1,3 +1,5 @@
+[Назад к описанию курса](../../README.md)
+
 # Введение в JavaScript
 
 ## Подключение скриптов
@@ -369,33 +371,61 @@ alert(is_adult);
 <hr>
 </details>
 
-## Типы данных
+## Операторы
 
-В языке JavaScript определены следующие типы данных:
+### Операторы присваивания
 
-Тип данных                     | Описание
--------------------------------|---------
-`Boolean` (логический тип)       | Булевый тип представляет результат логического выражения и принимает одно из двух значений: `true` (истина) или `false` (ложь).
-`Null` (неизвестный тип)         | Имеет смысл "ничего" или "значение неизвестно" и принимает единственное значение: `null`.
-`Undefined` (неопределённый тип) | Имеет смысл "значение не присвоено" и принимает единственное значение: `undefined`. Такое значение принимает неинициализированная переменная.
-`Number` (числовой тип)          | Представляет собой 64-битное число двойной точности. Имеет несколько символических значений: `+Infinity` (положительная бесконечность), `-Infinity` (отрицательная бесконечность), и `NaN` (не число).
-`String` (строковый тип)         | Представляет собой строку в кодировке `Unicode`.
-`Object` (объект)                | Может расцениваться как набор свойств.
+Запись        | Сокращённая запись | Приоритет | Описание
+--------------|--------------------|-----------|---------
+`x = y`       | `x = y`            | 3         | Присваивание.
+`x = x + y`   | `x += y`           | 3         | Присваивание со сложением.
+`x = x - y`   | `x -= y`           | 3         | Присваивание с вычитанием.
+`x = x * y`   | `x *= y`           | 3         | Присваивание с умножением.
+`x = x / y`   | `x /= y`           | 3         | Присваивание с делением.
+`x = x % y`   | `x %= y`           | 3         | Присваивание с делением по модулю.
+`x = x << y`  | `x <<= y`          | 3         | Присваивание с левым сдвигом.
+`x = x >> y`  | `x >>= y`          | 3         | Присваивание с правым сдвигом.
+`x = x >>> y` | `x >>>= y`         | 3         | Присваивание с правым беззнаковым сдвигом.
+`x = x & y`   | `x &= y`           | 3         | Присваивание с побитовым И.
+`x = x | y`   | `x |= y`           | 3         | Присваивание с побитовым ИЛИ.
+`x = x ^ y`   | `x ^= y`           | 3         | Присваивание с побитовым исключающим ИЛИ.
 
-С типами данных тесно связан оператор `typeof`. Он возвращает тип аргумента в виде строки:
-
-```js
-var num = 5;
-typeof num; // "number"
-```
 
 ### Ссылки
 
-- [Типы данных JavaScript и структуры данных](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures)
-- [Оператор `typeof`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof)
+- [Выражения и операторы](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Expressions_and_Operators)
+- [Приоритет операторов](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence)
+- [Операторы присваивания](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Assignment_Operators)
+- [Операторы сравнения](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Операторы_сравнения)
+- [Арифметические операции](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Arithmetic_Operators)
+- [Битовые операции](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Bitwise_Operators)
+- [Логические операторы](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Логические_операторы)
+- [Оператор запятая](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Оператор_Запятая)
 
 
-## Основные операторы
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 Бинарный и унарный минус (`-`):
 
@@ -436,8 +466,6 @@ var oranges = "3";
 alert( apples + oranges ); // "23", так как бинарный плюс складывает строки
 alert( +apples + +oranges ); // 5, число, оба операнда предварительно преобразованы в числа
 ```
-
-В том случае, если в выражении есть несколько операторов – порядок их выполнения определяется приоритетом: [таблица приоритетов](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
 
 Оператор присваивания (`=`):
 

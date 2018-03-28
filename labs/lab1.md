@@ -1,3 +1,5 @@
+[Назад к описанию курса](../../README.md)
+
 # Создание веб-страниц с помощью HTML
 
 Ниже представлены задания, которые необходимо выполнить в рамках лабораторной работы.
@@ -87,9 +89,9 @@
 > - Электронная почта
 > - Пароль
 > - Подтверждение пароля
-> 
+>
 > Помимо прочих рекомендуется использовать следующие атрибуты: [placeholder](http://htmlbook.ru/html/input/placeholder), [pattern](http://htmlbook.ru/html/input/pattern), [list](http://htmlbook.ru/html/input/list), [required](http://htmlbook.ru/html/input/required), [accesskey](http://htmlbook.ru/html/input/accesskey), [autofocus](http://htmlbook.ru/html/input/autofocus), [tabindex](http://htmlbook.ru/html/input/tabindex).
-> 
+>
 > Для каждого поля использовать наиболее подходящий элемент формы. Для отправки данных формы использовать метод `GET`.
 
 Обязательные элементы:

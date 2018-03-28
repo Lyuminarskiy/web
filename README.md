@@ -12,6 +12,7 @@
 
 Список практических занятий:
 1. [Введение в JavaScript](practice/01-introduction-to-js/README.md)
+2. [Типы данных](practice/02-types/README.md)
 
 ## Лабораторные работы
 
