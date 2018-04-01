@@ -1000,11 +1000,11 @@ switch (expression) {
   // ...
 
   case valueN:
-    statement2();
+    statementN();
     break;
 
   default:
-    statement3();
+    statementN1();
     break;
 }
 ```
