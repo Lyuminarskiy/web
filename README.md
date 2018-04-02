@@ -12,7 +12,9 @@
 
 Список практических занятий:
 1. [Введение в JavaScript](practice/01-introduction-to-js/README.md)
-2. [Типы данных](practice/02-types/README.md)
+2. [Объектная модель JavaScript](practice/02-jsom/README.md)
+3. [Объектная модель документа (DOM)](practice/02-dom/README.md)
+4. [Объектная модель браузера (BOM)](practice/02-bom/README.md)
 
 ## Лабораторные работы
 
