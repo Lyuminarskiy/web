@@ -723,11 +723,11 @@ function getTriangleArea(a, b, angle) {
 
 > ```js
 > -> new Date()
-> <- Tue Apr 03 2018 15:35:55 GMT+0400 (RTZ 3 (зима))
+> <- 'Tue Apr 03 2018 15:35:55 GMT+0400 (RTZ 3 (зима))'
 > -> new Date(2017, 5, 23, 12, 0, 0, 0)
-> <- Fri Jun 23 2017 12:00:00 GMT+0400 (RTZ 3 (зима))
+> <- 'Fri Jun 23 2017 12:00:00 GMT+0400 (RTZ 3 (зима))'
 > -> new Date('12-03-2018')
-> <- Mon Dec 03 2018 00:00:00 GMT+0400 (RTZ 3 (зима))
+> <- 'Mon Dec 03 2018 00:00:00 GMT+0400 (RTZ 3 (зима))'
 > ```
 
 Методы объекта `Date`:
@@ -768,7 +768,7 @@ function getTriangleArea(a, b, angle) {
 
 > ```js
 > -> new Date(2007, 2, 15, 7, 20, 0, 0)
-> <- Thu Mar 15 2007 07:20:00 GMT+0400 (RTZ 3 (зима))
+> <- 'Thu Mar 15 2007 07:20:00 GMT+0400 (RTZ 3 (зима))'
 > ```
 
 <hr>
