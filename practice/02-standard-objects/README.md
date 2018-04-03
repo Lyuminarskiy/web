@@ -627,14 +627,14 @@ alert(maxName);
 | `Math.min(x1, ..., xN)` | Возвращает наименьшее число из `x1`, ..., `xN`.                               |
 
 
-### 5.1. Ссылки
+### 6.1. Ссылки
 
 - [Стандартные встроенные объекты](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects)
 - [Объект `Math`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
 
-### 5.2. Задачи
+### 6.2. Задачи
 
-#### 5.2.1. Вычисление площади круга
+#### 6.2.1. Вычисление площади круга
 
 Написать функцию `getCircleArea(radius)`, возвращающую площадь круга с радиусом `radius`:
 
@@ -669,7 +669,7 @@ function getCircleArea(radius) {
 <hr>
 </details>
 
-#### 5.2.2. Вычисление площади треугольника
+#### 6.2.2. Вычисление площади треугольника
 
 Написать функцию `getTriangleArea(a, b, angle)`, возвращающую площадь треугольника со сторонами `a` и `b` и углом `angle` (в градусах) между ними:
 
@@ -708,3 +708,94 @@ function getTriangleArea(a, b, angle) {
 <hr>
 </details>
 
+## 7. Объект `Date`
+
+Объект `Date` представляет собой момент времени:
+
+> ```js
+> -> new Date()
+> <- Tue Apr 03 2018 15:35:55 GMT+0400 (RTZ 3 (зима))
+> -> new Date(2017, 5, 23, 12, 0, 0, 0)
+> <- Fri Jun 23 2017 12:00:00 GMT+0400 (RTZ 3 (зима))
+> -> new Date('12-03-2018')
+> <- Mon Dec 03 2018 00:00:00 GMT+0400 (RTZ 3 (зима))
+> ```
+
+Методы объекта `Date`:
+
+| Метод | Описание |
+| - | - |
+| `date.getFullYear()` | Возвращает год (4 цифры). |
+| `date.setFullYear(year[, month[, day]])` | Устанавливает год. |
+| `date.getMonth()` | Возвращает месяц (`0-11`). |
+| `date.setMonth(month[, day])` | Устанавливает месяц. |
+| `date.getDate()` | Возвращает день месяца (`1-31`). |
+| `date.setDate(day)` | Устанавливает день месяца. |
+| `date.getHours()` | Возвращает часы (`0-23`). |
+| `date.setHours(hours[, minutes[, seconds[, ms]]])` | Устанавливает часы. |
+| `date.getMinutes()` | Возвращает минуты (`0-59`). |
+| `date.setMinutes(minutes[, seconds[, ms]])` | Устанавливает минуты. |
+| `date.getSeconds()` | Возвращает секунды (`0-59`). |
+| `date.setSeconds(seconds[, ms])` | Устанавливает секунды. |
+| `date.getMilliseconds()` | Возвращает миллисекунды (`0-999`). |
+| `date.setMilliseconds(ms)` | Устанавливает миллисекунды. |
+
+### 7.1. Ссылки
+
+- [Стандартные встроенные объекты](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects)
+- [Объект `Date`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date)
+
+### 7.2. Задачи
+
+#### 7.2.1. Создание даты
+
+Создать объект `Date` для даты: `15 марта 2007 года, 7 часов 20 минут`. Временную зону не указывать.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Объект `Date`:
+
+> ```js
+> -> new Date(2007, 2, 15, 7, 20, 0, 0)
+> <- Thu Mar 15 2007 07:20:00 GMT+0400 (RTZ 3 (зима))
+> ```
+
+<hr>
+</details>
+
+#### 7.2.2. Форматирование даты
+
+Создать функцию `formatDate(date)`, которая возвращает строковое представление даты `date` в формате `дд.мм.гг`:
+
+> ```js
+> -> let date = new Date(2007, 2, 15)
+> <- undefined
+> -> formatDate(date)
+> <- "15.03.2007"
+> ```
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Функция `formatDate(date)`:
+
+```js
+function formatDate(date) {
+  let dd = date.getDate();
+  if (dd < 10) dd = '0' + dd;
+
+  let mm = date.getMonth() + 1;
+  if (mm < 10) mm = '0' + mm;
+
+  let yy = date.getFullYear() % 100;
+  if (yy < 10) yy = '0' + yy;
+
+  return dd + '.' + mm + '.' + yy;
+}
+```
+
+<hr>
+</details>
