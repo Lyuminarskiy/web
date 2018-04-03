@@ -799,3 +799,69 @@ function formatDate(date) {
 
 <hr>
 </details>
+
+## 8. Объект `JSON`
+
+Объект `JSON` содержит методы для разбора объектной нотации JavaScript и преобразования значений в JSON:
+
+> ```js
+> -> let obj = { 'name': 'text', 'value' : 10 }
+> <- undefined
+> -> JSON.stringify(obj)
+> <- '{"name":"text","value":10}'
+> -> let json = '{"name":"text","value":10}'
+> <- undefined
+> -> JSON.parse(json)
+> <- {name: "text", value: 10}
+> ```
+
+Методы объекта `JSON`:
+
+| Метод | Описание |
+| - | - |
+| `JSON.parse(text)` | Разбирает строку `JSON`, возможно с преобразованием получаемого значения и его свойств и возвращает разобранное значение. |
+| `JSON.stringify(value)` | Возвращает строку `JSON`, соответствующую указанному значению, возможно с включением только определённых свойств или с заменой значений свойств определяемым пользователем способом. |
+
+### 8.1. Ссылки
+
+- [Стандартные встроенные объекты](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects)
+- [Объект `JSON`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON)
+
+### 8.2. Задачи
+
+#### 8.2.1 Преобразование объекта в `JSON`
+
+Задание:
+1. преобразовать объект `user` из примера ниже в `JSON`:
+
+```js
+let user = {
+  id: 219874,
+  name: "Иван",
+  surname: "Иванович",
+  age: 15
+};
+```
+
+2. после этого преобразовать `JSON` обратно в объект.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Решение:
+
+```js
+let user = {
+  id: 219874,
+  name: "Иван",
+  surname: "Иванович",
+  age: 15
+};
+
+let userJson = JSON.stringify(user);
+user = JSON.parse(userJson);
+```
+
+<hr>
+</details>
