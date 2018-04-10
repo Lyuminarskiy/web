@@ -3,6 +3,19 @@
 
 <head>
   <meta charset="utf-8">
+  <style>
+    .order[data-state="new"] {
+      color: green;
+    }
+
+    .order[data-state="pending"] {
+      color: blue;
+    }
+
+    .order[data-state="canceled"] {
+      color: red;
+    }
+  </style>
 </head>
 
 <body>
@@ -43,6 +56,8 @@
       </ul>
     </li>
   </ul>
+
+  <p class="order" data-state="new">Статус заказа</p>
 </body>
 
 </html>

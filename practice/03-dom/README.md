@@ -16,6 +16,13 @@
 - [3. Свойства элементов](#3-Свойства-элементов)
   - [3.1. Ссылки](#31-Ссылки)
   - [3.2. Задачи](#32-Задачи)
+    - [3.2.1. Добавление класса](#321-Добавление-класса)
+    - [3.2.2. Установка класса](#322-Установка-класса)
+    - [3.2.3. Установка стилей](#323-Установка-стилей)
+- [4. Добавление и удаление элементов](#4-Добавление-и-удаление-элементов)
+  - [4.1. Ссылки](#41-Ссылки)
+  - [4.2. Задачи](#42-Задачи)
+    - [4.2.1. Удаление потомков элемента](#421-Удаление-потомков-элемента)
 
 ## 1. Навигация по элементам
 
@@ -355,7 +362,7 @@ document.querySelector('[name="info[0]"]')[0];
 </html>
 ```
 
-Написать скрипт, который для каждого элемента `li` выведет текст в этом элементе и количество вложенных в него элементов `li`. Текст элемета можно получить с помощью следующей команды:
+Написать скрипт, который для каждого элемента `li` выведет текст в этом элементе и количество вложенных в него элементов `li`. Текст элемента можно получить с помощью следующей команды:
 
 ```js
 list[i].firstChild.data
@@ -396,8 +403,236 @@ for (i = 0; i < list.length; i++) {
 
 Посмотреть все свойства элемента можно либо в документации, либо с помощью метода `console.dir(elem)` в интерактивной консоли браузера.
 
+Методы для доступа к атрибутам элемента `elem`:
+- `elem.hasAttribute(name)` – проверяет наличие атрибута,
+- `elem.getAttribute(name)` – получает значение атрибута,
+- `elem.setAttribute(name, value)` – устанавливает атрибут,
+- `elem.removeAttribute(name)` – удаляет атрибут.
+
+Методы для работы с классами элемента `elem`:
+- `elem.classList.contains(name)` – проверяет наличие класса,
+- `elem.classList.add(name)` - добавляет класс,
+- `elem.classList.remove(name)` - удаляет класс,
+- `elem.classList.toggle(name)` - если класса нет, добавляет его, если есть – удаляет.
+
+Атрибуты элемента `elem`, имя которых начинается с `data-`, доступны через специальное свойство `elem.dataset`.
+
+Установить стиль элемента `elem` можно через специальное свойство `elem.style`:
+
+```js
+// Стиль можно установить через свойства.
+elem.style.width='100px';
+elem.style.color='red';
+
+// Либо в виде строки.
+elem.style.cssText = 'width: 100px; color: red';
+```
+
+Получить значения стиля элемента `elem` можно с помощью встроенной функции `getComputedStyle(elem)`:
+
+```js
+var computedStyle = getComputedStyle(document.body);
+alert(computedStyle.marginTop); // Выведет отступ в пикселях
+alert(computedStyle.color); // Выведет цвет
+```
+
 ### 3.1. Ссылки
 
 - [Объект `Document`](https://developer.mozilla.org/ru/docs/Web/API/Document)
 
 ### 3.2. Задачи
+
+#### 3.2.1. Добавление класса
+
+Создать страницу `index.html` со следующим содержимым:
+
+```html
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <div id="widget" data-widget-name="menu">Выберите жанр</div>
+</body>
+
+</html>
+```
+
+Написать скрипт, получающий значение атрибута `data-widget-name` элемента `div`.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Возможное решение:
+
+```js
+var div = document.getElementById('widget');
+var widgetName = div.dataset.widgetName;
+```
+
+<hr>
+</details>
+
+#### 3.2.2. Установка класса
+
+Создать страницу `index.html` со следующим содержимым:
+
+```html
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .secure {
+      color: white;
+      background-color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <ul>
+    <li><a href="https://google.com">https://google.com</a></li>
+    <li><a href="http://nodejs.org">http://nodejs.org</a></li>
+    <li><a href="ftp://ftp.com/my.zip">ftp://ftp.com/my.zip</a></li>
+    <li><a href="https://vk.com">https://vk.com</a></li>
+  </ul>
+</body>
+
+</html>
+```
+
+Написать скрипт, добавляющий класс `external` для всех ссылок, для которых указан защищённый протокол `https`.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Возможное решение:
+
+```js
+var links = document.querySelectorAll('a[href^="https://"]');
+for (var link of links) {
+  link.classList.add('secure');
+}
+```
+
+<hr>
+</details>
+
+#### 3.2.3. Установка стилей
+
+Создать страницу `index.html` со следующим содержимым:
+
+```html
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <a class="button" href="#">Нажми меня</a>
+</body>
+
+</html>
+```
+
+Написать скрипт, устанавливающий для элемента `a` стиль (с помощью свойства `style`), аналогичный следующему:
+
+```css
+.button {
+  -moz-border-radius: 8px;
+  -webkit-border-radius: 8px;
+  border-radius: 8px;
+  border: 2px groove green;
+  display: block;
+  height: 30px;
+  line-height: 30px;
+  width: 100px;
+  text-decoration: none;
+  text-align: center;
+  color: red;
+  font-weight: bold;
+}
+```
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Возможное решение:
+
+```js
+var s = document.querySelector('a.button').style;
+s.borderRadius = '8px';
+s.border = '2px groove green';
+s.display = 'block';
+s.height = '30px';
+s.lineHeight = '30px';
+s.width = '100px';
+s.textDecoration = 'none';
+s.textAlign = 'center';
+s.color = 'red';
+s.fontWeight = 'bold';
+```
+
+<hr>
+</details>
+
+## 4. Добавление и удаление элементов
+
+Список методов:
+
+| Метод                                        | Описание                                                                                    |
+| -------------------------------------------- | ------------------------------------------------------------------------------------------- |
+| `document.createElement(tag)`                | Создает новый элемент с указанным тегом `tag`.                                              |
+| `parentElem.appendChild(elem)`               | Добавляет `elem` в конец дочерних элементов `parentElem`.                                   |
+| `parentElem.insertBefore(elem, nextSibling)` | Вставляет `elem` в коллекцию детей `parentElem`, перед элементом `nextSibling`.             |
+| `elem.cloneNode(deep)`                       | Клонирует элемент `elem`, если `deep == true`, то со всеми потомками, иначе – без потомков. |
+| `parentElem.removeChild(elem)`               | Удаляет `elem` из списка детей `parentElem`.                                                |
+| `parentElem.replaceChild(newElem, elem)`     | Среди детей `parentElem` удаляет `elem` и вставляет на его место `newElem`.                 |
+| `elem.remove()`                              | Удаляет элемент `elem`.                                                                     |
+
+### 4.1. Ссылки
+
+- [Объект `Document`](https://developer.mozilla.org/ru/docs/Web/API/Document)
+
+### 4.2. Задачи
+
+#### 4.2.1. Удаление потомков элемента
+
+Написать функцию `removeChildren(elem)`, которая удаляет всех потомков элемента `elem`:
+
+> ```js
+> -> elem.children.length
+> <- 6
+> -> removeChildren(elem)
+> <- undefined
+> -> elem.children.length
+> <- 0
+> ```
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Возможное решение:
+
+```js
+function removeChildren(elem) {
+  while (elem.lastChild) {
+    elem.removeChild(elem.lastChild);
+  }
+}
+```
+
+<hr>
+</details>
+
