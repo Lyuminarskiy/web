@@ -4,60 +4,60 @@
 <head>
   <meta charset="utf-8">
   <style>
-    .order[data-state="new"] {
-      color: green;
-    }
-
-    .order[data-state="pending"] {
+    .blue {
       color: blue;
     }
 
-    .order[data-state="canceled"] {
+    .colored[data-state="black"] {
+      color: black;
+    }
+
+    .colored[data-state="green"] {
+      color: green;
+    }
+
+    .colored[data-state="red"] {
       color: red;
     }
   </style>
 </head>
 
 <body>
-  <ul id='list'>
-    <li>Животные
-      <ul>
-        <li>Млекопитающие
-          <ul>
-            <li>Коровы</li>
-            <li>Ослы</li>
-            <li>Собаки</li>
-            <li>Тигры</li>
-          </ul>
-        </li>
-        <li>Другие
-          <ul>
-            <li>Змеи</li>
-            <li>Птицы</li>
-            <li>Ящерицы</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-    <li>Рыбы
-      <ul>
-        <li>Аквариумные
-          <ul>
-            <li>Гуппи</li>
-            <li>Скалярии</li>
-          </ul>
+  <!-- Комментарий -->
+  <p id="first" class="colored" data-color="black">Установка цвета через dataset</p>
 
-        </li>
-        <li>Морские
-          <ul>
-            <li>Морская форель</li>
-          </ul>
-        </li>
-      </ul>
-    </li>
-  </ul>
+  <p>
+    <a id="second" href="#">Ссылка</a>
+  </p>
 
-  <p class="order" data-state="new">Статус заказа</p>
+  <table id="third">
+    <caption>Заголовок таблицы</caption>
+
+    <thead>
+      <tr>
+        <th>Столбец 1</th>
+        <th>Столбец 2</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1.1</td>
+        <td>1.2</td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td>3.1</td>
+        <td>3.2</td>
+      </tr>
+    </tfoot>
+  </table>
 </body>
 
 </html>

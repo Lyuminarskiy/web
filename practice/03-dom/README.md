@@ -23,17 +23,32 @@
   - [4.1. Ссылки](#41-Ссылки)
   - [4.2. Задачи](#42-Задачи)
     - [4.2.1. Удаление потомков элемента](#421-Удаление-потомков-элемента)
+    - [4.2.2. Сортировка таблицы](#422-Сортировка-таблицы)
 
 ## 1. Навигация по элементам
 
 `DOM` – это представление документа в виде дерева объектов, доступное для изменения через JavaScript. Доступ к `DOM` производится через встроенный объект `document`.
+
+`DOM` состоит из узлов разных типов, вот некоторые из них:
+- документ – точка входа в `DOM`,
+- элементы – основные строительные блоки,
+- текстовые узлы,
+- комментарии.
+
+Навигация по узлам относительно произвольного узла `node`:
+- `node.parentNode` - родительский узел,
+- `node.previousSibling` - предшествующий соседний узел,
+- `node.nextSibling` - последующий соседний узел,
+- `node.childNodes` - коллекция дочерних узлов,
+- `node.firstChild` - первый дочерний узел,
+- `node.lastChild` - последний дочерний узел.
 
 Корневые элементы доступны напрямую:
 - `document.documentElement` - элемент `html`,
 - `document.head` - элемент `head`,
 - `document.body` - элемент `body`.
 
-Навигация относительно произвольного элемента `elem`:
+Навигация по элементам относительно произвольного элемента `elem`:
 - `elem.parentElement` - родительский элемент,
 - `elem.previousElementSibling` - предшествующий соседний элемент,
 - `elem.nextElementSibling` - последующий соседний элемент,
@@ -403,6 +418,8 @@ for (i = 0; i < list.length; i++) {
 
 Посмотреть все свойства элемента можно либо в документации, либо с помощью метода `console.dir(elem)` в интерактивной консоли браузера.
 
+HTML-атрибуты и DOM-свойства обычно, но не всегда соответствуют друг другу. Бывают ситуации, когда атрибут имеет одно значение, а свойство – другое. Бывает и так, что атрибут есть, а свойства с таким названием не создаётся.
+
 Методы для доступа к атрибутам элемента `elem`:
 - `elem.hasAttribute(name)` – проверяет наличие атрибута,
 - `elem.getAttribute(name)` – получает значение атрибута,
@@ -423,6 +440,10 @@ for (i = 0; i < list.length; i++) {
 // Стиль можно установить через свойства.
 elem.style.width='100px';
 elem.style.color='red';
+elem.style.backgroundColor='blue';
+
+// Сбросить поставленный стиль.
+elem.style.width='';
 
 // Либо в виде строки.
 elem.style.cssText = 'width: 100px; color: red';
@@ -431,9 +452,13 @@ elem.style.cssText = 'width: 100px; color: red';
 Получить значения стиля элемента `elem` можно с помощью встроенной функции `getComputedStyle(elem)`:
 
 ```js
+// Выведет пустую строку.
+alert(document.body.style.margin);
+
 var computedStyle = getComputedStyle(document.body);
-alert(computedStyle.marginTop); // Выведет отступ в пикселях
-alert(computedStyle.color); // Выведет цвет
+
+// Выведет реальное значение свойства.
+alert(computedStyle.margin);
 ```
 
 ### 3.1. Ссылки
@@ -548,8 +573,6 @@ for (var link of links) {
 
 ```css
 .button {
-  -moz-border-radius: 8px;
-  -webkit-border-radius: 8px;
   border-radius: 8px;
   border: 2px groove green;
   display: block;
@@ -636,3 +659,77 @@ function removeChildren(elem) {
 <hr>
 </details>
 
+#### 4.2.2. Сортировка таблицы
+
+Создать страницу `index.html` со следующим содержимым:
+
+```html
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <table>
+    <tbody>
+      <tr>
+        <th>Имя</th>
+        <th>Фамилия</th>
+        <th>Отчество</th>
+        <th>Возраст</th>
+      </tr>
+      <tr>
+        <td>Вася</td>
+        <td>Петров</td>
+        <td>Александрович</td>
+        <td>10</td>
+      </tr>
+      <tr>
+        <td>Петя</td>
+        <td>Иванов</td>
+        <td>Петрович</td>
+        <td>15</td>
+      </tr>
+      <tr>
+        <td>Владимир</td>
+        <td>Ленин</td>
+        <td>Ильич</td>
+        <td>9</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
+```
+
+Написать скрипт, который отсортирует таблицу по столбцу `Возраст`.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Возможное решение:
+
+```js
+var tbody = document.getElementsByTagName('tbody')[0];
+var rows = [];
+
+// Копируем строки в массив.
+for (var i = 0; i < tbody.children.length; i++) {
+  rows.push(tbody.children[i]);
+}
+
+// Сортируем строки в массиве.
+rows.sort((a, b) => a.lastChild.innerHTML - b.lastChild.innerHTML)
+
+// Переставляем строки в таблице.
+for (var i = 0; i < rows.length; i++) {
+  tbody.appendChild(rows[i]);
+}
+```
+
+<hr>
+</details>
