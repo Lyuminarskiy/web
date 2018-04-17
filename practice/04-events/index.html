@@ -4,7 +4,9 @@
 <head>
   <meta charset="utf-8">
   <style>
-    #one, #two, #three {
+    #one,
+    #two,
+    #three {
       color: white;
     }
 
@@ -35,12 +37,18 @@
       width: 50px;
       height: 50px;
     }
+
+    .highlight {
+      background: red;
+      color: white;
+    }
   </style>
 </head>
 
 <body>
   <input type="button" value="HTML-атрибут" onclick="console.log('HTML-атрибут')">
   <input id="button" type="button" value="DOM-свойство">
+
   <script>
     button.onclick = () => console.log('DOM-свойство');
   </script>
@@ -50,6 +58,7 @@
       <div id="three">three</div>
     </div>
   </div>
+
   <script>
     var elems = document.querySelectorAll('#one, #two, #three');
 
@@ -61,6 +70,56 @@
     function callback(event) {
       console.log('target: ' + event.target.id + '; currentTarget: ' + event.currentTarget.id);
     }
+  </script>
+
+  <p>
+    <a href="https://ru.wikipedia.org" onclick="return false">Ссылка</a>
+  </p>
+
+  <table id="delegate">
+    <caption>Заголовок таблицы</caption>
+
+    <thead>
+      <tr>
+        <th>Столбец 1</th>
+        <th>Столбец 2</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1.1</td>
+        <td>1.2</td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td>3.1</td>
+        <td>3.2</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script>
+    var selectedTd;
+    var table = document.getElementById('delegate');
+
+    table.onclick = function (event) {
+      var target = event.target;
+      if (target.tagName != 'TD') return;
+
+      if (selectedTd) {
+        selectedTd.classList.remove('highlight');
+      }
+
+      selectedTd = target;
+      selectedTd.classList.add('highlight');
+    };
   </script>
 </body>
 

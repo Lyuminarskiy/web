@@ -14,10 +14,16 @@
   - [2.2. Задачи](#22-Задачи)
     - [2.2.1. Скрыть элемент при нажатии](#221-Скрыть-элемент-при-нажатии)
     - [2.2.2. Раскрывающийся список](#222-Раскрывающийся-список)
-- [3. События в деталях](#3-События-в-деталях)
+    - [2.2.3. Перемещение элемента по клику](#223-Перемещение-элемента-по-клику)
+- [3. Делегирование событий](#3-Делегирование-событий)
   - [3.1. Ссылки](#31-Ссылки)
   - [3.2. Задачи](#32-Задачи)
-    - [3.2.1. Перемещение элемента по клику](#321-Перемещение-элемента-по-клику)
+    - [3.2.1. Раскрывающееся дерево](#321-Раскрывающееся-дерево)
+    - [3.2.2. Сортировка таблицы](#322-Сортировка-таблицы)
+    - [3.2.3. Переход по ссылке](#323-Переход-по-ссылке)
+- [4. События в деталях](#4-События-в-деталях)
+  - [4.1. Ссылки](#41-Ссылки)
+  - [4.2. Задачи](#42-Задачи)
 
 ## 1. Методы `setTimeout()` и `setInterval()`
 
@@ -25,7 +31,7 @@
 
 ```js
 // Функция вызовется через одну секунду.
-setTimeout(() => alert('Привет'), 1000);
+setTimeout(() => console.log('Привет'), 1000);
 ```
 
 Отменить исполнение можно с помощью функции `clearTimeout(timerId)`, на вход которой нужно передать числовой идентификатор таймера, возвращаемый функцией `setTimeout`:
@@ -210,7 +216,7 @@ setInterval(update, 1000);
 Обработчик события можно установить с использованием атрибута HTML с названием `on + <имя события>`:
 
 ```html
-<input type="button" value="HTML-атрибут" onclick="alert('HTML-атрибут')">
+<input type="button" value="HTML-атрибут" onclick="console.log('HTML-атрибут')">
 ```
 
 Также можно использовать одноимённое свойство `DOM`:
@@ -218,16 +224,16 @@ setInterval(update, 1000);
 ```html
 <input id="button" type="button" value="DOM-свойство">
 <script>
-  button.onclick = () => alert('DOM-свойство');
+  button.onclick = () => console.log('DOM-свойство');
 </script>
 ```
 
 У вышеприведённых способов есть недостаток - невозможность назначить *несколько* обработчиков на одно событие:
 
 ```js
-elem.onclick = () => alert('Старый обработчик');
+elem.onclick = () => console.log('Старый обработчик');
 // Заменит предыдущий обработчик.
-elem.onclick = () => alert('Новый обработчик');
+elem.onclick = () => console.log('Новый обработчик');
 ```
 
 Чтобы обойти этот недостаток, необходимо использовать функции `addEventListener(event, handler[, phase])` и `removeEventListener(event, handler[, phase])`, где:
@@ -239,17 +245,67 @@ elem.onclick = () => alert('Новый обработчик');
 Пример:
 
 ```js
-elem.onclick = () => alert('Обработчик №1');
-elem.addEventListener('click', () => alert('Обработчик №2'));
-elem.addEventListener('click', () => alert('Обработчик №3'));
+elem.onclick = () => console.log('Обработчик №1');
+elem.addEventListener('click', () => console.log('Обработчик №2'));
+elem.addEventListener('click', () => console.log('Обработчик №3'));
 ```
 
 Также стоит отметить, что не на все события можно назначить обработчик через `DOM`-свойство.
+
+Этапы обработки события:
+1. событие распространяется сверху вниз (этап перехвата),
+2. событие достигло целевого элемента (этап цели),
+3. событие распространяется снизу вверх (этап всплытия).
+
+![Всплытие и перехват](eventflow.png)
+
+Основной принцип всплытия:
+> При наступлении события обработчики сначала срабатывают на самом вложенном элементе, затем на его родителе, затем выше и так далее, вверх по цепочке вложенности.
+
+Всплывают *почти* все события. Например, событие `focus` не всплывает.
+
+Подробную информацию о событии можно получить с помощью *объекта события*, которое передаётся в обработчик первым аргументом:
+
+```js
+elem.onclick = function(event) {
+  // Вывести тип события, элемент и координаты клика.
+  alert(event.type + " на " + event.currentTarget);
+  alert(event.clientX + ":" + event.clientY);
+}
+```
+
+Некоторые свойства объекта `event`:
+
+| Свойство              | Описание                                 |
+| --------------------- | ---------------------------------------- |
+| `event.type`          | Тип события.                             |
+| `event.eventPhase`    | Текущий этап обработки события.          |
+| `event.target`        | Элемент, на котором произошло событие.   |
+| `event.currentTarget` | Элемент, на котором сработал обработчик. |
+
+Свойства `event.clientX` и `event.clientY` специфичны для события `click` и обозначают координаты курсора в момент клика.
+
+Некоторые методы объекта `event`:
+
+| Свойство                  | Описание                                                    |
+| ------------------------- | ----------------------------------------------------------- |
+| `event.stopPropagation()` | Прекращает дальнейшую передачу текущего события.            |
+| `event.preventDefault()`  | Отменяет действия браузера по умолчанию на текущее событие. |
+
+Если обработчик события назначен через свойство `on + <имя события>`, то действие браузера по умолчанию также можно отменить, вернув `false` из обработчика:
+
+```html
+<a href="https://ru.wikipedia.org" onclick="return false">Ссылка</a>
+<a href="https://ru.wikipedia.org" onclick="event.preventDefault()">Ссылка</a>
+```
 
 ### 2.1. Ссылки
 
 - [Метод `EventTarget.addEventListener()`](https://developer.mozilla.org/ru/docs/Web/API/EventTarget/addEventListener)
 - [Метод `EventTarget.removeEventListener()`](https://developer.mozilla.org/ru/docs/Web/API/EventTarget/removeEventListener)
+- [Объект `Event`](https://developer.mozilla.org/ru/docs/Web/API/Event)
+- [Метод `Event.stopPropagation()`](https://developer.mozilla.org/ru/docs/Web/API/Event/stopPropagation)
+- [Метод `Event.preventDefault()`](https://developer.mozilla.org/ru/docs/Web/API/Event/preventDefault)
 
 ### 2.2. Задачи
 
@@ -394,51 +450,7 @@ button.onclick = () => text.style.display = 'none';
 <hr>
 </details>
 
-## 3. События в деталях
-
-Подробную информацию о событии можно получить с помощью *объекта события*, которое передаётся в обработчик первым аргументом:
-
-```js
-elem.onclick = function(event) {
-  // Вывести тип события, элемент и координаты клика.
-  alert(event.type + " на " + event.currentTarget);
-  alert(event.clientX + ":" + event.clientY);
-}
-```
-
-Некоторые свойства объекта `event`:
-
-| Свойство              | Описание                                 |
-| --------------------- | ---------------------------------------- |
-| `event.type`          | Тип события.                             |
-| `event.eventPhase`    | Текущий этап обработки события.          |
-| `event.target`        | Элемент, на котором произошло событие.   |
-| `event.currentTarget` | Элемент, на котором сработал обработчик. |
-
-Свойства `event.clientX` и `event.clientY` специфичны для события `click` и обозначают координаты курсора в момент клика.
-
-Этапы обработки события:
-1. событие распространяется сверху вниз (этап перехвата),
-2. событие достигло целевого элемента (этап цели),
-3. событие распространяется снизу вверх (этап всплытия).
-
-![Всплытие и перехват](eventflow.png)
-
-Основной принцип всплытия:
-> При наступлении события обработчики сначала срабатывают на самом вложенном элементе, затем на его родителе, затем выше и так далее, вверх по цепочке вложенности.
-
-Всплывают *почти* все события. Например, событие `focus` не всплывает.
-
-Для дальнейшей передачи события необходимо вызвать метод `event.stopPropagation()`.
-
-### 3.1. Ссылки
-
-- [Объект `Event`](https://developer.mozilla.org/ru/docs/Web/API/Event)
-- [Метод `Event.stopPropagation()`](https://developer.mozilla.org/ru/docs/Web/API/Event/stopPropagation)
-
-### 3.2. Задачи
-
-#### 3.2.1. Перемещение элемента по клику
+#### 2.2.3. Перемещение элемента по клику
 
 Создать страницу `index.html` со следующим содержимым:
 
@@ -520,3 +532,374 @@ document.body.onclick = function (event) {
 
 <hr>
 </details>
+
+## 3. Делегирование событий
+
+Делегирование событий основано на механизме всплытия событий. Он заключается в том, что если у нас есть много элементов, события на которых нужно обрабатывать похожим образом, то вместо того, чтобы назначать обработчик каждому – мы ставим один обработчик на их общего предка.
+
+Например, делегируем событие нажатия на ячейку таблицы `<td>` элементу таблицы `<table>`:
+
+```html
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    .highlight {
+      background: red;
+      color: white;
+    }
+  </style>
+</head>
+
+<body>
+  <table id="delegate">
+    <caption>Заголовок таблицы</caption>
+
+    <thead>
+      <tr>
+        <th>Столбец 1</th>
+        <th>Столбец 2</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td>1.1</td>
+        <td>1.2</td>
+      </tr>
+      <tr>
+        <td>2.1</td>
+        <td>2.2</td>
+      </tr>
+    </tbody>
+
+    <tfoot>
+      <tr>
+        <td>3.1</td>
+        <td>3.2</td>
+      </tr>
+    </tfoot>
+  </table>
+
+  <script>
+    var selectedTd;
+    var table = document.getElementById('delegate');
+
+    table.onclick = function (event) {
+      // Проверяем, действительно мы нажали на ячейку таблицы.
+      var target = event.target;
+      if (target.tagName != 'TD') return;
+
+      if (selectedTd) {
+        selectedTd.classList.remove('highlight');
+      }
+
+      selectedTd = target;
+      selectedTd.classList.add('highlight');
+    };
+  </script>
+</body>
+
+</html>
+```
+
+### 3.1. Ссылки
+
+- [Объект `Event`](https://developer.mozilla.org/ru/docs/Web/API/Event)
+
+### 3.2. Задачи
+
+#### 3.2.1. Раскрывающееся дерево
+
+Создать страницу `index.html` со следующим содержимым:
+
+```html
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    #tree span {
+      cursor: pointer;
+    }
+
+    #tree span:hover {
+      font-weight: bold;
+    }
+  </style>
+</head>
+
+<body>
+  <ul id="tree">
+    <li>
+      <span>Животные</span>
+      <ul>
+        <li>
+          <span>Млекопитающие</span>
+          <ul>
+            <li>
+              <span>Коровы</span>
+            </li>
+            <li>
+              <span>Ослы</span>
+            </li>
+            <li>
+              <span>Собаки</span>
+            </li>
+            <li>
+              <span>Тигры</span>
+            </li>
+          </ul>
+        </li>
+        <li>
+          <span></span>Другие
+          <ul>
+            <li>
+              <span>Змеи</span>
+            </li>
+            <li>
+              <span>Птицы</span>
+            </li>
+            <li>
+              <span>Ящерицы</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+    <li>
+      <span>Рыбы</span>
+      <ul>
+        <li>
+          <span>Аквариумные</span>
+          <ul>
+            <li>
+              <span>Гуппи</span>
+            </li>
+            <li>
+              <span>Скалярии</span>
+            </li>
+          </ul>
+
+        </li>
+        <li>
+          <span>Морские</span>
+          <ul>
+            <li>
+              <span>Морская форель</span>
+            </li>
+          </ul>
+        </li>
+      </ul>
+    </li>
+  </ul>
+</body>
+
+</html>
+```
+
+Написать скрипт, который по клику на заголовок списка (`Животные`, `Млекопитающие`, `Рыбы` и др.) скрывает (если видимы) или показывает (если скрыты) его потомков.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Возможное решение:
+
+```js
+// Делегируем событие клика корневому элементу дерева.
+var tree = document.getElementById('tree');
+tree.onclick = function (event) {
+  // Проверяем, действительно ли мы нажали на элемент span.
+  var target = event.target;
+  if (target.tagName != 'SPAN') {
+    return;
+  }
+
+  // Находим ближайший вложенный список.
+  var childrenContainer = target.parentNode.querySelector('ul');
+  if (!childrenContainer) {
+    return;
+  }
+
+  childrenContainer.hidden = !childrenContainer.hidden;
+}
+```
+
+<hr>
+</details>
+
+#### 3.2.2. Сортировка таблицы
+
+Создать страницу `index.html` со следующим содержимым:
+
+```html
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    th {
+      cursor: pointer;
+    }
+
+    th:hover {
+      background: gray;
+    }
+  </style>
+</head>
+
+<body>
+  <table id="grid">
+    <thead>
+      <tr>
+        <th data-type="number">Возраст</th>
+        <th data-type="string">Имя</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>5</td>
+        <td>Вася</td>
+      </tr>
+      <tr>
+        <td>2</td>
+        <td>Петя</td>
+      </tr>
+      <tr>
+        <td>12</td>
+        <td>Женя</td>
+      </tr>
+      <tr>
+        <td>9</td>
+        <td>Маша</td>
+      </tr>
+      <tr>
+        <td>1</td>
+        <td>Илья</td>
+      </tr>
+    </tbody>
+  </table>
+</body>
+
+</html>
+```
+
+Написать скрипт, который по клику на заголовок таблицы будет сортировать её по столбцу.
+
+Тип данных столбца указан в атрибуте `data-type` у заголовка столбца таблицы.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Возможное решение:
+
+```js
+// Делегируем событие клика элементу таблицы.
+var grid = document.getElementById('grid');
+grid.onclick = function (event) {
+  // Проверяем, действительно ли мы нажали на элемент th.
+  if (event.target.tagName != 'TH') {
+    return;
+  }
+
+  sortGrid(event.target.cellIndex, event.target.dataset.type);
+};
+
+function sortGrid(colNum, type) {
+  var tbody = grid.tBodies[0];
+
+  // Создадим функцию сравнения в зависимости от типа столбца.
+  var compare;
+  switch (type) {
+    case 'number':
+      compare = function (rowA, rowB) {
+        return rowA.cells[colNum].innerHTML - rowB.cells[colNum].innerHTML;
+      };
+      break;
+    case 'string':
+      compare = function (rowA, rowB) {
+        return rowA.cells[colNum].innerHTML > rowB.cells[colNum].innerHTML;
+      };
+      break;
+  }
+
+  // Преобразуем коллекцию строк таблицы в массив.
+  var rowsArray = [];
+  for (var row of tbody.rows) {
+    rowsArray.push(row);
+  }
+
+  // Сортируем строки таблицы.
+  rowsArray.sort(compare);
+
+  // Переставляем строки с таблице.
+  for (var row of rowsArray) {
+    tbody.appendChild(row);
+  }
+}
+```
+
+<hr>
+</details>
+
+#### 3.2.3. Переход по ссылке
+
+Создать страницу `index.html` со следующим содержимым:
+
+```html
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+</head>
+
+<body>
+  <ul>
+    <li><a href="https://ru.wikipedia.org">Открыть Wikipedia</a></li>
+    <li><a href="https://www.google.ru">Открыть Google</a></li>
+  </ul>
+</body>
+
+</html>
+```
+
+Написать скрипт, который при клике на ссылки на странице пользователю выводился вопрос о том, действительно ли он хочет покинуть страницу. Если он не хочет, то прерывать переход по ссылке.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Возможное решение:
+
+```js
+document.body.onclick = function (event) {
+  // Проверяем, действительно ли мы нажали на ссылку.
+  if (event.target.tagName != 'A') {
+    return;
+  }
+
+  if (!confirm('Перейти по адресу ' + event.target.href + '?')) {
+    return event.stopPropagation();
+  }
+};
+```
+
+<hr>
+</details>
+
+## 4. События в деталях
+
+
+### 4.1. Ссылки
+
+- [Объект `Event`](https://developer.mozilla.org/ru/docs/Web/API/Event)
+- [Объект `MouseEvent`](https://developer.mozilla.org/ru/docs/Web/API/MouseEvent)
+
+### 4.2. Задачи
