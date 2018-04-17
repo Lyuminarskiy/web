@@ -14,7 +14,8 @@
 1. [Введение в JavaScript](practice/01-introduction-to-js/README.md)
 2. [Стандартные встроенные объекты JavaScript](practice/02-standard-objects/README.md)
 3. [Объектная модель документа (DOM)](practice/03-dom/README.md)
-4. [Интерфейсы Web API](practice/04-web-api/README.md)
+4. [Работа с событиями](practice/04-events/README.md)
+5. [Интерфейсы Web API](practice/05-web-api/README.md)
 
 ## Лабораторные работы
 

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    /* По умолчанию список скрыт. */
+    .list ul {
+      display: none;
+    }
+
+    /* Но при добавлении класса open список отображается. */
+    .list.open ul {
+      display: block;
+    }
+
+    .list .title::before {
+      content: '▶ ';
+    }
+
+    .list.open .title::before {
+      content: '▼ ';
+    }
+  </style>
+</head>
+
+<body>
+  <div class="list">
+  <span class="title">Цвета:</span>
+  <ul>
+    <li>Красный</li>
+    <li>Зелёный</li>
+    <li>Синий</li>
+  </ul>
+
+  <script>
+    var list = document.body.querySelector('.list');
+    var title = list.querySelector('.title');
+
+    title.onclick = () => list.classList.toggle('open');
+  </script>
+</div>
+</body>
+
+</html>
