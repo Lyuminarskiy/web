@@ -39,10 +39,10 @@
 </head>
 
 <body>
-  <input type="button" value="HTML-атрибут" onclick="alert('HTML-атрибут')">
+  <input type="button" value="HTML-атрибут" onclick="console.log('HTML-атрибут')">
   <input id="button" type="button" value="DOM-свойство">
   <script>
-    button.onclick = () => alert('DOM-свойство');
+    button.onclick = () => console.log('DOM-свойство');
   </script>
 
   <div id="one">one
@@ -59,7 +59,7 @@
     }
 
     function callback(event) {
-      alert('target: ' + event.target.id + '; currentTarget: ' + event.currentTarget.id);
+      console.log('target: ' + event.target.id + '; currentTarget: ' + event.currentTarget.id);
     }
   </script>
 </body>
