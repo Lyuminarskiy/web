@@ -4,42 +4,64 @@
 <head>
   <meta charset="utf-8">
   <style>
-    /* По умолчанию список скрыт. */
-    .list ul {
-      display: none;
+    #one, #two, #three {
+      color: white;
     }
 
-    /* Но при добавлении класса open список отображается. */
-    .list.open ul {
-      display: block;
+    #one {
+      background-color: green;
+      position: relative;
+      width: 150px;
+      height: 150px;
+      text-align: center;
+      cursor: pointer;
+      margin: 25px;
     }
 
-    .list .title::before {
-      content: '▶ ';
+    #two {
+      background-color: blue;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      width: 100px;
+      height: 100px;
     }
 
-    .list.open .title::before {
-      content: '▼ ';
+    #three {
+      background-color: red;
+      position: absolute;
+      top: 25px;
+      left: 25px;
+      width: 50px;
+      height: 50px;
     }
   </style>
 </head>
 
 <body>
-  <div class="list">
-  <span class="title">Цвета:</span>
-  <ul>
-    <li>Красный</li>
-    <li>Зелёный</li>
-    <li>Синий</li>
-  </ul>
-
+  <input type="button" value="HTML-атрибут" onclick="alert('HTML-атрибут')">
+  <input id="button" type="button" value="DOM-свойство">
   <script>
-    var list = document.body.querySelector('.list');
-    var title = list.querySelector('.title');
-
-    title.onclick = () => list.classList.toggle('open');
+    button.onclick = () => alert('DOM-свойство');
   </script>
-</div>
+
+  <div id="one">one
+    <div id="two">two
+      <div id="three">three</div>
+    </div>
+  </div>
+  <script>
+    var elems = document.querySelectorAll('#one, #two, #three');
+
+    for (elem of elems) {
+      elem.addEventListener("click", callback, true);
+      elem.addEventListener("click", callback, false);
+    }
+
+    function callback(event) {
+      alert('target: ' + event.target.id + '; currentTarget: ' + event.currentTarget.id);
+    }
+  </script>
 </body>
 
 </html>

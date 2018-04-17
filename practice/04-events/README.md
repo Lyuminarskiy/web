@@ -14,6 +14,10 @@
   - [2.2. Задачи](#22-Задачи)
     - [2.2.1. Скрыть элемент при нажатии](#221-Скрыть-элемент-при-нажатии)
     - [2.2.2. Раскрывающийся список](#222-Раскрывающийся-список)
+- [3. События в деталях](#3-События-в-деталях)
+  - [3.1. Ссылки](#31-Ссылки)
+  - [3.2. Задачи](#32-Задачи)
+    - [3.2.1. Перемещение элемента по клику](#321-Перемещение-элемента-по-клику)
 
 ## 1. Методы `setTimeout()` и `setInterval()`
 
@@ -385,6 +389,133 @@ button.onclick = () => text.style.display = 'none';
 </body>
 
 </html>
+```
+
+<hr>
+</details>
+
+## 3. События в деталях
+
+Подробную информацию о событии можно получить с помощью *объекта события*, которое передаётся в обработчик первым аргументом:
+
+```js
+elem.onclick = function(event) {
+  // Вывести тип события, элемент и координаты клика.
+  alert(event.type + " на " + event.currentTarget);
+  alert(event.clientX + ":" + event.clientY);
+}
+```
+
+Некоторые свойства объекта `event`:
+
+| Свойство              | Описание                                 |
+| --------------------- | ---------------------------------------- |
+| `event.type`          | Тип события.                             |
+| `event.eventPhase`    | Текущий этап обработки события.          |
+| `event.target`        | Элемент, на котором произошло событие.   |
+| `event.currentTarget` | Элемент, на котором сработал обработчик. |
+
+Свойства `event.clientX` и `event.clientY` специфичны для события `click` и обозначают координаты курсора в момент клика.
+
+Этапы обработки события:
+1. событие распространяется сверху вниз (этап перехвата),
+2. событие достигло целевого элемента (этап цели),
+3. событие распространяется снизу вверх (этап всплытия).
+
+![Всплытие и перехват](eventflow.png)
+
+Основной принцип всплытия:
+> При наступлении события обработчики сначала срабатывают на самом вложенном элементе, затем на его родителе, затем выше и так далее, вверх по цепочке вложенности.
+
+Всплывают *почти* все события. Например, событие `focus` не всплывает.
+
+Для дальнейшей передачи события необходимо вызвать метод `event.stopPropagation()`.
+
+### 3.1. Ссылки
+
+- [Объект `Event`](https://developer.mozilla.org/ru/docs/Web/API/Event)
+- [Метод `Event.stopPropagation()`](https://developer.mozilla.org/ru/docs/Web/API/Event/stopPropagation)
+
+### 3.2. Задачи
+
+#### 3.2.1. Перемещение элемента по клику
+
+Создать страницу `index.html` со следующим содержимым:
+
+```html
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <style>
+    #circle {
+      position: absolute;
+      width: 100px;
+      height: 100px;
+      background: yellow;
+      border: 3px solid red;
+      border-radius: 60px;
+    }
+
+    body {
+      width: 100vw;
+      height: 100vh;
+      margin: 0;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="circle"></div>
+</body>
+
+</html>
+```
+
+Написать скрипт, который при клике на странице поместит элемент с идентификатором `circle` на место клика.
+
+Также должны выполняться следующие условия:
+- центр элемента должен совпадать с местом клика.
+- элемент не должен выходить за границы страницы, а располагаться у границы.
+
+<details>
+<summary>Посмотреть решение</summary>
+<hr>
+
+Возможное решение:
+
+```js
+var circle = document.getElementById('circle');
+
+document.body.onclick = function (event) {
+  // Координаты центра элемента.
+  var top = event.clientY - circle.offsetHeight / 2;
+  var left = event.clientX - circle.offsetWidth / 2;
+
+  // Элемент вылезает за верхнюю границу.
+  if (top < 0) {
+    top = 0;
+  }
+
+  // Элемент вылезает за левую границу.
+  if (left < 0) {
+    left = 0;
+  }
+
+  // Элемент вылезает за правую границу.
+  if (left + circle.offsetWidth > document.body.offsetWidth) {
+    left = document.body.offsetWidth - circle.offsetWidth;
+  }
+
+  // Элемент вылезает за нижнюю границу.
+  if (top + circle.offsetHeight > document.body.offsetHeight) {
+    top = document.body.offsetHeight - circle.offsetHeight;
+  }
+
+  circle.style.left = left + 'px';
+  circle.style.top = top + 'px';
+}
 ```
 
 <hr>
