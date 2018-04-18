@@ -15,19 +15,29 @@
   <header>
     <input id='search' type='search' placeholder='Find post by title'>
   </header>
+
   <main id='posts'>
-    <div class='post' v-for='post in posts'>
-      <h3 class="post-author">Author: {{ post.user.name }}</h3>
-      <h2 class='post-title'>#{{ post.id }} {{ post.title }}</h2>
-      <p class='post-body'>{{ post.body }}</p>
-      <div class='comments'>
-        <div class='comment' v-for='comment in post.comments'>
-          <h3 class="comment-title">{{ comment.name }}</h3>
-          <p class='comment-body'>{{ comment.body }}</p>
+    <!-- Список постов пуст -->
+    <div v-if='posts.length > 0'>
+      <div class='post' v-for='post in posts'>
+        <h3 class="post-author">Author: {{ post.user.name }}</h3>
+        <h2 class='post-title'>#{{ post.id }} {{ post.title }}</h2>
+        <p class='post-body'>{{ post.body }}</p>
+        <div class='comments'>
+          <div class='comment' v-for='comment in post.comments'>
+            <h3 class="comment-title">{{ comment.name }}</h3>
+            <p class='comment-body'>{{ comment.body }}</p>
+          </div>
         </div>
       </div>
     </div>
+
+    <!-- Список постов не пуст -->
+    <div class='empty' v-else>
+      Loading...
+    </div>
   </main>
+  
   <footer></footer>
 </body>
 
