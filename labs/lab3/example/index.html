@@ -17,7 +17,7 @@
   </header>
 
   <main id='posts'>
-    <!-- Список постов пуст -->
+    <!-- Список постов не пуст -->
     <div v-if='posts.length > 0'>
       <div class='post' v-for='post in posts'>
         <h3 class="post-author">Author: {{ post.user.name }}</h3>
@@ -32,12 +32,12 @@
       </div>
     </div>
 
-    <!-- Список постов не пуст -->
-    <div class='empty' v-else>
+    <!-- Список постов пуст -->
+    <div v-else>
       Loading...
     </div>
   </main>
-  
+
   <footer></footer>
 </body>
 

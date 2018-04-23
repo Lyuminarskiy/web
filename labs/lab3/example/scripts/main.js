@@ -37,7 +37,7 @@ document.getElementById('search').oninput = (event) => {
       return;
     }
   }
-}
+};
 
 document.addEventListener("DOMContentLoaded", async () => {
   let main = document.querySelector('footer');
@@ -46,21 +46,21 @@ document.addEventListener("DOMContentLoaded", async () => {
   vm.posts = await initialize();
 });
 
+let vm = new Vue({
+  el: '#posts',
+  data: {
+      posts: []
+  }
+});
+
 async function initialize()
 {
   let posts = await Client.getPosts();
 
   for (let post of posts) {
-    post.user = await Client.getUsers(post.userId)
+    post.user = await Client.getUsers(post.userId);
     post.comments = await Client.getComments(post.id);
   }
 
   return posts;
 }
-
-let vm = new Vue({
-  el: '#posts',
-  data: {
-    posts: []
-  }
-})

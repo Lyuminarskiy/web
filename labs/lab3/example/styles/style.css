@@ -70,10 +70,6 @@ footer {
   box-shadow: 0 0 1em 0.2em yellow;
 }
 
-.empty {
-  height: 70vh;
-}
-
 .post-author {
   grid-area: post-author;
 }
