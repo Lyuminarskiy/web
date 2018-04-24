@@ -1,33 +1,131 @@
 * {
-  /* Поворот */
-  transform: rotate(30deg);
-  transform: rotate3d(1, 0.5, -0.2, 30deg);
-  transform: rotateX(1.5turn);
-  transform: rotateY(30rad);
-  transform: rotateZ(30grad);
+  /* Свойства, к которым будут применяться переходы */
+  transition-property: none;
+  transition-property: all;
+  transition-property: color;
+  transition-property: color, background-color;
 
-  /* Масштабирование */
-  transform: scale(0.5);
-  transform: scale3d(1, 0.5, 0.2);
-  transform: scaleX(2);
-  transform: scaleY(1.5);
-  transform: scaleZ(0.2);
+  /* Длительность перехода */
+  transition-duration: 2s;
+  transition-duration: 500ms;
+  transition-duration: 10s, 230ms;
 
-  /* Перемещение */
-  transform: translate(20px, 30px);
-  transform: translate3d(42px, -62px, -135px);
-  transform: translateX(-10px);
-  transform: translateY(50px);
-  transform: translateZ(30px);
+  /* Функция, с помощью которой будет вычисляться
+  промежуточное значение свойств (по умолчанию ease) */
+  transition-timing-function: ease;
+  transition-timing-function: ease-in;
+  transition-timing-function: ease-out;
+  transition-timing-function: ease-in-out;
+  transition-timing-function: linear;
+  transition-timing-function: step-start;
+  transition-timing-function: step-end;
+  transition-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  transition-timing-function: steps(3, start);
+  transition-timing-function: steps(2, start);
+  transition-timing-function: steps(4, end);
+  transition-timing-function: frames(10);
 
-  /* Наклон */
-  transform: skew(30deg, -15deg);
-  transform: skewX(2rad);
-  transform: skewY(1.2turn);
+  /* Задержка перед выполнением перехода для свойств */
+  transition-delay: 3s;
+  transition-delay: 2s, 4ms;
 
-  /* Координаты точки, относительно которой будут происходить преобразования (x, y, z) */
-  transform-origin: center center 0;
-  transform-origin: left top 30px;
-  transform-origin: right bottom -20px;
-  transform-origin: 30px 20% 80px;
+  /* Сокращённая запись (transition-property, transition-duration, transition-timing-function, transition-delay) */
+  transition: background-color 4s ease-in-out 1s;
+  transition: background-color 4s ease-in-out 1s, color 1s linear 3s;
+}
+
+@keyframes animation1  {
+  /* Начальное состояние. */
+  from {
+    background-color: red;
+  }
+  /* Конечное состояние. */
+  to {
+    background-color: violet;
+  }
+}
+
+@keyframes animation2  {
+  /* Начальное состояние. */
+  from {
+    background-color: red;
+  }
+  /* Промежуточное состояние. */
+  25% {
+    background-color: yellow;
+  }
+  /* Промежуточное состояние. */
+  50% {
+    background-color: green;
+  }
+  /* Промежуточное состояние. */
+  75% {
+    background-color: blue;
+  }
+  /* Конечное состояние. */
+  to {
+    background-color: violet;
+  }
+}
+
+* {
+  /* Названия применяемых анимаций */
+  animation-name: none;
+  animation-name: animation1;
+  animation-name: animation1, animation2;
+
+  /* Длительность анимаций */
+  animation-duration: 6s;
+  animation-duration: 120ms;
+  animation-duration: 10s, 230ms;
+
+  /* Функция, с помощью которой будет вычисляться
+  промежуточное значение анимируемых свойств (по умолчанию ease) */
+  animation-timing-function: ease;
+  animation-timing-function: ease-in;
+  animation-timing-function: ease-out;
+  animation-timing-function: ease-in-out;
+  animation-timing-function: linear;
+  animation-timing-function: step-start;
+  animation-timing-function: step-end;
+  animation-timing-function: cubic-bezier(0.1, 0.7, 1.0, 0.1);
+  animation-timing-function: steps(3, start);
+  animation-timing-function: steps(2, start);
+  animation-timing-function: steps(4, end);
+  animation-timing-function: frames(10);
+
+  /* Задержка перед выполнением перехода для свойств */
+  animation-delay: 3s;
+  animation-delay: 2s, 4ms;
+
+  /* Количество повторений анимаций (по умолчанию 1) */
+  animation-iteration-count: infinite;
+  animation-iteration-count: 3;
+  animation-iteration-count: 2.4;
+  animation-iteration-count: 2, 0, infinite;
+
+  /* Направление анимаций при повторе (по умолчанию normal) */
+  animation-direction: normal;
+  animation-direction: reverse;
+  animation-direction: alternate;
+  animation-direction: alternate-reverse;
+  animation-direction: normal, reverse;
+  animation-direction: alternate, reverse, normal;
+
+  /* Способ установки окончательного значения анимируемых свойств. */
+  animation-fill-mode: none;
+  animation-fill-mode: forwards;
+  animation-fill-mode: backwards;
+  animation-fill-mode: both;
+  animation-fill-mode: none, backwards;
+  animation-fill-mode: both, forwards, none;
+  
+  /* Текущее состояние анимаций (по умолчанию running) */
+  animation-play-state: running;
+  animation-play-state: paused;
+  animation-play-state: paused, running, running;  
+
+  /* Сокращённая запись (animation-name, animation-duration, animation-timing-function, animation-iteration-count, animation-direction, animation-delay, animation-fill-mode, animation-play-state) */
+  animation: animation1 5s ease-in-out 3 alternate 1s forwards running;
+  animation: animation1 5s ease-in-out 3 alternate 1s forwards running, animation2 3s linear 2 reverse 3s both paused;
 }
