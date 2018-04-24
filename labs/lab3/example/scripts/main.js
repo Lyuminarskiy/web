@@ -1,11 +1,11 @@
 'use strict';
 
+import './components/all.js';
 import Client from './client.js';
-import './components.js';
 
 // Инициализируем Vue.
 const vm = new Vue({
-  el: '#posts',
+  el: '#app',
   data: {
     // Данные с сервера.
     posts: []

@@ -1,28 +1,23 @@
 <!DOCTYPE html>
-<html>
 
-<head>
-  <meta charset="utf-8">
-  <title>REST API</title>
+<meta charset="utf-8">
+<title>REST API</title>
 
-  <link rel="stylesheet" type="text/css" href="styles/style.css">
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script defer type="module" src="scripts/main.js"></script>
-</head>
+<link rel="stylesheet" href="styles/style.css">
+<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+<script defer type="module" src="scripts/main.js"></script>
 
-<body>
-<header>
-  <input id="search" type="search" placeholder="Find post by title">
-</header>
+<div id="app">
+  <header>
+    <input id="search" type="search" placeholder="Find post by title">
+  </header>
 
-<main id="posts">
-  <div v-if="posts.length > 0">
-    <post-elem v-for="post in posts" :key="post.id" :post="post"></post-elem>
-  </div>
-  <h3 v-else>no posts</h3>
-</main>
+  <main id="posts">
+    <template v-if="posts.length > 0">
+      <post-elem v-for="post in posts" :key="post.id" :post="post"></post-elem>
+    </template>
+    <h3 v-else>no posts</h3>
+  </main>
 
-<footer></footer>
-</body>
-
-</html>
+  <footer></footer>
+</div>

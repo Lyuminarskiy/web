@@ -3,12 +3,14 @@
 }
 
 body {
+  margin: 0;
+}
+
+#app {
   display: grid;
   grid-template-columns: auto;
   grid-template-rows: auto auto 3em;
   grid-template-areas: 'header' 'content' 'footer';
-
-  margin: 0;
   padding-top: 8em;
 }
 
