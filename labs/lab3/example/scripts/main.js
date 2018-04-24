@@ -6,6 +6,7 @@ import Client from './client.js';
 const vm = new Vue({
   el: '#posts',
   data: {
+    // Данные с сервера.
     posts: []
   }
 });
@@ -13,18 +14,6 @@ const vm = new Vue({
 // Заполняем подвал сайта.
 const main = document.querySelector('footer');
 main.innerHTML = 'Powered by ' + Client.baseUrl;
-
-// Анимируем загрузку.
-let dotsNumber = 1;
-const loader = document.getElementById('loader');
-const loaderInitialText = loader.innerText;
-const loaderTimerId = setInterval(() => {
-  loader.innerText = loaderInitialText + '.'.repeat(dotsNumber);
-
-  if(++dotsNumber > 3) {
-    dotsNumber = 1;
-  }
-}, 1000);
 
 // Выделенный пост.
 let selectedPost;
@@ -62,25 +51,47 @@ document.getElementById('search').oninput = (event) => {
   }
 };
 
+// Производим инициализацию.
 document.addEventListener("DOMContentLoaded", async () => {
-  vm.posts = await initialize();
+  // Анимируем загрузку постов.
+  let dotsNumber = 1;
+  const loader = document.querySelector('.loader');
+  const loaderTimerId = setInterval(() => {
+    loader.innerText = 'Loading' + '.'.repeat(dotsNumber);
+    if(++dotsNumber > 3) {
+      dotsNumber = 1;
+    }
+  }, 1000, loader);
 
-  // Останавливаем анимацию загрузки после инициализации.
+  await update();
+
+  // Останавливаем анимацию загрузки постов.
   clearInterval(loaderTimerId);
 });
 
 /**
- * Загружает данные постов и производит инициализацию.
+ * Загружает данные с сервера и отображает их на странице.
  *
  * @returns {Promise<*>} данные постов.
  */
-async function initialize() {
+async function update() {
+  // Загружаем посты.
   const posts = await Client.getPosts();
-
+  // Добавляем фейковые данные для корректного отображения.
   for (let post of posts) {
+    post.user = { name: '' };
+    post.comments = [];
+  }
+  // Отображаем посты на странице.
+  vm.posts = posts;
+
+  // Загружаем пользователей и отображаем их на странице.
+  for (let post of vm.posts) {
     post.user = await Client.getUsers(post.userId);
-    post.comments = await Client.getComments(post.id);
   }
 
-  return posts;
+  // Загружаем комментарии к постам и отображаем их на странице.
+  for (let post of vm.posts) {
+    post.comments = await Client.getComments(post.id);
+  }
 }
