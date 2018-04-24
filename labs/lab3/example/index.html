@@ -17,38 +17,30 @@
 </header>
 
 <main id="posts">
-  <div class="loader" v-if="!posts.updated">Loading</div>
   <!-- Список постов не пуст -->
-  <div v-else-if="posts.length > 0">
-    <article class="post" v-for="post of posts">
+  <div v-if="posts.length > 0">
+    <article class="post" v-for="post of posts" :key="post.id">
       <h3 class="post-author">Author: {{ post.user.name }}</h3>
       <h2 class="post-title">#{{ post.id }} {{ post.title }}</h2>
       <p class="post-body">{{ post.body }}</p>
       <div class="comments">
-        <!-- В данный момент происходит загрузка комментариев -->
-        <div class="loader" v-if="!posts.updated">Loading...</div>
-        <!-- Загрузка завершена и список комментариев не пуст -->
-        <div v-else-if="post.comments.length > 0">
+        <!-- Список комментариев не пуст -->
+        <div v-if="post.comments.length > 0">
           <!-- Выбор заголовка в зависимости от количества комментариев -->
           <h3 v-if="post.comments.length > 1">{{ post.comments.length }} comments:</h3>
           <h3 v-else>comment:</h3>
-
-          <div class="comment" v-for="comment of post.comments">
+          <div class="comment" v-for="comment of post.comments" :key="comment.id">
             <h3 class="comment-title">{{ comment.name }}</h3>
             <p class="comment-body">{{ comment.body }}</p>
           </div>
         </div>
-        <!-- Загрузка завершена и список комментариев пуст -->
-        <div v-else>
-          <h3>no comments</h3>
-        </div>
+        <!-- Список комментариев пуст -->
+        <h3 v-else>no comments</h3>
       </div>
     </article>
   </div>
-  <!-- Загрузка завершена и список постов пуст -->
-  <div v-else>
-    <h3>no posts</h3>
-  </div>
+  <!-- Список постов пуст -->
+  <h3 v-else>no posts</h3>
 </main>
 
 <footer></footer>

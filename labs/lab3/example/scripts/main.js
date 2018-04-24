@@ -52,22 +52,7 @@ document.getElementById('search').oninput = (event) => {
 };
 
 // Производим инициализацию.
-document.addEventListener("DOMContentLoaded", async () => {
-  // Анимируем загрузку постов.
-  let dotsNumber = 1;
-  const loader = document.querySelector('.loader');
-  const loaderTimerId = setInterval(() => {
-    loader.innerText = 'Loading' + '.'.repeat(dotsNumber);
-    if(++dotsNumber > 3) {
-      dotsNumber = 1;
-    }
-  }, 1000, loader);
-
-  await update();
-
-  // Останавливаем анимацию загрузки постов.
-  clearInterval(loaderTimerId);
-});
+document.addEventListener("DOMContentLoaded", async () => await update());
 
 /**
  * Загружает данные с сервера и отображает их на странице.
