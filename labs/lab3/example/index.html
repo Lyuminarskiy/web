@@ -2,43 +2,54 @@
 <html>
 
 <head>
-  <meta charset='utf-8'>
+  <meta charset="utf-8">
   <title>REST API</title>
 
-  <link rel='stylesheet' type='text/css' href='styles/style.css'>
-  <script src='https://cdn.jsdelivr.net/npm/vue/dist/vue.js'></script>
-  <script defer type='module' src='scripts/client.js'></script>
-  <script defer type='module' src='scripts/main.js'></script>
+  <link rel="stylesheet" type="text/css" href="styles/style.css">
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+  <script defer type="module" src="scripts/client.js"></script>
+  <script defer type="module" src="scripts/main.js"></script>
 </head>
 
 <body>
-  <header>
-    <input id='search' type='search' placeholder='Find post by title'>
-  </header>
+<header>
+  <input id="search" type="search" placeholder="Find post by title">
+</header>
 
-  <main id='posts'>
-    <!-- Список постов не пуст -->
-    <div v-if='posts.length > 0'>
-      <div class='post' v-for='post in posts'>
-        <h3 class="post-author">Author: {{ post.user.name }}</h3>
-        <h2 class='post-title'>#{{ post.id }} {{ post.title }}</h2>
-        <p class='post-body'>{{ post.body }}</p>
-        <div class='comments'>
-          <div class='comment' v-for='comment in post.comments'>
+<main id="posts">
+  <!-- Список постов не пуст -->
+  <div v-if="posts.length > 0">
+    <div class="post" v-for="post in posts">
+      <h3 class="post-author">Author: {{ post.user.name }}</h3>
+      <h2 class="post-title">#{{ post.id }} {{ post.title }}</h2>
+      <p class="post-body">{{ post.body }}</p>
+      <div class="comments">
+        <!-- Список комментариев не пуст -->
+        <div v-if="post.comments.length > 0">
+
+          <!-- Выбор заголовка в зависимости от количества комментариев -->
+          <h3 v-if="post.comments.length > 1">{{ post.comments.length }} comments:</h3>
+          <h3 v-else>comment:</h3>
+
+          <div class="comment" v-for="comment in post.comments">
             <h3 class="comment-title">{{ comment.name }}</h3>
-            <p class='comment-body'>{{ comment.body }}</p>
+            <p class="comment-body">{{ comment.body }}</p>
           </div>
+        </div>
+
+        <!-- Список комментариев пуст -->
+        <div v-else>
+          <h3>no comments</h3>
         </div>
       </div>
     </div>
+  </div>
 
-    <!-- Список постов пуст -->
-    <div v-else>
-      Loading...
-    </div>
-  </main>
+  <!-- Список постов пуст -->
+  <div id="loader" v-else>Loading</div>
+</main>
 
-  <footer></footer>
+<footer></footer>
 </body>
 
 </html>

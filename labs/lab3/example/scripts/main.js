@@ -2,9 +2,32 @@
 
 import Client from './client.js';
 
+// Инициализируем Vue.
+const vm = new Vue({
+  el: '#posts',
+  data: {
+    posts: []
+  }
+});
+
+// Заполняем подвал сайта.
+const main = document.querySelector('footer');
+main.innerHTML = 'Powered by ' + Client.baseUrl;
+
+// Анимируем загрузку.
+let dotsNumber = 1;
+const loader = document.getElementById('loader');
+const loaderInitialText = loader.innerText;
+const loaderTimerId = setInterval(() => {
+  loader.innerText = loaderInitialText + '.'.repeat(dotsNumber);
+
+  if(++dotsNumber > 3) {
+    dotsNumber = 1;
+  }
+}, 1000);
+
 // Выделенный пост.
 let selectedPost;
-
 document.getElementById('search').oninput = (event) => {
   // Убираем текущее выделение.
   if (!!selectedPost) {
@@ -12,7 +35,7 @@ document.getElementById('search').oninput = (event) => {
   }
 
   // Поисковый запрос.
-  let query = event.target.value;
+  const query = event.target.value;
 
   // Завершаем обработку события, если поле поиска было очищено.
   if (!query.length) {
@@ -21,7 +44,7 @@ document.getElementById('search').oninput = (event) => {
 
   // Поиск и выделение поста.
   for (let post of document.getElementsByClassName('post')) {
-    let title = post.querySelector('.post-title').firstChild.data;
+    const title = post.querySelector('.post-title').firstChild.data;
 
     // Поисковый запрос найден в заголовке.
     if (title.indexOf(query) >= 0) {
@@ -40,22 +63,19 @@ document.getElementById('search').oninput = (event) => {
 };
 
 document.addEventListener("DOMContentLoaded", async () => {
-  let main = document.querySelector('footer');
-  main.innerHTML = 'Powered by ' + Client.baseUrl;
-
   vm.posts = await initialize();
+
+  // Останавливаем анимацию загрузки после инициализации.
+  clearInterval(loaderTimerId);
 });
 
-let vm = new Vue({
-  el: '#posts',
-  data: {
-      posts: []
-  }
-});
-
-async function initialize()
-{
-  let posts = await Client.getPosts();
+/**
+ * Загружает данные постов и производит инициализацию.
+ *
+ * @returns {Promise<*>} данные постов.
+ */
+async function initialize() {
+  const posts = await Client.getPosts();
 
   for (let post of posts) {
     post.user = await Client.getUsers(post.userId);

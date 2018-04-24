@@ -16,9 +16,10 @@ export default class Client {
    * или один пост, если указан идентификатор поста.
    *
    * @param {Number} postId идентификатор поста.
+   * @returns {Promise<*>} список постов.
    */
   static async getPosts(postId = 0) {
-    let request = (postId <= 0)
+    const request = (postId <= 0)
       ? fetch(this.baseUrl + 'posts')
       : fetch(this.baseUrl + `posts/${postId}`);
 
@@ -30,9 +31,10 @@ export default class Client {
    * или всех комментариев к одному посту, если указан идентификатор поста.
    *
    * @param {Number} postId идентификатор поста.
+   * @returns {Promise<*>} список комментариев.
    */
   static async getComments(postId = 0) {
-    let request = (postId <= 0)
+    const request = (postId <= 0)
       ? fetch(this.baseUrl + 'comments')
       : fetch(this.baseUrl + `comments?postId=${postId}`);
 
@@ -44,9 +46,10 @@ export default class Client {
    * или одного пользователя, если указан идентификатор пользователя.
    *
    * @param {Number} userId идентификатор пользователя.
+   * @returns {Promise<*>} список всех пользователей.
    */
   static async getUsers(userId = 0) {
-    let request = (userId <= 0)
+    const request = (userId <= 0)
       ? fetch(this.baseUrl + 'users')
       : fetch(this.baseUrl + `users/${userId}`);
 
