@@ -1,6 +1,7 @@
 'use strict';
 
 import Client from './client.js';
+import './components.js';
 
 // Инициализируем Vue.
 const vm = new Vue({

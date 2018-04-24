@@ -7,7 +7,6 @@
 
   <link rel="stylesheet" type="text/css" href="styles/style.css">
   <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
-  <script defer type="module" src="scripts/client.js"></script>
   <script defer type="module" src="scripts/main.js"></script>
 </head>
 
@@ -17,29 +16,9 @@
 </header>
 
 <main id="posts">
-  <!-- Список постов не пуст -->
   <div v-if="posts.length > 0">
-    <article class="post" v-for="post of posts" :key="post.id">
-      <h3 class="post-author">Author: {{ post.user.name }}</h3>
-      <h2 class="post-title">#{{ post.id }} {{ post.title }}</h2>
-      <p class="post-body">{{ post.body }}</p>
-      <div class="comments">
-        <!-- Список комментариев не пуст -->
-        <div v-if="post.comments.length > 0">
-          <!-- Выбор заголовка в зависимости от количества комментариев -->
-          <h3 v-if="post.comments.length > 1">{{ post.comments.length }} comments:</h3>
-          <h3 v-else>comment:</h3>
-          <div class="comment" v-for="comment of post.comments" :key="comment.id">
-            <h3 class="comment-title">{{ comment.name }}</h3>
-            <p class="comment-body">{{ comment.body }}</p>
-          </div>
-        </div>
-        <!-- Список комментариев пуст -->
-        <h3 v-else>no comments</h3>
-      </div>
-    </article>
+    <post-elem v-for="post in posts" :key="post.id" :post="post"></post-elem>
   </div>
-  <!-- Список постов пуст -->
   <h3 v-else>no posts</h3>
 </main>
 
