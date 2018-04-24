@@ -1,0 +1,33 @@
+* {
+  /* Поворот */
+  transform: rotate(30deg);
+  transform: rotate3d(1, 0.5, -0.2, 30deg);
+  transform: rotateX(1.5turn);
+  transform: rotateY(30rad);
+  transform: rotateZ(30grad);
+
+  /* Масштабирование */
+  transform: scale(0.5);
+  transform: scale3d(1, 0.5, 0.2);
+  transform: scaleX(2);
+  transform: scaleY(1.5);
+  transform: scaleZ(0.2);
+
+  /* Перемещение */
+  transform: translate(20px, 30px);
+  transform: translate3d(42px, -62px, -135px);
+  transform: translateX(-10px);
+  transform: translateY(50px);
+  transform: translateZ(30px);
+
+  /* Наклон */
+  transform: skew(30deg, -15deg);
+  transform: skewX(2rad);
+  transform: skewY(1.2turn);
+
+  /* Координаты точки, относительно которой будут происходить преобразования (x, y, z) */
+  transform-origin: center center 0;
+  transform-origin: left top 30px;
+  transform-origin: right bottom -20px;
+  transform-origin: 30px 20% 80px;
+}

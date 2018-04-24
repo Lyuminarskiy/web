@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Анимации и рисование</title>
+
+  <link rel="stylesheet" type="text/css" href="style.css"/>
+</head>
+
+<body>
+<h1>transitions</h1>
+<div class="block transition-background hover-background">
+  <span class="info">background-color 1s</span>
+</div>
+<div class="block transition-transform hover-transform">
+  <span class="info">transform 1s</span>
+</div>
+<div class="block transition-background-transform hover-background hover-transform">
+  <span class="info">background-color 1s,<br>transform 1s</span>
+</div>
+
+<hr>
+
+<h1>animations</h1>
+<div class="block animation-background">
+  <span class="info">animation-background 5s linear infinite alternate</span>
+</div>
+<div class="block animation-transform">
+  <span class="info">animation-transform 5s ease-in-out infinite alternate</span>
+</div>
+<div class="block animation-background-transform">
+  <span class="info">animation-background 5s linear infinite alternate,<br>animation-transform 5s ease-in-out infinite alternate</span>
+</div>
+
+<hr>
+
+<h1>canvas</h1>
+<div class="block rotate-none">
+  <span class="info">rotate(0)</span>
+</div>
+</body>
+
+</html>

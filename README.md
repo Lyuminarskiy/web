@@ -15,7 +15,7 @@
 2. [Стандартные встроенные объекты JavaScript](practice/02-standard-objects/README.md)
 3. [Объектная модель документа (DOM)](practice/03-dom/README.md)
 4. [Работа с событиями](practice/04-events/README.md)
-5. [Работа с анимацией](practice/05-web-api/README.md)
+5. [Анимации и рисование](practice/05-animation-canvas/README.md)
 
 ## Лабораторные работы
 

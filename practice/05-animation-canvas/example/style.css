@@ -1,0 +1,83 @@
+* {
+  font-family: monospace;
+}
+
+h1, h2, h3, h4, h5, h6, hr {
+  text-align: center;
+  clear: both;
+}
+
+.block {
+  display: inline-block;
+  width: 200px;
+  height: 200px;
+  margin: 30px;
+  border: 5px solid orange;
+  background-color: lightgreen;
+}
+
+.block > .info {
+  width: 80%;
+  text-align: center;
+
+  /* Поместить текст в центр контейнера */
+  position: relative;
+  float: left;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+/* transitions */
+
+.transition-background {
+  transition: background-color 1s;
+}
+
+.transition-transform {
+  transition: transform 1s;
+}
+
+.transition-background-transform {
+  transition: background-color 1s, transform 1s;
+}
+
+.hover-background:hover {
+  background-color: orange;
+}
+
+.hover-transform:hover {
+  transform: scale(1.2);
+}
+
+/* animations */
+
+@keyframes animation-background {
+  from {
+    background-color: lightgreen;
+  }
+  to {
+    background-color: orange;
+  }
+}
+
+@keyframes animation-transform {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.2);
+  }
+}
+
+.animation-background {
+  animation: animation-background 5s linear infinite alternate;
+}
+
+.animation-transform {
+  animation: animation-transform 5s ease-in-out infinite alternate;
+}
+
+.animation-background-transform {
+  animation: animation-background 5s linear infinite alternate, animation-transform 5s ease-in-out infinite alternate;
+}
