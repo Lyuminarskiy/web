@@ -1,0 +1,39 @@
+.post {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(4, auto);
+  grid-template-areas: 'post-author' 'post-title' 'post-body' 'post-comments';
+
+  width: 90%;
+  max-width: 80em;
+  margin: 2em;
+  padding: 1em;
+  border: 1px solid black;
+  box-shadow: 0 0 1em 0.2em gray;
+}
+
+.post-selected {
+  border: 1px solid yellow;
+  box-shadow: 0 0 1em 0.2em yellow;
+}
+
+.post-author {
+  grid-area: post-author;
+}
+
+.post-title {
+  grid-area: post-title;
+}
+
+.post-body {
+  grid-area: post-body;
+}
+
+.comments {
+  grid-area: post-comments;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1em;
+  padding: 1em;
+  border: 1px dotted black;
+}

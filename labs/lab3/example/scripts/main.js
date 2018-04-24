@@ -3,25 +3,19 @@
 import './components/all.js';
 import Client from './client.js';
 
-// Инициализируем Vue.
 const vm = new Vue({
   el: '#app',
   data: {
-    // Данные с сервера.
     posts: []
   }
 });
-
-// Заполняем подвал сайта.
-const main = document.querySelector('footer');
-main.innerHTML = 'Powered by ' + Client.baseUrl;
 
 // Выделенный пост.
 let selectedPost;
 document.getElementById('search').oninput = (event) => {
   // Убираем текущее выделение.
   if (!!selectedPost) {
-    selectedPost.classList.remove('selected');
+    selectedPost.classList.remove('post-selected');
   }
 
   // Поисковый запрос.
@@ -40,7 +34,7 @@ document.getElementById('search').oninput = (event) => {
     if (title.indexOf(query) >= 0) {
       // Выделяем пост.
       selectedPost = post;
-      selectedPost.classList.add('selected');
+      selectedPost.classList.add('post-selected');
 
       // Перемещаем окно к выделенному посту.
       post.scrollIntoView();

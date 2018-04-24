@@ -1,0 +1,18 @@
+.comment {
+  display: grid;
+  grid-template-columns: auto;
+  grid-template-rows: repeat(2, auto);
+  grid-template-areas: 'comment-title' 'comment-body';
+}
+
+.comment:not(:last-child) {
+  border-bottom: 1px dotted black;
+}
+
+.comment-title {
+  grid-area: comment-title;
+}
+
+.comment-body {
+  grid-area: comment-body;
+}
