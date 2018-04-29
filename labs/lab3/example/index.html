@@ -13,7 +13,7 @@
   </header>
 
   <main id="posts">
-    <template v-if="posts.length > 0">
+    <template v-if="!!posts.length">
       <post-elem v-for="post in posts" :key="post.id" :post="post"></post-elem>
     </template>
     <h3 v-else>no posts</h3>
