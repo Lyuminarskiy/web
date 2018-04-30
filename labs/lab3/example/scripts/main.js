@@ -6,7 +6,10 @@ import Client from './client.js';
 const vm = new Vue({
   el: '#app',
   data: {
-    posts: []
+    // Данные постов.
+    posts: [],
+    // Кеш пользователей.
+    users: new Map()
   }
 });
 
@@ -59,7 +62,7 @@ async function update() {
   const posts = await Client.getPosts();
   // Добавляем фейковые данные для корректного отображения.
   for (let post of posts) {
-    post.user = { name: '' };
+    post.user = {name: ''};
     post.comments = [];
   }
   // Отображаем посты на странице.
@@ -67,7 +70,16 @@ async function update() {
 
   // Загружаем пользователей и отображаем их на странице.
   for (let post of vm.posts) {
-    post.user = await Client.getUsers(post.userId);
+    if (vm.users.has(post.userId)) {
+      // Берём пользователя из кеша.
+      post.user = vm.users.get(post.userId)
+    }
+    else {
+      post.user = await Client.getUsers(post.userId);
+
+      // Кешируем пользователя.
+      vm.users.set(post.userId, post.user)
+    }
   }
 
   // Загружаем комментарии к постам и отображаем их на странице.
