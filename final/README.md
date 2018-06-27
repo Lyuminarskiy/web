@@ -76,11 +76,11 @@
 Оформить следующие документы:
 
 - отчёт по производственной практике,
-- дневник производственной практики (см. [пример дневника](https://docs.google.com/document/d/15exVALQxJCNkgzapwX6NDSJZhSQRjl0OplDvp9YCbzM/edit?usp=sharing)),
-- аттестационный лист по производственной практике (см. [пример аттестационного листа](https://docs.google.com/document/d/1ry32Mf5TSyDwp-oUjtnjq_fTXIW2QZ5ndjmMbBpuWKw/edit?usp=sharing)).
+- аттестационный лист по производственной практике,
+- дневник производственной практики (см. [шаблон](https://docs.google.com/document/d/15exVALQxJCNkgzapwX6NDSJZhSQRjl0OplDvp9YCbzM/edit?usp=sharing)).
 
 Состав отчёта по производственной практике:
-- титульный лист (см. [пример титульного листа](https://docs.google.com/document/d/1HogMRk-z7CMOAaytQMERQwJ2K-VUUQyAl3PQr6OiRvs/edit?usp=sharing)),
+- титульный лист (см. [шаблон](https://docs.google.com/document/d/1HogMRk-z7CMOAaytQMERQwJ2K-VUUQyAl3PQr6OiRvs/edit?usp=sharing)),
 - содержание,
 - задание (на производственную практику),
 - техническое задание,
