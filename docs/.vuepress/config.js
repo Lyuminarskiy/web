@@ -29,8 +29,11 @@ module.exports = {
     sidebar: [
       '/',
       {
-        title: 'HTML+CSS',
-        collapsable: false
+        title: 'HTML и CSS',
+        collapsable: false,
+        children: [
+          '/html/01'
+        ]
       },
       {
         title: 'JavaScript',
