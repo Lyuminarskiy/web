@@ -1,6 +1,14 @@
 # Web-программирование
 
-Учебные материалы по курсу "Основы Web-программирования".
+Учебные материалы по курсу "Web-программирование".
+
+[Список студентов и прогресс работы](https://docs.google.com/spreadsheets/d/11zr8hoBczJjDeymf9hln2TO-HC8GdzppIweR8Ws3XRw/edit?usp=sharing).
+
+::: tip На заметку
+
+Для web-программирования подходит любой текстовый редактор. В данном курсе рекомендуется использовать кроссплатформенный редактор исходных кодов [Visual Studio Code](https://code.visualstudio.com/) вместе с расширением [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+
+:::
 
 ## Ссылки
 
