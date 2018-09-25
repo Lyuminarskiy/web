@@ -1,2 +1,7 @@
+# IDE
 .vscode
-.idea
+**/.idea
+
+# Build artifacts
+node_modules
+**/dist

@@ -1,0 +1,21 @@
+language: node_js
+node_js: node
+
+install: npm install --save-dev vuepress
+
+stages:
+  - Deploy
+
+jobs:
+  include:
+    - stage: Deploy
+      script: npm run docs:build
+      deploy:
+        skip-cleanup: true
+        provider: pages
+        github-token: $GITHUB_TOKEN
+        repo: Vladislav-Lyuminarskiy-websites/Web-course-website
+        target-branch: master
+        local-dir: docs/.vuepress/dist
+        on:
+          branch: master
