@@ -32,7 +32,7 @@ module.exports = {
         title: 'HTML и CSS',
         collapsable: false,
         children: [
-          '/html_css/01'
+          '/practice/01/tasks'
         ]
       },
       {
