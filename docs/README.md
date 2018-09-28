@@ -1,16 +1,27 @@
-# Web-программирование
-
-Учебные материалы по курсу "Web-программирование".
-
-[Список студентов и прогресс работы](https://docs.google.com/spreadsheets/d/11zr8hoBczJjDeymf9hln2TO-HC8GdzppIweR8Ws3XRw/edit?usp=sharing).
+---
+home: true
+heroImage: /icons/icon512.png
+actionText: Начать курс
+actionLink: /practice/
+footer: MIT Licensed. Copyright © 2018-present Владислав Люминарский.
+---
 
 ::: tip На заметку
+Для web-программирования подходит любой текстовый редактор. В данном курсе мы рекомендуем использовать кроссплатформенный редактор исходных кодов [Visual Studio Code](https://code.visualstudio.com/) вместе с расширением [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+:::
 
-Для web-программирования подходит любой текстовый редактор. В данном курсе рекомендуется использовать кроссплатформенный редактор исходных кодов [Visual Studio Code](https://code.visualstudio.com/) вместе с расширением [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+::: warning Обратите внимание!
+По всем вопросам, возникшим в ходе курса, вы можете получить ответ, отправив письмо на почту
+<a href='mailto:Vladislav.Lyuminarskiy@gmail.com?subject=Web-программирование,%20Иванов%20Иван%20Иванович' target='_blank'>Vladislav.Lyuminarskiy@gmail.com</a>. В теме письма укажите название курса и Ф.И.О., например:
 
+`Web-программирование, Иванов Иван Иванович`
 :::
 
 ## Ссылки
+
+Учебный процесс:
+
+- [Журнал успеваемости](https://docs.google.com/spreadsheets/d/11zr8hoBczJjDeymf9hln2TO-HC8GdzppIweR8Ws3XRw/edit?usp=sharing).
 
 Справочники и руководства по веб-технологиям:
 

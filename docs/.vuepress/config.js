@@ -22,24 +22,50 @@ module.exports = {
     '/': {
       lang: 'ru-RU',
       title: 'Web-программирование',
-      description: 'Учебные материалы по курсу "Web-программирование".'
+      description: 'Учебные материалы по курсу "Web-программирование"'
     }
   },
   themeConfig: {
-    sidebar: [
-      '/',
+    nav: [
       {
-        title: 'HTML и CSS',
-        collapsable: false,
-        children: [
-          '/practice/01/tasks'
-        ]
+        text: 'Практика',
+        link: '/practice/'
       },
       {
-        title: 'JavaScript',
-        collapsable: false
+        text: 'Лабораторные',
+        link: '/labs/'
       }
     ],
+    sidebar: {
+      '/practice/': [
+        '',
+        {
+          title: 'HTML и CSS',
+          collapsable: false,
+          children: [
+            '01/',
+            '02/',
+            '03/'
+          ]
+        },
+        {
+          title: 'JavaScript',
+          collapsable: false
+        }
+      ],
+      '/labs/': [
+        '',
+        {
+          title: 'Лабораторные работы',
+          collapsable: false,
+          children: [
+            '01/',
+            '02/',
+            '03/'
+          ]
+        }
+      ]
+    },
     lastUpdated: 'Последнее обновление',
     repo: 'Vladislav-Lyuminarskiy/Web-course',
     docsDir: 'docs',
