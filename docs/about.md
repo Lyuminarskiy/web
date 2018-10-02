@@ -8,8 +8,8 @@ sidebar: auto
 
 Курс состоит из двух тематических блоков и двух-трёх лабораторных работ. Разбиение блоков по времени:
 
-1. HTML и CSS - 2 месяца (29%),
-2. JavaScript - 5 месяцев (71%).
+- HTML и CSS - 2 месяца (29%),
+- JavaScript - 5 месяцев (71%).
 
 ## 1. HTML и CSS
 
@@ -23,32 +23,32 @@ sidebar: auto
 
 Темы занятия:
 
-1. Инструменты разработчика Chrome.
-2. Базовые элементы HTML.
-3. Атрибуты элементов, универсальные атрибуты.
-4. Свойства CSS для установки цвета текста и фона.
+- Инструменты разработчика Chrome.
+- Базовые элементы HTML.
+- Атрибуты элементов, универсальные атрибуты.
+- Свойства CSS для установки цвета текста и фона.
 
 #### Что нового?
 
-HTML:
+- HTML:
 
-- Тип документа `<!DOCTYPE>`
-- Корневой элемент `<html>`
-- Блок невизуальных элементов `<head>`
-- Блок визуальных элементов `<body>`
-- Заголовок документа `<title>`
-- Контекстная информация о документе `<meta>` и атрибут `charset`
-- Блок текста `<p>`
-- Заголовки `<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`
-- Горизонтальная линия `<hr>`
-- Комментарий `<!-- -->`
-- Универсальный атрибут `title`
-- Универсальный строчный элемент `<span>`
+  - Тип документа [`<!DOCTYPE>`](https://webref.ru/html/!doctype).
+  - Корневой элемент [`<html>`](https://webref.ru/html/html).
+  - Блок невизуальных элементов [`<head>`](https://webref.ru/html/head).
+  - Блок визуальных элементов [`<body>`](https://webref.ru/html/body).
+  - Заголовок документа [`<title>`](https://webref.ru/html/title).
+  - Контекстная информация о документе [`<meta>`](https://webref.ru/html/meta) и его атрибут [`charset`](https://webref.ru/html/meta/charset).
+  - Блок текста [`<p>`](https://webref.ru/html/p).
+  - Заголовки [`<h1>`](https://webref.ru/html/h1), [`<h2>`](https://webref.ru/html/h2), [`<h3>`](https://webref.ru/html/h3), [`<h4>`](https://webref.ru/html/h4), [`<h5>`](https://webref.ru/html/h5), [`<h6>`](https://webref.ru/html/h6).
+  - Горизонтальная линия [`<hr>`](https://webref.ru/html/hr).
+  - Комментарий [`<!-- -->`](https://webref.ru/html/!--).
+  - Универсальные атрибуты [`title`](https://webref.ru/html/attr/title) и [`style`](https://webref.ru/html/attr/style)
+  - Универсальный строчный элемент [`<span>`](https://webref.ru/html/span).
 
-CSS:
+- CSS:
 
-- Цвет текста `color`
-- Цвет фона `baclground-color`
+  - Цвет текста [`color`](https://webref.ru/css/color)
+  - Цвет фона [`background-color`](https://webref.ru/css/background-color)
 
 #### Сценарий
 
