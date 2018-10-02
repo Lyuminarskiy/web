@@ -43,9 +43,7 @@ module.exports = {
           title: 'HTML и CSS',
           collapsable: false,
           children: [
-            '01/',
-            '02/',
-            '03/'
+            '01/'
           ]
         },
         {
@@ -58,11 +56,7 @@ module.exports = {
         {
           title: 'Лабораторные работы',
           collapsable: false,
-          children: [
-            '01/',
-            '02/',
-            '03/'
-          ]
+          children: []
         }
       ]
     },
