@@ -42,7 +42,8 @@ sidebar: auto
   - Заголовки [`<h1>`](https://webref.ru/html/h1), [`<h2>`](https://webref.ru/html/h2), [`<h3>`](https://webref.ru/html/h3), [`<h4>`](https://webref.ru/html/h4), [`<h5>`](https://webref.ru/html/h5), [`<h6>`](https://webref.ru/html/h6).
   - Горизонтальная линия [`<hr>`](https://webref.ru/html/hr).
   - Комментарий [`<!-- -->`](https://webref.ru/html/!--).
-  - Универсальные атрибуты [`title`](https://webref.ru/html/attr/title) и [`style`](https://webref.ru/html/attr/style)
+  - Всплывающая подсказка - универсальный атрибут [`title`](https://webref.ru/html/attr/title).
+  - Стилизация элемента - универсальный атрибут [`style`](https://webref.ru/html/attr/style).
   - Универсальный строчный элемент [`<span>`](https://webref.ru/html/span).
 
 - CSS:
