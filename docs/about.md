@@ -15,22 +15,17 @@ sidebar: auto
 
 Блок рассчитан на два месяца, т.е. примерно восемь еженедельных занятий по две пары. Ниже рассмотрим план на каждое занятие.
 
-Ожидаемый итог - студент свободно оперирует HTML-элементами и создаёт блоки команд CSS.
+Ожидаемый итог - студент свободно оперирует HTML-элементами и создаёт блоки объявлений CSS.
 
 В конце блока студенту выдаётся первая лабораторная работа.
 
 ### 1.1. Введение
 
 ::: tip На заметку
-Объяснение материала занимает 30-40 минут.
+Затраты времени (из доступных **180 минут**):
 
-Во время объяснения возник вопрос о том, как правильно использовать VS Code с расширением Live Server так, чтобы повторять действия за преподавателем.
-
-На выполнение заданий студенты потратили 90-150 минут.
-
-Студенты используют заголовки большего уровня, чтобы подобрать нужный размер  шрифта, хотя по правильному надо начинать с первого уровня, а шрифт устанавливать через CSS.
-
-Надо подумать, куда поместить элемент [`<br>`](https://webref.ru/html/br).
+- **30-40 минут** - объяснение материала.
+- **90-150 минут** - выполнение заданий студентами.
 :::
 
 Темы занятия:
@@ -65,6 +60,10 @@ sidebar: auto
 
 #### Сценарий
 
+Представиться студентам. Попросить их не шуметь, переговариваться шёпотом, не ругаться и уважать друг друга.
+
+Дать ссылку на этот веб-сайт. Кратко описать содержимое ссылок на главной странице.
+
 Открываем в браузере любой сайт и открываем инструменты разработчика. Демонстрируем, как выглядят HTML и CSS в современном сайте.
 
 Показываем [список элементов HTML](https://webref.ru/html) и [свойств CSS](https://webref.ru/css). Их довольно много, при случае лучше обращаться к этому справочнику.
@@ -72,6 +71,15 @@ sidebar: auto
 Показываем структуру HTML-элемента.
 
 ![Cтруктура HTML-элемента](./practice/01/html_tag.svg)
+
+Обратить внимание, что все угловые скобки должны быть закрыты, в закрывающем тэге должна быть косая черта перед именем элемента. Атрибут и его значение разделяются знаком `=`, значение атрибута обрамляется двойными кавычками.
+
+Показываем, как правильно настроить [Visual Studio Code](https://code.visualstudio.com/), чтобы можно было повторять действия за преподавателем:
+
+1. Установить расширение [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+2. Открыть папку через редактор.
+3. Создать файл `index.html`.
+4. Нажать на кнопку `Go Live`.
 
 Показываем базовую структуру страницы. `<!DOCTYPE>` обозначает тип документа.
 
@@ -126,6 +134,8 @@ sidebar: auto
 </html>
 ```
 
+Выбирать уровень заголовка следует исходя из текущего контекста, а не его внешнего вида. Внешний вид заголовка (размер шрифта и т.п.) следует устанавливать с помощью CSS.
+
 Оформляем текст с помощью универсального атрибута `style`. Устанавливаем цвет текста `color` и фона `background-color`. Свойства записываютсяс помощью *объявлений* вида `свойство: значение`. Несколько *объявлений* разделяются точкой с запятой. С помощью элемента `<span>` можно применять стили к отдельным участкам текста внутри элемента `<p>`.
 
 Цвет можно записать по названию, либо по его шестнадцатеричному значению. Подробнее можно прочитать [в статье](https://webref.ru/html/value/color).
@@ -141,27 +151,55 @@ sidebar: auto
   <body>
     <p style="color: blue">Синий текст</p>
     <p style="background-color: yellow">Текст на жёлтом фоне</p>
-    <p style="color: #ffffff; background-color: #ff0000">Белый текст на красном фоне</p>
+    <p style="color: #ffffff; background-color: #ff0000">
+      Белый текст на красном фоне
+    </p>
 
     <p>
-      Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam erat volutpat.
-      <span title="Зелёный текст" style="color: green">Ut wisi enim ad minim veniam, quis nostrud exerci tation ullamcorper suscipit lobortis nisl ut aliquip ex ea commodo consequat.</span>
-      Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse molestie consequat, vel illum dolore eu feugiat nulla facilisis at vero eros et accumsan et iusto odio dignissim qui blandit praesent luptatum zzril delenit augue duis dolore te feugait nulla facilisi.
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+      magna aliquam erat volutpat.
+      <span title="Зелёный текст" style="color: green">
+        Ut wisi enim ad minim veniam, quis nostrud exerci tation
+        ullamcorper suscipit lobortis nisl ut aliquip ex ea
+        commodo consequat.
+      </span>
+      Duis autem vel eum iriure dolor in hendrerit in vulputate
+      velit esse molestie consequat, vel illum dolore eu feugiat
+      nulla facilisis at vero eros et accumsan et iusto odio
+      dignissim qui blandit praesent luptatum zzril delenit augue
+      duis dolore te feugait nulla facilisi.
     </p>
   </body>
 </html>
 ```
 
-Студенты переходят к выполнению самостоятельных заданий.
+Кратко повторить пройденный материал.
+
+Студенты переходят к выполнению самостоятельных заданий. Кратко описать, что нужно сделать в заданиях. Обратить внимание на раздел `Теоретические сведения`, а также на подсказки к заданиям.
 
 ### 1.2. "Таблицы и списки + немного CSS"
 
 Темы занятия:
 
-1. Элементы для создания списков.
-2. Элементы для создания таблиц.
-3. Элемент `style`.
-4. Селекторы элементов, идентификаторов и классов.
+- Элементы для создания списков.
+- Элементы для создания таблиц.
+- Элемент `style`.
+- Селекторы элементов, идентификаторов и классов.
+
+#### Что нового?
+
+- HTML:
+
+  -
+
+- CSS:
+
+  -
+
+#### Сценарий
+
+Попросить студентов не шуметь, переговариваться шёпотом, не ругаться и уважать друг друга. Напомнить им, что к невыполненным в прошлый раз заданиям сегодня прибавятся новые. Чтобы долг не накапливался, сегодня надо и сдать долги, и выполнить новые задания.
 
 ### 1.3. "Мультимедиа и ссылки + ещё немного CSS"
 
