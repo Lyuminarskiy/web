@@ -29,8 +29,8 @@
 
 - CSS:
 
-  - Цвет текста [`color`](https://webref.ru/css/color)
-  - Цвет фона [`background-color`](https://webref.ru/css/background-color)
+  - Цвет текста [`color`](https://webref.ru/css/color).
+  - Цвет фона [`background-color`](https://webref.ru/css/background-color).
 
 Структура HTML-элемента:
 

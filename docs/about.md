@@ -24,8 +24,8 @@ sidebar: auto
 ::: tip На заметку
 Затраты времени (из доступных **180 минут**):
 
-- **30-40 минут** - объяснение материала.
-- **90-150 минут** - выполнение заданий студентами.
+- **30-50 минут** - объяснение материала.
+- **50-150 минут** - выполнение заданий студентами.
 :::
 
 Темы занятия:
@@ -55,8 +55,8 @@ sidebar: auto
 
 - CSS:
 
-  - Цвет текста [`color`](https://webref.ru/css/color)
-  - Цвет фона [`background-color`](https://webref.ru/css/background-color)
+  - Цвет текста [`color`](https://webref.ru/css/color).
+  - Цвет фона [`background-color`](https://webref.ru/css/background-color).
 
 #### Сценарий
 
