@@ -314,9 +314,48 @@ sidebar: auto
 </html>
 ```
 
-Теперь перейдём к рассмотрению свойств CSS, предназначенных для стилизации текста, и их значений. Во время описания нового свойства сначала открывать страницу с его описанием в справочнике, а затем показывать его применение на практике.
+Теперь перейдём к рассмотрению свойств CSS, предназначенных для стилизации текста, и их значений. Во время описания нового свойства сначала открывать страницу с его описанием в справочнике, а затем показывать его применение на практике (если необходимо).
 
-А начнём мы с группы свойств, устанавливающих различные характеристики шрифта и текста.
+А начнём мы с группы свойств, устанавливающих различные характеристики шрифта и текста:
+
+- Начертание шрифта [`font-style`](https://webref.ru/css/font-style).
+- Способ отображения строчных букв [`font-variant`](https://webref.ru/css/font-variant).
+- Насыщенность шрифта [`font-weight`](https://webref.ru/css/font-weight).
+- Размер шрифта [`font-size`](https://webref.ru/css/font-size).
+- Минимальная высота строки текста [`line-height`](https://webref.ru/css/line-height).
+- Семейство шрифта [`font-family`](https://webref.ru/css/font-family).
+- Универсальное свойство для установки различных характеристик шрифта и текста [`font`](https://webref.ru/css/font).
+
+```html
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Заголовок страницы</title>
+    <style>
+      p {
+        font: 14pt Arial;
+      }
+    </style>
+  </head>
+  <body>
+    <p>
+      Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+      sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+      magna aliquam erat volutpat.
+      Ut wisi enim ad minim veniam, quis nostrud exerci tation
+      ullamcorper suscipit lobortis nisl ut aliquip ex ea
+      commodo consequat.
+      Duis autem vel eum iriure dolor in hendrerit in vulputate
+      velit esse molestie consequat, vel illum dolore eu feugiat
+      nulla facilisis at vero eros et accumsan et iusto odio
+      dignissim qui blandit praesent luptatum zzril delenit augue
+      duis dolore te feugait nulla facilisi.
+    </p>
+  </body>
+</html>
+```
 
 text-align text-indent text-transform text-decoration letter-spacing word-spacing text-shadow
 ::first-letter ::selection ::before
