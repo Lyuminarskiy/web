@@ -69,6 +69,11 @@
     - Посещённая ссылка [`:visited`](https://webref.ru/css/visited).
     - Элемент, на который наведён указатель мыши [`:hover`](https://webref.ru/css/hover).
 
+  - Размеры элементов:
+
+    - Ширина [`width`](https://webref.ru/css/width).
+    - Высота [`height`](https://webref.ru/css/height).
+
 ## 3.1. Демографические показатели
 
 Задачи:

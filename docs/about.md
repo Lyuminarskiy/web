@@ -545,6 +545,15 @@ sidebar: auto
 
 ### 1.3. Таблицы, ссылки, мультимедиа и фреймы. Псевдоклассы
 
+::: tip На заметку
+Затраты времени (из доступных **180 минут**):
+
+- **X минут** - объяснение материала.
+- **Y минут** - выполнение заданий студентами.
+
+Доработать сценарий.
+:::
+
 Темы занятия:
 
 - Универсальный атрибут [`lang`](https://webref.ru/html/attr/lang).
@@ -611,6 +620,11 @@ sidebar: auto
     - Непосещённая ссылка [`:link`](https://webref.ru/css/link).
     - Посещённая ссылка [`:visited`](https://webref.ru/css/visited).
     - Элемент, на который наведён указатель мыши [`:hover`](https://webref.ru/css/hover).
+
+  - Размеры элементов:
+
+    - Ширина [`width`](https://webref.ru/css/width).
+    - Высота [`height`](https://webref.ru/css/height).
 
 #### Сценарий
 
@@ -828,6 +842,48 @@ sidebar: auto
 </html>
 ```
 
+Ссылка [`<a>`](https://webref.ru/html/a) и её атрибуты [`href`](https://webref.ru/html/a/href), [`target`](https://webref.ru/html/a/target) и [`download`](https://webref.ru/html/a/download).
+
+Псевдоклассы:
+
+- Непосещённая ссылка [`:link`](https://webref.ru/css/link).
+- Посещённая ссылка [`:visited`](https://webref.ru/css/visited).
+- Элемент, на который наведён указатель мыши [`:hover`](https://webref.ru/css/hover).
+
+Адреса бывают локальный и глобальные: [статья](https://webref.ru/html/value/url). Можно ссылаться по `id`.
+
+
+```html
+<!DOCTYPE html>
+
+<html lang="ru">
+  <head>
+    <meta charset="utf-8">
+    <title>Ссылки</title>
+    <style>
+    </style>
+  </head>
+  <body>
+  </body>
+</html>
+```
+
+Элементы мультимедиа:
+
+- Изображение [`<img>`](https://webref.ru/html/img) и его атрибуты.
+- Аудиозапись [`<audio>`](https://webref.ru/html/audio) и его атрибуты.
+- Видеоролик [`<video>`](https://webref.ru/html/video) и его атрибуты.
+- Текстовая дорожка [`<track>`](https://webref.ru/html/track) и её атрибуты.
+
+Встроенный фрейм [`<iframe>`](https://webref.ru/html/iframe) и его атрибуты.
+
+Размеры элементов:
+
+- Ширина [`width`](https://webref.ru/css/width).
+- Высота [`height`](https://webref.ru/css/height).
+
+Размеры можно указывать в пискелях и процентах.
+
 ```html
 <!DOCTYPE html>
 
@@ -876,6 +932,10 @@ sidebar: auto
   </body>
 </html>
 ```
+
+Кратко повторить пройденный материал.
+
+Студенты переходят к выполнению самостоятельных заданий. Кратко описать, что нужно сделать в заданиях. Обратить внимание на раздел `Теоретические сведения`, а также на подсказки к заданиям. Для тех, у кого есть долги, сейчас самое время сдать их, перед началом работы над новыми заданиями.
 
 ### 1.4. "Dive into CSS"
 
