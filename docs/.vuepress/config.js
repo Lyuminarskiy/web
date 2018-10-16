@@ -44,7 +44,8 @@ module.exports = {
           collapsable: false,
           children: [
             '01/',
-            '02/'
+            '02/',
+            '03/'
           ]
         },
         {
