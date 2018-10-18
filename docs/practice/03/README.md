@@ -55,7 +55,6 @@
   - Оформление таблиц:
 
     - Положение заголовка [`caption-side`](https://webref.ru/css/caption-side).
-    - Ширина ячеек [`table-layout`](https://webref.ru/css/table-layout).
     - Отображение границ ячеек [`border-collapse`](https://webref.ru/css/border-collapse).
     - Расстояние между границами ячеек [`border-spacing`](https://webref.ru/css/border-spacing).
     - Отображение пустых ячеек [`empty-cells`](https://webref.ru/css/empty-cells).
