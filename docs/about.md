@@ -28,6 +28,8 @@ sidebar: auto
 - **50-150 минут** - выполнение заданий студентами.
 
 Перенести описание [валидатора](https://validator.w3.org/) и атрибута [lang](https://webref.ru/html/attr/lang) из третьего занятия в первое.
+
+Отформатировать все примеры кода.
 :::
 
 Темы занятия:
@@ -194,6 +196,8 @@ sidebar: auto
 Забыл упомянуть, что можно для текста устанавливать несколько теней.
 
 Неправильно объяснил, как делать вложенные списки.
+
+Рассказать о том, как делать комментарии в CSS.
 
 Переименовать *селектор элементов* в *селектор типа*. Определиться, использовать мн.ч. или ед.ч. для наименования селекторов. В целом, желательно соответствовать материалам с Webref.
 :::
@@ -852,7 +856,7 @@ sidebar: auto
 - Посещённая ссылка [`:visited`](https://webref.ru/css/visited).
 - Элемент, на который наведён указатель мыши [`:hover`](https://webref.ru/css/hover).
 
-Адреса бывают локальный и глобальные: [статья](https://webref.ru/html/value/url). Можно ссылаться по `id`.
+Адреса бывают абсолютные и относительные: [статья](https://webref.ru/html/value/url). Можно ссылаться по `id`.
 
 
 ```html
@@ -952,20 +956,44 @@ sidebar: auto
 
 Темы занятия:
 
-- Остальные псевдоклассы.
+- Связь с внешними документами с помощью элемента [`<link>`](https://webref.ru/html/link).
+- Блочная модель и относящиеся к ней свойства CSS.
+- Блочные, строчные и строчно-блочные элементы, свойство [`display`](https://webref.ru/css/display).
+- Прочие виды селекторов.
 - Псевдоэлементы.
-- Остальные виды селекторов.
-- Элемент `div`.
-- Блочная модель элементов.
-- Типы элементов: блочные, строчные, строчно-блочные. Свойство `display`.
-- [Emmet](https://emmet.io) - разработка на HTML на стероидах.
-- Элемент `link`: иконка сайта и подключаемые стили.
+- [Emmet](https://emmet.io).
 
 #### Что нового?
 
 - HTML:
 
+  - Связь с внешним документом [`<link>`](https://webref.ru/html/link) и его атрибуты [`href`](https://webref.ru/html/link/href) и [`rel`](https://webref.ru/html/link/rel).
+  - Универсальный блочный элемент [`<div>`](https://webref.ru/html/div)
+
 - CSS:
+
+  - Блочная модель (вместо `*` подставить одно из следующих значений: `top`, `bottom`, `left`, `right`):
+
+    - Величина полей [`padding`](https://webref.ru/css/padding) и `padding-*`.
+    - Величина отступа [`margin`](https://webref.ru/css/padding) и `margin-*`.
+
+  - Алгоритм расчёта ширины и высоты элемента [`box-sizing`](https://webref.ru/css/box-sizing).
+  - Способ отображения элемента [`display`](https://webref.ru/css/display).
+
+  - Селекторы:
+
+    - [Вложенный селектор](https://webref.ru/css/selector/descendant).
+    - [Дочерний селектор](https://webref.ru/css/selector/child).
+    - [Соседний селектор](https://webref.ru/css/selector/adjacent).
+    - [Родственный селектор](https://webref.ru/css/selector/sibling).
+    - [Селектор атрибутов](https://webref.ru/css/selector/attr).
+
+  - Псевдоэлементы:
+
+    - Первый символ в тексте [`::first-letter`](https://webref.ru/css/first-letter).
+    - Первая строка текста [`::first-line`](https://webref.ru/css/first-line).
+    - Отображения контента до содержимого элемента [`::before`](https://webref.ru/css/before), после содержимого элемента [`::after`](https://webref.ru/css/after) и свойство [`content`](https://webref.ru/css/content).
+    - Выделенный текст [`::selection`](https://webref.ru/css/first-line).
 
 #### Сценарий
 
@@ -975,10 +1003,183 @@ sidebar: auto
 
 Кратко напомнить содержимое предыдущего занятия.
 
+Подключение иконки и внешних стилей с помощью элемента [`<link>`](https://webref.ru/html/link) и его атрибутов [`href`](https://webref.ru/html/link/href) и [`rel`](https://webref.ru/html/link/rel).
 
 ```html
+<!DOCTYPE html>
 
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Внешние документы</title>
+  <link rel="icon" href="icons/icon192.png">
+  <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+  <h1>Заголовок</h1>
+</body>
+
+</html>
 ```
+
+```css
+h1 {
+  color: white;
+  background-color: red;
+}
+```
+
+В блочной модели элемент рассматривается как прямоугольный контейнер, имеющий область содержимого и необязательные рамки и отступы (внутренние и внешние).
+
+![Блочная модель](./practice/04/box_model.svg)
+
+Блочная модель:
+
+- *Содержимое* - содержимое элемента (например, текст или изображение, или другой элемент).
+- *Поля* - расстояние между содержимым и границей элемента. Задаётся свойством [`padding`](https://webref.ru/css/padding).
+- *Границы* - видимая граница элемента. Задаётся свойством [`border`](https://webref.ru/css/border).
+- *Отступы* - расстояние снаружи элемента от границы до соседних элементов. Задаётся свойством [`margin`](https://webref.ru/css/margin).
+
+Показать блочную модель нескольких элементов в инструментах разработчика Chrome.
+
+Алгоритм расчёта ширины и высоты элемента можно изменить с помощью свойства [`box-sizing`](https://webref.ru/css/box-sizing).
+
+```html
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Блочная модель</title>
+  <style>
+    .box {
+      box-sizing: border-box;
+      width: 200px;
+      padding: 50px;
+      border: 3px solid red;
+      margin: 50px;
+    }
+  </style>
+</head>
+
+<body>
+  <p class="box">
+    Lorem ipsum dolor sit amet, consectetuer adipiscing elit,
+    sed diam nonummy nibh euismod tincidunt ut laoreet dolore
+    magna aliquam erat volutpat.
+    Ut wisi enim ad minim veniam, quis nostrud exerci tation
+    ullamcorper suscipit lobortis nisl ut aliquip ex ea
+    commodo consequat.
+    Duis autem vel eum iriure dolor in hendrerit in vulputate
+    velit esse molestie consequat, vel illum dolore eu feugiat
+    nulla facilisis at vero eros et accumsan et iusto odio
+    dignissim qui blandit praesent luptatum zzril delenit augue
+    duis dolore te feugait nulla facilisi.
+  </p>
+</body>
+
+</html>
+```
+
+Свойство [`display`](https://webref.ru/css/display) определяет тип контейнера элемента. Для каждого элемента существует значение браузера по умолчанию. Это значение можно при необходимости изменить. Элементы бывают:
+
+- Блочные - `display: block` (`<h1>`, `<h2>`, `<h3>`, `<h4>`, `<h5>`, `<h6>`, `<p>`, `<hr>`, `<ul>`, `<ol>`, `<li>`, `<table>` и др.). Создают разрыв строки перед элементом и после него, образуя прямоугольную область, по ширине занимающую всю ширину веб-страницы или блока-родителя (если для элемента не задано значение ширины). Блочные элементы могут содержать как строчные, так и блочные элементы, но не оба типа элементов сразу. Блочные элементы могут содержаться только в пределах блочных элементов.
+- Строчные - `display: inline` (`<span>`, `<a>`, `<img>`, `<iframe>` и др.). Ширина и высота строчного элемента зависит только от его содержимого, задать размеры с помощью CSS нельзя. Можно увеличить расстояние между соседними элементами по горизонтали с помощью горизонтальных полей и отступов.
+- Строчно-блочные - `display: inline-block` (`<audio>`, `<video>` и др.). Такие элементы являются строочными, но для них можно задавать поля, отступы, ширину и высоту.
+
+Мы уже знаем универсальный строчный элемент [`<span>`](https://webref.ru/html/span), который использовался для выделения отдельных строк, символов или других строчных элементов для дальнейшего изменения их оформления с помощью стилей. Универсальный блочный элемент [`<div>`](https://webref.ru/html/div) предназначен для группирования элементов документа с целью изменения вида содержимого через стили.
+
+```html
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Свойство display</title>
+  <style>
+    div {
+      width: 50px;
+      height: 50px;
+      margin: 5px;
+      padding: 5px;
+      text-align: center;
+    }
+
+    .block {
+      display: block;
+      border: 3px solid red;
+      background-color: orange;
+    }
+
+    .inline {
+      display: inline;
+      border: 3px solid black;
+      background-color: lightgreen;
+    }
+
+    .inline-block {
+      display: inline-block;
+      border: 3px solid blue;
+      background-color: yellow;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- display: block -->
+  <div class="block">block1</div>
+  <div class="block">block2</div>
+
+  <!-- display: inline -->
+  <div class="inline">inline1</div>
+  <div class="inline">inline2</div>
+
+  <!-- display: inline-block -->
+  <div class="inline-block">inline-block1</div>
+  <div class="inline-block">inline-block2</div>
+</body>
+
+</html>
+```
+
+Подробнее можно почитать в статье ["Открываем блочную модель"](https://webref.ru/layout/learn-html-css/box-model).
+
+Селекторы:
+
+- [Вложенный селектор](https://webref.ru/css/selector/descendant) - `A B`.
+- [Дочерний селектор](https://webref.ru/css/selector/child) `A > B`.
+- [Соседний селектор](https://webref.ru/css/selector/adjacent) `A + B`.
+- [Родственный селектор](https://webref.ru/css/selector/sibling) `A ~ B`.
+- [Селектор атрибута](https://webref.ru/css/selector/attr) `[attr]`.
+
+Полный список вариантов использования селектора атрибута:
+
+| Селектор          | Описание                                                                                                                                                       |
+| ----------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| `[attr]`          | Все элементы с атрибутом по имени `attr`.                                                                                                                      |
+| `[attr="value"]`  | Все элементы с атрибутом по имени `attr`, значение которого в точности совпадает с `"value"`.                                                                  |
+| `[attr^="value"]` | Все элементы с атрибутом по имени `attr`, значение которого начинается с `"value"`.                                                                            |
+| `[attr$="value"]` | Все элементы с атрибутом по имени `attr`, значение которого заканчивается на `"value"`.                                                                        |
+| `[attr*="value"]` | Все элементы с атрибутом по имени `attr`, значение которого содержит по крайней мере одно вхождение  `"value"` как подстроки.                                  |
+| `[attr~="value"]` | Все элементы с атрибутом по имени `attr`, значением которого является набор слов, разделённых пробелами, одно из которых в точности совпадает с `"value"`.     |
+| `[attr|="value"]` | Все элементы с атрибутом по имени `attr`, значение которого или в точности совпадает с `"value"`, или начинается с `"value"`, после которого идёт дефис `"-"`. |
+
+Повторить все виды селекторов, вкючая рассмотренные ранее.
+
+Псевдоэлементы позволяют задать стиль элементов не определённых в дереве элементов документа, а также генерировать содержимое, которого нет в исходном коде текста. Псевдоэлементы начинаются с `::`, чтобы отличить их от псевдоклассов.
+
+Псевдоэлементы (почти все существующие):
+
+- Первый символ в тексте [`::first-letter`](https://webref.ru/css/first-letter).
+- Первая строка текста [`::first-line`](https://webref.ru/css/first-line).
+- Отображения контента до содержимого элемента [`::before`](https://webref.ru/css/before), после содержимого элемента [`::after`](https://webref.ru/css/after) и свойство [`content`](https://webref.ru/css/content).
+- Выделенный текст [`::selection`](https://webref.ru/css/first-line).
+
+Рассказать про [Emmet](https://emmet.io).
 
 Кратко повторить пройденный материал.
 
@@ -988,6 +1189,8 @@ sidebar: auto
 
 Темы занятия:
 
+- Остальные псевдоклассы.
+- Наследование и каскадность стилей.
 - Свойства CSS для позиционирования.
 - CSS Grid Layout.
 - CSS Flexible box Layout.
