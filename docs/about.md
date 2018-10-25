@@ -52,7 +52,7 @@ sidebar: auto
   - Блок визуальных элементов [`<body>`](https://webref.ru/html/body).
   - Заголовок документа [`<title>`](https://webref.ru/html/title).
   - Контекстная информация о документе [`<meta>`](https://webref.ru/html/meta) и его атрибут [`charset`](https://webref.ru/html/meta/charset).
-  - Блок текста [`<p>`](https://webref.ru/html/p).
+  - Абзац [`<p>`](https://webref.ru/html/p).
   - Заголовки [`<h1>`](https://webref.ru/html/h1), [`<h2>`](https://webref.ru/html/h2), [`<h3>`](https://webref.ru/html/h3), [`<h4>`](https://webref.ru/html/h4), [`<h5>`](https://webref.ru/html/h5), [`<h6>`](https://webref.ru/html/h6).
   - Горизонтальная линия [`<hr>`](https://webref.ru/html/hr).
   - Комментарий [`<!-- -->`](https://webref.ru/html/!--).
