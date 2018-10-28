@@ -26,14 +26,17 @@ module.exports = {
     }
   },
   themeConfig: {
-    nav: [
-      {
+    nav: [{
         text: 'Практика',
         link: '/practice/'
       },
       {
         text: 'Лабораторные',
         link: '/labs/'
+      },
+      {
+        text: 'Экзамен',
+        link: '/exam/'
       }
     ],
     sidebar: {
