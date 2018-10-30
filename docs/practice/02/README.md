@@ -4,7 +4,7 @@
 
 - Элемент [`<style>`](https://webref.ru/html/style).
 - Универсальные атрибуты [`id`](https://webref.ru/html/attr/id) и [`class`](https://webref.ru/html/attr/class).
-- Универсальный селектор, cелекторы элементов, идентификаторов и классов.
+- Универсальный селектор, cелекторы типа, идентификатора и класса.
 - Свойства CSS для стилизации текста.
 - Элементы для создания списков.
 - Свойства CSS для стилизации списков.
@@ -29,10 +29,10 @@
 
   - Селекторы:
 
-    - [Селектор элементов](https://webref.ru/css/selector/tag).
+    - [Селектор типа](https://webref.ru/css/selector/tag).
     - [Универсальный селектор](https://webref.ru/css/selector/universal).
-    - [Селектор идентификаторов](https://webref.ru/css/selector/id).
-    - [Селектор классов](https://webref.ru/css/selector/class).
+    - [Селектор идентификатора](https://webref.ru/css/selector/id).
+    - [Селектор класса](https://webref.ru/css/selector/class).
 
   - Характеристики шрифта:
 

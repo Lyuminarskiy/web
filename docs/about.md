@@ -209,7 +209,7 @@ sidebar: auto
 
 - Элемент [`<style>`](https://webref.ru/html/style).
 - Универсальные атрибуты [`id`](https://webref.ru/html/attr/id) и [`class`](https://webref.ru/html/attr/class).
-- Универсальный селектор, cелекторы элементов, идентификаторов и классов.
+- Универсальный селектор, cелекторы типа, идентификатора и класса.
 - Свойства CSS для стилизации текста.
 - Элементы для создания списков.
 - Свойства CSS для стилизации списков.
@@ -232,10 +232,10 @@ sidebar: auto
 
   - Селекторы:
 
-    - [Селектор элементов](https://webref.ru/css/selector/tag).
+    - [Селектор типа](https://webref.ru/css/selector/tag).
     - [Универсальный селектор](https://webref.ru/css/selector/universal).
-    - [Селектор идентификаторов](https://webref.ru/css/selector/id).
-    - [Селектор классов](https://webref.ru/css/selector/class).
+    - [Селектор идентификатора](https://webref.ru/css/selector/id).
+    - [Селектор класса](https://webref.ru/css/selector/class).
 
   - Характеристики шрифта:
 
@@ -273,8 +273,6 @@ sidebar: auto
 #### Сценарий
 
 Попросить студентов не шуметь, переговариваться шёпотом, не ругаться и уважать друг друга. Если у студентов возникнут вопросы в ходе лекции, можно немедленно их задавать.
-
-Напомнить им, что к невыполненным в прошлый раз заданиям сегодня прибавятся новые. Чтобы долг не накапливался, сегодня надо и сдать долги, и выполнить новые задания.
 
 Кратко напомнить содержимое предыдущего занятия.
 
@@ -642,8 +640,6 @@ sidebar: auto
 
 Попросить студентов не шуметь, переговариваться шёпотом, не ругаться и уважать друг друга. Если у студентов возникнут вопросы в ходе лекции, можно немедленно их задавать.
 
-Напомнить им, что к невыполненным в прошлый раз заданиям сегодня прибавятся новые. Чтобы долг не накапливался, сегодня надо и сдать долги, и выполнить новые задания.
-
 Кратко напомнить содержимое предыдущего занятия.
 
 Помимо кодировки документа следует также указывать язык текста документа. Для этого используется универсальный атрибут [`lang`](https://webref.ru/html/attr/lang). Его можно указать в элементе [`<html>`](https://webref.ru/html/html) для всего документа или локально для отдельных элементов. В качестве значение необходимо указать код языка. Посмотреть некоторые распространенные языки и их коды можно в [справочнике](https://webref.ru/html/value/lang).
@@ -955,6 +951,8 @@ sidebar: auto
 - **90-100 минут** - выполнение заданий студентами.
 
 Доработать сценарий.
+
+Сегодняшние селекторы (за исключением селектора атрибута) ещё называют комбинаторами.
 :::
 
 Темы занятия:
@@ -971,7 +969,7 @@ sidebar: auto
 - HTML:
 
   - Связь с внешним документом [`<link>`](https://webref.ru/html/link) и его атрибуты [`href`](https://webref.ru/html/link/href) и [`rel`](https://webref.ru/html/link/rel).
-  - Универсальный блочный элемент [`<div>`](https://webref.ru/html/div)
+  - Универсальный блочный элемент [`<div>`](https://webref.ru/html/div).
 
 - CSS:
 
@@ -989,7 +987,7 @@ sidebar: auto
     - [Дочерний селектор](https://webref.ru/css/selector/child).
     - [Соседний селектор](https://webref.ru/css/selector/adjacent).
     - [Родственный селектор](https://webref.ru/css/selector/sibling).
-    - [Селектор атрибутов](https://webref.ru/css/selector/attr).
+    - [Селектор атрибута](https://webref.ru/css/selector/attr).
 
   - Псевдоэлементы:
 
@@ -1001,8 +999,6 @@ sidebar: auto
 #### Сценарий
 
 Попросить студентов не шуметь, переговариваться шёпотом, не ругаться и уважать друг друга. Если у студентов возникнут вопросы в ходе лекции, можно немедленно их задавать.
-
-Напомнить им, что к невыполненным в прошлый раз заданиям сегодня прибавятся новые. Чтобы долг не накапливался, сегодня надо и сдать долги, и выполнить новые задания.
 
 Кратко напомнить содержимое предыдущего занятия.
 
@@ -1190,19 +1186,228 @@ h1 {
 
 ### 1.5. "Про позиционирование"
 
+::: tip На заметку
+Затраты времени (из доступных **180 минут**):
+
+- **X минут** - объяснение материала.
+- **Y минут** - выполнение заданий студентами.
+
+Доработать сценарий.
+:::
+
 Темы занятия:
 
-- Остальные псевдоклассы.
-- Наследование и каскадность стилей.
+- Псевдокласс [`:not()`](https://webref.ru/css/not).
+- Наследование и каскадность стилей, специфичность.
+- Размерности.
 - Свойства CSS для позиционирования.
 - CSS Grid Layout.
 - CSS Flexible box Layout.
 - Семантические элементы HTML, описывающие структуру документа.
 
+#### Что нового?
+
+- HTML:
+
+- CSS:
+
+    - Ограничение границ действия селектора - псевдокласс [`:not()`](https://webref.ru/css/not).
+
+#### Сценарий
+
+Попросить студентов не шуметь, переговариваться шёпотом, не ругаться и уважать друг друга. Если у студентов возникнут вопросы в ходе лекции, можно немедленно их задавать.
+
+Кратко напомнить содержимое предыдущего занятия.
+
+[Наследование стилей](https://metanit.com/web/html5/5.9.php).
+
+Пример №1:
+
+```html
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Наследование стилей в CSS3</title>
+  <style>
+    /*body {color: red;}*/
+    p {
+      color: red;
+    }
+
+    h2 {
+      color: red;
+    }
+  </style>
+</head>
+
+<body>
+  <h2>Наследование стилей</h2>
+  <p>Текст про наследование стилей в CSS 3</p>
+</body>
+
+</html>
+```
+
+Пример №2:
+
+```html
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Наследование стилей в CSS3</title>
+  <style>
+    body {
+      color: red;
+    }
+
+    div {
+      color: black;
+    }
+  </style>
+</head>
+
+<body>
+  <div>
+    <h2>Наследование стилей</h2>
+    <p>Текст про наследование стилей в CSS 3</p>
+  </div>
+  <p>Copyright © MyCorp.com</p>
+</body>
+
+</html>
+```
+
+[Каскадность стилей](https://metanit.com/web/html5/5.10.php) работает с помощью специфичности. Пример каскадности:
+
+```html
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Каскадность стилей в CSS3</title>
+  <style>
+    .redLink {
+      color: red;
+    }
+
+    /* красный цет текста */
+    .footer a {
+      font-weight: bold;
+    }
+
+    /* выделение жирным */
+    a {
+      text-decoration: none;
+    }
+
+    /* отмена подчеркивания ссылки */
+  </style>
+</head>
+
+<body>
+  <p class="footer">Для просмотра подробной информации пройдите по ссылке:
+    <a class="redLink" href="index.php">Основы CSS 3</a>
+  </p>
+</body>
+
+</html>
+```
+
+| Специфичность | Применимость                                                                                                                                                                                                                                                                                                                                   |
+| :-----------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0             | [Универсальный](https://webref.ru/css/selector/universal), [вложенный](https://webref.ru/css/selector/descendant), [дочерний](https://webref.ru/css/selector/child), [соседний](https://webref.ru/css/selector/adjacent), [родственный](https://webref.ru/css/selector/sibling) селекторы и псевдокласс [`:not()`](https://webref.ru/css/not). |
+| 1             | [Селектор типа](https://webref.ru/css/selector/tag) и [псевдоэлементы](https://webref.ru/css/type/pseudoelement).                                                                                                                                                                                                                              |
+| 10            | Селекторы [класса](https://webref.ru/css/selector/class), [атрибута](https://webref.ru/css/selector/attr) и [псевдоклассы](https://webref.ru/css/type/pseudoclass).                                                                                                                                                                            |
+| 100           | [Селектор идентификатора](https://webref.ru/css/selector/id).                                                                                                                                                                                                                                                                                  |
+| 1000          | Объявления, указанные с помощью универсального атрибута [`style`](https://webref.ru/html/attr/style).                                                                                                                                                                                                                                          |
+
+Пример расчёта специфичности:
+
+```html
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Каскадность стилей в CSS3</title>
+  <style>
+    /* The following list of selector types is by increasing specificity:
+            1    = Type selectors (e.g., h1) and pseudo-elements (e.g., :before).
+            10   = Class selectors (e.g., .example), attributes selectors (e.g., [type="radio"]) and pseudo-classes (e.g., :hover).
+            100  = ID selectors (e.g., #example).
+            1000 = Inline styles
+            Universal selector (*), combinators (+, >, ~, ' ') and negation pseudo-class (:not()) have no effect on specificity.*/
+
+    a {
+      font-size: 18px;
+    }
+
+    /* 1 */
+    .nav li a {
+      color: red;
+    }
+
+    /* 10 + 2 = 12 */
+    #menu a {
+      color: navy;
+    }
+
+    /* 100 + 1 = 101 */
+    .nav .menuItem {
+      color: green;
+    }
+
+    /* 20 */
+    a.menuItem:not(.newsLink) {
+      color: orange;
+    }
+
+    /* 20 + 1 = 21 */
+    div ul li a {
+      color: gray;
+    }
+
+    /* 4 */
+    /* a { font-size: 18px; color: red !important; } */
+  </style>
+</head>
+
+<body>
+  <div id="menu">
+    <ul class="nav">
+      <li><a class="menuItem">Главная</a></li>
+      <li><a class="menuItem">Форум</a></li>
+      <li><a class="menuItem">Блог</a></li>
+      <li><a class="menuItem">О сайте</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
+```
+
+CSS Grid:
+
+<iframe width="100%" height="300" src="//jsfiddle.net/Vladislav_Lyuminarskiy/zdt086p1/embedded/html,css,result/dark/" allowfullscreen="allowfullscreen" allowpaymentrequest frameborder="0"></iframe>
+
+Кратко повторить пройденный материал.
+
+Студенты переходят к выполнению самостоятельных заданий. Кратко описать, что нужно сделать в заданиях. Обратить внимание на раздел `Теоретические сведения`, а также на подсказки к заданиям. Для тех, у кого есть долги, сейчас самое время сдать их, перед началом работы над новыми заданиями.
+
 ### 1.6. "Полезные вещи"
 
 Темы занятия:
 
+- Формы и связяные с ними свойства и псевдоклассы.
 - [Методология БЭМ](https://ru.bem.info).
 
 ### 1.7. "Всякие полезности".

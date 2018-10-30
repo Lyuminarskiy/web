@@ -34,7 +34,7 @@
     - [Дочерний селектор](https://webref.ru/css/selector/child).
     - [Соседний селектор](https://webref.ru/css/selector/adjacent).
     - [Родственный селектор](https://webref.ru/css/selector/sibling).
-    - [Селектор атрибутов](https://webref.ru/css/selector/attr).
+    - [Селектор атрибута](https://webref.ru/css/selector/attr).
 
   - Псевдоэлементы:
 
