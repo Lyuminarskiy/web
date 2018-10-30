@@ -35,7 +35,7 @@
 
   - Ограничение границ действия селектора - псевдокласс [`:not()`](https://webref.ru/css/not).
 
-  - Уровень прозрачности элемента [`opecity`](https://webref.ru/css/opacity).
+  - Уровень прозрачности элемента [`opacity`](https://webref.ru/css/opacity).
 
   - Позиция элементов:
 
@@ -55,6 +55,62 @@
     - Шаблон сетки [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas).
     - Привязка элемента в области сетки [`grid-area`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area).
 
+Таблица для расчёта специфичности:
+
+| Специфичность | Применимость                                                                                                                                                                                                                                                                                                                                   |
+| :-----------: | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 0             | [Универсальный](https://webref.ru/css/selector/universal), [вложенный](https://webref.ru/css/selector/descendant), [дочерний](https://webref.ru/css/selector/child), [соседний](https://webref.ru/css/selector/adjacent), [родственный](https://webref.ru/css/selector/sibling) селекторы и псевдокласс [`:not()`](https://webref.ru/css/not). |
+| 1             | [Селектор типа](https://webref.ru/css/selector/tag) и [псевдоэлементы](https://webref.ru/css/type/pseudoelement).                                                                                                                                                                                                                              |
+| 10            | Селекторы [класса](https://webref.ru/css/selector/class), [атрибута](https://webref.ru/css/selector/attr) и [псевдоклассы](https://webref.ru/css/type/pseudoclass).                                                                                                                                                                            |
+| 100           | [Селектор идентификатора](https://webref.ru/css/selector/id).                                                                                                                                                                                                                                                                                  |
+| 1000          | Объявления, указанные с помощью универсального атрибута [`style`](https://webref.ru/html/attr/style).                                                                                                                                                                                                                                          |
+
 Пример использования CSS Grid Layout:
 
 <iframe src="//jsfiddle.net/Vladislav_Lyuminarskiy/zdt086p1/embedded/html,css,result/dark/" width="100%" height="400" frameborder="0"></iframe>
+
+## 5.1. Расчёт специфичности
+
+Подсчитайте специфичность селекторов. Какой цвет текста будет установлен?
+
+```html
+<!DOCTYPE html>
+
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <title>Расчёт специфичности</title>
+  <style>
+    .list li a {
+      color: red;
+    }
+
+    a.link:not(#hotlink) {
+      color: orange;
+    }
+
+    .block ul li a {
+      color: purple;
+    }
+
+    #block a {
+      color: blue;
+    }
+
+    .list .link {
+      color: green;
+    }
+  </style>
+</head>
+
+<body>
+  <div id="block">
+    <ul class="list">
+      <li><a class="link">Текст ссылки</a></li>
+    </ul>
+  </div>
+</body>
+
+</html>
+```
