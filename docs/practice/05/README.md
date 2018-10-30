@@ -76,13 +76,13 @@
 ```html
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
   <title>Расчёт специфичности</title>
   <style>
-    .list li a {
+    *.list > li > a {
       color: red;
     }
 
@@ -90,7 +90,7 @@
       color: orange;
     }
 
-    .block ul li a {
+    .block > ul li a {
       color: purple;
     }
 

@@ -1300,7 +1300,7 @@ h1 {
 ```html
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -1356,7 +1356,7 @@ CSS предоставляет возможность полностью отм�
 ```html
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -1495,7 +1495,7 @@ CSS предоставляет возможность полностью отм�
 ```html
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -1576,7 +1576,7 @@ CSS предоставляет возможность полностью отм�
 ```html
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
@@ -1731,7 +1731,7 @@ CSS Grid Layout:
 ```html
 <!DOCTYPE html>
 
-<html>
+<html lang="ru">
 
 <head>
   <meta charset="utf-8">
