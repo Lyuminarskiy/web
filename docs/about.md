@@ -1203,13 +1203,13 @@ h1 {
 - Единицы измерения CSS для задания [размеров](https://webref.ru/css/value/size).
 - Свойства CSS для указания позиции элементов и ограничения размеров.
 - [CSS Grid Layout](https://metanit.com/web/html5/13.1.php).
-- Элементы, формирующие структуру документа и другие семантические элементы.
+- Элементы, формирующие структуру документа и прочие семантические элементы.
 
 #### Что нового?
 
 - HTML:
 
-  - Структура документа:
+  - Семантические элементы, формирующие структуру документа:
 
     - Основное содержимое документа [`<main>`](https://webref.ru/html/main).
     - Шапка документа [`<header>`](https://webref.ru/html/header).
@@ -1219,7 +1219,7 @@ h1 {
     - Единичная статья [`<article>`](https://webref.ru/html/article).
     - Блок статей [`<section>`](https://webref.ru/html/section).
 
-  - Семантические элементы:
+  - Прочие семантические элементы:
 
     - Информация об авторе [`<address>`](https://webref.ru/html/address).
     - Указание даты и времени [`<time>`](https://webref.ru/html/time) и его атрибут [`datetime`](https://webref.ru/html/time/datetime).
@@ -1243,10 +1243,11 @@ h1 {
 
   - CSS Grid Layout:
 
-    - Количество и размер строк [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows), столбцов [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns), комбинированное свойство [`grid`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid) и функция [`repeat()`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
-    - Промежуток между строками [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap), столбцами [`grid-column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) и комбинированное свойство [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap).
+    - Количество и размер строк [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows), столбцов [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) и комбинированное свойство [`grid-template`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template).
+    - Функция [`repeat()`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) и единица [`fr`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value).
     - Шаблон сетки [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas).
     - Привязка элемента в области сетки [`grid-area`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area).
+    - Промежуток между строками [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap), столбцами [`grid-column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) и комбинированное свойство [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap).
 
 #### Сценарий
 

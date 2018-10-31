@@ -8,7 +8,7 @@
 - Единицы измерения CSS для задания [размеров](https://webref.ru/css/value/size).
 - Свойства CSS для указания позиции элементов и ограничения размеров.
 - [CSS Grid Layout](https://metanit.com/web/html5/13.1.php).
-- Элементы, формирующие структуру документа и другие семантические элементы.
+- Элементы, формирующие структуру документа и прочие семантические элементы.
 
 ### Теоретические сведения
 
@@ -16,7 +16,7 @@
 
 - HTML:
 
-  - Структура документа:
+  - Семантические элементы, формирующие структуру документа:
 
     - Основное содержимое документа [`<main>`](https://webref.ru/html/main).
     - Шапка документа [`<header>`](https://webref.ru/html/header).
@@ -26,7 +26,7 @@
     - Единичная статья [`<article>`](https://webref.ru/html/article).
     - Блок статей [`<section>`](https://webref.ru/html/section).
 
-  - Семантические элементы:
+  - Прочие семантические элементы:
 
     - Информация об авторе [`<address>`](https://webref.ru/html/address).
     - Указание даты и времени [`<time>`](https://webref.ru/html/time) и его атрибут [`datetime`](https://webref.ru/html/time/datetime).
@@ -50,10 +50,11 @@
 
   - CSS Grid Layout:
 
-    - Количество и размер строк [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows), столбцов [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns), комбинированное свойство [`grid`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid) и функция [`repeat()`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout).
-    - Промежуток между строками [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap), столбцами [`grid-column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) и комбинированное свойство [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap).
+    - Количество и размер строк [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows), столбцов [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) и комбинированное свойство [`grid-template`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template).
+    - Функция [`repeat()`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) и единица [`fr`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value).
     - Шаблон сетки [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas).
     - Привязка элемента в области сетки [`grid-area`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area).
+    - Промежуток между строками [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap), столбцами [`grid-column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) и комбинированное свойство [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap).
 
 Таблица для расчёта специфичности:
 
@@ -115,4 +116,33 @@
 </html>
 ```
 
-<practice-05-task-02/>
+## 5.3. CSS Grid Layout
+
+Используя CSS Grid Layout, создайте веб-страницу следующего вида:
+
+<practice-05-task-03/>
+
+Подзадачи:
+
+- Назовите области следующими именами:
+
+  1. `header`,
+  2. `side1`,
+  3. `side2`,
+  4. `content`,
+  5. `footer`.
+
+- Используйте подходящие семантические элементы.
+- Размеры столбцов должны находиться в соотношении `1:3:1`.
+- Установите у строк одинаковую высоту.
+- Добавьте промежуток между ячейками.
+- В качестве цветов областей используйте следующие значения:
+
+  1. `rgb(60, 186, 84)`,
+  2. `rgb(244, 194, 13)`,
+  3. `rgb(219, 50, 54)`,
+  4. `rgb(72, 133, 237)`.
+
+::: warning Обратите внимание!
+Чтобы использовать свойства CSS Grid Layout, создайте **элемент-контейнер** с помощью объявления `display: grid`. Все элементы, которые планируется размещать на сетке, поместите внутрь этого элемента-контейнера.
+:::
