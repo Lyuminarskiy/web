@@ -44,18 +44,18 @@
 
     - Связь с внешними документами с помощью элемента [`<link>`](https://webref.ru/html/link).
     - Блочная модель и относящиеся к ней свойства CSS.
-    - Блочные, строчные и строчно-блочные элементы, свойство [`display`](https://webref.ru/css/display).
+    - [Блочные](https://webref.ru/course/block-inline/block), [строчные](https://webref.ru/course/block-inline/inline) и [строчно-блочные](https://webref.ru/course/block-inline/inline-block) элементы, свойство [`display`](https://webref.ru/css/display).
     - Прочие виды селекторов.
     - Псевдоэлементы.
     - [Emmet](https://emmet.io).
 
-5. **Наследование и каскадность стилей. Позиционирование и CSS Grid Layout. Семантические элементы**:
+5. **Наследование и каскадность стилей. Позиционирование и CSS Grid Layout**:
 
     - Псевдокласс [`:not()`](https://webref.ru/css/not).
     - [Наследование](https://metanit.com/web/html5/5.9.php) и [каскадность](https://metanit.com/web/html5/5.10.php) стилей, специфичность и значение [`!important`](https://webref.ru/css/%21important).
     - Способы задания [цвета](https://webref.ru/css/value/color).
     - Единицы измерения CSS для задания [размеров](https://webref.ru/css/value/size).
-    - Свойства CSS для указания позиции элементов и ограничения размеров.
+    - Свойства CSS для указания позиции элементов.
     - [CSS Grid Layout](https://metanit.com/web/html5/13.1.php).
     - Элементы, формирующие структуру документа и прочие семантические элементы.
 

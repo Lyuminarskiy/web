@@ -1,4 +1,4 @@
-# 5. Наследование и каскадность стилей. Позиционирование и CSS Grid Layout. Семантические элементы
+# 5. Наследование и каскадность стилей. Позиционирование и CSS Grid Layout
 
 Темы занятия:
 
@@ -6,7 +6,7 @@
 - [Наследование](https://metanit.com/web/html5/5.9.php) и [каскадность](https://metanit.com/web/html5/5.10.php) стилей, специфичность и значение [`!important`](https://webref.ru/css/%21important).
 - Способы задания [цвета](https://webref.ru/css/value/color).
 - Единицы измерения CSS для задания [размеров](https://webref.ru/css/value/size).
-- Свойства CSS для указания позиции элементов и ограничения размеров.
+- Свойства CSS для указания позиции элементов.
 - [CSS Grid Layout](https://metanit.com/web/html5/13.1.php).
 - Элементы, формирующие структуру документа и прочие семантические элементы.
 
@@ -34,8 +34,9 @@
 - CSS:
 
   - Ограничение границ действия селектора - псевдокласс [`:not()`](https://webref.ru/css/not).
-
+  - Способы задания [цвета](https://webref.ru/css/value/color).
   - Уровень прозрачности элемента [`opacity`](https://webref.ru/css/opacity).
+  - Единицы измерения для задания [размеров](https://webref.ru/css/value/size).
 
   - Позиция элементов:
 
@@ -43,16 +44,11 @@
     - Расстояние от верхнего [`top`](https://webref.ru/css/top), правого [`right`](https://webref.ru/css/right), нижнего [`bottom`](https://webref.ru/css/bottom), левого [`left`](https://webref.ru/css/left) краёв родительского элемента до соответствующего края дочернего элемента.
     - Порядок наложения элементов друг на друга [`z-index`](https://webref.ru/css/z-index).
 
-  - Ограничение размеров:
-
-    - Минимальная [`min-width`](https://webref.ru/css/min-width) и максимальная [`max-width`](https://webref.ru/css/max-width) ширина.
-    - Минимальная [`min-height`](https://webref.ru/css/min-height) и максимальная [`max-height`](https://webref.ru/css/max-height) высота.
-
   - CSS Grid Layout:
 
     - Количество и размер строк [`grid-template-rows`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows), столбцов [`grid-template-columns`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) и комбинированное свойство [`grid-template`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template).
     - Функция [`repeat()`](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) и единица [`fr`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value).
-    - Шаблон сетки [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas).
+    - Макет сетки [`grid-template-areas`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas).
     - Привязка элемента в области сетки [`grid-area`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area).
     - Промежуток между строками [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap), столбцами [`grid-column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) и комбинированное свойство [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap).
 
@@ -72,7 +68,9 @@
 
 ## 5.1. Расчёт специфичности
 
-Подсчитайте специфичность селекторов. Какой цвет текста будет установлен?
+Задачи:
+
+1. Создайте новый документ с именем `index.html` со следующим содержимым:
 
 ```html
 <!DOCTYPE html>
@@ -116,6 +114,14 @@
 </html>
 ```
 
+2. Рассчитайте специфичность селекторов.
+3. По результатам расчётов определите, какой цвет текста будет установлен.
+4. Откройте страницу в браузере и проверьте своё решение.
+
+::: tip На заметку
+Если вы испытываете расчётом специфичности, обратите внимание на раздел [`Теоретические сведения`](../../practice/05/#теоретические-сведения)
+:::
+
 ## 5.3. CSS Grid Layout
 
 Используя CSS Grid Layout, создайте веб-страницу следующего вида:
@@ -132,7 +138,6 @@
   4. `content`,
   5. `footer`.
 
-- Используйте подходящие семантические элементы.
 - Размеры столбцов должны находиться в соотношении `1:3:1`.
 - Установите у строк одинаковую высоту.
 - Добавьте промежуток между ячейками.
@@ -142,6 +147,9 @@
   2. `rgb(244, 194, 13)`,
   3. `rgb(219, 50, 54)`,
   4. `rgb(72, 133, 237)`.
+
+- Используйте подходящие семантические элементы.
+- Используйте только [селекторы класса](https://webref.ru/css/selector/class).
 
 ::: warning Обратите внимание!
 Чтобы использовать свойства CSS Grid Layout, создайте **элемент-контейнер** с помощью объявления `display: grid`. Все элементы, которые планируется размещать на сетке, поместите внутрь этого элемента-контейнера.

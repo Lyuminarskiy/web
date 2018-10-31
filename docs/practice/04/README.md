@@ -4,7 +4,7 @@
 
 - Связь с внешними документами с помощью элемента [`<link>`](https://webref.ru/html/link).
 - Блочная модель и относящиеся к ней свойства CSS.
-- Блочные, строчные и строчно-блочные элементы, свойство [`display`](https://webref.ru/css/display).
+- [Блочные](https://webref.ru/course/block-inline/block), [строчные](https://webref.ru/course/block-inline/inline) и [строчно-блочные](https://webref.ru/course/block-inline/inline-block) элементы, свойство [`display`](https://webref.ru/css/display).
 - Прочие виды селекторов.
 - Псевдоэлементы.
 - [Emmet](https://emmet.io).
@@ -16,7 +16,14 @@
 - HTML:
 
   - Связь с внешним документом [`<link>`](https://webref.ru/html/link) и его атрибуты [`href`](https://webref.ru/html/link/href) и [`rel`](https://webref.ru/html/link/rel).
-  - Универсальный блочный элемент [`<div>`](https://webref.ru/html/div)
+
+  - Виды элементов:
+
+    - [Блочные](https://webref.ru/course/block-inline/block).
+    - [Строчные](https://webref.ru/course/block-inline/inline).
+    - [Строчно-блочные](https://webref.ru/course/block-inline/inline-block)
+
+  - Универсальный блочный элемент [`<div>`](https://webref.ru/html/div).
 
 - CSS:
 
@@ -58,33 +65,55 @@
 5. Установите произвольный цвет текста и размер шрифта для первого символа первого абзаца каждой из частей.
 6. Установите произвольные цвет и фон для выделенного текста.
 
+::: tip На заметку
+При выполнении этого задания вам потребуется использовать псевдоэлементы. Если вы испытываете трудности с выбором правильного псевдоэлемента, обратите внимание на раздел [Теоретические сведения](../../practice/04/#теоретические-сведения)
+:::
+
 ## 4.2. Типы элементов
 
-Задачи:
-
-1. Создайте новый документ с именем `index.html` со следующим содержимым:
-
-```html
-<!DOCTYPE html>
-
-<html lang="ru">
-
-<head>
-  <meta charset="utf-8">
-  <title>Типы элементов</title>
-</head>
-
-<body></body>
-
-</html>
-```
-
-2. Используя только элементы [`<div>`](https://webref.ru/html/div), создайте веб-страницу следующего вида:
+Создайте веб-страницу следующего вида:
 
 <practice-04-task-02/>
 
+Подзадачи:
+
+- Используйте следующую структуру элементов:
+
+```html
+<div class="card">
+  <div class="card-image"></div>
+  <div class="card-content">
+    <div class="card-header"></div>
+    <div class="card-text narrow"></div>
+    <div class="card-text wide"></div>
+    <div class="card-text wide"></div>
+    <div class="card-text narrow"></div>
+  </div>
+</div>
+```
+
+- Используйте только [селекторы класса](https://webref.ru/css/selector/class).
+- Установите у элементов с классом:
+
+  1. `card-image` ширину `30%` и высоту `100%`.
+  2. `card-content` ширину `60%` и высоту `100%`, а также свойство [`vertical-align`](https://webref.ru/css/vertical-align) в значении `top`.
+  3. `narrow` ширину `30%`.
+  4. `wide` ширину `60%`.
+
+- Используйте следующую палитру цветов:
+
+  1. `#333`,
+  2. `#555`,
+  3. `#eee`,
+  4. `black`.
+
+
 ::: tip На заметку
 Для выполнения этого задания вам понадобится изменять значение свойства [`display`](https://webref.ru/css/display) у элементов.
+:::
+
+::: warning Обратите внимание!
+В этом задании потребовалось использовать ранее неизвестное для вас свойство [`vertical-align`](https://webref.ru/css/vertical-align). Изучите его смысл и значения **самостоятельно**.
 :::
 
 ## 4.3. Селекторы
@@ -107,7 +136,7 @@
   <div class="card">
     <img class="card-image" src="#" alt="">
     <div class="card-content">
-      <h1 class="card-header">Заголовок карточки</h1>
+      <h2 class="card-header">Заголовок карточки</h2>
       <p class="card-datetime">01 сентября 2005 г.</p>
       <p class="card-text">Текст карточки</p>
     </div>
