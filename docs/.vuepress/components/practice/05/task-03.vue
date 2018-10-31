@@ -40,6 +40,7 @@
 
 .side-block2 {
   grid-area: side2;
+  opacity: 0.6;
 }
 
 .side-block1,

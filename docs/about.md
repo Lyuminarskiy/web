@@ -1223,8 +1223,8 @@ h1 {
     - Подвал документа [`<footer>`](https://webref.ru/html/footer).
     - Боковая панель документа [`<aside>`](https://webref.ru/html/aside).
     - Панель навигации [`<nav>`](https://webref.ru/html/nav).
-    - Единичная статья [`<article>`](https://webref.ru/html/article).
-    - Блок статей [`<section>`](https://webref.ru/html/section).
+    - Независимый фрагмент веб-страницы [`<article>`](https://webref.ru/html/article).
+    - Блок информации [`<section>`](https://webref.ru/html/section).
 
   - Прочие семантические элементы:
 
