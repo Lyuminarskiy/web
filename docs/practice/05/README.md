@@ -52,6 +52,20 @@
     - Привязка элемента в области сетки [`grid-area`](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area).
     - Промежуток между строками [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap), столбцами [`grid-column-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) и комбинированное свойство [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap).
 
+Цветовая модель `RGB` ([источник](https://engineering.purdue.edu/~abe305/HTMLS/rgbspace.htm)):
+
+- Фронтальный вид:
+
+![Фронтальный вид](./rgb1.gif)
+
+- Вид с обратной стороны:
+
+![Вид с обратной стороны](./rgb2.gif)
+
+Пространство цветов `HSL` ([источник](http://www.erinsowards.com/articles/2011/01/colors.php)):
+
+![Пространство цветов HSL](./hsl-colors.png)
+
 Таблица для расчёта специфичности:
 
 | Специфичность | Применимость                                                                                                                                                                                                                                                                                                                                   |
