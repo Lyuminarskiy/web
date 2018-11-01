@@ -96,7 +96,7 @@
 - Установите у элементов с классом:
 
   1. `card-image` ширину `30%` и высоту `100%`.
-  2. `card-content` ширину `60%` и высоту `100%`, а также свойство [`vertical-align`](https://webref.ru/css/vertical-align) в значении `top`.
+  2. `card-content` ширину `60%` и высоту `100%`, а также свойство [`vertical-align`](https://webref.ru/css/vertical-align).
   3. `narrow` ширину `30%`.
   4. `wide` ширину `60%`.
 
