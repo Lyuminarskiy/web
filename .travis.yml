@@ -1,15 +1,13 @@
 language: node_js
 node_js: node
 
-install: npm install --save-dev vuepress
-
-stages:
-  - Deploy
-
 jobs:
   include:
     - stage: Deploy
-      script: npm run docs:build
+      install:
+        - npm install --save-dev vuepress
+      script:
+        - npm run docs:build
       deploy:
         skip-cleanup: true
         provider: pages
