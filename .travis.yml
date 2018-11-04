@@ -9,7 +9,7 @@ jobs:
       script:
         - npm run docs:build
       after_success:
-        - mv README.md LICENSE docs/.vuepress/dist
+        - mv README.md LICENSE docs/.vuepress/dist --verbose
       deploy:
         skip-cleanup: true
         provider: pages
