@@ -1,6 +1,6 @@
 ---
 home: true
-heroImage: /icons/icon512.png
+heroImage: /images/logo.png
 actionText: Начать курс
 actionLink: /practice/
 footer: MIT Licensed. Copyright © 2017-present Владислав Люминарский
