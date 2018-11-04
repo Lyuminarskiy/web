@@ -3,15 +3,8 @@ home: true
 heroImage: /icons/icon512.png
 actionText: Начать курс
 actionLink: /practice/
-footer: MIT Licensed. Copyright © 2018-present Владислав Люминарский.
+footer: MIT Licensed. Copyright © 2017-present Владислав Люминарский
 ---
-
-::: warning Обратите внимание!
-По всем вопросам, возникшим в ходе курса, вы можете получить ответ, отправив письмо на почту
-<a href='mailto:Vladislav.Lyuminarskiy@gmail.com?subject=Web-программирование,%20Иванов%20Иван%20Иванович' target='_blank'>Vladislav.Lyuminarskiy@gmail.com</a>. В теме письма укажите название курса и Ф.И.О., например:
-
-`Web-программирование, Иванов Иван Иванович`
-:::
 
 ## Инструменты
 
