@@ -27,6 +27,10 @@ module.exports = {
   },
   themeConfig: {
     nav: [{
+        text: 'О курсе',
+        link: '/about/'
+      },
+      {
         text: 'Практика',
         link: '/practice/'
       },
