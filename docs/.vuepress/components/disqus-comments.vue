@@ -6,8 +6,11 @@
 export default {
   mounted() {
     var disqus_config = function() {
-      this.page.url = window.location.origin + "/Web-course-website/";
-      this.page.identifier = window.location.pathname;
+      let base = "/Web-course-website/";
+
+      this.page.url = window.location.origin + base;
+      this.page.identifier = window.location.pathname.replace(base, "");
+      this.page.title = document.title;
     };
 
     (function() {
