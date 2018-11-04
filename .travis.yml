@@ -5,6 +5,7 @@ jobs:
   include:
     - stage: Deploy
       install:
+        - move README.md LICENSE docs/.vuepress/dist
         - npm install --save-dev vuepress
       script:
         - npm run docs:build

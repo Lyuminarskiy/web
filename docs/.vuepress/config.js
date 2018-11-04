@@ -16,6 +16,10 @@ module.exports = {
     ['link', {
       rel: 'manifest',
       href: '/manifest.webmanifest'
+    }],
+    ['link', {
+      rel: 'license',
+      href: '/LICENSE'
     }]
   ],
   locales: {
