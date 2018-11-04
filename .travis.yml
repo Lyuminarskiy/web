@@ -5,10 +5,11 @@ jobs:
   include:
     - stage: Deploy
       install:
-        - move README.md LICENSE docs/.vuepress/dist
         - npm install --save-dev vuepress
       script:
         - npm run docs:build
+      after_success:
+        - mv README.md LICENSE docs/.vuepress/dist
       deploy:
         skip-cleanup: true
         provider: pages
