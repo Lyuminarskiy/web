@@ -1,3 +1,5 @@
+const path = require('path');
+
 module.exports = {
   base: '/Web-course-website/',
   head: [
@@ -30,7 +32,8 @@ module.exports = {
     }
   },
   themeConfig: {
-    nav: [{
+    nav: [
+      {
         text: 'О курсе',
         link: '/about/'
       },
@@ -94,6 +97,13 @@ module.exports = {
       }
     }
   },
+  configureWebpack: {
+    resolve: {
+      alias: {
+        practice: path.resolve(".", "docs/practice")
+      }
+    }
+  },
   serviceWorker: true,
   evergreen: true
-}
+};
