@@ -20,7 +20,7 @@
 Справочники и руководства по веб-технологиям:
 
 - [Веб-документация MDN](https://developer.mozilla.org)
-- [WebReference](https://webref.ru/)
+- [WebReference](https://webref.ru)
 
 Обучающие материалы по HTML и CSS:
 
@@ -30,5 +30,5 @@
 
 Обучающие материалы по JavaScript:
 
-- [Современный учебник Javascript](https://learn.javascript.ru/)
+- [Современный учебник Javascript](https://learn.javascript.ru)
 - [Учебник JavaScript](https://professorweb.ru/my/javascript/js_theory/level1/javascript_index.php)

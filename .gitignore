@@ -1,7 +1,5 @@
-# IDE
 .vscode
-**/.idea
-
-# Build artifacts
+.idea/misc.xml
+.idea/workspace.xml
 node_modules
 **/dist
