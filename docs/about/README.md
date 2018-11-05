@@ -1,5 +1,6 @@
 ---
 sidebar: auto
+next: /practice/
 ---
 
 # Информация о курсе

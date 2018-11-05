@@ -1,5 +1,6 @@
 ---
 sidebar: auto
+prev: /labs/
 ---
 
 # Экзамен

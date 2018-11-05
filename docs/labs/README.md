@@ -1,3 +1,8 @@
+---
+prev: /practice/
+next: /exam/
+---
+
 # Лабораторные работы
 
 ## Общая информация
@@ -64,7 +69,7 @@
     "style-disabled": true,
     "tagname-lowercase": true,
     "tag-pair": true,
-    "title-require": true,
+    "title-require": true
   }
 }
 ```
@@ -302,6 +307,7 @@
       }]
     }
   }
+}
 ```
 
 </details>
