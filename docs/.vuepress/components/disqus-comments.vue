@@ -9,7 +9,9 @@
         type: String,
         required: false,
         default() {
-          return "web-course";
+          return location.hostname === "localhost"
+                 ? "vuepress-testing"
+                 : "web-course";
         }
       },
       pageUuid: {
@@ -22,18 +24,19 @@
           return pattern.test(uuid);
         }
       },
+      pageUrl: {
+        type: String,
+        required: false,
+        default() {
+          return location.origin + location.pathname;
+        }
+      },
       pageTitle: {
         type: String,
         required: false,
         default() {
           return document.pageTitle;
         }
-      }
-    },
-    
-    computed: {
-      url() {
-        return location.origin + location.pathname;
       }
     },
     
@@ -77,9 +80,9 @@
       
       configure(disqus) {
         const page = disqus.page;
-        page.title = this.pageTitle;
-        page.url = this.url;
         page.identifier = this.pageUuid;
+        page.url = this.pageUrl;
+        page.title = this.pageTitle;
       }
     },
 
