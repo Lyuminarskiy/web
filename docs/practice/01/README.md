@@ -448,7 +448,7 @@
 :::
 
 <disqus-comments
-  page-title="1. Введение | Практические занятия"
-  page-uuid="421fcad2-73d7-43d2-8562-a5efbe588237"/>
+  page-uuid="421fcad2-73d7-43d2-8562-a5efbe588237"
+  page-title="1. Введение | Практические занятия"/>
   
 <script-button/>

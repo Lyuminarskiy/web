@@ -5,15 +5,6 @@
 <script>
   export default {
     props: {
-      forumShortname: {
-        type: String,
-        required: false,
-        default() {
-          return location.hostname === "localhost"
-                 ? "vuepress-testing"
-                 : "web-course";
-        }
-      },
       pageUuid: {
         type: String,
         required: true,
@@ -24,24 +15,26 @@
           return pattern.test(uuid);
         }
       },
-      pageUrl: {
-        type: String,
-        required: false,
-        default() {
-          return location.origin + location.pathname;
-        }
-      },
+      
       pageTitle: {
         type: String,
-        required: false,
-        default() {
-          return document.pageTitle;
-        }
+        required: true
+      }
+    },
+    
+    computed: {
+      forumShortname() {
+        return location.hostname === "localhost"
+               ? "vuepress-testing"
+               : "web-course";
+      },
+      
+      pageUrl() {
+        return location.origin + location.pathname;
       }
     },
     
     methods: {
-      
       install() {
         const self = this;
         

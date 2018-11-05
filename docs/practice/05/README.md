@@ -260,8 +260,8 @@
 :::
  
 <disqus-comments
+  page-uuid="4d519cee-a0db-4708-8978-1de79cdde5ef"
   page-title="5. Наследование и каскадность стилей.
-    Позиционирование и CSS Grid Layout | Практические занятия"
-  page-uuid="4d519cee-a0db-4708-8978-1de79cdde5ef"/>
+    Позиционирование и CSS Grid Layout | Практические занятия"/>
   
 <script-button/>
