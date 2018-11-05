@@ -227,5 +227,8 @@ p.card-datetime {
 постепенно усложнять его до тех пор, пока вы не получите требуемый результат.
 :::
 
-<disqus-comments/>
+<disqus-comments
+  page-title="4. Блочная модель. Псевдоэлементы. Emmet | Практические занятия"
+  page-uuid="d4883cce-4d79-4289-9f0a-5df7b990ee43"/>
+  
 <script-button/>

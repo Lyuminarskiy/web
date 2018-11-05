@@ -3,29 +3,94 @@
 </template>
 
 <script>
-export default {
-  mounted() {
-    var disqus_config = function() {
-      let base = "/Web-course-website/";
+  export default {
+    props: {
+      forumShortname: {
+        type: String,
+        required: false,
+        default() {
+          return "web-course";
+        }
+      },
+      pageUuid: {
+        type: String,
+        required: true,
+        validator(uuid) {
+          const pattern =
+            /^[0-9a-f]{8}-[0-9a-f]{4}-[1-5][0-9a-f]{3}-[89ab][0-9a-f]{3}-[0-9a-f]{12}$/i;
+          
+          return pattern.test(uuid);
+        }
+      },
+      pageTitle: {
+        type: String,
+        required: false,
+        default() {
+          return document.pageTitle;
+        }
+      }
+    },
+    
+    computed: {
+      url() {
+        return location.origin + location.pathname;
+      }
+    },
+    
+    methods: {
+      
+      install() {
+        const self = this;
+        
+        window.disqus_config = function() {
+          self.configure(this);
+        };
+        
+        const script = document.createElement("script");
+        script.setAttribute("data-timestamp", Date.now().toString());
+        script.src = `https://${this.forumShortname}.disqus.com/embed.js`;
+        script.type = "text/javascript";
+        script.async = true;
 
-      this.page.url = window.location.origin + base;
-      this.page.identifier = window.location.pathname.replace(base, "");
-      this.page.title = document.title;
-    };
+        (document.head || document.body).appendChild(script);
+      },
+      
+      reset() {
+        const self = this;
+        
+        const observer = new MutationObserver(() => {
+          observer.disconnect();
 
-    (function() {
-      var script = window.document.createElement("script");
-      script.src = "https://web-course.disqus.com/embed.js";
-      script.setAttribute("data-timestamp", +new Date());
+          window.DISQUS.reset({
+            reload: true,
+            config: function() {
+              self.configure(this);
+            }
+          });
+        });
 
-      (window.document.head || window.document.body).appendChild(script);
-    })();
-  }
-};
+        const target = document.getElementsByTagName("title")[0];
+        const config = {childList: true};
+        
+        observer.observe(target, config);
+      },
+      
+      configure(disqus) {
+        const page = disqus.page;
+        page.title = this.pageTitle;
+        page.url = this.url;
+        page.identifier = this.pageUuid;
+      }
+    },
+
+    mounted() {
+      window.DISQUS === undefined ? this.install() : this.reset();
+    }
+  };
 </script>
 
 <style scoped>
-#disqus_thread {
-  margin-top: 5rem;
-}
+  #disqus_thread {
+    margin-top: 5rem;
+  }
 </style>
