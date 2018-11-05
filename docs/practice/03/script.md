@@ -347,6 +347,40 @@ sidebar: auto
 
 Встроенный фрейм [`<iframe>`](https://webref.ru/html/iframe).
 
+<style>
+  .embed {
+    width: 100%;
+  }
+  
+  iframe.embed {
+    height: 400px;
+    border: none;
+  }
+</style>
+
+Пример изображения:
+
+<img class="embed" :src="$withBase('/images/cat.jpeg')">
+
+Пример аудиозаписи:
+
+<audio class="embed" :src="$withBase('/assets/audio.mp3')"
+       controls></audio>
+
+Пример видеоролика с субтитрами:
+
+<video class="embed" :src="$withBase('/assets/video.mp4')" controls>
+  <track kind="subtitles" :src="$withBase('/assets/subtitles.en.vtt')"
+         srclang="en" label="English">
+  <track kind="subtitles" :src="$withBase('/assets/subtitles.ru.vtt')"
+         srclang="ru" label="Русский" default>
+</video>
+
+Пример встроенного фрейма:
+
+<iframe class="embed" src="https://www.youtube.com/embed/aqz-KE-bpKQ?rel=0"
+        allowfullscreen></iframe>
+
 Размеры элементов:
 
 - Ширина [`width`](https://webref.ru/css/width).
@@ -372,6 +406,7 @@ sidebar: auto
     }
     
     iframe {
+      height: 400px;
       border: none;
     }
   </style>
