@@ -1,6 +1,6 @@
 <template>
   <p class="action">
-    <a href="script.html" class="action-button">Открыть сценарий</a>
+    <a href="script.html" target="_blank" class="action-button">Открыть сценарий</a>
   </p>
 </template>
 
