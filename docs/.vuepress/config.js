@@ -1,88 +1,99 @@
 const path = require("path");
 
 module.exports = {
-  base: '/Web-course-website/',
+  base: "/Web-course-website/",
   head: [
-    ['meta', {
-      name: 'author',
-      content: 'Владислав Люминарский'
-    }],
-    ['meta', {
-      name: 'theme-color',
-      content: '#3eaf7c'
-    }],
-    ['link', {
-      rel: 'icon',
-      href: '/icons/icon512.png'
-    }],
-    ['link', {
-      rel: 'manifest',
-      href: '/manifest.webmanifest'
-    }],
-    ['link', {
-      rel: 'license',
-      href: '/LICENSE'
-    }]
+    [
+      "meta", {
+      name: "author",
+      content: "Владислав Люминарский"
+    }
+    ],
+    [
+      "meta", {
+      name: "theme-color",
+      content: "#3eaf7c"
+    }
+    ],
+    [
+      "link", {
+      rel: "icon",
+      href: "/icons/icon512.png"
+    }
+    ],
+    [
+      "link", {
+      rel: "manifest",
+      href: "/manifest.webmanifest"
+    }
+    ],
+    [
+      "link", {
+      rel: "license",
+      href: "/LICENSE"
+    }
+    ]
   ],
   locales: {
-    '/': {
-      lang: 'ru-RU',
-      title: 'Web-программирование',
-      description: 'Учебные материалы по курсу "Web-программирование"'
+    "/": {
+      lang: "ru-RU",
+      title: "Web-программирование",
+      description: "Учебные материалы по курсу \"Web-программирование\""
     }
   },
   themeConfig: {
     nav: [
       {
-        text: 'О курсе',
-        link: '/about/'
+        text: "О курсе",
+        link: "/about/"
       },
       {
-        text: 'Практика',
-        link: '/practice/'
+        text: "Практика",
+        link: "/practice/"
       },
       {
-        text: 'Лабораторные',
-        link: '/labs/'
+        text: "Лабораторные",
+        link: "/labs/"
       },
       {
-        text: 'Экзамен',
-        link: '/exam/'
+        text: "Экзамен",
+        link: "/exam/"
       }
     ],
     sidebar: {
-      '/practice/': [
-        '',
+      "/practice/": [
+        "",
         {
-          title: 'HTML и CSS',
+          title: "HTML и CSS",
           collapsable: false,
           children: [
-            '01/',
-            '02/',
-            '03/',
-            '04/',
-            '05/'
+            "01/",
+            "02/",
+            "03/",
+            "04/",
+            "05/",
+            "06/"
           ]
         },
         {
-          title: 'JavaScript',
+          title: "JavaScript",
           collapsable: false
         }
       ],
-      '/labs/': [
-        '',
+      "/labs/": [
+        "",
         {
-          title: 'Лабораторные работы',
+          title: "Лабораторные работы",
           collapsable: false,
           children: []
         }
       ]
     },
-    lastUpdated: 'Последнее обновление',
-    repo: 'Vladislav-Lyuminarskiy/Web-course',
-    docsDir: 'docs',
+    lastUpdated: "Последнее обновление",
+    repo: "Vladislav-Lyuminarskiy/Web-course",
+    docsDir: "docs",
     editLinks: true,
-    editLinkText: 'Редактировать эту страницу',
+    editLinkText: "Редактировать эту страницу",
     serviceWorker: {
       updatePopup: {
         message: "Доступно новое содержимое.",
@@ -90,8 +101,8 @@ module.exports = {
       }
     },
     algolia: {
-      apiKey: '892ad28dc056e1eb225c126678ef1c09',
-      indexName: 'c_vladislav',
+      apiKey: "892ad28dc056e1eb225c126678ef1c09",
+      indexName: "c_vladislav",
       algoliaOptions: {
         facetFilters: ["tags:web"]
       }
