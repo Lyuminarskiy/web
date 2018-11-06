@@ -47,7 +47,7 @@
         script.src = `https://${this.forumShortname}.disqus.com/embed.js`;
         script.type = "text/javascript";
         script.async = true;
-
+        
         (document.head || document.body).appendChild(script);
       },
       
@@ -56,7 +56,7 @@
         
         const observer = new MutationObserver(() => {
           observer.disconnect();
-
+          
           window.DISQUS.reset({
             reload: true,
             config: function() {
@@ -64,7 +64,7 @@
             }
           });
         });
-
+        
         const target = document.getElementsByTagName("title")[0];
         const config = {childList: true};
         
@@ -78,7 +78,7 @@
         page.title = this.pageTitle;
       }
     },
-
+    
     mounted() {
       window.DISQUS === undefined ? this.install() : this.reset();
     }
