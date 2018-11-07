@@ -6,6 +6,14 @@ sidebar: auto
 
 ## Общая информация
 
+::: warning Обратите внимание!
+[Вложенный](https://webref.ru/css/selector/descendant),
+[дочерний](https://webref.ru/css/selector/child),
+[соседний](https://webref.ru/css/selector/adjacent) и
+[родственный](https://webref.ru/css/selector/sibling) селекторы лучше называть
+**комбинаторами**.
+:::
+
 Затраты времени (из доступных **180 минут**):
 
 - **80-90 минут** - объяснение материала.
