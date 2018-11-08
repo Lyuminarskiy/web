@@ -11,7 +11,7 @@
 функция [`var()`](https://webref.ru/css/value/var).
 - Вычисляемые значения свойств с помощью функций
 [`attr()`](https://webref.ru/css/value/attr) и
-[`calc()`](https://webref.ru/css/value/attr).
+[`calc()`](https://webref.ru/css/value/calc).
 
 ## Теоретические сведения
 

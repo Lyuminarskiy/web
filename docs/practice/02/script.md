@@ -193,7 +193,7 @@ sidebar: auto
 </head>
 
 <body>
-  <p id="about">Блок текста</p>
+  <p id="about">Абзац</p>
   
   <p class="blue-text">Синий текст</p>
   <p class="yellow-background">Текст на жёлтом фоне</p>
@@ -239,7 +239,7 @@ sidebar: auto
 </head>
 
 <body>
-  <p id="about">Блок текста</p>
+  <p id="about">Абзац</p>
   <p class="blue-text">Синий текст</p>
 </body>
 
@@ -382,7 +382,7 @@ sidebar: auto
 
 <body>
   <h1>Заголовок</h1>
-  <p>Блок текста</p>
+  <p>Абзац</p>
 </body>
 
 </html>
