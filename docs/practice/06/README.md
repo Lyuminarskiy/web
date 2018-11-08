@@ -31,7 +31,14 @@
   - Метка [`<label>`](https://webref.ru/html/label).
   - Группа элементов [`<fieldset>`](https://webref.ru/html/fieldset) с 
   заголовком [`<legend>`](https://webref.ru/html/legend).
-  - Общий для элементов форм атрибут блокировки
+  
+- Общие для элементов форм атрибуты:
+ 
+  - Уникальное имя элемента формы
+  [`name`](https://webref.ru/html/input/name).
+  - Установка поля формы обязательным для заполнения
+  [`required`](https://webref.ru/html/input/required).
+  - Блокировка доступа к полю формы
   [`disabled`](https://webref.ru/html/input/disabled).
 
 ### CSS

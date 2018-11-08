@@ -589,7 +589,7 @@ CSS предоставляет возможность полностью отм�
 
 ### CSS Grid Layout
 
-[A Complete Guide to Grid
+Отличная статья по теме: [A Complete Guide to Grid
 ](https://css-tricks.com/snippets/css/complete-guide-grid)
 
 CSS Grid Layout:
