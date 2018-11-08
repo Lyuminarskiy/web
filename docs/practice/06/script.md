@@ -35,25 +35,7 @@ CSS Flexible box Layout:
 - Выравнивание элементов вдоль побочной оси [`align-items`
 ](https://developer.mozilla.org/ru/docs/Web/CSS/align-items).
 - Фактор расширения элементов [`flex-grow`
-](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow)
-
-Псевдоклассы для стилизации форм:
-
-- Доступные [`:enabled`](https://webref.ru/css/enabled) и
-заблокированные [`:disabled`](https://webref.ru/css/disabled) поля формы.
-- Необязательные [`:optional`](https://webref.ru/css/optional) и
-обязательные [`:required`](https://webref.ru/css/required) поля формы.
-- Поле формы, значение которого доступно
-[`:read-write`](https://webref.ru/css/read-write) или недоступно
-[`:read-only`](https://webref.ru/css/read-only) для изменения.
-- Содержимое поля формы соответствует
-[`:valid`](https://webref.ru/css/valid) или не соответствует
-[`:invalid`](https://webref.ru/css/invalid) указанному типу.
-- Значение поля формы входит
-[`:in-range`](https://webref.ru/css/in-range) или не входит
-[`:out-of-range`](https://webref.ru/css/out-of-range) в заданный диапазон.
-- Поле формы, находящееся в состоянии "включено"
-[`checked`](https://webref.ru/css/checked).
+](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow).
 
 Направление основной оси [`flex-direction`
   ](https://developer.mozilla.org/ru/docs/Web/CSS/flex-direction). Возможные 
@@ -238,6 +220,12 @@ group — группа вариантов_) представляет собой 
 значения элементов формы при щелчке курсором мыши на текст. Кроме того, с 
 помощью [`<label>`](https://webref.ru/html/label) можно устанавливать 
 горячие клавиши на клавиатуре и переходить на активный элемент подобно ссылкам.
+Существует два способа связывания объекта и метки. Первый заключается в 
+использовании идентификатора [`id`](https://webref.ru/html/attr/id) внутри 
+элемента формы и указании его имени в качестве атрибута
+[`for`](https://webref.ru/html/label/for) элемента
+[`<label>`](https://webref.ru/html/label). При втором способе элемент формы 
+помещается внутрь контейнера [`<label>`](https://webref.ru/html/label).
 - Элемент [`<fieldset>`](https://webref.ru/html/fieldset) (от _англ. form 
 field set — набор полей формы_) предназначен для группирования элементов 
 формы. Такая группировка облегчает работу с формами, содержащими большое 

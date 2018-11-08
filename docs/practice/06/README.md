@@ -52,7 +52,7 @@
   - Выравнивание элементов вдоль побочной оси [`align-items`
   ](https://developer.mozilla.org/ru/docs/Web/CSS/align-items).
   - Фактор расширения элементов [`flex-grow`
-  ](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow)
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow).
   
 - Псевдоклассы для стилизации форм:
 
