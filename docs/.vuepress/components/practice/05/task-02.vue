@@ -144,6 +144,7 @@
   padding-left: 10px;
   border-bottom: 3px dotted black;
   margin-left: -10px;
+  text-align: center;
   background-color: rgba(100%, 100%, 100%, 0.8);
 }
 </style>
