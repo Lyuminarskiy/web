@@ -21,16 +21,55 @@ sidebar: auto
 
 Кратко напомнить содержимое предыдущего занятия.
 
-### @-правила
+### @-правила и медиазапросы
 
 - Правило [`@charset`](https://webref.ru/css/charset) применяется для 
 задания кодировки внешнего CSS-файла. Это имеет значение в том случае, если 
-в CSS-файле используются символы национального алфавита.
+в CSS-файле используются символы национального алфавита. Синтаксис:
+
+```css
+@charset "<кодировка>";
+```
+
 - Правило [`@import`](https://webref.ru/css/import) позволяет импортировать 
 содержимое файла CSS в текущую стилевую таблицу.
 Правило [`@import`](https://webref.ru/css/import) не разрешается вставлять 
 после любых объявлений кроме [`@charset`](https://webref.ru/css/charset) или 
-другого [`@import`](https://webref.ru/css/import).
+другого [`@import`](https://webref.ru/css/import). Синтаксис:
+
+```css
+@import url("<имя файла>") [типы носителей];
+@import "<имя файла>" [типы носителей];
+```
+
+- Правило [`@media`](https://webref.ru/css/media) позволяет указать тип 
+носителя, для которого будет применяться указанный стиль. Синтаксис:
+
+```css
+@media /* <тип носителя> */ {
+  /* <стилевые правила> */
+}
+```
+
+[Медиа-запросы](https://webref.ru/css/value/media):
+
+- Типы носителей:
+
+  - `all` - все типы.
+  - `print` - принтеры и другие печатающие устройства.
+  - `screen` - экран монитора.
+  - `speech` - речевые синтезаторы.
+  
+- Логические операторы:
+
+  - `all` - логическое `И`.
+  - `not` - логическое `НЕ`.
+  
+- Медиа-функции:
+
+  - `orientation` - ориентация устройства.
+  - `width`, `min-width` и `max-width` - ширина отображаемой области.
+  - `height`, `min-height` и `max-height` - высота отображаемой области.
 
 Пример применения @-правил:
 
@@ -40,9 +79,30 @@ sidebar: auto
 @import url("mobile.css") (max-width: 767px);
 @import url("tablet.css") (min-width: 768px) and (max-width: 1023px);
 @import url("desktop.css") (min-width: 1024px);
+
+@media (max-width: 767px) {
+  /* Стилевые правила для мобильных устройств. */
+}
+
+@media (min-width: 768px) and (max-width: 1023px) {
+  /* Стилевые правила для планшетных компьютеров. */
+}
+
+@media (min-width: 1024px) {
+  /* Стилевые правила для настольных компьютеров. */
+}
+
 ```
 
 ### Трансформации
+
+- Применение трасформации [`transform`](https://webref.ru/css/transform).
+- Установка точки, относительно которой будет происходить трансформация
+[`transform-origin`](https://webref.ru/css/transform-origin)
+- Функция поворота `rotate(<угол>)`.
+- Функция растяжения `scale(<ось X>, <ось Y>)`.
+- Функция перемещения `translate(<ось X>, <ось Y>)`.
+- Функция наклона `skew(<ось X>, <ось Y>)`.
 
 ```css
 {
@@ -80,7 +140,18 @@ sidebar: auto
 }
 ```
 
-### Анимации и переходы
+### Переходы
+
+- Указание свойства, к которому будет применяться эффект перехода
+[`transition-property`](https://webref.ru/css/transition-property).
+- Длительность эффекта перехода
+[`transition-duration`](https://webref.ru/css/transition-duration).
+- Задержка перед запуском эффекта перехода
+[`transition-delay`](https://webref.ru/css/transition-delay).
+- Функция для вычисление промежуточных значений при переходе
+[`transition-timing-function`
+](https://webref.ru/css/transition-timing-function).  
+- Универсальное свойство [`transition`](https://webref.ru/css/transition).
 
 ```css
 {
@@ -118,7 +189,32 @@ sidebar: auto
   transition: background-color 4s ease-in-out 1s;
   transition: background-color 4s ease-in-out 1s, color 1s linear 3s;
 }
+```
 
+### Анимации
+
+- Задание ключевых кадров [`@keyframes`](https://webref.ru/css/keyframes).
+- Указание идентификатора анимации
+[`animation-name`](https://webref.ru/css/animation-name).
+- Длительность анимации
+[`animation-duration`](https://webref.ru/css/animation-duration).
+- Задержка перед запуском анимации
+[`animation-delay`](https://webref.ru/css/animation-delay).
+- Функция для вычисление промежуточных значений при анимации
+[`animation-timing-function`
+](https://webref.ru/css/animation-timing-function).
+- Число повторений анимации
+[`animation-iteration-count`
+](https://webref.ru/css/animation-iteration-count).
+- Направление движения анимации
+[`animation-direction`](https://webref.ru/css/animation-direction).
+- Стили, которые применяются, когда анимация не проигрывается
+[`animation-fill-mode`](https://webref.ru/css/animation-fill-mode).
+- Текущее состояние анимации
+[`animation-play-state`](https://webref.ru/css/animation-play-state).
+- Универсальное свойство [`animation`](https://webref.ru/css/animation).
+
+```css
 @keyframes animation1  {
   /* Начальное состояние. */
   from {
@@ -177,7 +273,6 @@ sidebar: auto
   animation-timing-function: steps(3, start);
   animation-timing-function: steps(2, start);
   animation-timing-function: steps(4, end);
-  animation-timing-function: frames(10);
 
   /* Задержка перед выполнением перехода для свойств */
   animation-delay: 3s;
@@ -216,7 +311,27 @@ sidebar: auto
 }
 ```
 
-### Фон
+### Установка фона элемента
+
+- Фоновое изображение
+[`background-image`](https://webref.ru/css/background-image).
+- Начальное положение фонового изображения
+[`background-position`](https://webref.ru/css/background-position).
+- Масшабирование фонового изображения
+[`background-size`](https://webref.ru/css/background-size).
+- Повторение фонового изображения
+[`background-repeat`](https://webref.ru/css/background-repeat).
+- Поведение фонового изображения при прокрутке
+[`background-attachment`](https://webref.ru/css/background-attachment).
+- Универсальное свойство [`background`](https://webref.ru/css/background).
+- Линейные градиенты
+[`linear-gradient()`](https://webref.ru/css/value/linear-gradient) и
+[`repeating-linear-gradient()`
+](https://webref.ru/css/value/repeating-linear-gradient).
+- Радиальные градиенты
+[`radial-gradient()`](https://webref.ru/css/value/radial-gradient) и
+[`repeating-radial-gradient()`
+](https://webref.ru/css/value/repeating-radial-gradient).
 
 ```css
 * {
@@ -313,27 +428,29 @@ sidebar: auto
   background-image: linear-gradient(top, red, orange, yellow, green, lightblue, blue, purple);
 
   /* Опорные точки */
-  background-image: linear-gradient(top, red 20%, green 50%, blue 80%);
+  background-image: linear-gradient(to top, red 20%, green 50%, blue 80%);
 
   /* Повторяющийся линейный градиент (угол, список цветов) */
-  background-image: repeating-linear-gradient(left, black, white);
-  background-image: -webkit-repeating-linear-gradient(left, black, white);
-  background-image: -moz-repeating-linear-gradient(left, black, white);
+  background-image: repeating-linear-gradient(to left, black, white);
+  background-image: repeating-linear-gradient(-45deg, #fff, #fff 25px, #e2edc1 25px, #e2edc1 50px);
 
   /* Радиальный градиент (форма, радиус, позиция, список цветов, размер) */
-  background-image: radial-gradient(left, black, white);
-  background-image: -webkit-radial-gradient(left, black, white);
-  background-image: -moz-radial-gradient(left, black, white);
+  background-image: radial-gradient(circle, black, white);
 
   /* Повторяющийся радиальный градиент (форма, радиус, позиция, список цветов, размер) */
-  background-image: repeating-radial-gradient(left, black, white);
-  background-image: -webkit-repeating-radial-gradient(left, black, white);
-  background-image: -moz-repeating-radial-gradient(left, black, white);
-
-  background-image: -webkit-repeating-linear-gradient(left top, rgba(41, 99, 156, 0.5), rgba(41, 99, 156, 0.5) 3%, transparent 3%, transparent 6%),
-  -webkit-repeating-linear-gradient(left bottom, rgba(211, 47, 47, 0.5), rgba(211, 47, 47, 0.5) 3%, transparent 3%, transparent 6%);
+  background-image: repeating-radial-gradient(circle, black, white);
+  background-image: repeating-radial-gradient(circle at 200px 100px, #fff, #fff 25px, #fce3ee 25px, #fce3ee 50px);
 }
 ```
+
+### Работа с инструментами разработчика Chrome
+
+Открыть пример с анимацией и продемонстрировать на нём:
+
+- Просмотр и изменение дерева элементов и правил CSS.
+- Запись и воспроизведение анимаций.
+- Переключение текущего медиа-типа устройства. 
+- Инструменты проверки адаптивной вёрстки.
 
 ### Заключение
 
