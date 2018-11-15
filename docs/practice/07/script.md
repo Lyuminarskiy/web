@@ -73,25 +73,74 @@ sidebar: auto
 
 Пример применения @-правил:
 
-```css
-@charset "utf-8";
+```html
+<!DOCTYPE html>
 
-@import url("mobile.css") (max-width: 767px);
-@import url("tablet.css") (min-width: 768px) and (max-width: 1023px);
-@import url("desktop.css") (min-width: 1024px);
+<html lang="ru">
 
-@media (max-width: 767px) {
-  /* Стилевые правила для мобильных устройств. */
-}
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок документа</title>
+  <style>
+    body {
+      display: grid;
+      grid-template: repeat(3, 1fr) 3fr / repeat(2, 1fr);
+      grid-gap: 5px;
+      grid-template-areas:
+        "header header"
+        "main   aside"
+        "main   footer"
+        "main   ."
+                
+      height: 100vh;
+      margin: 0;
+    }
+    
+    @media (max-width: 300px) {
+      body {
+        grid-template: repeat(2, 1fr) 3fr 1fr / auto;
+        grid-template-areas:
+          "header"
+          "aside "
+          "main  "
+          "footer"
+      }
+    }
+    
+    div {
+      border: 1px solid black;
+    }
+    
+    .block1 {
+      grid-area: header;
+      background-color: green;
+    }
+    
+    .block2 {
+      grid-area: main;
+      background-color: yellow;
+    }
+    
+    .block3 {
+      grid-area: aside;
+      background-color: red;
+    }
+    
+    .block4 {
+      grid-area: footer;
+      background-color: blue;
+    }
+  </style>
+</head>
 
-@media (min-width: 768px) and (max-width: 1023px) {
-  /* Стилевые правила для планшетных компьютеров. */
-}
+<body>
+  <div class="block1"></div>
+  <div class="block2"></div>
+  <div class="block3"></div>
+  <div class="block4"></div>
+</body>
 
-@media (min-width: 1024px) {
-  /* Стилевые правила для настольных компьютеров. */
-}
-
+</html>
 ```
 
 ### Трансформации
@@ -138,6 +187,51 @@ sidebar: auto
   transform-origin: right bottom -20px;
   transform-origin: 30px 20% 80px;
 }
+```
+
+Пример применения трансформаций:
+
+```html
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок документа</title>
+  <style>
+    .block1, .block2 {
+      position: absolute;
+      top: calc(50vh - 100px / 2);
+      left: calc(50vw - 100px / 2);
+      
+      width: 100px;
+      height: 100px;
+    }
+
+    .block1 {
+      border: 1px dashed black;
+      background-color: lightgrey;
+    }
+
+    .block2 {
+      border: 1px solid black;
+      background-color: red;
+      transform-origin: left top;
+    }
+
+    .block2:hover {
+      transform: rotate(45deg);
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block1"></div>
+  <div class="block2"></div>
+</body>
+
+</html>
 ```
 
 ### Переходы
@@ -189,6 +283,53 @@ sidebar: auto
   transition: background-color 4s ease-in-out 1s;
   transition: background-color 4s ease-in-out 1s, color 1s linear 3s;
 }
+```
+
+Пример применения переходов:
+
+```html
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок документа</title>
+  <style>
+    .block1, .block2 {
+      position: absolute;
+      top: calc(50vh - 100px / 2);
+      left: calc(50vw - 100px / 2);
+      width: 100px;
+      height: 100px;
+    }
+
+    .block1 {
+      border: 1px dashed black;
+      background-color: lightgrey;
+    }
+
+    .block2 {
+      border: 1px solid black;
+      background-color: red;
+      transform-origin: left top;
+      transition: all 2s ease;
+    }
+
+    .block2:hover {
+      transform: rotate(45deg);
+      background-color: green;
+      opacity: 0.8;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block1"></div>
+  <div class="block2"></div>
+</body>
+
+</html>
 ```
 
 ### Анимации
@@ -311,6 +452,82 @@ sidebar: auto
 }
 ```
 
+Пример применения анимации:
+
+```html
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок документа</title>
+  <style>
+    .block1, .block2 {
+      position: absolute;
+      top: calc(50vh - 100px / 2);
+      left: calc(50vw - 100px / 2);
+      width: 100px;
+      height: 100px;
+    }
+
+    .block1 {
+      border: 1px dashed black;
+      background-color: lightgrey;
+    }
+
+    .block2 {
+      border: 1px solid black;
+      background-color: red;
+
+      animation: rainbow-rotate 5s linear infinite;
+    }
+
+    .block2:hover {
+      animation-play-state: paused;
+    }
+
+    @keyframes rainbow-rotate {
+      from {
+        transform: none;
+      }
+
+      17% {
+        background-color: orange;
+      }
+
+      33% {
+        background-color: yellow;
+      }
+
+      50% {
+        background-color: green;
+      }
+
+      67% {
+        background-color: lightblue;
+      }
+
+      83% {
+        background-color: blue;
+      }
+
+      to {
+        transform: rotate(1turn);
+        background-color: purple;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="block1"></div>
+  <div class="block2"></div>
+</body>
+
+</html>
+```
+
 ### Установка фона элемента
 
 - Фоновое изображение
@@ -403,12 +620,36 @@ sidebar: auto
 }
 ```
 
+Пример установки фона элемента:
+
+```html
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок документа</title>
+  <style>
+    body {
+      height: 2000px;
+      margin: 0;
+      
+      background-size: 40% auto;
+      background: url("cat.jpeg") space fixed 30px 30px;
+    }
+  </style>
+</head>
+
+<body></body>
+
+</html>
+```
+
 ```css
 {
   /* Линейный градиент (угол, список цветов) */
   background-image: linear-gradient(left, black, white);
-  background-image: -webkit-linear-gradient(left, black, white);
-  background-image: -moz-linear-gradient(left, black, white);
 
   /* Углы градиента */
   background-image: linear-gradient(top, black, white);
@@ -441,6 +682,64 @@ sidebar: auto
   background-image: repeating-radial-gradient(circle, black, white);
   background-image: repeating-radial-gradient(circle at 200px 100px, #fff, #fff 25px, #fce3ee 25px, #fce3ee 50px);
 }
+```
+
+Пример работы с линейными градиентами:
+
+```html
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок документа</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      
+      background-image:
+        repeating-linear-gradient(45deg, #0000, #0000 20px, #f007 20px,
+          #f007 40px),
+        repeating-linear-gradient(-45deg, #0000, #0000 20px, #0f07 20px, 
+          #0f07 40px);
+    }
+  </style>
+</head>
+
+<body></body>
+
+</html>
+```
+
+Пример работы с радиальными градиентами:
+
+```html
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Заголовок документа</title>
+  <style>
+    body {
+      height: 100vh;
+      margin: 0;
+      
+      background-image:
+        repeating-radial-gradient(circle at center 40%, #0000, #0000 20px,
+          #f007 20px, #f007 40px),
+        repeating-radial-gradient(circle at center 60%, #0000, #0000 20px,
+          #f007 20px, #f007 40px),
+    }
+  </style>
+</head>
+
+<body></body>
+
+</html>
 ```
 
 ### Работа с инструментами разработчика Chrome
