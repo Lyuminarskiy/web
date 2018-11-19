@@ -163,9 +163,9 @@
 элемента-контейнера.
 :::
 
+<script-button/>
+
 <disqus-comments
   page-uuid="9f516f8d-5063-43f1-a1cc-82c5b66b627b"
   page-title="6. Flexbox. Формы. Пользовательские свойства и
     вычисляемые значения | Практические занятия"/>
-
-<script-button/>
