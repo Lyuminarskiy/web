@@ -33,6 +33,8 @@
     --blue: rgb(72, 133, 237);
     --yellow: rgb(244, 194, 13);
     
+    --article-height: 200px;
+    
     height: 500px;
     overflow-y: scroll;
   }
@@ -72,7 +74,7 @@
   
   .page-content {
     grid-area: content;
-    padding: 10px 0 100px 0;
+    padding: 10px 0 calc(var(--article-height) / 2) 0;
     background-color: var(--yellow);
   }
   
@@ -83,7 +85,6 @@
   
   .page-navbar {
     display: flex;
-    justify-content: space-between;
     align-items: center;
     
     height: 100%;
@@ -98,14 +99,12 @@
     margin: 0 10px;
   
     text-align: center;
-    vert-align: middle;
     color: var(--yellow);
   }
   
   .page-articles {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
   
     height: 100%;
@@ -114,7 +113,7 @@
   .page-articles > .page-article {
     box-sizing: border-box;
     width: 80%;
-    height: 200px;
+    height: var(--article-height);
     padding: 10px;
     border: 1px solid var(--blue);
     margin: 10px 0;
