@@ -40,8 +40,8 @@
       
       <fieldset>
         <label>
-          <span>Фотография профиля:</span>
-          <input type="file" accept="image/*">
+          <span>Изображение профиля:</span>
+          <input type="file" name="avatar" accept="image/*">
         </label>
         <label>
           <span>Город:</span>
