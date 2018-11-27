@@ -87,7 +87,9 @@ module.exports = {
         {
           title: "Лабораторные работы",
           collapsable: false,
-          children: []
+          children: [
+            "01/"
+          ]
         }
       ]
     },
