@@ -37,3 +37,13 @@ next: /practice/
 
 - [Современный учебник Javascript](https://learn.javascript.ru)
 - [Учебник JavaScript](https://professorweb.ru/my/javascript/js_theory/level1/javascript_index.php)
+
+## Обратная связь
+
+По всем вопросам, возникшим в ходе курса, вы можете получить ответ, отправив
+письмо на почту <a href='mailto:Vladislav.Lyuminarskiy@gmail.com
+?subject=Web-программирование,%20Иванов%20Иван%20Иванович'
+target='_blank'>Vladislav.Lyuminarskiy@gmail.com</a>.
+В теме письма укажите название курса и Ф.И.О., например:
+
+`Web-программирование, группа 3-19-1од, Иванов Иван Иванович`
