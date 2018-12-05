@@ -20,16 +20,75 @@
 
 ### Ultim8
 
-![Ultim8](./assets/ultim8.jpg)
+![Внешний вид](assets/Ultim8.jpg)
 [Открыть предпросмотр](https://colorlib.com/wp/template/ultim8/) |
 [Скачать исходный код](https://colorlib.com/download/1703/)
 
-**Ultim8** - шаблон веб-сайта для любого вида деятельности. Он разработан с 
-учётом мобильных браузеров и экранов с высоким разрешением. Помимо эффекта 
-печатной машинки и слайд-шоу, на макете присутствует анимированная 
-статистика, ценовые планы, отзывы и форма обратной связи. Также на макете вы 
-найдёте форму подписки на новостную рассылку и ссылки на последние записи из 
-блога.
+### Unapp
+
+![Внешний вид](./assets/Unapp.jpg)
+[Открыть предпросмотр](https://colorlib.com/preview/#unapp) |
+[Скачать исходный код](https://colorlib.com/download/1059/)
+
+### Glint
+
+![Внешний вид](./assets/Glint.jpg)
+[Открыть предпросмотр](https://colorlib.com/demo?theme=glint) |
+[Скачать исходный код](https://colorlib.com/download/81/)
+
+### Transcend
+
+![Внешний вид](./assets/Transcend.jpg)
+[Открыть предпросмотр](https://colorlib.com/preview/#transcend) |
+[Скачать исходный код](https://colorlib.com/download/888/)
+
+### CVPortfolio
+
+![Внешний вид](./assets/CVPortfolio.jpg)
+[Открыть предпросмотр](https://colorlib.com/preview/#cvportfolio) |
+[Скачать исходный код](https://colorlib.com/download/526/)
+
+### CA App Landing
+
+![Внешний вид](./assets/CA_App_Landing.jpg)
+[Открыть предпросмотр](https://colorlib.com/demo?theme=ca-app) |
+[Скачать исходный код](https://colorlib.com/download/55/)
+
+### BizPro
+
+![Внешний вид](./assets/BizPro.jpg)
+[Открыть предпросмотр](https://colorlib.com/demo?theme=bizpro) |
+[Скачать исходный код](https://colorlib.com/download/125/)
+
+### Boxus
+
+![Внешний вид](./assets/BizPro.jpg)
+[Открыть предпросмотр](https://colorlib.com/demo?theme=boxus) |
+[Скачать исходный код](https://colorlib.com/download/67/)
+
+### Creative Agency
+
+![Внешний вид](./assets/Creative_Agency.jpg)
+[Открыть предпросмотр](https://colorlib.com/demo?theme=creative-agency) |
+[Скачать исходный код](https://colorlib.com/download/63/)
+
+### Bobsled
+
+![Внешний вид](./assets/Bobsled.jpg)
+[Открыть предпросмотр](https://colorlib.com/demo?theme=Bobsled) |
+[Скачать исходный код](https://colorlib.com/download/49/)
+
+### Datarc
+
+![Внешний вид](./assets/Datarc.jpg)
+[Открыть предпросмотр](https://colorlib.com/demo?theme=datarc) |
+[Скачать исходный код](https://colorlib.com/download/83/)
+
+### Celt
+
+![Внешний вид](./assets/Celt.jpg)
+[Открыть предпросмотр](https://colorlib.com/demo?theme=Celt) |
+[Скачать исходный код](https://colorlib.com/download/23/)
 
 ## Задачи
 
