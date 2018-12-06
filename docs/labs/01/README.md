@@ -20,7 +20,7 @@
 
 ### Ultim8
 
-![Внешний вид](assets/Ultim8.jpg)
+![Внешний вид](./assets/Ultim8.jpg)
 [Открыть предпросмотр](https://colorlib.com/wp/template/ultim8/) |
 [Скачать исходный код](https://colorlib.com/download/1703/)
 
