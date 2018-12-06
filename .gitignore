@@ -1,6 +1,8 @@
 node_modules
 **/dist
 
+.vscode
+
 .idea/**
 !.idea/Web-course.iml
 !.idea/modules.xml
