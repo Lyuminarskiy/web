@@ -1,7 +1,6 @@
 const path = require("path");
 
 module.exports = {
-  base: "/Web-course-website/",
   head: [
     [
       "meta", {
@@ -94,7 +93,7 @@ module.exports = {
       ]
     },
     lastUpdated: "Последнее обновление",
-    repo: "Vladislav-Lyuminarskiy/Web-course",
+    repo: "Web-courses/Web-course",
     docsDir: "docs",
     editLinks: true,
     editLinkText: "Редактировать эту страницу",

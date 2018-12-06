@@ -3,18 +3,17 @@
   "name": "Web-программирование",
   "short_name": "Web-программирование",
   "description": "Учебные материалы по курсу \"Web-программирование\".",
-  "start_url": "/Web-course-website",
   "theme_color": "#3eaf7c",
   "background_color": "#3eaf7c",
   "display": "standalone",
   "orientation": "any",
   "icons": [{
-      "src": "/Web-course-website/icons/icon192.png",
+      "src": "/icons/icon192.png",
       "type": "image/png",
       "sizes": "192x192"
     },
     {
-      "src": "/Web-course-website/icons/icon512.png",
+      "src": "/icons/icon512.png",
       "type": "image/png",
       "sizes": "512x512"
     }
