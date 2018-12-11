@@ -78,7 +78,10 @@ module.exports = {
         },
         {
           title: "JavaScript",
-          collapsable: false
+          collapsable: false,
+          children: [
+            "09/"
+          ]
         }
       ],
       "/labs/": [
