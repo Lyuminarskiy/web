@@ -80,7 +80,8 @@ module.exports = {
           title: "JavaScript",
           collapsable: false,
           children: [
-            "09/"
+            "09/",
+            "10/"
           ]
         }
       ],

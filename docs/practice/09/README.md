@@ -7,6 +7,7 @@
 - [Типы данных](https://learn.javascript.ru/types-intro) и оператор [`typeof`
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof).
 - [Основные операторы](https://learn.javascript.ru/operators).
+- [Преобразования типов](https://learn.javascript.ru/types-conversion).
 - [Переменные](https://learn.javascript.ru/let-const).
 - Глобальный объект 
 [window](https://developer.mozilla.org/ru/docs/Web/API/Window) и его свойства.

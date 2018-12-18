@@ -38,20 +38,12 @@ sidebar: auto
 - JS in Browser.
 - Node.js.
 
-### 2.2. 
-
-- Элемент script
-- Условные операторы
-- Циклы
-- switch
-- Функции, функциональные выражения
-- Отладка кода в браузере
-- Методы работы с консолью
-
 ### 2.3.
 
 - Отладка кода через VS Code.
 - Функции встроенных объектов.
+- [Деструктуризация](https://learn.javascript.ru/destructuring).
+- [Модули](https://learn.javascript.ru/modules).
 
 
 
