@@ -113,7 +113,7 @@
 ### Bobsled
 
 ![Внешний вид](./assets/Bobsled.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=Bobsled) |
+[Открыть предпросмотр](https://colorlib.com/demo?theme=bobsled) |
 [Скачать исходный код](https://colorlib.com/download/49/)
 
 **Bobsled** - чистый и минималистичный макет веб-сайта - целевой страницы для 
