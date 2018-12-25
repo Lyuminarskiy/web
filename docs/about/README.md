@@ -13,6 +13,7 @@ next: /practice/
 - Расширения [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) и [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek) позволят вам достичь синергии при работе с HTML и CSS.
 - Расширения [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) и [Russian - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-russian) помогут не допустить орфографических ошибок в тексте.
 - Расширения [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) и [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) за счёт цветового оформления упростят ориентацию в коде в большим уровнем вложенности.
+- Расширение [Auto Close Tag](https://marketplace.visualstudio.com/items?itemName=formulahendry.auto-close-tagr) автоматически будет ставить закрывающий HTML тэг для ускорения решения заданий.
 
 ## Ссылки
 
