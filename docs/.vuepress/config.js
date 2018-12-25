@@ -81,7 +81,8 @@ module.exports = {
           collapsable: false,
           children: [
             "09/",
-            "10/"
+            "10/",
+            "11/"
           ]
         }
       ],

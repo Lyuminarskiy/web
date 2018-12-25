@@ -61,5 +61,3 @@
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let).
   - Константа с блочной областью видимости [`const`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const).
-
-<script-button/>
