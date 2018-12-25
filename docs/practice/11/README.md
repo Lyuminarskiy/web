@@ -5,8 +5,10 @@
 - [Стандартные встроенные объекты
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects),
 их свойства и методы.
-- [Оператор распространения `...`
+- [Оператор `...`
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+- [Оператор `new`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new).
 - Отладка кода с помощью [Visual Studio Code](https://code.visualstudio.com).
 
 ## Теоретические сведения
@@ -17,25 +19,27 @@
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects),
 их свойства и методы:
 
-  - `Object`:
+  - Объект `Number` и числа:
   
-    - `Object.keys()`
+  - Объект `String` и строки:
+  
+  - Массивы:
+  
+  - Объект `Object`:
     
-  - `Number`:
+  - Объект `Math`:
   
-    - `Number.isInteger(value)`
-    - `Number.isFinite(value)`
-    - `Number.isNaN(value)`
-    - `numObj.toFixed([digits])`
-    - `numObj.toPrecision([precision])`
-    
-  - `Math`:
-  
-    - `Math.PI`, `Math.E`, ...
-    - `Math.sin()`, `Math.cos()`, ...
-    - `Math.max()`, `Math.min()`
+  - Объект `Date`:
+
+- [Оператор `...`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+
+- [Оператор `new`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new).
   
 ### Visual Studio Code
+
+#### Настройка отладки
 
 Для отладки кода с помощью [Visual Studio Code](https://code.visualstudio.com)
 у вас должны быть установлены следующие расширения:
@@ -54,15 +58,31 @@
 }
 ```
 
-Добавьте конфигурацию отладки `Chrome: Attach` с помощью меню `Отладка → 
-Добавить конфигурацию...`:
+Добавьте конфигурацию отладки:
+ 
+1. Выберите пункт меню `Отладка → Открыть конфигурации`.
+2. Откроется диалог выбора среды. Выберите или введите `Chrome`.
+3. Откроется файл `launch.json`. Замените его содержимое следующим:
 
 ```json
 {
-  "type": "chrome",
-  "request": "attach",
-  "name": "Attach to Chrome",
-  "port": 9222,
-  "webRoot": "${workspaceFolder}"
+  "version": "0.2.0",
+  "configurations": [{
+    "type": "chrome",
+    "request": "attach",
+    "name": "Attach to Chrome",
+    "port": 9222,
+    "webRoot": "${workspaceFolder}"
+  }]
 }
 ```
+
+#### Запуск отладки
+
+Теперь, чтобы начать отладку, выполните следующие действия:
+
+1. Закройте Google Chrome, если он был открыт. 
+2. Откройте файл `index.html` и в контекстном меню выберите пункт `Open with 
+Live Server`. В результате откроется окно Google Chrome с вкладкой в 
+режиме инкогнито.
+3. Выберите пункт меню `Отладка → Запустить отладку` для запуска отладки.
