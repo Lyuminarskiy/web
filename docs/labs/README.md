@@ -26,7 +26,7 @@ next: /exam/
 нужно установить несколько расширений для
 [Visual Studio Code](https://code.visualstudio.com) и дополнить файл 
 настроек `settings.json`, который можно открыть через меню
-`Файл → Параметры → Параметры → ... → Открыть файл settings.json`:
+`Файл → Параметры → Параметры → {} (Открыть параметры (JSON))`:
 
 - Расширение [Beautify
 ](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) 
