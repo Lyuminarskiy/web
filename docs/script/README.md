@@ -38,14 +38,11 @@ sidebar: auto
 - JS in Browser.
 - Node.js.
 
-### 2.3.
+### 13.
 
-- Отладка кода через VS Code.
-- Функции встроенных объектов.
-- [Деструктуризация](https://learn.javascript.ru/destructuring).
-- [Модули](https://learn.javascript.ru/modules).
+- События
 
-
+### 14. Node.js
 
 ## 3. Популярные фреймворки
 
