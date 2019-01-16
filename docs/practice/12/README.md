@@ -1,16 +1,35 @@
-# 12. Объектная модель документа. Модули
+# 12. Объектная модель документа. Программные модули
 
 ## Темы занятия
 
-- Работа с [объектной моделью документа
+- [Объектная модель документа (DOM)
 ](https://developer.mozilla.org/ru/docs/DOM/DOM_Reference).
-- Разбиение кода на [модули](https://learn.javascript.ru/modules).
+- [Навигация по элементам документа
+](https://learn.javascript.ru/traversing-dom).
+- [Поиск элементов в документе
+](https://learn.javascript.ru/searching-elements-dom).
+- [Создание и удаление элементов
+](https://learn.javascript.ru/modifying-document).
+- [Вставка элементов в документ
+](https://learn.javascript.ru/multi-insert).
+- [Основные свойства объектного представления элементов
+](https://learn.javascript.ru/basic-dom-node-properties).
+- [Работа с атрибутами элементов через DOM
+](https://learn.javascript.ru/attributes-and-custom-properties).
+- [Работа со свойствами CSS элементов через DOM
+](https://learn.javascript.ru/attributes-and-custom-properties).
+- Организация кода на JavaScript в виде
+[программных модулей](https://learn.javascript.ru/modules).
+- Инструкции [`export`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/export)
+и [`import`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/import).
 
 ## Теоретические сведения
 
 ### JavaScript
 
-- [Объектная модель документа
+- [Объектная модель документа (DOM)
 ](https://developer.mozilla.org/ru/docs/DOM/DOM_Reference):
 
   - Объект [`document`](https://developer.mozilla.org/ru/docs/Web/API/Document):
@@ -73,7 +92,7 @@
     возвращает коллекцию всех элементов с заданным классом `className` внутри 
     элемента `element`.
     
-- [Модули](https://learn.javascript.ru/modules):
+- [Программные модули](https://learn.javascript.ru/modules):
 
   - Атрибут [`type`
   ](https://developer.mozilla.org/ru/docs/Web/HTML/Element/script) элемента
@@ -104,3 +123,10 @@
 ([источник](https://learn.javascript.ru/traversing-dom)):
 
 ![Навигация по дереву элементов документа](./assets/dom_navigation.png)
+
+<script-button/>
+
+<disqus-comments
+  page-uuid="4d519cee-a0db-4708-8978-1de79cdde5ef"
+  page-title="12. Объектная модель документа. Программные модули
+    | Практические занятия"/>
