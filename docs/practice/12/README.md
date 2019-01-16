@@ -17,7 +17,8 @@
 - [Основные свойства объектного представления элементов
 ](https://learn.javascript.ru/basic-dom-node-properties).
 - [Работа с атрибутами элементов через DOM
-](https://learn.javascript.ru/attributes-and-custom-properties).
+](https://learn.javascript.ru/attributes-and-custom-properties) и универсальный
+атрибут [`data-*`](https://webref.ru/html/attr/data).
 - [Работа со свойствами CSS элементов через DOM
 ](https://learn.javascript.ru/attributes-and-custom-properties).
 - Организация кода на JavaScript в виде
@@ -28,6 +29,10 @@
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/import).
 
 ## Теоретические сведения
+
+### HTML
+
+Универсальный атрибут [`data-*`](https://webref.ru/html/attr/data).
 
 ### JavaScript
 
