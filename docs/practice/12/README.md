@@ -8,6 +8,8 @@
 ](https://learn.javascript.ru/traversing-dom).
 - [Поиск элементов в документе
 ](https://learn.javascript.ru/searching-elements-dom).
+- [Вспомогательые методы для проверки элементов
+](https://learn.javascript.ru/compare-document-position).
 - [Создание и удаление элементов
 ](https://learn.javascript.ru/modifying-document).
 - [Вставка элементов в документ
