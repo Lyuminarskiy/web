@@ -8,7 +8,7 @@
 ](https://learn.javascript.ru/traversing-dom).
 - [Поиск элементов в документе
 ](https://learn.javascript.ru/searching-elements-dom).
-- [Вспомогательые методы для проверки элементов
+- [Методы для проверки элементов
 ](https://learn.javascript.ru/compare-document-position).
 - [Создание и удаление элементов
 ](https://learn.javascript.ru/modifying-document).
@@ -32,14 +32,19 @@
 
 ### HTML
 
-Универсальный атрибут [`data-*`](https://webref.ru/html/attr/data).
+- Универсальный атрибут [`data-*`](https://webref.ru/html/attr/data).
+- Атрибут [`type`
+](https://developer.mozilla.org/ru/docs/Web/HTML/Element/script) элемента
+[`<script>`](https://webref.ru/html/script).
 
 ### JavaScript
 
 - [Объектная модель документа (DOM)
-](https://developer.mozilla.org/ru/docs/DOM/DOM_Reference):
+](https://developer.mozilla.org/ru/docs/DOM/DOM_Reference) (`document` - объект
+[`document`](https://developer.mozilla.org/ru/docs/Web/API/Document),
+`element` - произвольный элемент):
 
-  - Объект [`document`](https://developer.mozilla.org/ru/docs/Web/API/Document):
+  - Доступ к элементам верхнего уровня:
     
     - [`document.documentElement`
     ](https://developer.mozilla.org/ru/docs/Web/API/Document/documentElement) -
@@ -51,8 +56,10 @@
     ](https://developer.mozilla.org/ru/docs/Web/API/Document/head) -
     элемент [`<head>`](https://webref.ru/html/head).
     
-  - Навигация по дереву элементов документа относительно элемента, 
-  представленного объектом `element`:
+  - [Навигация по элементам документа
+  ](https://learn.javascript.ru/traversing-dom) (`table` - элемент
+  [`<table>`](https://webref.ru/html/table), `tableRow` - элемент
+  [`<tr>`](https://webref.ru/html/tr)):
   
     - [`element.parentElement`
     ](https://developer.mozilla.org/ru/docs/Web/API/Node/parentElement) -
@@ -65,16 +72,13 @@
     последующий соседний элемент.
     - [`element.children`
     ](https://developer.mozilla.org/ru/docs/Web/API/ParentNode/children) - 
-    коллекция дочерних элементов.
+    _коллекция_ дочерних элементов.
     - [`element.firstElementChild`
     ](https://developer.mozilla.org/ru/docs/Web/API/ParentNode/firstElementChild) -
     первый дочерний элемент.
     - [`element.lastElementChild`
     ](https://developer.mozilla.org/ru/docs/Web/API/ParentNode/lastElementChild) -
-    последний дочерний элемент.
-    
-  - Навигация по элементам таблиц:
-   
+    последний дочерний элемент.     
     - [`table.caption`
     ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/caption) -
     элемент [`<caption>`](https://webref.ru/html/caption) внутри таблицы.
@@ -84,26 +88,69 @@
     - [`table.tFoot`
     ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/tFoot) -
     элемент [`<tfoot>`](https://webref.ru/html/tfoot) внутри таблицы.
+    - [`table.tBodies`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/tBodies) -
+    _коллекция_ элементов [`<tbody>`](https://webref.ru/html/tbody) внутри 
+    таблицы.
+    - [`table.rows`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows) -
+    _коллекция_ всех строк [`<tr>`](https://webref.ru/html/tr) внутри таблицы.
+    - [`tableRow.cells`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement) -
+    _коллекция_ всех ячеек [`<td>`](https://webref.ru/html/td) внутри 
+    строки таблицы.
     
-  - Поиск по дереву элементов:
+  - [Поиск элементов в документе
+    ](https://learn.javascript.ru/searching-elements-dom):
   
     - Функция [`document.getElementById(id)`
     ](https://developer.mozilla.org/ru/docs/Web/API/Document/getElementById)
     выполняет поиск элемента по его идентификатору `id` по всему документу.
-    - Функция [`element.getElementsByTagName(tag)`
+    - Функция [`element.getElementsByTagName(type)`
     ](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName) -
-    возвращает коллекцию всех элементов с заданным тэгом `tag` внутри элемента 
-    `element`.
-    - Функция [`element.getElementsByClassName(className)`
+    возвращает _коллекцию_ всех элементов типа `type` внутри элемента.
+    - Функция [`element.getElementsByClassName(class)`
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/getElementsByClassName) -
-    возвращает коллекцию всех элементов с заданным классом `className` внутри 
-    элемента `element`.
+    возвращает _коллекцию_ всех элементов с заданным классом `class` внутри 
+    элемента.
+    - Функции [`element.querySelector(selector)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/querySelector) и
+    [`element.querySelectorAll(selector)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/querySelectorAll)
+    возвращают соответственно первый элемент и _коллекцию_ элементов внутри
+    элемента, которые соответствуют селектору CSS `selector`.
+    - Функция [`element.closest(selector)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/closest) 
+    возвращает ближайший родительский элемент (или сам элемент), который 
+    соответствуют селектору CSS `selector`.    
+    
+  - [Методы для проверки элементов
+  ](https://learn.javascript.ru/compare-document-position):
+  
+    - Функция [`element.matches(selector)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/Element/matches) 
+    проверяет, соответствует ли элемент селектору CSS `selector`.  
+    - Функция [`parent.contains(element)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Node/contains) 
+    проверяет, является ли элемент потомком элемента `parent`.
+  
+  - [Создание и удаление элементов
+  ](https://learn.javascript.ru/modifying-document):
+  
+  - [Вставка элементов в документ
+  ](https://learn.javascript.ru/multi-insert):
+  
+  - [Основные свойства объектного представления элементов
+  ](https://learn.javascript.ru/basic-dom-node-properties):
+  
+  - [Работа с атрибутами элементов через DOM
+  ](https://learn.javascript.ru/attributes-and-custom-properties):
+  
+  - [Работа со свойствами CSS элементов через DOM
+  ](https://learn.javascript.ru/attributes-and-custom-properties):
     
 - [Программные модули](https://learn.javascript.ru/modules):
 
-  - Атрибут [`type`
-  ](https://developer.mozilla.org/ru/docs/Web/HTML/Element/script) элемента
-  [`<script>`](https://webref.ru/html/script).
   - Инструкция [`export`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/export)
   для экспорта содержимого из модуля.

@@ -29,7 +29,7 @@
   - Группа элементов [`<figure>`](https://webref.ru/html/figure) и подпись к 
   ним [`<figcaption>`](https://webref.ru/html/figcaption).
 
-### CSS[``]()
+### CSS
 
 - Обтекание элементов [`float`](https://webref.ru/css/float) и запрет обтекания
 [`clear`](https://webref.ru/css/clear).
