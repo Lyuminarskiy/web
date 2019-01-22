@@ -34,25 +34,28 @@
   
 - Общие для элементов форм атрибуты:
  
-  - Уникальное имя элемента формы
-  [`name`](https://webref.ru/html/input/name).
-  - Установка поля формы обязательным для заполнения
-  [`required`](https://webref.ru/html/input/required).
-  - Блокировка доступа к полю формы
-  [`disabled`](https://webref.ru/html/input/disabled).
+  - [`name`](https://webref.ru/html/input/name) - уникальное имя элемента формы.
+  - [`required`](https://webref.ru/html/input/required) - установка поля 
+  формы обязательным для заполнения.
+  - [`disabled`](https://webref.ru/html/input/disabled) - блокировка доступа к 
+  полю формы.
 
 ### CSS
   
-- CSS Flexible box Layout:
+- [CSS Flexible box Layout](https://metanit.com/web/html5/12.1.php):
 
-  - Направление основной оси [`flex-direction`
-  ](https://developer.mozilla.org/ru/docs/Web/CSS/flex-direction).
-  - Выравнивание элементов вдоль основной оси [`justify-content`
-  ](https://developer.mozilla.org/ru/docs/Web/CSS/justify-content).
-  - Выравнивание элементов вдоль побочной оси [`align-items`
-  ](https://developer.mozilla.org/ru/docs/Web/CSS/align-items).
-  - Фактор расширения элементов [`flex-grow`
-  ](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow).
+  - [`flex-direction`
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/flex-direction) -
+  направление основной оси.
+  - [`justify-content`
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/justify-content) -
+  выравнивание элементов вдоль основной оси.
+  - [`align-items`
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/align-items) -
+  выравнивание элементов вдоль побочной оси.
+  - [`flex-grow`
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/flex-grow) -
+  фактор расширения элементов.
   
 - Псевдоклассы для стилизации форм:
 
@@ -83,10 +86,10 @@
    
 - Вычисляемые значения свойств:
 
-  - Функция [`attr()`](https://webref.ru/css/value/attr) для доступа к 
-  значениям атрибута элемента.
-  - Функция [`calc()`](https://webref.ru/css/value/attr) для вычисления 
-  выражения.
+  - [`attr()`](https://webref.ru/css/value/attr) - динамически получает 
+  значение атрибута элемента.
+  - [`calc()`](https://webref.ru/css/value/calc) - динамически вычисляет 
+  арифметическое выражение.
   
 Модель работы CSS Flexible box Layout ([источник
 ](https://developer.mozilla.org/ru/docs/Learn/CSS/CSS_layout/Flexbox)):
