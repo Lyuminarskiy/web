@@ -1,26 +1,27 @@
-# 7. Анимации и переходы. @-правила и медиа-запросы
+# 7. @-правила и медиа-запросы. Трансформации, переходы и анимации. Фон элемента
 
 ## Темы занятия
 
-- [@-правила](https://webref.ru/css/type/atrules) и
-[медиа-запросы](https://webref.ru/css/value/media).
+- [@-правила](https://webref.ru/css/type/atrules).
+- [Медиа-запросы](https://webref.ru/css/value/media).
 - [Трансформации](https://webref.ru/layout/advanced-html-css/transform).
-- [Анимации и переходы
+- [Эффект перехода и анимации
 ](https://webref.ru/layout/advanced-html-css/transitions-animations).
-- Установка фона элемента.
-- Работа с [инструментами разработчика Chrome
+- [Фон элемента](https://metanit.com/web/html5/6.14.php).
+- [Инструменты разработчика Chrome
 ](https://developers.google.com/web/tools/chrome-devtools/).
 
 ## Теоретические сведения
 
 ### CSS
   
-- @-правила:
+- [@-правила](https://webref.ru/css/type/atrules):
 
-  - Указание кодировки [`@charset`](https://webref.ru/css/charset).
-  - Импорт содержимого внешнего файла CSS
-  [`@import`](https://webref.ru/css/import).
-  - Указание типа носителя [`@media`](https://webref.ru/css/media).
+  - [`@charset`](https://webref.ru/css/charset) - кодировка файла CSS.
+  - [`@import`](https://webref.ru/css/import) - импорт содержимого внешнего 
+  файла CSS.
+  - [`@media`](https://webref.ru/css/media) - указание типа носителя.  
+  - [`@keyframes`](https://webref.ru/css/keyframes) - ключевые кадры анимации.
   
 - [Медиа-запросы](https://webref.ru/css/value/media):
 
@@ -42,87 +43,129 @@
     - `width`, `min-width` и `max-width` - ширина отображаемой области.
     - `height`, `min-height` и `max-height` - высота отображаемой области.
     
-- [Трансформации](https://webref.ru/layout/advanced-html-css/transform):
+- [Трансформации](https://metanit.com/web/html5/9.1.php):
 
-  - Применение трасформации [`transform`](https://webref.ru/css/transform).
-  - Установка точки, относительно которой будет происходить трансформация
-  [`transform-origin`](https://webref.ru/css/transform-origin)
-  - Функция поворота `rotate(<угол>)`.
-  - Функция растяжения `scale(<ось X>, <ось Y>)`.
-  - Функция перемещения `translate(<ось X>, <ось Y>)`.
-  - Функция наклона `skew(<ось X>, <ось Y>)`.
+  - [`transform`](https://webref.ru/css/transform) - применяемые трансформации.
+  - [`transform-origin`](https://webref.ru/css/transform-origin) -
+  точка, относительно которой происходит трансформация.
+  - [`rotate(angle)`](https://webref.ru/css/value/rotate) -
+  поворачивает элемент на угол `angle`.
+  - [`scale(dx, dy)`](https://webref.ru/css/value/scale) - масштабирует 
+  элемент в `dx` и `dy` раз по горизонтали и вертикали соответственно.
+  - [`translate(dx, dy)`](https://webref.ru/css/value/translate) - сдвигает 
+  элемент на расстояние `dx` и `dy` по горизонтали и вертикали соответственно.
+  - [`skew(dx, dy)`](https://webref.ru/css/value/skew) - наклоняет 
+  элемент на угол `dx` и `dy` по горизонтали и вертикали соответственно.
   
-- Переходы:
+- [Эффект перехода](https://metanit.com/web/html5/9.2.php):
 
-  - Указание свойства, к которому будет применяться эффект перехода
-  [`transition-property`](https://webref.ru/css/transition-property).
-  - Длительность эффекта перехода
-  [`transition-duration`](https://webref.ru/css/transition-duration).
-  - Задержка перед запуском эффекта перехода
-  [`transition-delay`](https://webref.ru/css/transition-delay).
-  - Функция для вычисление промежуточных значений при переходе
-  [`transition-timing-function`
-  ](https://webref.ru/css/transition-timing-function).  
-  - Универсальное свойство [`transition`](https://webref.ru/css/transition).
+  - [`transition-property`](https://webref.ru/css/transition-property) -
+  свойство, к которому будет применяться эффект перехода.
+  - [`transition-duration`](https://webref.ru/css/transition-duration) -
+  длительность эффекта перехода.
+  - [`transition-delay`](https://webref.ru/css/transition-delay) -
+  задержка перед запуском эффекта перехода.
+  - [`transition-timing-function`
+  ](https://webref.ru/css/transition-timing-function) - функция для 
+  вычисления промежуточных значений свойств при эффекте перехода.
+  - [`transition`](https://webref.ru/css/transition) - _универсальное свойство_
+  для установки различных параметров эффекта перехода.
   
-- Анимации:
+- [Анимации](https://metanit.com/web/html5/9.3.php):
 
-  - Задание ключевых кадров [`@keyframes`](https://webref.ru/css/keyframes).
-  - Указание идентификатора анимации
-  [`animation-name`](https://webref.ru/css/animation-name).
-  - Длительность анимации
-  [`animation-duration`](https://webref.ru/css/animation-duration).
-  - Задержка перед запуском анимации
-  [`animation-delay`](https://webref.ru/css/animation-delay).
-  - Функция для вычисление промежуточных значений при анимации
-  [`animation-timing-function`
-  ](https://webref.ru/css/animation-timing-function).
-  - Число повторений анимации
-  [`animation-iteration-count`
-  ](https://webref.ru/css/animation-iteration-count).
-  - Направление движения анимации
-  [`animation-direction`](https://webref.ru/css/animation-direction).
-  - Стили, которые применяются, когда анимация не проигрывается
-  [`animation-fill-mode`](https://webref.ru/css/animation-fill-mode).
-  - Текущее состояние анимации
-  [`animation-play-state`](https://webref.ru/css/animation-play-state).
-  - Универсальное свойство [`animation`](https://webref.ru/css/animation).
+  - [`animation-name`](https://webref.ru/css/animation-name) -
+  идентификатора анимации.
+  - [`animation-duration`](https://webref.ru/css/animation-duration) -
+  длительность анимации.
+  - [`animation-delay`](https://webref.ru/css/animation-delay) -
+  задержка перед запуском анимации.
+  - [`animation-timing-function`
+  ](https://webref.ru/css/animation-timing-function) - функция для вычисления
+  промежуточных значений свойств при анимации.
+  - [`animation-iteration-count`
+  ](https://webref.ru/css/animation-iteration-count) -
+  число повторений анимации.
+  - [`animation-direction`](https://webref.ru/css/animation-direction) -
+  направление движения анимации.
+  - [`animation-fill-mode`](https://webref.ru/css/animation-fill-mode) -
+  стили, которые применяются, когда анимация не активна.
+  - [`animation-play-state`](https://webref.ru/css/animation-play-state) -
+  состояние анимации.
+  - [`animation`](https://webref.ru/css/animation) - _универсальное свойство_
+  для установки различных параметров анимации.
 
-- Установка фона элемента.
+- [Фон элемента](https://metanit.com/web/html5/6.14.php):
 
-  - Фоновое изображение
-  [`background-image`](https://webref.ru/css/background-image).
-  - Начальное положение фонового изображения
-  [`background-position`](https://webref.ru/css/background-position).
-  - Масшабирование фонового изображения
-  [`background-size`](https://webref.ru/css/background-size).
-  - Повторение фонового изображения
-  [`background-repeat`](https://webref.ru/css/background-repeat).
-  - Поведение фонового изображения при прокрутке
-  [`background-attachment`](https://webref.ru/css/background-attachment).
-  - Универсальное свойство [`background`](https://webref.ru/css/background).
-  - Линейные градиенты
-  [`linear-gradient()`](https://webref.ru/css/value/linear-gradient) и
+  - [`background-image`](https://webref.ru/css/background-image) -
+  фоновое изображение.
+  - [`background-position`](https://webref.ru/css/background-position) -
+  начальное положение фонового изображения.
+  - [`background-size`](https://webref.ru/css/background-size) -
+  масшабирование фонового изображения.
+  - [`background-repeat`](https://webref.ru/css/background-repeat) -
+  повторение фонового изображения.
+  - [`background-attachment`](https://webref.ru/css/background-attachment) -
+  поведение фонового изображения при прокрутке.
+  - [`background`](https://webref.ru/css/background) - _универсальное свойство_
+  для установки различных параметров фона элемента.
+  - [`linear-gradient()`](https://webref.ru/css/value/linear-gradient) и
   [`repeating-linear-gradient()`
-  ](https://webref.ru/css/value/repeating-linear-gradient).
-  - Радиальные градиенты
-  [`radial-gradient()`](https://webref.ru/css/value/radial-gradient) и
+  ](https://webref.ru/css/value/repeating-linear-gradient) -
+  линейные градиенты.
+  - [`radial-gradient()`](https://webref.ru/css/value/radial-gradient) и
   [`repeating-radial-gradient()`
-  ](https://webref.ru/css/value/repeating-radial-gradient).
+  ](https://webref.ru/css/value/repeating-radial-gradient) -
+  радиальные градиенты.
   
 ### Прочее
 
-Работа с [инструментами разработчика Chrome
+[Инструменты разработчика Chrome
 ](https://developers.google.com/web/tools/chrome-devtools/):
 
-- Просмотр и изменение дерева элементов и правил CSS.
-- Запись и воспроизведение анимаций.
-- Переключение текущего медиа-типа устройства. 
-- Инструменты проверки адаптивной вёрстки.
+- [Просмотр и изменение дерева элементов
+](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/edit-dom).
+- [Просмотр и изменение правил CSS
+](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/edit-styles).
+- [Просмотр и изменение анимаций
+](https://developers.google.com/web/tools/chrome-devtools/inspect-styles/animations).
+- [Инструменты проверки адаптивной вёрстки
+](https://developers.google.com/web/tools/chrome-devtools/device-mode).
+
+## 7.1. @-правила и медиа-запросы
+
+Доработайте веб-страницу, созданную в задании [`6.1. Пользовательские 
+свойства`](/practice/06/#_6-1-поnьзоватеnьские-свойства), выполнив следующие
+задачи:
+
+1. Создайте файл `variables.css` и перенесите в него все объявления 
+пользовательских свойств из файла `style.css`. После этого импортируйте 
+содержимое файла `variables.css` в файл `style.css`.
+
+2. Создайте файл `print.css` и импортируйте его содержимое в файл `style
+.css`. Добавьте в точку импорта такой медиа-запрос, чтобы импорт происходил 
+только в том случае, если текущее устройство - принтер (или другое печетающее 
+устройство).
+
+3. Добавьте внутрь файла `print.css` такие правила CSS, чтобы при печати 
+страница приобретала следующий вид:
+
+   - Виден только текст рассказа с заголовками и указаниями об авторе и 
+   времени публикации рассказа в конце.   
+   - Содержимое занимает всю ширину страницы.   
+   - Убрано всё оформление текста, установленное ранее, за некоторыми 
+   исключениями, перечисленными далее.   
+   - Текст абзацев выровнен по ширине, добавлен отступ первой строки.
+   - Заголовки выровнены по центру.
+
+3. Укажите кодировку для всех файлов CSS.
+
+## 7.2. Трансформации и эффект перехода, фон элементов
+
+## 7.3. Анимации
 
 <script-button/>
 
 <disqus-comments
   page-uuid="d6d92b81-f885-41a2-ab1c-ca9559e438c0"
-  page-title="7. Анимации и переходы. @-правила и медиа-запросы
-    | Практические занятия"/>
+  page-title="7. @-правила и медиа-запросы. Трансформации, переходы и анимации.
+    Фон элемента | Практические занятия"/>
