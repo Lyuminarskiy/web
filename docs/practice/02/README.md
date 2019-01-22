@@ -39,52 +39,52 @@
 
 - Характеристики шрифта:
 
-  - Начертание шрифта [`font-style`](https://webref.ru/css/font-style).
-  - Способ отображения строчных букв
-  [`font-variant`](https://webref.ru/css/font-variant).
-  - Насыщенность шрифта [`font-weight`](https://webref.ru/css/font-weight).
-  - Размер шрифта [`font-size`](https://webref.ru/css/font-size).
-  - Минимальная высота строки текста
-  [`line-height`](https://webref.ru/css/line-height).
-  - Семейство шрифта [`font-family`](https://webref.ru/css/font-family).
-  - Универсальное свойство для установки различных характеристик шрифта и 
-  текста [`font`](https://webref.ru/css/font).
+  - [`font-style`](https://webref.ru/css/font-style) - начертание шрифта.
+  - [`font-variant`](https://webref.ru/css/font-variant) - способ отображения
+  строчных букв.
+  - [`font-weight`](https://webref.ru/css/font-weight) - насыщенность шрифта.
+  - [`font-size`](https://webref.ru/css/font-size) - размер шрифта.
+  - [`line-height`](https://webref.ru/css/line-height) - минимальная высота 
+  строки текста.
+  - [`font-family`](https://webref.ru/css/font-family) - семейство шрифта.
+  - [`font`](https://webref.ru/css/font) - _универсальное свойство_ для 
+  установки различных характеристик шрифта и текста.
 
 - Отображения текста:
 
-  - Горизонтальное выравнивание текста
-  [`text-align`](https://webref.ru/css/text-align).
-  - Величина отступа первой строки блока текста
-  [`text-indent`](https://webref.ru/css/text-indent).
-  - Интервал между словами
-  [`word-spacing`](https://webref.ru/css/word-spacing).
-  - Интервал между символами
-  [`letter-spacing`](https://webref.ru/css/letter-spacing).
-  - Преобразование регистра символов текста
-  [`text-transform`](https://webref.ru/css/text-transform).
+  - [`text-align`](https://webref.ru/css/text-align) - горизонтальное 
+  выравнивание текста.
+  - [`text-indent`](https://webref.ru/css/text-indent) - величина отступа 
+  первой строки блока текста.
+  - [`word-spacing`](https://webref.ru/css/word-spacing) - интервал между 
+  словами.
+  - [`letter-spacing`](https://webref.ru/css/letter-spacing) - интервал между
+  символами.
+  - [`text-transform`](https://webref.ru/css/text-transform) - преобразование
+  регистра символов текста.
 
 - Оформление текста:
 
-  - Тень текста [`text-shadow`](https://webref.ru/css/text-shadow).
-  - Добавление декоративной линии к тексту
-  [`text-decoration-line`](https://webref.ru/css/text-decoration-line).
-  - Стиль декоративной линии 
-  [`text-decoration-style`](https://webref.ru/css/text-decoration-style).
-  - Цвет декоративной линии
-  [`text-decoration-color`](https://webref.ru/css/text-decoration-color).
-  - Универсальное свойство для добавления декоративной линии
-  [`text-decoration`](https://webref.ru/css/text-decoration).
+  - [`text-shadow`](https://webref.ru/css/text-shadow) - тень текста.
+  - [`text-decoration-line`](https://webref.ru/css/text-decoration-line) - 
+  добавление декоративной линии к тексту.
+  - [`text-decoration-style`](https://webref.ru/css/text-decoration-style) -
+  стиль декоративной линии.
+  - [`text-decoration-color`](https://webref.ru/css/text-decoration-color) -
+  цвет декоративной линии.
+  - [`text-decoration`](https://webref.ru/css/text-decoration) - 
+  _универсальное свойство_ для добавления декоративной линии.
 
 - Оформление списков:
 
-  - Вид маркеров элементов списка
-  [`list-style-type`](https://webref.ru/css/list-style-type).
-  - Положение маркеров элементов списка относительно текста
-  [`list-style-position`](https://webref.ru/css/list-style-position).
-  - Изображение вместо стандартных маркеров элементов списка
-  [`list-style-image`](https://webref.ru/css/list-style-image).
-  - Универсальное свойство для оформления списков
-  [`list-style`](https://webref.ru/css/list-style).
+  - [`list-style-type`](https://webref.ru/css/list-style-type) - вид маркеров
+  элементов списка.
+  - [`list-style-position`](https://webref.ru/css/list-style-position) -
+  положение маркеров элементов списка относительно текста.
+  - [`list-style-image`](https://webref.ru/css/list-style-image) - 
+  изображение вместо стандартных маркеров элементов списка.
+  - [`list-style`](https://webref.ru/css/list-style) - _универсальное 
+  свойство_ для оформления списков
 
 Cтруктура правила CSS:
 
