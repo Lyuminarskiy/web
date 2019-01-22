@@ -19,7 +19,7 @@
 ](https://learn.javascript.ru/attributes-and-custom-properties) и универсальный
 атрибут [`data-*`](https://webref.ru/html/attr/data).
 - [Работа со свойствами CSS элементов через DOM
-](https://learn.javascript.ru/attributes-and-custom-properties).
+](https://learn.javascript.ru/styles-and-classes).
 - Организация кода на JavaScript в виде
 [программных модулей](https://learn.javascript.ru/modules).
 - Инструкции [`export`
@@ -179,9 +179,6 @@
     - [`element.tagName`
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/tagName) -
     тип элемента.
-    - [`element.id`
-    ](https://developer.mozilla.org/ru/docs/Web/API/Element/id) -
-    идентификатор элемента.
     - [`element.innerHTML`
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/innerHTML) -
     внутреннее содержимое элемента в виде HTML.
@@ -197,7 +194,7 @@
     объект, хранящий информацию обо всех атрибутах элемента.
     - [`element.hasAttribute(attribute)`
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/hasAttribute) -
-    проверяет наличие атрибута `attribute` элемента.
+    проверяет наличие атрибута `attribute` у элемента.
     - [`element.getAttribute(attribute)`
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/getAttribute) -
     возвращает значение атрибута `attribute` элемента.
@@ -217,10 +214,39 @@
     ](https://developer.mozilla.org/ru/docs/Web/API/HTMLElement/dataset) -
     объект, предоставляющий доступ ко всем атрибутам
     [`data-*`](https://webref.ru/html/attr/data) элемента.
-    - [`element.classList`] - _коллекция_ классов элемента.
+    - [`element.id`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/id) -
+    значение атрибута [`id`](https://webref.ru/html/attr/id) элемента.
+    - [`element.className`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/className) - 
+    значение атрибута [`class`](https://webref.ru/html/attr/class) элемента.
+    - [`element.classList`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/classList) - 
+    _коллекция_ классов элемента.
+    - [`element.classList.contains(class)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains) -
+    проверяет наличие класса `class` у элемента.
+    - [`element.classList.add(...classes)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add) -
+    добавляет классы `classes` для элемента.
+    - [`element.classList.remove(...classes)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove) -
+    удаляет классы `classes` у элемента.
   
   - [Работа со свойствами CSS элементов через DOM
-  ](https://learn.javascript.ru/attributes-and-custom-properties):
+  ](https://learn.javascript.ru/styles-and-classes):
+  
+    - [`element.style`
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLElement/style) -
+    объект, позволяющий изменять _большинство_ свойств CSS у элемента через 
+    атрибут [`style`](https://webref.ru/html/attr/style).
+    - [`element.style.cssText`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText) -
+    содержимое атрибута [`style`](https://webref.ru/html/attr/style) элемента.
+    - [`getComputedStyle(element)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Window/getComputedStyle) -
+    возвращает объект, позволяющий получить значения _большинства_ свойств 
+    CSS у элемента с учётом механизмов работы CSS.
     
 - [Программные модули](https://learn.javascript.ru/modules):
 
