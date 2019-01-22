@@ -8,8 +8,7 @@
 ](https://learn.javascript.ru/traversing-dom).
 - [Поиск элементов в документе
 ](https://learn.javascript.ru/searching-elements-dom).
-- [Методы для проверки элементов
-](https://learn.javascript.ru/compare-document-position).
+- [Проверка элементов](https://learn.javascript.ru/compare-document-position).
 - [Создание и удаление элементов
 ](https://learn.javascript.ru/modifying-document).
 - [Вставка элементов в документ
@@ -41,7 +40,7 @@
 
 - [Объектная модель документа (DOM)
 ](https://developer.mozilla.org/ru/docs/DOM/DOM_Reference) (`document` - объект
-[`document`](https://developer.mozilla.org/ru/docs/Web/API/Document),
+[`document`](https://developer.mozilla.org/ru/docs/Web/API/Document);
 `element` - произвольный элемент):
 
   - Доступ к элементам верхнего уровня:
@@ -58,7 +57,10 @@
     
   - [Навигация по элементам документа
   ](https://learn.javascript.ru/traversing-dom) (`table` - элемент
-  [`<table>`](https://webref.ru/html/table), `tableRow` - элемент
+  [`<table>`](https://webref.ru/html/table); `tableSection` - элемент 
+  [`<thead>`](https://webref.ru/html/thead),
+  [`<tbody>`](https://webref.ru/html/tbody), или
+  [`<tfoot>`](https://webref.ru/html/tfoot); `tableRow` - элемент
   [`<tr>`](https://webref.ru/html/tr)):
   
     - [`element.parentElement`
@@ -94,57 +96,128 @@
     таблицы.
     - [`table.rows`
     ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows) -
-    _коллекция_ всех строк [`<tr>`](https://webref.ru/html/tr) внутри таблицы.
+    _коллекция_ строк [`<tr>`](https://webref.ru/html/tr) внутри таблицы.
+    - [`tableSection.rows`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement) -
+    _коллекция_ строк [`<tr>`](https://webref.ru/html/tr) внутри секции
+    таблицы.
     - [`tableRow.cells`
     ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement) -
-    _коллекция_ всех ячеек [`<td>`](https://webref.ru/html/td) внутри 
-    строки таблицы.
+    _коллекция_ ячеек [`<td>`](https://webref.ru/html/td) и 
+    [`<th>`](https://webref.ru/html/th) внутри строки таблицы.
     
   - [Поиск элементов в документе
     ](https://learn.javascript.ru/searching-elements-dom):
   
-    - Функция [`document.getElementById(id)`
-    ](https://developer.mozilla.org/ru/docs/Web/API/Document/getElementById)
+    - [`document.getElementById(id)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Document/getElementById) -
     выполняет поиск элемента по его идентификатору `id` по всему документу.
-    - Функция [`element.getElementsByTagName(type)`
+    - [`element.getElementsByTagName(type)`
     ](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName) -
     возвращает _коллекцию_ всех элементов типа `type` внутри элемента.
-    - Функция [`element.getElementsByClassName(class)`
+    - [`element.getElementsByClassName(class)`
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/getElementsByClassName) -
     возвращает _коллекцию_ всех элементов с заданным классом `class` внутри 
     элемента.
-    - Функции [`element.querySelector(selector)`
+    - [`element.querySelector(selector)`
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/querySelector) и
     [`element.querySelectorAll(selector)`
-    ](https://developer.mozilla.org/ru/docs/Web/API/Element/querySelectorAll)
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/querySelectorAll) -
     возвращают соответственно первый элемент и _коллекцию_ элементов внутри
     элемента, которые соответствуют селектору CSS `selector`.
-    - Функция [`element.closest(selector)`
-    ](https://developer.mozilla.org/ru/docs/Web/API/Element/closest) 
+    - [`element.closest(selector)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/closest) -
     возвращает ближайший родительский элемент (или сам элемент), который 
     соответствуют селектору CSS `selector`.    
     
-  - [Методы для проверки элементов
+  - [Проверка элементов
   ](https://learn.javascript.ru/compare-document-position):
   
-    - Функция [`element.matches(selector)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/Element/matches) 
+    - [`element.matches(selector)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/Element/matches) -
     проверяет, соответствует ли элемент селектору CSS `selector`.  
-    - Функция [`parent.contains(element)`
-    ](https://developer.mozilla.org/ru/docs/Web/API/Node/contains) 
+    - [`parent.contains(element)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Node/contains) -
     проверяет, является ли элемент потомком элемента `parent`.
   
   - [Создание и удаление элементов
   ](https://learn.javascript.ru/modifying-document):
   
+    - [`document.createElement(type)`
+    ](https://developer.mozilla.org/ru/docs/DOM/document.createElement) -
+    создаёт элемент типа `type`.
+    - [`element.cloneNode(deep)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Node/cloneNode) - создаёт
+     копию элемента вместе со всеми вложенными элементами, если `deep == 
+     true`, и без них в ином случае.
+    - [`element.remove()`
+    ](https://developer.mozilla.org/ru/docs/Web/API/ChildNode/remove) -
+    удаляет элемент из документа.
+  
   - [Вставка элементов в документ
   ](https://learn.javascript.ru/multi-insert):
+  
+    - [`element.append(...childs)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append) -
+    вставляет элементы `childs` после последнего дочернего элемента.
+    - [`element.prepend(...childs)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend) -
+    вставляет элементы `childs` перед первым дочерним элементом.
+    - [`element.after(...siblings)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/after) -
+    вставляет элементы `siblings` после элемента.
+    - [`element.before(...siblings)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/before) -
+    вставляет элементы `siblings` перед элементом.
+    - [`element.replaceWith(...substitutes)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/before) -
+    заменяет элемент на элементы `substitutes`.
   
   - [Основные свойства объектного представления элементов
   ](https://learn.javascript.ru/basic-dom-node-properties):
   
+    - [`element.tagName`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/tagName) -
+    тип элемента.
+    - [`element.id`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/id) -
+    идентификатор элемента.
+    - [`element.innerHTML`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/innerHTML) -
+    внутреннее содержимое элемента в виде HTML.
+    - [`element.innerText`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText) -
+    текстовое содержимое элемента.
+  
   - [Работа с атрибутами элементов через DOM
   ](https://learn.javascript.ru/attributes-and-custom-properties):
+  
+    - [`element.attributes`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/attributes) -
+    объект, хранящий информацию обо всех атрибутах элемента.
+    - [`element.hasAttribute(attribute)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/hasAttribute) -
+    проверяет наличие атрибута `attribute` элемента.
+    - [`element.getAttribute(attribute)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/getAttribute) -
+    возвращает значение атрибута `attribute` элемента.
+    - [`element.setAttribute(attribute, value)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/setAttribute) -
+    устанавливает значение `value` для атрибута `attribute` элемента, либо 
+    добавляет новый атрибут.
+    - [`element.toggleAttribute(attribute)`
+    ](https://developer.mozilla.org/en-US/docs/Web/API/Element/toggleAttribute) -
+    переключает атрибут `attribute` ([логический тип
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean))
+    элемента.
+    - [`element.removeAttribute(attribute)`
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/removeAttribute) -
+    удаляет атрибут `attribute` элемента.
+    - [`element.dataset`
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLElement/dataset) -
+    объект, предоставляющий доступ ко всем атрибутам
+    [`data-*`](https://webref.ru/html/attr/data) элемента.
+    - [`element.classList`] - _коллекция_ классов элемента.
   
   - [Работа со свойствами CSS элементов через DOM
   ](https://learn.javascript.ru/attributes-and-custom-properties):
