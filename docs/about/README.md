@@ -5,22 +5,58 @@ next: /practice/
 
 # Информация о курсе
 
+В материалах курса вы встретитесь со следующими информационными блоками:
+
+::: tip На заметку
+Вспомогательная информация для расширения кругозора.
+:::
+
+::: warning Обратите внимание!
+Помощь в решении задания или поиска ответа на вопрос.
+:::
+
+::: danger Распространённая ошибка!
+Возможные ошибки, которые следует избегать.
+:::
+
+Не игнорируйте эти блоки, они помогут вам более успешно усваивать материалы 
+курса!
+
 ## Инструменты
 
-Для Web-программирования подойдёт любой текстовый редактор. В данном курсе мы рекомендуем вам использовать кроссплатформенный редактор исходных кодов [Visual Studio Code](https://code.visualstudio.com) вместе с несколькими расширениями:
+Для Web-программирования подойдёт любой текстовый редактор. В данном курсе 
+мы рекомендуем вам использовать кроссплатформенный редактор исходных кодов
+[Visual Studio Code](https://code.visualstudio.com) вместе с несколькими 
+расширениями:
 
-- Расширение [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer) отобразит вашу страницу в браузере и будет в реальном времени обновлять её содержимое в соответствии с изменениями, внесёнными в исходный код.
-- Расширения [HTML CSS Support](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) и [CSS Peek](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek) позволят вам достичь синергии при работе с HTML и CSS.
-- Расширения [Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker) и [Russian - Code Spell Checker](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-russian) помогут не допустить орфографических ошибок в тексте.
-- Расширения [Bracket Pair Colorizer](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer) и [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow) за счёт цветового оформления упростят ориентацию в коде в большим уровнем вложенности.
+- Расширение [Live Server
+](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)
+отобразит вашу страницу в браузере и будет в реальном времени обновлять её 
+содержимое в соответствии с изменениями, внесёнными в исходный код.
+- Расширения [HTML CSS Support
+](https://marketplace.visualstudio.com/items?itemName=ecmel.vscode-html-css) и
+[CSS Peek
+](https://marketplace.visualstudio.com/items?itemName=pranaygp.vscode-css-peek)
+позволят вам достичь синергии при работе с HTML и CSS.
+- Расширения [Code Spell Checker
+](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker)
+и [Russian - Code Spell Checker
+](https://marketplace.visualstudio.com/items?itemName=streetsidesoftware.code-spell-checker-russian)
+помогут не допустить орфографических ошибок в тексте.
+- Расширения [Bracket Pair Colorizer
+](https://marketplace.visualstudio.com/items?itemName=CoenraadS.bracket-pair-colorizer)
+и [indent-rainbow](https://marketplace.visualstudio.com/items?itemName=oderwat.indent-rainbow)
+за счёт цветового оформления упростят ориентацию в коде в большим уровнем вложенности.
 
 ## Ссылки
 
-Перечисленные ниже ссылки помогут вам углубить свои знания и изучить те немногочисленные темы, которые не были затронуты в рамках данного курса.
+Перечисленные ниже ссылки помогут вам углубить свои знания и изучить те 
+немногочисленные темы, которые не были затронуты в рамках данного курса.
 
 Учебный процесс:
 
-- [Журнал успеваемости](https://docs.google.com/spreadsheets/d/11zr8hoBczJjDeymf9hln2TO-HC8GdzppIweR8Ws3XRw/edit?usp=sharing).
+- [Журнал успеваемости
+](https://docs.google.com/spreadsheets/d/11zr8hoBczJjDeymf9hln2TO-HC8GdzppIweR8Ws3XRw/edit?usp=sharing).
 
 Справочники и руководства по веб-технологиям:
 
@@ -36,7 +72,8 @@ next: /practice/
 Обучающие материалы по JavaScript:
 
 - [Современный учебник Javascript](https://learn.javascript.ru)
-- [Учебник JavaScript](https://professorweb.ru/my/javascript/js_theory/level1/javascript_index.php)
+- [Учебник JavaScript
+](https://professorweb.ru/my/javascript/js_theory/level1/javascript_index.php)
 
 ## Обратная связь
 
