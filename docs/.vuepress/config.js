@@ -77,7 +77,7 @@ module.exports = {
           ]
         },
         {
-          title: "JavaScript",
+          title: "JavaScript и Node.js",
           collapsable: false,
           children: [
             "09/",

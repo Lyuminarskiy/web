@@ -33,7 +33,7 @@ sidebar: auto
 
 В конце блока студенту выдаётся первая лабораторная работа.
 
-## 2. JavaScript
+## 2. JavaScript и Node.js
 
 - JS in Browser.
 - Node.js.
