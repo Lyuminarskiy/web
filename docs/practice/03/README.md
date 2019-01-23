@@ -4,8 +4,9 @@
 
 - Универсальный атрибут [`lang`](https://webref.ru/html/attr/lang).
 - Проверка кода с помощью [валидатора](https://validator.w3.org).
-- Свойства CSS для добавления границ к элементам.
-- Элементы для создания таблиц и свойства CSS для стилизации таблиц.
+- [Границы элементов](https://metanit.com/web/html5/6.12.php).
+- [Элементы таблиц](https://metanit.com/web/html5/2.8.php) и свойства CSS 
+для стилизации таблиц.
 - Псевдоклассы.
 - Ссылки.
 - Элементы мультимедиа: изображения, аудио и видео.
@@ -16,81 +17,81 @@
 
 ### HTML
 
-- Указание языка текста - универсальный атрибут
-[`lang`](https://webref.ru/html/attr/lang).
+- [`lang`](https://webref.ru/html/attr/lang) - указание языка текста,
+_универсальный атрибут_.
 
-- Элементы таблиц:
+- [Элементы таблиц](https://metanit.com/web/html5/2.8.php):
 
-  - Содержимое таблицы [`<table>`](https://webref.ru/html/table).
-  - Заголовок таблицы [`<caption>`](https://webref.ru/html/caption).
-  - Шапка таблицы [`<thead>`](https://webref.ru/html/thead).
-  - Основное тело таблицы [`<tbody>`](https://webref.ru/html/tbody).
-  - Подвал таблицы [`<tfoot>`](https://webref.ru/html/tfoot).
-  - Строка таблицы [`<tr>`](https://webref.ru/html/tr).
-  - Обычная [`<td>`](https://webref.ru/html/td) и заголовочная
-  [`<th>`](https://webref.ru/html/th) ячейки таблицы, и их атрибуты
+  - [`<table>`](https://webref.ru/html/table) - содержимое таблицы.
+  - [`<caption>`](https://webref.ru/html/caption) - заголовок таблицы.
+  - [`<thead>`](https://webref.ru/html/thead) - шапка таблицы.
+  - [`<tbody>`](https://webref.ru/html/tbody) - основное тело таблицы.
+  - [`<tfoot>`](https://webref.ru/html/tfoot) - подвал таблицы.
+  - [`<tr>`](https://webref.ru/html/tr) - строка таблицы.
+  - [`<td>`](https://webref.ru/html/td) и [`<th>`](https://webref.ru/html/th) -
+  обычная и заголовочная ячейки таблицы соответственно, и их атрибуты
   [`colspan`](https://webref.ru/html/td/colspan) и
   [`rowspan`](https://webref.ru/html/td/rowspan).
 
-- Ссылка [`<a>`](https://webref.ru/html/a) и её атрибуты
+- [`<a>`](https://webref.ru/html/a)- ссылка, и её атрибуты
 [`href`](https://webref.ru/html/a/href),
 [`target`](https://webref.ru/html/a/target) и
 [`download`](https://webref.ru/html/a/download).
 
 - Элементы мультимедиа:
 
-  - Изображение [`<img>`](https://webref.ru/html/img) и его атрибуты.
-  - Аудиозапись [`<audio>`](https://webref.ru/html/audio) и его атрибуты.
-  - Видеоролик [`<video>`](https://webref.ru/html/video) и его атрибуты.
-  - Текстовая дорожка [`<track>`](https://webref.ru/html/track) и её атрибуты.
+  - [`<img>`](https://webref.ru/html/img) - изображение.
+  - [`<audio>`](https://webref.ru/html/audio) - аудиозапись.
+  - [`<video>`](https://webref.ru/html/video) - видеоролик.
+  - [`<track>`](https://webref.ru/html/track) - текстовая дорожка.
 
-- Встроенный фрейм [`<iframe>`](https://webref.ru/html/iframe) и его атрибуты.
+- [`<iframe>`](https://webref.ru/html/iframe) - встроенный фрейм.
 
 ### CSS
 
-- Границы элемента (вместо `*` подставить одно из следующих значений: `top`,
- `bottom`, `left`, `right`):
+- [Границы элементов](https://metanit.com/web/html5/6.12.php)
+(`*` - `top`, `bottom`, `left`, или `right`):
 
-  - Толщина границы [`border-width`](https://webref.ru/css/border-width) и 
-  `border-*-width`.
-  - Стиль границы [`border-style`](https://webref.ru/css/border-style) и 
-  `border-*-style`.
-  - Цвет границы [`border-color`](https://webref.ru/css/border-color) и 
-  `border-*-color`.
-  - Универсальное свойство [`border`](https://webref.ru/css/border) и 
-  `border-*`.
-  - Радиус скругления углов границы
-  [`border-radius`](https://webref.ru/css/border-radius) и `border-*-*-radius`.
+  - [`border-width`](https://webref.ru/css/border-width) и `border-*-width` -
+  толщина границы .
+  - [`border-style`](https://webref.ru/css/border-style) и `border-*-style` -
+  стиль границы .
+  - [`border-color`](https://webref.ru/css/border-color) и `border-*-color` -
+  цвет границы.
+  - [`border`](https://webref.ru/css/border) и `border-*` -
+  универсальное свойство для установки различных параметров границ.
+  - [`border-radius`](https://webref.ru/css/border-radius) и
+  `border-*-*-radius` - радиус скругления углов границы.
 
 - Оформление таблиц:
 
-  - Положение заголовка [`caption-side`](https://webref.ru/css/caption-side).
-  - Отображение границ ячеек
-  [`border-collapse`](https://webref.ru/css/border-collapse).
-  - Расстояние между границами ячеек
-  [`border-spacing`](https://webref.ru/css/border-spacing).
-  - Отображение пустых ячеек
-  [`empty-cells`](https://webref.ru/css/empty-cells).
+  - [`caption-side`](https://webref.ru/css/caption-side) - положение заголовка.
+  - [`border-collapse`](https://webref.ru/css/border-collapse) -
+  отображение границ ячеек.
+  - [`border-spacing`](https://webref.ru/css/border-spacing) -
+  расстояние между границами ячеек.
+  - [`empty-cells`](https://webref.ru/css/empty-cells) -
+  отображение пустых ячеек.
 
 - Псевдоклассы:
 
-  - Первый дочерний элемент
-  [`:first-child`](https://webref.ru/css/first-child).
-  - Последний дочерний элемент
-  [`:last-child`](https://webref.ru/css/last-child).
-  - Группа дочерних элементов в соответствии с их нумерацией в дереве 
-  элементов [`:nth-child()`](https://webref.ru/css/nth-child) и
-  [`:nth-last-child()`](https://webref.ru/css/nth-last-child) (нумерация в 
-  обратном порядке).
-  - Непосещённая ссылка [`:link`](https://webref.ru/css/link).
-  - Посещённая ссылка [`:visited`](https://webref.ru/css/visited).
-  - Элемент, на который наведён указатель мыши
-  [`:hover`](https://webref.ru/css/hover).
+  - [`:first-child`](https://webref.ru/css/first-child) -
+  первый дочерний элемент.
+  - [`:last-child`](https://webref.ru/css/last-child) -
+  последний дочерний элемент.
+  - [`:nth-child()`](https://webref.ru/css/nth-child) и
+  [`:nth-last-child()`](https://webref.ru/css/nth-last-child) -
+  группа дочерних элементов в соответствии с их нумерацией в дереве элементов
+  (нумерация в прямом и обратном порядке, соответственно).
+  - [`:link`](https://webref.ru/css/link) - непосещённая ссылка.
+  - [`:visited`](https://webref.ru/css/visited) - посещённая ссылка.
+  - [`:hover`](https://webref.ru/css/hover) - элемент, на который наведён 
+  указатель мыши.
 
 - Размеры элементов:
 
-  - Ширина [`width`](https://webref.ru/css/width).
-  - Высота [`height`](https://webref.ru/css/height).
+  - [`width`](https://webref.ru/css/width) - ширина элемента.
+  - [`height`](https://webref.ru/css/height) - высота элемента.
 
 ## 3.1. Элементы таблиц и их стилизация
 
