@@ -79,7 +79,6 @@
         var(--red) 1em,
         var(--yellow) 1em,
         var(--yellow) 2em);
-    transition: opacity 0.5s;
   }
   
   .side-block2:hover {
@@ -117,6 +116,7 @@
   }
 
   .navbar-link,
+  .side-block2,
   .page-article,
   .page-article > .article-header {
     transition: all 0.5s;
