@@ -60,16 +60,30 @@
   
   .side-block1 {
     grid-area: side1;
+    background: fixed
+      repeating-linear-gradient(
+        -45deg,
+        var(--red),
+        var(--red) 1em,
+        var(--yellow) 1em,
+        var(--yellow) 2em);
   }
   
   .side-block2 {
     grid-area: side2;
     opacity: 0.6;
+    background:
+      repeating-radial-gradient(
+        circle at top right,
+        var(--red),
+        var(--red) 1em,
+        var(--yellow) 1em,
+        var(--yellow) 2em);
+    transition: opacity 0.5s;
   }
   
-  .side-block1,
-  .side-block2 {
-    background-color: var(--red);
+  .side-block2:hover {
+    opacity: initial;
   }
   
   .page-content {
@@ -101,6 +115,18 @@
     text-align: center;
     color: var(--yellow);
   }
+
+  .navbar-link,
+  .page-article,
+  .page-article > .article-header {
+    transition: all 0.5s;
+  }
+
+  .navbar-link:hover {
+    transform: scale(1.1);
+    background: var(--yellow);
+    color: var(--blue);
+  }
   
   .page-articles {
     display: flex;
@@ -124,5 +150,26 @@
     border-bottom: 1px solid var(--blue);
     margin: 0;
     color: var(--blue);
+  }
+  
+  .page-article:hover > .article-header {
+    font-size: 2em;
+    transform: rotate(-5deg);
+  }
+
+  .page-article:hover {
+    transform: rotate(5deg);
+  }
+  
+  @media (max-width: 768px) {
+    .grid-container {
+      grid-template: repeat(2, 5em) auto repeat(2, 5em) / auto;
+      grid-template-areas:
+        "header "
+        "side1  "
+        "content"
+        "side2  "
+        "footer ";
+    }
   }
 </style>
