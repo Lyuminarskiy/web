@@ -13,19 +13,20 @@
 
 ### HTML
 
-- Таблицы стилей для всего документа [`<style>`](https://webref.ru/html/style).
-- Идентификатор элемента - универсальный атрибут
-[`id`](https://webref.ru/html/attr/id).
-- Класс элемента - универсальный атрибут
-[`class`](https://webref.ru/html/attr/class).
+- [`<style>`](https://webref.ru/html/style) - таблицы стилей для всего 
+документа.
+- [`id`](https://webref.ru/html/attr/id) - идентификатор элемента,
+_универсальный атрибут_.
+- [`class`](https://webref.ru/html/attr/class) - класс элемента,
+_универсальный атрибут_.
 
-- Элементы списков:
+- [Элементы списков](https://metanit.com/web/html5/2.5.php):
 
-  - Маркированный список [`<ul>`](https://webref.ru/html/ul).
-  - Нумерованный список [`<ol>`](https://webref.ru/html/ol) и его атрибуты 
+  - [`<ul>`](https://webref.ru/html/ul) - маркированный список.
+  - [`<ol>`](https://webref.ru/html/ol) - нумерованный список, и его атрибуты 
   [`reversed`](https://webref.ru/html/ol/reversed) и
   [`start`](https://webref.ru/html/ol/start).
-  - Пункт списка [`<li>`](https://webref.ru/html/li).
+  - [`<li>`](https://webref.ru/html/li) - пункт списка.
 
 ### CSS
 
