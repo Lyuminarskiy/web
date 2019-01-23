@@ -15,25 +15,25 @@
 ### HTML
 
 - [Список элементов HTML](https://webref.ru/html).
-- Тип документа [`<!DOCTYPE>`](https://webref.ru/html/!doctype).
-- Корневой элемент [`<html>`](https://webref.ru/html/html).
-- Блок невизуальных элементов [`<head>`](https://webref.ru/html/head).
-- Блок визуальных элементов [`<body>`](https://webref.ru/html/body).
-- Заголовок документа [`<title>`](https://webref.ru/html/title).
-- Контекстная информация о документе [`<meta>`](https://webref.ru/html/meta)
+- [`<!DOCTYPE>`](https://webref.ru/html/!doctype) - тип документа.
+- [`<html>`](https://webref.ru/html/html) - корневой элемент документа.
+- [`<head>`](https://webref.ru/html/head) - блок невизуальных элементов.
+- [`<body>`](https://webref.ru/html/body) - блок визуальных элементов.
+- [`<title>`](https://webref.ru/html/title) - заголовок документа.
+- [`<meta>`](https://webref.ru/html/meta) - контекстная информация о документе, 
 и его атрибут [`charset`](https://webref.ru/html/meta/charset).
-- Абзац [`<p>`](https://webref.ru/html/p).
-- Заголовки [`<h1>`](https://webref.ru/html/h1),
-[`<h2>`](https://webref.ru/html/h2), [`<h3>`](https://webref.ru/html/h3), 
-[`<h4>`](https://webref.ru/html/h4), [`<h5>`](https://webref.ru/html/h5), 
-[`<h6>`](https://webref.ru/html/h6).
-- Горизонтальная линия [`<hr>`](https://webref.ru/html/hr).
-- Комментарий [`<!-- -->`](https://webref.ru/html/!--).
-- Всплывающая подсказка - универсальный атрибут
-[`title`](https://webref.ru/html/attr/title).
-- Стилизация элемента - универсальный атрибут
-[`style`](https://webref.ru/html/attr/style).
-- Универсальный строчный элемент [`<span>`](https://webref.ru/html/span).
+- [`<p>`](https://webref.ru/html/p) - текстовый абзац.
+- [`<h1>`](https://webref.ru/html/h1), [`<h2>`](https://webref.ru/html/h2), 
+[`<h3>`](https://webref.ru/html/h3), [`<h4>`](https://webref.ru/html/h4), 
+[`<h5>`](https://webref.ru/html/h5), [`<h6>`](https://webref.ru/html/h6) - 
+заголовки.
+- [`<hr>`](https://webref.ru/html/hr) - горизонтальная линия.
+- [`<!-- -->`](https://webref.ru/html/!--) - комментарий.
+- [`title`](https://webref.ru/html/attr/title) - всплывающая подсказка,
+_универсальный атрибут_.
+- [`style`](https://webref.ru/html/attr/style) - стилизация элемента,
+_универсальный атрибут_.
+- [`<span>`](https://webref.ru/html/span) - универсальный строчный элемент.
 
 Структура элемента HTML:
 
@@ -43,8 +43,8 @@
 
 - [Список свойств CSS](https://webref.ru/css).
 - [Цвета в CSS](https://webref.ru/html/value/color).
-- Цвет текста [`color`](https://webref.ru/css/color).
-- Цвет фона [`background-color`](https://webref.ru/css/background-color).
+- [`color`](https://webref.ru/css/color) - цвет текста.
+- [`background-color`](https://webref.ru/css/background-color) - цвет фона.
 
 ## 1.1. Базовая структура страницы
 
