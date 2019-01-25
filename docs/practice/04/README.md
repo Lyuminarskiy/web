@@ -4,8 +4,7 @@
 
 - Связь с внешними документами с помощью элемента
 [`<link>`](https://webref.ru/html/link).
-- [Блочная модель](https://webref.ru/layout/learn-html-css/box-model) и 
-относящиеся к ней свойства CSS.
+- [Блочная модель](https://webref.ru/layout/learn-html-css/box-model).
 - [Блочные](https://webref.ru/course/block-inline/block),
 [строчные](https://webref.ru/course/block-inline/inline) и
 [строчно-блочные](https://webref.ru/course/block-inline/inline-block) 
@@ -18,7 +17,7 @@
 
 ### HTML
 
-- Связь с внешним документом [`<link>`](https://webref.ru/html/link) и его 
+- [`<link>`](https://webref.ru/html/link) - связь с внешним документом, и его 
 атрибуты [`href`](https://webref.ru/html/link/href) и
 [`rel`](https://webref.ru/html/link/rel).
 
@@ -28,41 +27,44 @@
   - [Строчные](https://webref.ru/course/block-inline/inline).
   - [Строчно-блочные](https://webref.ru/course/block-inline/inline-block)
 
-- Универсальный блочный элемент [`<div>`](https://webref.ru/html/div).
+- [`<div>`](https://webref.ru/html/div) - универсальный блочный элемент.
 
 ### CSS
 
-- Блочная модель (вместо `*` подставить одно из следующих значений: `top`, 
-`bottom`, `left`, `right`):
+- [Блочная модель](https://webref.ru/layout/learn-html-css/box-model)
+(`*` - `top`, `bottom`, `left`, или `right`):
 
-  - Величина полей [`padding`](https://webref.ru/css/padding) и `padding-*`.
-  - Величина отступа [`margin`](https://webref.ru/css/padding) и `margin-*`.
+  - [`padding`](https://webref.ru/css/padding) и `padding-*` - величина полей
+  (внутренних отступов).
+  - [`margin`](https://webref.ru/css/padding) и `margin-*` - величина отступов
+  (внешних отступов).
 
-- Алгоритм расчёта ширины и высоты элемента
-[`box-sizing`](https://webref.ru/css/box-sizing).
-- Способ отображения элемента [`display`](https://webref.ru/css/display).
+- [`box-sizing`](https://webref.ru/css/box-sizing) - алгоритм расчёта ширины и 
+высоты элемента.
+
+- [`display`](https://webref.ru/css/display) - способ отображения элемента.
 
 Селекторы:
 
-- [Селектор атрибута](https://webref.ru/css/selector/attr) - `[attr]`.
+- [`[attr]`](https://webref.ru/css/selector/attr) - селектор атрибута.
 
 - Комбинаторы:
 
-  - [Вложенный селектор](https://webref.ru/css/selector/descendant) - `A B`.
-  - [Дочерний селектор](https://webref.ru/css/selector/child) - `A > B`.
-  - [Соседний селектор](https://webref.ru/css/selector/adjacent) - `A + B`.
-  - [Родственный селектор](https://webref.ru/css/selector/sibling) - `A ~ B`.
+  - [`A B`](https://webref.ru/css/selector/descendant) - вложенный селектор.
+  - [`A > B`](https://webref.ru/css/selector/child) - дочерний селектор.
+  - [`A + B`](https://webref.ru/css/selector/adjacent) - соседний селектор.
+  - [`A ~ B`](https://webref.ru/css/selector/sibling) - родственный селектор.
 
 - Псевдоэлементы:
 
-  - Первый символ в тексте
-  [`::first-letter`](https://webref.ru/css/first-letter).
-  - Первая строка текста [`::first-line`](https://webref.ru/css/first-line).
-  - Отображения контента до содержимого элемента
-  [`::before`](https://webref.ru/css/before), после содержимого элемента
-  [`::after`](https://webref.ru/css/after) и свойство
+  - [`::first-letter`](https://webref.ru/css/first-letter) -
+  первый символ в тексте.
+  - [`::first-line`](https://webref.ru/css/first-line) - первая строка текста.
+  - [`::before`](https://webref.ru/css/before) и
+  [`::after`](https://webref.ru/css/after) - отображения контента до 
+  содержимого элемента и после содержимого элемента соответственно, и свойство
   [`content`](https://webref.ru/css/content).
-  - Выделенный текст [`::selection`](https://webref.ru/css/first-line).
+  - [`::selection`](https://webref.ru/css/first-line) - выделенный текст.
 
 Блочная модель:
 
