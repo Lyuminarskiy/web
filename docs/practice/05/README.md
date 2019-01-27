@@ -20,70 +20,75 @@
 
 - Семантические элементы, формирующие структуру документа:
 
-  - Основное содержимое документа [`<main>`](https://webref.ru/html/main).
-  - Шапка документа [`<header>`](https://webref.ru/html/header).
-  - Подвал документа [`<footer>`](https://webref.ru/html/footer).
-  - Боковая панель документа [`<aside>`](https://webref.ru/html/aside).
+  - [`<main>`](https://webref.ru/html/main) - основное содержимое документа.
+  - [`<header>`](https://webref.ru/html/header) - шапка документа.
+  - [`<footer>`](https://webref.ru/html/footer) - подвал документа.
+  - [`<aside>`](https://webref.ru/html/aside) - боковая панель документа.
   - Панель навигации [`<nav>`](https://webref.ru/html/nav).
-  - Независимый фрагмент веб-страницы
-  [`<article>`](https://webref.ru/html/article).
-  - Блок информации [`<section>`](https://webref.ru/html/section).
+  - [`<article>`](https://webref.ru/html/article) -
+  независимый фрагмент веб-страницы.
+  - [`<section>`](https://webref.ru/html/section) - блок информации.
 
 - Прочие семантические элементы:
 
-  - Информация об авторе [`<address>`](https://webref.ru/html/address).
-  - Указание даты и времени [`<time>`](https://webref.ru/html/time) и его
-  атрибут [`datetime`](https://webref.ru/html/time/datetime).
+  - [`<address>`](https://webref.ru/html/address) - информация об авторе.
+  - [`<time>`](https://webref.ru/html/time) - указание даты и времени,
+  и его атрибут [`datetime`](https://webref.ru/html/time/datetime).
 
 ### CSS
 
-- Ограничение границ действия селектора - псевдокласс
-[`:not()`](https://webref.ru/css/not).
+- [`:not()`](https://webref.ru/css/not) - ограничение границ действия 
+селектора, _псевдокласс_.
 
 - Механизм работы CSS:
 
   - [Наследование](https://metanit.com/web/html5/5.9.php).
   - [Каскадность](https://metanit.com/web/html5/5.10.php).
   - [Специфичность](https://www.w3.org/TR/selectors/#specificity).
-  - Значение [`!important`](https://webref.ru/css/%21important)
+  - [`!important`](https://webref.ru/css/%21important) - повышение приоритета
+  объявления CSS.
 
 - Способы задания [цвета](https://webref.ru/css/value/color).
-- Уровень прозрачности элемента [`opacity`](https://webref.ru/css/opacity).
+- [`opacity`](https://webref.ru/css/opacity) - уровень прозрачности элемента.
 - Единицы измерения для задания [размеров](https://webref.ru/css/value/size).
 
 - Позиция элементов:
 
-  - Способ позиционирования элемента
-  [`position`](https://webref.ru/css/position).
-  - Расстояние от верхнего [`top`](https://webref.ru/css/top),
-  правого [`right`](https://webref.ru/css/right),
-  нижнего [`bottom`](https://webref.ru/css/bottom),
-  левого [`left`](https://webref.ru/css/left) краёв родительского элемента
-  до соответствующего края дочернего элемента.
-  - Порядок наложения элементов друг на друга
-  [`z-index`](https://webref.ru/css/z-index).
+  - [`position`](https://webref.ru/css/position) - способ позиционирования 
+  элемента.
+  - [`top`](https://webref.ru/css/top), [`right`](https://webref.ru/css/right),
+  [`bottom`](https://webref.ru/css/bottom) и
+  [`left`](https://webref.ru/css/left) - расстояние от верхнего, правого, 
+  нижнего и левого краёв родительского элемента до соответствующего края 
+  дочернего элемента соответственно.
+  - [`z-index`](https://webref.ru/css/z-index) - порядок наложения элементов 
+  друг на друга.
 
 - CSS Grid Layout:
 
-  - Количество и размер строк [`grid-template-rows`
+  - [`grid-template-rows`
   ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows),
-  столбцов [`grid-template-columns`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns)
-  и комбинированное свойство [`grid-template`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template).
+  [`grid-template-columns`
+  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) и
+  [`grid-template`
+  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template) - 
+  количество и размер строк и столбцов сетки и комбинированное свойство 
+  соответственно.
   - Функция [`repeat()`
   ](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) и
   единица [`fr`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value).
-  - Макет сетки [`grid-template-areas`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas).
-  - Привязка элемента в области сетки [`grid-area`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area).
-  - Промежуток между строками [`grid-row-gap`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap),
-  столбцами [`grid-column-gap`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap)
-  и комбинированное свойство [`grid-gap`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/gap).
+  - [`grid-template-areas`
+  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) -
+  макет сетки.
+  - [`grid-area`
+  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area) -
+  привязка элемента в области сетки.
+  - [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap),
+  [`grid-column-gap`
+  ](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) и
+  [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) -
+  промежуток между строками и столбцами сетки и комбинированное свойство 
+  соответственно.
 
 Цветовая модель `RGB`
 ([источник](https://engineering.purdue.edu/~abe305/HTMLS/rgbspace.htm)):
