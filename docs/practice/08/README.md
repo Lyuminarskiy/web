@@ -24,7 +24,6 @@
   [`<summary>`](https://webref.ru/html/summary) - раскрывающийся блок, и 
   заголовок раскрывающегося блока соответственно.
   - [`<progress>`](https://webref.ru/html/progress) - полоса прогресса.
-  - [`<meter>`](https://webref.ru/html/meter) - шкала значений.
 
 - Прочие семантические элементы:
 

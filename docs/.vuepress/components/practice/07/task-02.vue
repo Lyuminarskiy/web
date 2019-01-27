@@ -19,6 +19,9 @@
           <article class="page-article">
             <h2 class="article-header">Заголовок</h2>
           </article>
+          <article class="page-article">
+            <h2 class="article-header">Заголовок</h2>
+          </article>
         </section>
       </main>
       <footer class="page-footer"></footer>
@@ -34,9 +37,6 @@
     --yellow: rgb(244, 194, 13);
     
     --article-height: 200px;
-    
-    height: 700px;
-    overflow-y: scroll;
   }
   
   .grid-container {

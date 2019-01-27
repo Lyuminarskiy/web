@@ -82,11 +82,6 @@
 </template>
 
 <style scoped>
-  .page-container {
-    height: 800px;
-    overflow-y: scroll;
-  }
-  
   label {
     display: block;
     margin: 5px 0;
