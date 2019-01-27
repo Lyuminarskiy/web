@@ -19,18 +19,20 @@
 
 - Элементы для создания форм:
 
-  - Форма [`<form>`](https://webref.ru/html/form).
-  - Кнопка [`<button>`](https://webref.ru/html/button) и её атрибут
+  - [`<form>`](https://webref.ru/html/form) - содержимое формы.
+  - [`<button>`](https://webref.ru/html/button) - кнопка, и её атрибут
   [`type`](https://webref.ru/html/button/type).
-  - Элемент ввода [`<input>`](https://webref.ru/html/input) и его атрибуты.
-  - Текстовое поле [`<textarea>`](https://webref.ru/html/textarea) и его 
-  атрибуты.
-  - Раскрывающийся список [`<select>`](https://webref.ru/html/select) с 
-  пунктами [`<option>`](https://webref.ru/html/option), объединёнными в 
-  группы [`<optgroup>`](https://webref.ru/html/optgroup).
-  - Метка [`<label>`](https://webref.ru/html/label).
-  - Группа элементов [`<fieldset>`](https://webref.ru/html/fieldset) с 
-  заголовком [`<legend>`](https://webref.ru/html/legend).
+  - [`<input>`](https://webref.ru/html/input) - многофункциональный
+  элемент ввода.
+  - [`<textarea>`](https://webref.ru/html/textarea) - текстовое поле.
+  - [`<select>`](https://webref.ru/html/select),
+  [`<option>`](https://webref.ru/html/option) и
+  [`<optgroup>`](https://webref.ru/html/optgroup) - раскрывающийся список, 
+  пункты списка и группы пунктов списка соответственно.
+  - [`<label>`](https://webref.ru/html/label) - метка поля формы.
+  - [`<fieldset>`](https://webref.ru/html/fieldset) и
+  [`<legend>`](https://webref.ru/html/legend) - группа элементов и заголовок 
+  группы соответственно.
   
 - Общие для элементов форм атрибуты:
  
@@ -59,30 +61,32 @@
   
 - Псевдоклассы для стилизации форм:
 
-  - Доступные [`:enabled`](https://webref.ru/css/enabled) и
-  заблокированные [`:disabled`](https://webref.ru/css/disabled) поля формы.
-  - Необязательные [`:optional`](https://webref.ru/css/optional) и
-  обязательные [`:required`](https://webref.ru/css/required) поля формы.
-  - Поле формы, значение которого доступно
-  [`:read-write`](https://webref.ru/css/read-write) или недоступно
-  [`:read-only`](https://webref.ru/css/read-only) для изменения.
-  - Содержимое поля формы соответствует
-  [`:valid`](https://webref.ru/css/valid) или не соответствует
-  [`:invalid`](https://webref.ru/css/invalid) указанному типу.
-  - Значение поля формы входит
-  [`:in-range`](https://webref.ru/css/in-range) или не входит
-  [`:out-of-range`](https://webref.ru/css/out-of-range) в заданный диапазон.
-  - Поле формы, находящееся в состоянии "включено"
-  [`checked`](https://webref.ru/css/checked).
+  - [`:enabled`](https://webref.ru/css/enabled) и
+  [`:disabled`](https://webref.ru/css/disabled) - доступные и заблокированные
+  поля формы соответственно.
+  - [`:optional`](https://webref.ru/css/optional) и
+  [`:required`](https://webref.ru/css/required) - необязательные и обязательные
+  поля формы соответственно.
+  - [`:read-write`](https://webref.ru/css/read-write) и 
+  [`:read-only`](https://webref.ru/css/read-only) - поля формы, значения 
+  которых доступны и недоступны для изменения соответственно.
+  - [`:valid`](https://webref.ru/css/valid) и 
+  [`:invalid`](https://webref.ru/css/invalid) - поля формы, содержимое 
+  которых соответствует и не соответствует типу поля соответственно.
+  - [`:in-range`](https://webref.ru/css/in-range) и 
+  [`:out-of-range`](https://webref.ru/css/out-of-range) - поля формы, значения 
+  которых входят и не входят в заданный диапазон соответственно.
+  - [`checked`](https://webref.ru/css/checked) - поля формы, находящиеся в 
+  состоянии "включено".
   
 - Пользовательские свойства:
 
   - [Объявление переменной
   ](https://developer.mozilla.org/ru/docs/Web/CSS/Using_CSS_variables).
-  - Функция [`var()`](https://webref.ru/css/value/var) для использования 
-  переменной.
-  - Псевдокласс [`:root`](https://webref.ru/css/root) для создания глобальных
-   переменных.
+  - [`var(variable)`](https://webref.ru/css/value/var) - возвращает значение 
+  переменной `variable`.
+  - [`:root`](https://webref.ru/css/root) - стилизация элемента
+  [`<html>`](https://webref.ru/html/html), _псевдокласс_.
    
 - Вычисляемые значения свойств:
 
