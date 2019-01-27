@@ -12,6 +12,10 @@ sidebar: auto
 [соседний](https://webref.ru/css/selector/adjacent) и
 [родственный](https://webref.ru/css/selector/sibling) селекторы лучше называть
 **комбинаторами**.
+
+Добавить работу со свойством
+[`vertical-align`](https://webref.ru/css/vertical-align), чтобы студентам не 
+приходилось изучать его самостоятельно.
 :::
 
 Затраты времени (из доступных **180 минут**):
