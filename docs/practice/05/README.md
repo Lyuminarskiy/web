@@ -151,7 +151,7 @@
       color: orange;
     }
 
-    .block > ul li a {
+    #block > ul li a {
       color: purple;
     }
 
