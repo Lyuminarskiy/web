@@ -37,6 +37,7 @@
     --yellow: rgb(244, 194, 13);
     
     --article-height: 200px;
+    --article-rotate-angle: 5deg;
   }
   
   .grid-container {
@@ -154,11 +155,11 @@
   
   .page-article:hover > .article-header {
     font-size: 2em;
-    transform: rotate(-5deg);
+    transform: rotate(calc(0 - var(--article-rotate-angle)));
   }
 
   .page-article:hover {
-    transform: rotate(5deg);
+    transform: rotate(var(--article-rotate-angle));
   }
   
   @media (max-width: 768px) {
