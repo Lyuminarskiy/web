@@ -6,6 +6,9 @@
 - [Хранение данных в браузере
 ](https://developer.mozilla.org/ru/docs/Web/API/Web_Storage_API).
 - [Node.js](https://nodejs.org/api).
+- Модули OS, Process, Path, File System, Buffer, Console, глобальные объекты, 
+модули,
+таймеры.
 
 ## Теоретические сведения
 
