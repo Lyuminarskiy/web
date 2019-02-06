@@ -90,7 +90,7 @@ module.exports = {
           ]
         },
         {
-          title: "Технологии MEVN",
+          title: "Стек технологий MEVN",
           collapsable: false,
           children: []
         }
@@ -101,7 +101,9 @@ module.exports = {
           title: "Лабораторные работы",
           collapsable: false,
           children: [
-            "01/"
+            "01/",
+            "02/",
+            "03/"
           ]
         }
       ]
