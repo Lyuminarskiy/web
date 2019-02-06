@@ -88,6 +88,11 @@ module.exports = {
             "14/",
             "15/"
           ]
+        },
+        {
+          title: "Технологии MEVN",
+          collapsable: false,
+          children: []
         }
       ],
       "/labs/": [
