@@ -35,18 +35,9 @@ sidebar: auto
 
 ## 2. JavaScript и Node.js
 
-- JS in Browser.
-- Node.js.
-
-### 13.
-
-- Размеры и координаты
-- События
-
-### 14. Node.js
-
-## 3. Популярные фреймворки
+## 3. Стек технологий MEVN
 
 - [Express](http://expressjs.com).
-- [Bootstrap](https://getbootstrap.com).
+- [MongoDB](https://www.mongodb.com).
 - [Vue.js](https://ru.vuejs.org/index.html).
+- `try...catch`
