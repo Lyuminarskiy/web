@@ -21,62 +21,72 @@
 ### Vizew
 
 ![Внешний вид](./assets/Vizew.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#vizew) |
-[Скачать исходный код](https://colorlib.com/download/2232)
+[Страница макета](https://colorlib.com/wp/template/vizew) |
+[Демонстрация](https://colorlib.com/preview/#vizew) |
+[Исходный код](https://colorlib.com/download/2232)
 
 ### Wordify
 
 ![Внешний вид](./assets/Wordify.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#wordify) |
-[Скачать исходный код](https://colorlib.com/download/2210)
+[Страница макета](https://colorlib.com/wp/template/wordify) |
+[Демонстрация](https://colorlib.com/preview/#wordify) |
+[Исходный код](https://colorlib.com/download/2210)
 
 ### Ruft
 
 ![Внешний вид](./assets/Ruft.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#ruft) |
-[Скачать исходный код](https://colorlib.com/download/2203)
+[Страница макета](https://colorlib.com/wp/template/ruft) |
+[Демонстрация](https://colorlib.com/preview/#ruft) |
+[Исходный код](https://colorlib.com/download/2203)
 
 ### Wordsmith
 
 ![Внешний вид](./assets/Wordsmith.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#wordsmith) |
-[Скачать исходный код](https://colorlib.com/download/1361)
+[Страница макета](https://colorlib.com/wp/template/wordsmith) |
+[Демонстрация](https://colorlib.com/preview/#wordsmith) |
+[Исходный код](https://colorlib.com/download/1361)
 
 ### Fantom
 
 ![Внешний вид](./assets/Fantom.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#fantom) |
-[Скачать исходный код](https://colorlib.com/download/1266)
+[Страница макета](https://colorlib.com/wp/template/fantom) |
+[Демонстрация](https://colorlib.com/preview/#fantom) |
+[Исходный код](https://colorlib.com/download/1266)
 
 ### Callie
 
 ![Внешний вид](./assets/Callie.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#callie) |
-[Скачать исходный код](https://colorlib.com/download/1020)
+[Страница макета](https://colorlib.com/wp/template/callie) |
+[Демонстрация](https://colorlib.com/preview/#callie) |
+[Исходный код](https://colorlib.com/download/1020)
 
 ### WebMag
 
 ![Внешний вид](./assets/WebMag.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#webmag) |
-[Скачать исходный код](https://colorlib.com/download/959)
+[Страница макета](https://colorlib.com/wp/template/webmag) |
+[Демонстрация](https://colorlib.com/preview/#webmag) |
+[Исходный код](https://colorlib.com/download/959)
 
 ### Balita
 
 ![Внешний вид](./assets/Balita.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#balita) |
-[Скачать исходный код](https://colorlib.com/download/941)
+[Страница макета](https://colorlib.com/wp/template/balita) |
+[Демонстрация](https://colorlib.com/preview/#balita) |
+[Исходный код](https://colorlib.com/download/941)
 
 ### Avision
 
 ![Внешний вид](./assets/Avision.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#avision) |
-[Скачать исходный код](https://colorlib.com/download/932)
+[Страница макета](https://colorlib.com/wp/template/avision) |
+[Демонстрация](https://colorlib.com/preview/#avision) |
+[Исходный код](https://colorlib.com/download/932)
 
 ### Philosophy
 
 ![Внешний вид](./assets/Philosophy.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=philosophy) |
-[Скачать исходный код](https://colorlib.com/download/339)
+[Страница макета](https://colorlib.com/wp/template/philosophy) |
+[Демонстрация](https://colorlib.com/demo?theme=philosophy) |
+[Исходный код](https://colorlib.com/download/339)
 
 ## Задачи
 
