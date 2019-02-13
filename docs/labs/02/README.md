@@ -107,3 +107,7 @@
 
 ```
 ```
+
+<disqus-comments
+  page-uuid="73464fea-046b-4dad-ac0d-a2e973598a45"
+  page-title="2. JavaScript и Node.js | Лабораторные работы"/>
