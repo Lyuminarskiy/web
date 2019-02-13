@@ -2,8 +2,8 @@
 
 ## Общая информация
 
-В этой лабораторной работе вам предлагается создать многостраничный 
-клиент-серверный веб-сайт - блог на основе макета, разработанного 
+В этой лабораторной работе вам предлагается создать многостраничный
+динамический веб-сайт - блог на основе макета, разработанного 
 профессиональными дизайнерами.
 
 ## Макеты
@@ -197,7 +197,7 @@
         // Изображение, закодированное в Base64.
         "image": "0lGODlhEAAOALMAAOazToeHh0tLSCwLJoExKcppV0aCcGCmTIHEIUEq",
         // Содержимое в виде кода HTML.
-        "body": "<p>Абзац</p><img src='data:image/gif;base64, 0lGODlhEAAOALMAAOazToeHh0tLSCwLJoExKcppV0aCcGCmTIHEIUEq' alt='Изображение'/><ul><li>Первый</li><li>Второй</li></ul>"
+        "body": "<p>Абзац</p><img src='data:image/gif;base64,0lGODlhEAAOALMAAOazToeHh0tLSCwLJoExKcppV0aCcGCmTIHEIUEq' alt='Изображение'/><ul><li>Первый</li><li>Второй</li></ul>"
       },
       // {...}
     ]
@@ -274,6 +274,22 @@
       // {...}
     ]
     ```
+
+3. На странице поста учтите всё возможное содержимое свойства `body`:
+
+    - Изображения [`<img>`](https://webref.ru/html/img)
+    с данными в кодировке [Base64](https://ru.wikipedia.org/wiki/Data:_URL).
+    - Заголовки второго уровня [`<h2>`](https://webref.ru/html/h2).
+    - Нумерованные [`<ol>`](https://webref.ru/html/ol)
+    и ненумерованные списки [`<ul>`](https://webref.ru/html/ul)
+    с пунктами [`<li>`](https://webref.ru/html/li).
+    - Абзацы [`<p>`](https://webref.ru/html/p).
+    - Цитаты [`<q>`](https://webref.ru/html/q).
+    
+4. Укажите заголовок, иконку, имя автора, описание и список ключевых слов у
+всех страниц веб-сайта.
+
+5. Укажите кодировку у всех файлов HTML и CSS.
 
 <disqus-comments
   page-uuid="73464fea-046b-4dad-ac0d-a2e973598a45"
