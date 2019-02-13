@@ -11,18 +11,29 @@
 ([источник](https://colorlib.com/wp/cat/one-page)).
 
 Макеты распространяются по лицензии
-[CC BY 3.0](https://creativecommons.org/licenses/by/3.0/), согласно которой 
+[CC BY 3.0](https://creativecommons.org/licenses/by/3.0), согласно которой 
 вы можете свободно изменять оригинальные материалы, но должны указать 
 информацию об авторе в подвале страницы. Все макеты уже содержат такую 
 информацию, так что вы должны просто оставить её такой, какая она есть.
 
 Все макеты можно открыть для предпросмотра и скачать их исходный код.
 
+### Glint
+
+![Внешний вид](./assets/Glint.jpg)
+[Страница макета](https://colorlib.com/wp/template/glint) |
+[Демонстрация](https://colorlib.com/demo?theme=glint) |
+[Исходный код](https://colorlib.com/download/81)
+
+**Glint** - современный и стильный макет веб-сайта для digital-агенства. Он 
+создан для дизайнеров, фотографов и любых других творческих профессий.
+
 ### Ultim8
 
 ![Внешний вид](./assets/Ultim8.jpg)
-[Открыть предпросмотр](https://colorlib.com/wp/template/ultim8/) |
-[Скачать исходный код](https://colorlib.com/download/1703/)
+[Страница макета](https://colorlib.com/wp/template/ultim8) |
+[Демонстрация](https://colorlib.com/wp/template/ultim8) |
+[Исходный код](https://colorlib.com/download/1703)
 
 **Ultim8** - универсальный макет веб-сайта для агенства любого вида. Это 
 очень гибкий инструмент, который отлично подойдёт к вашему проекту.
@@ -30,28 +41,21 @@
 ### Unapp
 
 ![Внешний вид](./assets/Unapp.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#unapp) |
-[Скачать исходный код](https://colorlib.com/download/1059/)
+[Страница макета](https://colorlib.com/wp/template/unapp) |
+[Демонстрация](https://colorlib.com/preview/#unapp) |
+[Исходный код](https://colorlib.com/download/1059)
 
 Используя **Unapp**, макет веб-сайта для бизнес-приложения, вы сделаете ваш 
 проект доступным онлайн для огромного количества людей. Используйте ваше 
 воображение, не ограничивайте себя и создайте выдающийся веб-сайт для вашего 
 продукта.
 
-### Glint
-
-![Внешний вид](./assets/Glint.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=glint) |
-[Скачать исходный код](https://colorlib.com/download/81/)
-
-**Glint** - современный и стильный макет веб-сайта для digital-агенства. Он 
-создан для дизайнеров, фотографов и любых других творческих профессий.
-
 ### Transcend
 
 ![Внешний вид](./assets/Transcend.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#transcend) |
-[Скачать исходный код](https://colorlib.com/download/888/)
+[Страница макета](https://colorlib.com/wp/template/transcend) |
+[Демонстрация](https://colorlib.com/preview/#transcend) |
+[Исходный код](https://colorlib.com/download/888)
 
 Продемонстрируйте ваши работы с помощью **Transcend**, макета веб-сайта для 
 дизайн-студии, и помогите вашему бизнесу достичь новых успехов. Со 
@@ -61,8 +65,9 @@
 ### CVPortfolio
 
 ![Внешний вид](./assets/CVPortfolio.jpg)
-[Открыть предпросмотр](https://colorlib.com/preview/#cvportfolio) |
-[Скачать исходный код](https://colorlib.com/download/526/)
+[Страница макета](https://colorlib.com/wp/template/cvportfolio) |
+[Демонстрация](https://colorlib.com/preview/#cvportfolio) |
+[Исходный код](https://colorlib.com/download/526)
 
 Не будте посредственным и создайте личную страницу с помощью **CVPortfolio**,
 макета веб-сайта для резюме и портфолио. Если вы хотели бы выделить себя 
@@ -71,8 +76,9 @@
 ### CA App Landing
 
 ![Внешний вид](./assets/CA_App_Landing.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=ca-app) |
-[Скачать исходный код](https://colorlib.com/download/55/)
+[Страница макета](https://colorlib.com/wp/template/ca-app) |
+[Демонстрация](https://colorlib.com/demo?theme=ca-app) |
+[Исходный код](https://colorlib.com/download/55)
 
 **CA** - минималистичный и современно выглядящий макет веб-сайта для 
 демонстрации мобильного приложения под Android и iOS. Он может также отлично 
@@ -82,8 +88,9 @@
 ### BizPro
 
 ![Внешний вид](./assets/BizPro.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=bizpro) |
-[Скачать исходный код](https://colorlib.com/download/125/)
+[Страница макета](https://colorlib.com/wp/template/bizpro) |
+[Демонстрация](https://colorlib.com/demo?theme=bizpro) |
+[Исходный код](https://colorlib.com/download/125)
 
 **BizPro** - классически выглядящий макет одностраничного веб-сайта для 
 бизнеса, который вы можете использовать для создания любого веб-сайта для 
@@ -93,8 +100,9 @@
 ### Boxus
 
 ![Внешний вид](./assets/Boxus.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=boxus) |
-[Скачать исходный код](https://colorlib.com/download/67/)
+[Страница макета](https://colorlib.com/wp/template/boxus) |
+[Демонстрация](https://colorlib.com/demo?theme=boxus) |
+[Исходный код](https://colorlib.com/download/67)
 
 **Boxus** - макет веб-сайта для творческих, цифровых, СМИ, веб-дизайн и любых 
 других видов агенств. Он отлично подходит для демонстрации вашего портфолио, 
@@ -103,8 +111,9 @@
 ### Creative Agency
 
 ![Внешний вид](./assets/Creative_Agency.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=creative-agency) |
-[Скачать исходный код](https://colorlib.com/download/63/)
+[Страница макета](https://colorlib.com/wp/template/creative-agency) |
+[Демонстрация](https://colorlib.com/demo?theme=creative-agency) |
+[Исходный код](https://colorlib.com/download/63)
 
 **Creative Agency**, как следует из названия, - макет веб-сайта для 
 творческих, СМИ и цифровых агенств любого вида. Он достаточно гибкий для 
@@ -113,8 +122,9 @@
 ### Bobsled
 
 ![Внешний вид](./assets/Bobsled.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=bobsled) |
-[Скачать исходный код](https://colorlib.com/download/49/)
+[Страница макета](https://colorlib.com/wp/template/bobsled) |
+[Демонстрация](https://colorlib.com/demo?theme=bobsled) |
+[Исходный код](https://colorlib.com/download/49)
 
 **Bobsled** - чистый и минималистичный макет веб-сайта - целевой страницы для 
 бизнеса. Вы можете использовать его для технологических стартапов, личных 
@@ -124,8 +134,9 @@
 ### Datarc
 
 ![Внешний вид](./assets/Datarc.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=datarc) |
-[Скачать исходный код](https://colorlib.com/download/83/)
+[Страница макета](https://colorlib.com/wp/template/datarc) |
+[Демонстрация](https://colorlib.com/demo?theme=datarc) |
+[Исходный код](https://colorlib.com/download/83)
 
 **Datarc** - профессионально выглядящий полноэкранный макет веб-сайта, 
 идеально подходящий для творческих агенств, цифровых фирм, технологических 
@@ -135,8 +146,9 @@
 ### Celt
 
 ![Внешний вид](./assets/Celt.jpg)
-[Открыть предпросмотр](https://colorlib.com/demo?theme=Celt) |
-[Скачать исходный код](https://colorlib.com/download/23/)
+[Страница макета](https://colorlib.com/wp/template/celt) |
+[Демонстрация](https://colorlib.com/demo?theme=Celt) |
+[Исходный код](https://colorlib.com/download/23)
 
 **Celt** - чисто выглядящий и гибкий макет веб-сайта для строительной компании.
 Продвиньте ваши услуги и продемонстрируйте завершённые проекты убедительным 
