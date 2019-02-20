@@ -196,7 +196,7 @@
         "tags": [5, 7, 4],
         // Заголовок.
         "title": "Как я провёл прошлое лето.",
-        // Изображение, закодированное в Base64.
+        // Изображение поста, закодированное в Base64.
         "image": "0lGODlhEAAOALMAAOazToeHh0tLSCwLJoExKcppV0aCcGCmTIHEIUEq",
         // Содержимое в виде кода HTML.
         "body": "<p>Абзац</p><img src='data:image/gif;base64,0lGODlhEAAOALMAAOazToeHh0tLSCwLJoExKcppV0aCcGCmTIHEIUEq' alt='Изображение'/><ul><li>Первый</li><li>Второй</li></ul>"
