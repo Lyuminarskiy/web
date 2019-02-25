@@ -123,7 +123,10 @@ module.exports = {
       apiKey: "892ad28dc056e1eb225c126678ef1c09",
       indexName: "c_vladislav",
       algoliaOptions: {
-        facetFilters: ["tags:web"]
+        facetFilters: [
+          "lang:ru-RU",
+          "tags:web-course"
+        ]
       }
     }
   },
