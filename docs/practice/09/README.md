@@ -57,25 +57,33 @@
 - Глобальный объект
 [window](https://developer.mozilla.org/ru/docs/Web/API/Window):
 
-  - Диалоговое окно с сообщением
-  [`alert()`](https://developer.mozilla.org/ru/docs/Web/API/Window/alert).
-  - Диалоговое окно запроса подтверждения с сообщением
-  [`confirm()`](https://developer.mozilla.org/ru/docs/Web/API/Window/confirm).
-  - Диалоговое окно запроса на ввод текста с сообщением
-  [`prompt()`](https://developer.mozilla.org/ru/docs/Web/API/Window/prompt).
-  - Преобразование строки в целое число [`parseInt()`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseInt).
-  - Преобразование строки в число с плавающей точкой [`parseFloat()`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat).
-  
+  - [`alert()`
+  ](https://developer.mozilla.org/ru/docs/Web/API/Window/alert) -
+  диалоговое окно с сообщением.
+  - [`confirm()`
+  ](https://developer.mozilla.org/ru/docs/Web/API/Window/confirm) -
+  диалоговое окно запроса подтверждения с сообщением.
+  - [`prompt()`
+  ](https://developer.mozilla.org/ru/docs/Web/API/Window/prompt) -
+  диалоговое окно запроса на ввод текста с сообщением.
+  - [`parseInt()`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseInt) -
+  преобразование строки в целое число.
+  - [`parseFloat()`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) -
+  преобразование строки в число с плавающей точкой.
+
 - Объявление переменных:
 
-  - Переменная с областью видимости контекста выполнения [`var`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/var).
-  - Переменная с блочной областью видимости [`let`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let).
-  - Константа с блочной областью видимости [`const`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const).
+  - [`var`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/var) -
+  переменная с областью видимости контекста выполнения.
+  - [`let`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let) -
+  переменная с блочной областью видимости. 
+  - [`const`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const) -
+  константа с блочной областью видимости.
 
 ## 9.1. Переменные
 
@@ -84,7 +92,9 @@
 1. Создайте переменные `first` и `second`.
 2. Запишите строку `"Василий"` в переменную `first`.
 3. Запишите строку `"Иван"` в переменную `second`.
-4. С помощью функции `alert` отобразите значение `first`.
+4. С помощью функции
+[`alert()`](https://developer.mozilla.org/ru/docs/Web/API/Window/alert)
+отобразите значение `first`.
 5. Скопируйте значение из `second` в `first`.
 6. Ещё раз отобразите значение `first`.
 
@@ -116,9 +126,28 @@
     - находится в диапазоне от `14` до `70` включительно,
     - не находится в диапазоне от `27` до `42` включительно.
 
-::: warning Обратите внимание!
-Проверяйте себя, выполняя выражения в **консоли**.
-:::
+## 9.3. Преобразование типов
 
-9.2. Преобразование типов
+Для каждого выражения определите результат и тип данных результата:
+
+- `"" + 1 + 0`,
+- `"" - 1 + 0`,
+- `true + false`,
+- `6 / "3"`,
+- `"2" * "3"`,
+- `4 + 5 + "px"`,
+- `"$" + 4 + 5`,
+- `"4" - 2`,
+- `"4px" - 2`,
+- `7 / 0`,
+- `"  -9\n" + 5`,
+- `"  -9\n" - 5`,
+- `5 && 2`,
+- `2 && 5`,
+- `5 || 0`,
+- `0 || 5`,
+- `null + 1`,
+- `undefined + 1`,
+- `null == "\n0\n"`,
+- `+null == +"\n0\n"`.
 
