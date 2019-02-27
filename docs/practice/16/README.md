@@ -1,9 +1,9 @@
-# 16. 
+# 16. npm и `package.json`. Nodemon. Express (ч.1)
 
 ## Темы занятия
 
-- [npm и package.json](https://metanit.com/web/nodejs/2.4.php):
-
+- [npm и `package.json`](https://metanit.com/web/nodejs/2.4.php):
+Ц
   - [install](https://docs.npmjs.com/cli/install.html) -
   устанавливает пакет и все пакеты, от которых он зависит.
   - [uninstall](https://docs.npmjs.com/cli/uninstall) -
@@ -23,4 +23,6 @@
 
 ## Теоретические сведения
 
-_Раздел находится в разработке._
+### Nodemon
+
+Файл `server.js`

@@ -113,7 +113,10 @@ module.exports = {
           title: "Стек технологий MEVN",
           collapsable: false,
           children: [
-            "16/"
+            "16/",
+            "17/",
+            "18/",
+            "19/"
           ]
         }
       ],
