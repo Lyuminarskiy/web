@@ -4,7 +4,7 @@
 - В задачах надо продемонстрировать различие между let, var и const.
 ---
 
-# 9. Типы данных. Переменные. Условные операторы. Объект `window`
+# 9. Типы данных. Переменные. Операторы. Объект `window`. Операторы ветвления
 
 ## Темы занятия
 
@@ -13,27 +13,34 @@
 - [Типы данных
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Data_structures):
 
-  - [Число
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number),
-  [`NaN`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/NaN) и
-  [`Infinity`
+  - [`Number`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number) -
+  числовой тип, включающий в себя специальные значения _не число_ [`NaN`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/NaN)
+  и _бесконечность_ [`Infinity`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Infinity).
-  - [Строка
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String)
-  и [шаблонная строка
+  - [`String`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String) -
+  строковый тип, а также [шаблонная строка
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings).
-  - [Логический тип
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean).
-  - Специальное значение [`null`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/null).
-  - Специальное значение [`undefined`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/undefined).
-  - [Объект
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_Objects).
-  - Оператор [`typeof`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof).
-
+  - [`Boolean`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean) -
+  логический тип, принимает значения _истина_ `true` или _ложь_ `false`.
+  - [`null`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/null) -
+  имеет смысл _"ничего"_ или _"значение неизвестно"_ и принимает единственное 
+  значение - `null`. 
+  - [`undefined`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/undefined) -
+  имеет смысл _"значение не присвоено"_ и принимает единственное значение -
+  `undefined`.
+  - [`Object`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_Objects) -
+  объект, может расцениваться как набор свойств.
+  - [`typeof`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof) -
+  оператор, определяющий тип данных.
+  
 - [Переменные](https://learn.javascript.ru/let-const):
 
   - [`var`
@@ -46,7 +53,7 @@
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const) -
   константа с блочной областью видимости.
 
-- [Основные операторы](https://learn.javascript.ru/operators):
+- [Операторы](https://learn.javascript.ru/operators):
 
   - [Операторы присваивания
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Assignment_Operators).
@@ -81,7 +88,7 @@
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) -
   преобразование строки в число с плавающей точкой.
   
-- Условные инструкции:
+- Операторы ветвления:
 
   - [Условный оператор
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Условный_оператор).
@@ -208,7 +215,7 @@ _Раздел находится в разработке._
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings).
 :::
 
-## 9.5. Условные инструкции
+## 9.5. Операторы ветвления
 
 ### Получение знака числа
 
@@ -318,3 +325,8 @@ switch (browser) {
 
 alert(message);
 ```
+
+<disqus-comments
+  page-uuid="34a8ec8f-68f6-4c50-8a87-9559dc0445dc"
+  page-title="9. Типы данных. Переменные. Операторы. Объект `window`. 
+    Операторы ветвления | Практические занятия"/>
