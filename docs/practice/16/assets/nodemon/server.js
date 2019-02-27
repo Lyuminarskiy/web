@@ -8,6 +8,6 @@ function listener(request, response) {
 };
 
 const server = http.createServer(listener);
-server.listen(30000, () => {
+server.listen(30000, function() {
   console.log("Сервер начал прослушивание запросов");
 });

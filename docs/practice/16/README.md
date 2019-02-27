@@ -49,7 +49,9 @@ const app = express();
 app.get("/", function(request, response) {
   response.end("Hello from Express!");
 });
-app.listen(30000);
+app.listen(30000, function() {
+  console.log("Сервер начал прослушивание запросов");
+});
 ```
 
 Для более удобного управления конфигурацией и пакетами приложения в npm 
@@ -195,7 +197,7 @@ function listener(request, response) {
 };
 
 const server = http.createServer(listener);
-server.listen(30000, () => {
+server.listen(30000, function() {
   console.log("Сервер начал прослушивание запросов");
 });
 ```
