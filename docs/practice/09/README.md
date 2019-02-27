@@ -1,20 +1,12 @@
+---
+На доработку:
+
+- В задачах надо продемонстрировать различие между let, var и const.
+---
+
 # 9. Типы данных. Переменные. Условные операторы. Объект `window`
 
 ## Темы занятия
-
-- Работа с консолью [инструментов разработчика Chrome
-](https://developers.google.com/web/tools/chrome-devtools).
-- [Типы данных](https://learn.javascript.ru/types-intro) и оператор [`typeof`
-](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof).
-- [Основные операторы](https://learn.javascript.ru/operators).
-- [Преобразования типов](https://learn.javascript.ru/types-conversion).
-- [Переменные](https://learn.javascript.ru/let-const).
-- Глобальный объект 
-[window](https://developer.mozilla.org/ru/docs/Web/API/Window) и его свойства.
-- [Условные операторы](https://learn.javascript.ru/ifelse) и
-[конструкция `switch`](https://learn.javascript.ru/switch).
-
-## Теоретические сведения
 
 ### JavaScript
 
@@ -29,7 +21,8 @@
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Infinity).
   - [Строка
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String)
-  и [шаблонная строка](https://developer.mozilla.org/ru/docs/Web/API/Window).
+  и [шаблонная строка
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings).
   - [Логический тип
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean).
   - Специальное значение [`null`
@@ -38,6 +31,20 @@
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/undefined).
   - [Объект
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_Objects).
+  - Оператор [`typeof`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof).
+
+- [Переменные](https://learn.javascript.ru/let-const):
+
+  - [`var`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/var) -
+  переменная с областью видимости контекста выполнения.
+  - [`let`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let) -
+  переменная с блочной областью видимости. 
+  - [`const`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const) -
+  константа с блочной областью видимости.
 
 - [Основные операторы](https://learn.javascript.ru/operators):
 
@@ -54,8 +61,9 @@
   - [Приоритет операторов
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
 
-- Глобальный объект
-[window](https://developer.mozilla.org/ru/docs/Web/API/Window):
+- [Преобразование типов](https://learn.javascript.ru/types-conversion).
+
+- Объект [`window`](https://developer.mozilla.org/ru/docs/Web/API/Window):
 
   - [`alert()`
   ](https://developer.mozilla.org/ru/docs/Web/API/Window/alert) -
@@ -72,18 +80,24 @@
   - [`parseFloat()`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/parseFloat) -
   преобразование строки в число с плавающей точкой.
+  
+- Условные инструкции:
 
-- Объявление переменных:
+  - [Условный оператор
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Условный_оператор).
+  - Оператор [`if..else`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else).
+  - Оператор [`switch`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch).
+  
+### Прочее
 
-  - [`var`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/var) -
-  переменная с областью видимости контекста выполнения.
-  - [`let`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/let) -
-  переменная с блочной областью видимости. 
-  - [`const`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const) -
-  константа с блочной областью видимости.
+Работа с консолью [инструментов разработчика Chrome
+](https://developers.google.com/web/tools/chrome-devtools).
+
+## Теоретические сведения
+
+_Раздел находится в разработке._
 
 ## 9.1. Переменные
 
@@ -151,3 +165,135 @@
 - `null == "\n0\n"`,
 - `+null == +"\n0\n"`.
 
+::: warning Обратите внимание!
+Для определения типа данных используйте оператор [`typeof`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof).
+:::
+
+## 9.4. Объект `window`
+
+Задачи:
+
+1. Получите имя пользователя, спросив его `Как вас зовут?`, и сохраните его в
+переменной `name`.
+2. Выведите сообщение вида `Здравствуйте, ...!`, подставляя вместо многоточия
+полученное ранее имя пользователя.
+3. Получите возраст пользователя, спросив его `Сколько вам лет?`, и сохраните 
+его в переменной `age` как число.
+4. Выведите сообщение вида `Через 5 лет вам будет ... года (лет).`, подставляя 
+вместо многоточия полученный ранее возраст пользователя, увеличенный на `5`.
+5. Спросите пользователя `Вам понравились наши вопросы?`, и сохраните его 
+ответ в переменной `result`.
+6. C помощью условного оператора выведите сообщение `Приходите ещё!`, если 
+пользователь ответил утвердительно, или `Мы исправимся!` в обратном случае.
+
+::: warning Обратите внимание!
+Для подстановки значений в строку используйте [шаблонные строки
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings).
+:::
+
+## 9.5. Условные инструкции
+
+### Получение знака числа
+
+Напишите программу, которая получает число от пользователя, спросив его
+`Введите любое число`, а затем выводит сообщение:
+
+- `Число больше нуля`, если число больше нуля,
+- `Число меньше нуля`, если число меньше нуля,
+- `Число равно нулю`, если число равно нулю.
+
+### Проверка логина и пароля
+
+Напишите программу, которая будет проверять логин и пароль пользователя:
+
+1. Получите логин пользователя, спросив его `Введите логин`,
+и сохраните его в переменной `login`.
+
+2. Проверьте логин. Eсли пользователь:
+
+   - ... ввёл `Администратор`, перейдите к пункту 3.
+   - ... ввёл другое значение, выведите сообщение 
+   `Пользователь с таким именем не существует` и перейдите к пункту 5.
+   - ... отменил ввод логина, выведите сообщение `Вход отменён`
+   и перейдите к пункту 5.
+
+3. Получите пароль пользователя, спросив его `Введите пароль`,
+и сохраните его в переменной `password`.
+
+4. Проверьте пароль. Eсли пользователь:
+
+   - ... ввёл `12345qwerty`, выведите сообщение  `Вход выполнен`.
+   - ... ввёл другое значение, выведите сообщение `Неверный пароль`.
+   - ... отменил ввод пароля, выведите сообщение `Вход отменён`.
+   
+5. Завершите программу.
+   
+### Замена условных инструкций
+
+В фрагменте программы замените оператор:
+
+1. ... [`if..else`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else)
+на [условный оператор
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Условный_оператор):
+
+```js
+var a = 2, b = 3, result;
+
+if (a + b < 4) {
+  result = 'Верно';
+}
+else {
+  result = 'Неверно';
+}
+```
+
+2,3. ... [`if..else`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else)
+на [условный оператор
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Условный_оператор)
+и (отдельно) оператор [`switch`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch):
+
+```js
+var login = '', message;
+
+if (login == 'Иван') {
+  message = 'Привет';
+}
+else if (login == 'Директор') {
+  message = 'Здравствуйте';
+}
+else if (login == '') {
+  message = 'Логин не указан';
+}
+else {
+  message = '';
+}
+```
+
+4. ... [`switch`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch)
+на оператор [`if..else`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else):
+
+```js
+var browser = 'Chrome', message;
+
+switch (browser) {
+  case 'IE':
+    message = 'Давай, до свидания!';
+    break;
+
+  case 'Chrome':
+  case 'Firefox':
+  case 'Safari':
+  case 'Opera':
+    message = 'Эти браузеры поддерживаются';
+    break;
+
+  default:
+    message = 'Браузер неизвествен';
+}
+```
