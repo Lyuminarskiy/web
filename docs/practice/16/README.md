@@ -44,12 +44,14 @@ npm install express
 
 ```js
 const express = require("express");
+const server = express();
 
-const app = express();
-app.get("/", function(request, response) {
-  response.end("Hello from Express!");
+server.get("/", function(request, response) {
+  response.setHeader("Content-Type", "text/plain; charset=UTF-8;");
+  response.end("Привет, мир!");
 });
-app.listen(30000, function() {
+
+server.listen(30000, function() {
   console.log("Сервер начал прослушивание запросов");
 });
 ```
@@ -181,22 +183,21 @@ npm run start
 npm start
 ```  
 
-
 ### Nodemon
 
 Файл `server.js`:
 
 ```js
-const http = require("http");
+const express = require("express");
+const server = express();
 
-function listener(request, response) {
+server.get("/", function(request, response) {
   console.log(new Date);
+  
+  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
+  response.end("<h1>Главная страница</h1>");
+});
 
-  response.setHeader("Content-type", "text/plain; charset=UTF-8;");
-  response.end("Привет, мир!");
-};
-
-const server = http.createServer(listener);
 server.listen(30000, function() {
   console.log("Сервер начал прослушивание запросов");
 });
