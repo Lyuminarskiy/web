@@ -112,7 +112,9 @@ module.exports = {
         {
           title: "Стек технологий MEVN",
           collapsable: false,
-          children: []
+          children: [
+            "16/"
+          ]
         }
       ],
       "/labs/": [
