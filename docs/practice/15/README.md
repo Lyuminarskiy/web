@@ -8,6 +8,7 @@
 - Модули Url и Query Strings
 - Вкладка `Network` в Chrome Devtools.
 - Fetch и Promise, JSON Placeholder.
+- Microsoft Azure.
 
 ## Теоретические сведения
 
