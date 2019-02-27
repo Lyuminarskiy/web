@@ -255,8 +255,8 @@ server.use(function(request, response, next) {
   let h = now.getHours();
   let m = now.getMinutes();
   let s = now.getSeconds();
-  let ua = req.get("user-agent");
-  console.log(`${h}:${m}:${s} ${req.method} ${req.url} ${ua}`);
+  let ua = request.get("user-agent");
+  console.log(`${h}:${m}:${s} ${request.method} ${request.url} ${ua}`);
 
   next();
 });
@@ -287,8 +287,8 @@ function logger(request, response, next) {
   let h = now.getHours();
   let m = now.getMinutes();
   let s = now.getSeconds();
-  let ua = req.get("user-agent");
-  console.log(`${h}:${m}:${s} ${req.method} ${req.url} ${ua}`);
+  let ua = request.get("user-agent");
+  console.log(`${h}:${m}:${s} ${request.method} ${request.url} ${ua}`);
 
   next();
 }
