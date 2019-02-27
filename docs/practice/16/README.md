@@ -3,7 +3,7 @@
 ## Темы занятия
 
 - [npm и `package.json`](https://metanit.com/web/nodejs/2.4.php):
-Ц
+
   - [install](https://docs.npmjs.com/cli/install.html) -
   устанавливает пакет и все пакеты, от которых он зависит.
   - [uninstall](https://docs.npmjs.com/cli/uninstall) -
@@ -25,4 +25,41 @@
 
 ### Nodemon
 
-Файл `server.js`
+Файл `server.js`:
+
+```js
+const http = require("http");
+
+function listener(request, response) {
+  console.log(new Date);
+
+  response.setHeader("Content-type", "text/plain; charset=UTF-8;");
+  response.end("Привет, мир!");
+};
+
+const server = http.createServer(listener);
+server.listen(30000, () => {
+  console.log("Сервер начал прослушивание запросов");
+});
+```
+
+Запуск сервера:
+
+```
+node server.js
+```
+
+При изменении файла `server.js` необходимо вручную перезапускать сервер. 
+Избежать этого поможет Nodemon.
+
+Установка Nodemon (глобальная установка):
+
+```
+npm install nodemon --global
+```
+
+Теперь сервер надо запускать следующим образом:
+
+```
+nodemon server.js
+```
