@@ -65,8 +65,7 @@ const express = require("express");
 const server = express();
 
 server.get("/", function(request, response) {
-  response.setHeader("Content-Type", "text/plain; charset=UTF-8;");
-  response.send("Привет, мир!");
+  response.send("<h1>Главная страница</h1>");
 });
 
 server.listen(30000, function() {
@@ -211,8 +210,6 @@ const server = express();
 
 server.get("/", function(request, response) {
   console.log(new Date);
-  
-  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
   response.send("<h1>Главная страница</h1>");
 });
 
@@ -252,20 +249,14 @@ const server = express();
 
 server.get("/", function(request, response) {
   console.log(new Date);
-  
-  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
   response.send("<h1>Главная страница</h1>");
 });
 server.get("/about", function(request, response) {
   console.log(new Date);
-  
-  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
   response.send("<h1>О сайте</h1>");
 });
 server.get("/contacts", function(request, response) {
   console.log(new Date);
-  
-  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
   response.send("<h1>Контакты</h1>");
 });
 
@@ -283,19 +274,24 @@ const express = require("express");
 const server = express();
 
 server.use(function(request, response, next) {
-  console.log(new Date);
-  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
+  let now = new Date();
+  let h = now.getHours();
+  let m = now.getMinutes();
+  let s = now.getSeconds();
+  let ua = req.get("user-agent");
+  console.log(`${h}:${m}:${s} ${req.method} ${req.url} ${ua}`);
+
   next();
 });
 
 server.get("/", function(request, response) {
-  response.end("<h1>Главная страница</h1>");
+  response.send("<h1>Главная страница</h1>");
 });
 server.get("/about", function(request, response) {
-  response.end("<h1>О сайте</h1>");
+  response.send("<h1>О сайте</h1>");
 });
 server.get("/contacts", function(request, response) {
-  response.end("<h1>Контакты</h1>");
+  response.send("<h1>Контакты</h1>");
 });
 
 server.listen(30000, function() {
@@ -309,12 +305,18 @@ server.listen(30000, function() {
 const express = require("express");
 const server = express();
 
-server.use(function(request, response, next) {
-  console.log(new Date);
-  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
-  next();
-});
+function logger(request, response, next) {
+  let now = new Date();
+  let h = now.getHours();
+  let m = now.getMinutes();
+  let s = now.getSeconds();
+  let ua = req.get("user-agent");
+  console.log(`${h}:${m}:${s} ${req.method} ${req.url} ${ua}`);
 
+  next();
+}
+
+server.use(logger);
 server.use(express.static(__dirname + "/public"));
 
 server.listen(30000, function() {
