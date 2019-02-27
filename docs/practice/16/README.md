@@ -63,7 +63,7 @@ const express = require("express");
 
 const server = express();
 server.listen(30000, function() {
-  console.log("Сервер начал прослушивание запросов");
+  console.log("Сервер запущен");
 });
 ```
 
@@ -183,7 +183,7 @@ npm start
 
 ### Nodemon
 
-Файл `server.js`:
+Nodemon автоматически перезапускает сервер при любом изменении в исходном коде:
 
 ```js
 const express = require("express");
@@ -195,26 +195,11 @@ server.get("/", function(request, response) {
 });
 
 server.listen(30000, function() {
-  console.log("Сервер начал прослушивание запросов");
+  console.log("Сервер запущен");
 });
 ```
 
-Запуск сервера:
-
-```
-node server.js
-```
-
-При изменении файла `server.js` необходимо вручную перезапускать сервер. 
-Избежать этого поможет Nodemon.
-
-Установка Nodemon (глобальная установка):
-
-```
-npm install nodemon --global
-```
-
-Теперь сервер надо запускать следующим образом:
+С помощью Nodemon сервер запускается следующим образом:
 
 ```
 nodemon server.js
@@ -242,7 +227,7 @@ server.get("/contacts", function(request, response) {
 });
 
 server.listen(30000, function() {
-  console.log("Сервер начал прослушивание запросов");
+  console.log("Сервер запущен");
 });
 ```
 
@@ -276,7 +261,7 @@ server.get("/contacts", function(request, response) {
 });
 
 server.listen(30000, function() {
-  console.log("Сервер начал прослушивание запросов");
+  console.log("Сервер запущен");
 });
 ```
 
@@ -301,6 +286,6 @@ server.use(logger);
 server.use(express.static(__dirname + "/public"));
 
 server.listen(30000, function() {
-  console.log("Сервер начал прослушивание запросов");
+  console.log("Сервер запущен");
 });
 ```

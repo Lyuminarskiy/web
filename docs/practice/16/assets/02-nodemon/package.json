@@ -1,7 +1,10 @@
 {
-  "name": "nodemon",
+  "name": "web-course",
   "version": "1.0.0",
   "scripts": {
     "start": "nodemon server.js"
+  },
+  "dependencies": {
+    "express": "^4.16.4"
   }
 }
