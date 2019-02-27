@@ -29,18 +29,17 @@
   - [`null`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/null) -
   имеет смысл _"ничего"_ или _"значение неизвестно"_ и принимает единственное 
-  значение - `null`. 
+  значение. 
   - [`undefined`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/undefined) -
-  имеет смысл _"значение не присвоено"_ и принимает единственное значение -
-  `undefined`.
+  имеет смысл _"значение не присвоено"_ и принимает единственное значение.
   - [`Object`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Working_with_Objects) -
   объект, может расцениваться как набор свойств.
   - [`typeof`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof) -
   оператор, определяющий тип данных.
-  
+ 
 - [Переменные](https://learn.javascript.ru/let-const):
 
   - [`var`
@@ -53,6 +52,18 @@
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/const) -
   константа с блочной областью видимости.
 
+- Структуры данных:
+
+  - [`Array`](https://learn.javascript.ru/array) - массив с числовыми индексами.
+  - [`Object`](https://learn.javascript.ru/object) - объект, ассоциативный 
+  массив.
+  - [`in`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/in) -
+  оператор, проверяющий наличие свойства в объекте.
+  - [`delete`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/delete) -
+  оператор, удаляющий свойство из объекта.
+  
 - [Операторы](https://learn.javascript.ru/operators):
 
   - [Операторы присваивания
@@ -113,13 +124,47 @@ _Раздел находится в разработке._
 1. Создайте переменные `first` и `second`.
 2. Запишите строку `"Василий"` в переменную `first`.
 3. Запишите строку `"Иван"` в переменную `second`.
-4. С помощью функции
-[`alert()`](https://developer.mozilla.org/ru/docs/Web/API/Window/alert)
-отобразите значение `first`.
+4. Отобразите значение `first`.
 5. Скопируйте значение из `second` в `first`.
 6. Ещё раз отобразите значение `first`.
 
-## 9.2. Операторы
+## 9.2. Структуры данных
+
+### Массивы
+
+Задачи:
+
+1. Создайте массив, состоящий из трёх строк:
+`"Иван"`, `"Василий"` и `"Дмитрий"`.    
+2. Сохраните массив в константу `people`.
+3. Отобразите значение первого элемента массива.
+4. Замените значение третьего элемента массива на `"Александр"`.
+5. Добавьте ещё два элемента массива: `"Максим"` и `"Юля"`.
+
+### Объекты
+
+Задачи:
+
+1. Создайте объект со свойством `name` и значением `"Иван"` и свойством
+`surname` и значением `"Иванов"`.
+2. Сохраните объект в константу `user`.
+3. Отобразите значение свойства `name`.
+4. Поменяйте значение свойства `name` на `"Александр"`.
+5. Добавьте к объекту свойство `age` со значением `25`.
+6. Проверьте, есть ли свойство `age` в объекте.
+7. Удалите свойство `age`.
+8. Ещё раз проверьте наличие свойства `age`.
+
+::: warning Обратите внимание!
+Для удаления свойства из объекта используйте оператор [`delete`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/delete).
+:::
+
+::: danger Распространённая ошибка!
+Элементы массивов **нумеруются с нуля**.
+:::
+
+## 9.3. Операторы
 
 ### Арифметические операции
 
@@ -163,7 +208,7 @@ _Раздел находится в разработке._
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Operator_Precedence).
 :::
 
-## 9.3. Преобразование типов
+## 9.4. Преобразование типов
 
 Для каждого выражения определите результат и тип данных результата:
 
@@ -193,7 +238,7 @@ _Раздел находится в разработке._
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/typeof).
 :::
 
-## 9.4. Объект `window`
+## 9.5. Объект `window`
 
 Задачи:
 
@@ -215,7 +260,7 @@ _Раздел находится в разработке._
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/template_strings).
 :::
 
-## 9.5. Операторы ветвления
+## 9.6. Операторы ветвления
 
 ### Получение знака числа
 
