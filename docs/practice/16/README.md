@@ -21,9 +21,27 @@
   файл, хранит дерево зависимостей пакетов в проекте.
   
 - [Nodemon](https://metanit.com/web/nodejs/2.6.php) - утилита для 
-автоматического перезапуска сервера при любом изменении в исходном коде. 
+автоматического перезапуска сервера при любом изменении в исходном коде.
+
 - [Express](https://metanit.com/web/nodejs/4.1.php) - фреймворк для
-веб-приложений Node.js.
+веб-приложений Node.js:
+
+  - [Middleware](https://metanit.com/web/nodejs/4.2.php) -
+  функции промежуточной обработки.
+  - [`express.static()`](https://metanit.com/web/nodejs/4.4.php) -
+  встроенная функция промежуточной обработки, отвечает за 
+  предоставление статических ресурсов.
+  - [`app.use()`](https://expressjs.com/ru/4x/api.html#app.use) - 
+  подключает функцию промежуточной обработки.
+  - [`app.get(path, callback)`
+  ](https://expressjs.com/ru/4x/api.html#app.get.method) - 
+  направляет HTTP GET запросы на путь `path` с обработчиком `callback`.
+  - [`res.send()`](https://expressjs.com/ru/4x/api.html#res.send) -
+  отправляет HTTP ответ клиенту.
+  - [`res.sendFile()`](https://expressjs.com/ru/4x/api.html#res.sendFile) -
+  отправляет файл клиенту по HTTP.
+  - [`res.sendStatus()`](https://expressjs.com/ru/4x/api.html#res.sendStatus) -
+  отправляет код состояния HTTP клиенту.
 
 ## Теоретические сведения
 
@@ -48,7 +66,7 @@ const server = express();
 
 server.get("/", function(request, response) {
   response.setHeader("Content-Type", "text/plain; charset=UTF-8;");
-  response.end("Привет, мир!");
+  response.send("Привет, мир!");
 });
 
 server.listen(30000, function() {
@@ -195,7 +213,7 @@ server.get("/", function(request, response) {
   console.log(new Date);
   
   response.setHeader("Content-Type", "text/html; charset=UTF-8;");
-  response.end("<h1>Главная страница</h1>");
+  response.send("<h1>Главная страница</h1>");
 });
 
 server.listen(30000, function() {
@@ -222,4 +240,84 @@ npm install nodemon --global
 
 ```
 nodemon server.js
+```
+
+### Express
+
+Создадим сервер с тремя маршрутами:
+
+```js
+const express = require("express");
+const server = express();
+
+server.get("/", function(request, response) {
+  console.log(new Date);
+  
+  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
+  response.send("<h1>Главная страница</h1>");
+});
+server.get("/about", function(request, response) {
+  console.log(new Date);
+  
+  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
+  response.send("<h1>О сайте</h1>");
+});
+server.get("/contacts", function(request, response) {
+  console.log(new Date);
+  
+  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
+  response.send("<h1>Контакты</h1>");
+});
+
+server.listen(30000, function() {
+  console.log("Сервер начал прослушивание запросов");
+});
+```
+
+Можно заметить, что во всех обработчиках мы отправляем в консоль текущие 
+дату и время, а также устанавливаем заголовок `Content-Type`. Эту 
+избыточность можно устранить с использованием функций промежуточной обработки:
+
+```js
+const express = require("express");
+const server = express();
+
+server.use(function(request, response, next) {
+  console.log(new Date);
+  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
+  next();
+});
+
+server.get("/", function(request, response) {
+  response.end("<h1>Главная страница</h1>");
+});
+server.get("/about", function(request, response) {
+  response.end("<h1>О сайте</h1>");
+});
+server.get("/contacts", function(request, response) {
+  response.end("<h1>Контакты</h1>");
+});
+
+server.listen(30000, function() {
+  console.log("Сервер начал прослушивание запросов");
+});
+```
+
+Предоставление статических файлов:
+
+```js
+const express = require("express");
+const server = express();
+
+server.use(function(request, response, next) {
+  console.log(new Date);
+  response.setHeader("Content-Type", "text/html; charset=UTF-8;");
+  next();
+});
+
+server.use(express.static(__dirname + "/public"));
+
+server.listen(30000, function() {
+  console.log("Сервер начал прослушивание запросов");
+});
 ```

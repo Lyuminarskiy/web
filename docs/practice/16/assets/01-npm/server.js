@@ -2,8 +2,8 @@ const express = require("express");
 const server = express();
 
 server.get("/", function(request, response) {
-  response.setHeader("Content-Type", "text/plain; charset=UTF-8;");
-  response.end("Привет, мир!");
+  response.set("Content-Type", "text/plain; charset=UTF-8;");
+  response.send("Привет, мир!");
 });
 
 server.listen(30000, function() {
