@@ -155,7 +155,7 @@
       color: purple;
     }
 
-    #block a {
+    #block a[href$=".ru"] {
       color: blue;
     }
 
