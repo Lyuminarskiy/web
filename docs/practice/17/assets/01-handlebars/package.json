@@ -1,0 +1,11 @@
+{
+  "name": "express-basic",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "dependencies": {
+    "express": "^4.16.4",
+    "hbs": "^4.0.3"
+  }
+}

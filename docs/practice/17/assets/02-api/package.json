@@ -1,6 +1,9 @@
 {
-  "name": "webapi",
+  "name": "ajax",
   "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon server"
+  },
   "dependencies": {
     "body-parser": "^1.18.3",
     "express": "^4.16.4"
