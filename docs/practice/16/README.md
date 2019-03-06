@@ -1,4 +1,4 @@
-# 16. npm и `package.json`. Nodemon. Express (ч.1)
+# 16. npm и `package.json`. Nodemon. Основы работы с Express
 
 ## Темы занятия
 
