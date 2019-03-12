@@ -2,10 +2,15 @@
   "name": "ajax",
   "version": "1.0.0",
   "scripts": {
-    "start": "nodemon server"
+    "dev:server": "nodemon server",
+    "dev:client": "browser-sync start --proxy 'localhost:30000' --port 35001 --ui-port 35000 --files 'public' --no-notify"
   },
   "dependencies": {
     "body-parser": "^1.18.3",
-    "express": "^4.16.4"
+    "browser-sync": "^2.26.3"
+  },
+  "devDependencies": {
+    "express": "^4.16.4",
+    "nodemon": "^1.18.10"
   }
 }

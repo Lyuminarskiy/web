@@ -11,7 +11,7 @@ let parser = bodyParser.urlencoded({
 let count = 0;
 
 app.get("/", function(request, response) {
-  response.sendFile(__dirname + "/index.html");
+  response.sendFile(__dirname + "/public/index.html");
 });
 
 app.post("/", parser, function(request, response) {
