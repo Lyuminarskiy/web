@@ -1,0 +1,13 @@
+{
+  "name": "02-mongoose",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "nodemon server"
+  },
+  "dependencies": {
+    "mongoose": "^5.4.19"
+  },
+  "devDependencies": {
+    "nodemon": "^1.18.10"
+  }
+}
