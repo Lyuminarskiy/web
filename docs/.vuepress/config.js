@@ -2,6 +2,7 @@ const path = require("path");
 
 module.exports = {
   evergreen: true,
+  serviceWorker: true,
   configureWebpack: {
     resolve: {
       alias: {
