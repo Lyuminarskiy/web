@@ -155,9 +155,11 @@
 │  │  └─...
 │  │
 │  ├──┬styles (стили)
+│  │  ├─main.css
 │  │  └─...
 │  │
 │  └──┬scripts (скрипты)
+│     ├─main.js
 │     └─...
 │
 └──┬pages (страницы веб-сайта)
@@ -190,14 +192,17 @@
 ## Серверная часть
 
 Серверная часть должна обрабатывать запросы клиентской части по заранее 
-установленным URL и возвращать динамически формируемые страницы себ-сайта.
+установленным URL и возвращать статические ресурсы (изображения, 
+скрипты и др.) и динамически формируемые страницы веб-сайта.
 
 ### Статическое и динамическое содержимое страниц
 
 Содержимое всех страниц можно разделить на два типа:
 
-1. _Статическое содержимое_ - одинаково для всех страниц веб-сайта
-(например, шапка и подвал).
+1. _Статическое содержимое_ - одинаково для всех страниц веб-сайта:
+
+    - части самой страницы (шапка, подвал и др.),
+    - ссылки на внешние ресурсы (скрипты, стили и др.).
 
 2. _Динамическое содержимое_ - формируется веб-сервером по запросу клиента:
 
@@ -282,8 +287,25 @@ _конечным точкам_:
     https://lab2.azurewebsites.net/post/5
     https://lab2.azurewebsites.net/post/27
     ```
+ 
+3. `/client/path-to-file` - [файлы клиентской части](#описание-файnов),
+где `path-to-file` - путь к файлу относительно директории `client`, например:
+
+    ```
+    https://lab2.azurewebsites.net/client/shared/assets/icon.png
+    https://lab2.azurewebsites.net/client/shared/styles/main.css
+    https://lab2.azurewebsites.net/client/shared/scripts/main.js
+    
+    https://lab2.azurewebsites.net/client/pages/index/index.css
+    https://lab2.azurewebsites.net/client/pages/index/index.js
+    https://lab2.azurewebsites.net/client/pages/index/assets/image.png
+    
+    https://lab2.azurewebsites.net/client/pages/post/post.css
+    https://lab2.azurewebsites.net/client/pages/post/post.js
+    https://lab2.azurewebsites.net/client/pages/post/assets/image.png
+    ```
   
-3. По всем остальным адресам серверная часть должна возвращать
+4. По всем остальным адресам серверная часть должна возвращать
 код ошибки HTTP `404 Not Found`.
 
 ### Описание файлов

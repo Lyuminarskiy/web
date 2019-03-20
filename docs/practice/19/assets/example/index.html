@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js</title>
+
+  <style>
+    .styled {
+      color: red;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="root">
+    <h1 :title="title"
+    v-if="active">
+      {{ header.toUpperCase() }}
+    </h1>
+    <h1 v-else>
+      Скрытый заголовок
+    </h1>
+
+    <button id="toggle"
+    @click="toggle">
+      Переключить
+    </button>
+
+    <p :class="{ styled: active }" :style="style">
+      {{ text }}
+    </p>
+
+    <!--
+    <ul>
+      <li>{{ names[0] }}</li>
+      <li>{{ names[1] }}</li>
+      <li>{{ names[2] }}</li>
+    </ul>
+    -->
+
+    <ul>
+      <li v-for="name of names">
+        {{ name }}
+      </li>
+    </ul>
+
+    <input type="text"
+      v-model="input">
+    <button @click="add">
+      Добавить
+    </button>
+    <button @click="remove">
+      Удалить
+    </button>
+  </div>
+
+  <script>
+    const app = new Vue({
+      el: "#root",
+      data: {
+        header: "Заголовок",
+        title: "Подсказка",
+        active: true,
+        names: [
+          "Иван",
+          "Василий",
+          "Алексей"
+        ],
+        style: {
+          background: "yellow",
+          textDecoration: "underline double"
+        },
+        input: ""
+        /*text: "Абзац"*/
+      },
+      computed: {
+        text() {
+          return this.names.join(" ");
+        }
+      },
+      methods: {
+        toggle() {
+          this.active = !this.active;
+        },
+        add() {
+          this.names.push(this.input);
+        },
+        remove() {
+          this.names.pop();
+        }
+      }
+    })
+
+    /*const button = document.getElementById("toggle");
+    button.onclick =
+      () => app.active = !app.active;*/
+  </script>
+</body>
+
+</html>

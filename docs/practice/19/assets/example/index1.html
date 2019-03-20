@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js</title>
+
+  <style>
+    .styled {
+      color: red;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app" :title="title">
+
+    <button @click="toggleHeader">
+      Показать/скрыть
+    </button>
+
+    <h1 v-if="visible">
+      {{ message.toUpperCase() }}
+    </h1>
+    <h1 v-else>
+      Скрытый заголовок
+    </h1>
+
+    <ul>
+      <li v-for="name of names">
+        {{ name }}
+      </li>
+    </ul>
+
+    <input v-model="text">
+
+    <p :class="{ styled: visible }" :style="style">
+      {{ paragraph }}
+    </p>
+  </div>
+
+  <script>
+    const app = new Vue({
+      el: "#app",
+      data: {
+        message: "Vue.js",
+        title: "Подсказка",
+        visible: true,
+        names: [
+          "Иван",
+          "Василий",
+          "Алексей"
+        ],
+        text: "",
+        style: {
+          fontSize: "20px",
+          textDecoration: "underline"
+        }
+      },
+      computed: {
+        /*paragraph() {
+          let text = "";
+
+          for(let name of this.names) {
+            text += name + " ";
+          }
+
+          return text;
+        }*/
+        paragraph() {
+          return this.names.join(" ");
+        }
+      },
+      methods: {
+        toggleHeader() {
+          this.visible = !this.visible;
+        }
+      }
+    })
+
+    /*const button = document.getElementById("button");
+
+    button.onclick = () => {
+      app.visible = !app.visible;
+    };*/
+  </script>
+</body>
+
+</html>
