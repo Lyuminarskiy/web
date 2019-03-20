@@ -1,6 +1,8 @@
-# 18. Основы работы с MongoDB. Mongoose
+# 18. Операции CRUD. MongoDB. Mongoose
 
 ## Темы занятия
+
+- [CRUD](https://ru.wikipedia.org/wiki/CRUD).
 
 - MongoDB:
 
