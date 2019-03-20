@@ -207,11 +207,11 @@ p.card-datetime {
 <div id="items-list">
   <p class="list-header">Список:</p>
   <ol reversed start="8">
+    <li class="list-item">Пункт 12</li>
+    <li class="list-item">Пункт 11</li>
+    <li class="list-item">Пункт 10</li>
+    <li class="list-item">Пункт 09</li>
     <li class="list-item">Пункт 08</li>
-    <li class="list-item">Пункт 07</li>
-    <li class="list-item">Пункт 06</li>
-    <li class="list-item">Пункт 05</li>
-    <li class="list-item">Пункт 04</li>
   </ol>
 </div>
 ```
