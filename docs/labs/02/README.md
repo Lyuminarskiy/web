@@ -234,15 +234,17 @@ client/                (файлы клиентской части)
 
 Опорные точки можно указывать в любом месте HTML-документа, например:
 
-```html
-<img src="{{ post-image }}">
+- в содержимом элемента:
 
-<h1>{{ post-title }}</h1>
+  ```html
+  <h1>{{ post-title }}</h1>
+  ```
 
-<main>{{ post-body }}<main>
+- в значении атрибута элемента:
 
-<div id="comments">{{ post-comments }}</div>
-```
+  ```html
+  <img src="{{ post-image }}">
+  ```
 
 В дальнейшем при запросе пользователя эти опорные точки можно будет заменить 
 на реальные данные. Для этого файл HTML надо интерпретировать как строку,
@@ -267,7 +269,8 @@ _конечным точкам_:
     https://lab2.azurewebsites.net/    
     https://lab2.azurewebsites.net/?page=2
     https://lab2.azurewebsites.net/?page=15
-    
+    ```
+    ```
     https://lab2.azurewebsites.net/index.html
     https://lab2.azurewebsites.net/index.html?page=3
     https://lab2.azurewebsites.net/index.html?page=10
@@ -291,11 +294,13 @@ _конечным точкам_:
     https://lab2.azurewebsites.net/client/shared/assets/icon.png
     https://lab2.azurewebsites.net/client/shared/styles/main.css
     https://lab2.azurewebsites.net/client/shared/scripts/main.js
-    
+    ```
+    ```
     https://lab2.azurewebsites.net/client/pages/index/index.css
     https://lab2.azurewebsites.net/client/pages/index/index.js
     https://lab2.azurewebsites.net/client/pages/index/assets/image.png
-    
+    ```
+    ```
     https://lab2.azurewebsites.net/client/pages/post/post.css
     https://lab2.azurewebsites.net/client/pages/post/post.js
     https://lab2.azurewebsites.net/client/pages/post/assets/image.png
