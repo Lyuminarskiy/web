@@ -88,6 +88,8 @@
             timeSince: getCurrentTime(),
             timeLeft: examTime
           });
+          
+          this.name = "";
         }
       },
       remove(event, index) {
@@ -141,6 +143,7 @@
     padding: 0.5rem;
     border: 1px solid black;
     
+    text-align: center;
     font-size: inherit;
     font-family: inherit;
   }
