@@ -25,7 +25,7 @@
 ### 2. Fashiop
 
 ![Внешний вид](./assets/Fashiop.jpg)
-[Страница макета](https://colorlib.com/wp/template/aroma) |
+[Страница макета](https://colorlib.com/wp/template/fashiop) |
 [Демонстрация](https://colorlib.com/preview/#fashiop) |
 [Исходный код](https://colorlib.com/download/1529)
 
