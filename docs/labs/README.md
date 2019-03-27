@@ -458,6 +458,7 @@ HTML, CSS и JavaScript.
           "no-array-constructor": "error",
           "no-bitwise": "error",
           "no-buffer-constructor": "error",
+          "no-console": "off",
           "no-else-return": "warn",
           "no-empty-function": "error",
           "no-eval": "error",
