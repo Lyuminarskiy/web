@@ -27,329 +27,547 @@ next: /exam/
 и переносам строк, но и к способам использования особенностей
 HTML, CSS и JavaScript.
 
-Для наиболее простого соблюдения требований к стилю кодирования вам будет 
-нужно установить несколько расширений для
-[Visual Studio Code](https://code.visualstudio.com) и дополнить файл 
-настроек `settings.json`, который можно открыть через меню
-`Файл → Параметры → Параметры → {} (Открыть параметры (JSON))`:
+Для наиболее простого соблюдения требований к стилю кодирования 
+установите несколько расширений для
+[Visual Studio Code](https://code.visualstudio.com):
 
 - Расширение [Beautify
 ](https://marketplace.visualstudio.com/items?itemName=HookyQR.beautify) 
-будет автоматически форматировать ваш HTML, CSS и JavaScript код. Описание 
-настроек расширения можно посмотреть
-[здесь](https://github.com/HookyQR/VSCodeBeautify/blob/master/Settings.md).
-Настройки:
+будет автоматически форматировать ваш HTML, CSS и JavaScript код:
 
-<details>
-<summary>Настройки Beautify</summary>
-
-```json
-{
-  "beautify.config": {
-    "break_chained_methods": true,
-    "extra_liners": ["head", "body", "html", "/html"],
-    "indent_size": 2,
-    "max_preserve_newlines": 1,
-    "newline_between_rules": true,
-    "selector_separator_newline": false,
-    "space_around_combinator": true,
-    "tab_size": 2,
-    "wrap_attributes": "aligned-multiple",
-    "wrap_line_length": 80
-  },
-  "editor.formatOnSave": true,
-  "html.format.enable": false
-}
-```
-
-</details>
+  <details>
+  <summary>Настройка Beautify</summary>
+  
+  1. Ознакомьтесь со [списком правил
+  ](https://github.com/HookyQR/VSCodeBeautify/blob/master/Settings.md).
+  
+  2. Добавьте следующий JSON-текст в файл настроек:
+  
+      ```json
+      {
+        "beautify.config": {
+          "break_chained_methods": true,
+          "extra_liners": ["head", "body", "html", "/html"],
+          "indent_size": 2,
+          "max_preserve_newlines": 1,
+          "newline_between_rules": true,
+          "selector_separator_newline": false,
+          "space_around_combinator": true,
+          "tab_size": 2,
+          "wrap_attributes": "aligned-multiple",
+          "wrap_line_length": 80
+        },
+        "editor.formatOnSave": true,
+        "html.format.enable": false
+      }
+      ```
+  
+  </details>
 
 - Расширение [HTMLHint
 ](https://marketplace.visualstudio.com/items?itemName=mkaufman.HTMLHint) 
-будет проверять ваш HTML код. Описание настроек расширения можно посмотреть
-[здесь](https://github.com/htmlhint/HTMLHint/wiki). Настройки:
+будет проверять ваш HTML код:
 
-<details>
-<summary>Настройки HTMLHint</summary>
-
-```json
-{
-  "htmlhint.options": {
-    "alt-require": true,
-    "attr-lowercase": true,
-    "attr-no-duplication": true,
-    "attr-unsafe-chars": true,
-    "attr-value-double-quotes": true,
-    "doctype-first": true,
-    "doctype-html5": true,
-    "id-unique": true,
-    "inline-script-disabled": true,
-    "inline-style-disabled": true,
-    "space-tab-mixed-disabled": "space",
-    "spec-char-escape": true,
-    "src-not-empty": true,
-    "style-disabled": true,
-    "tagname-lowercase": true,
-    "tag-pair": true,
-    "title-require": true
-  }
-}
-```
-
-</details>
+  <details>
+  <summary>Настройка HTMLHint</summary>
+  
+  1. Ознакомьтесь со
+  [списком правил](https://github.com/htmlhint/HTMLHint/wiki).
+  
+  2. Добавьте следующий JSON-текст в файл настроек:
+  
+      ```json
+      {
+        "htmlhint.options": {
+          "alt-require": true,
+          "attr-lowercase": true,
+          "attr-no-duplication": true,
+          "attr-unsafe-chars": true,
+          "attr-value-double-quotes": true,
+          "doctype-first": true,
+          "doctype-html5": true,
+          "id-unique": true,
+          "inline-script-disabled": true,
+          "inline-style-disabled": true,
+          "space-tab-mixed-disabled": "space",
+          "spec-char-escape": true,
+          "src-not-empty": true,
+          "style-disabled": true,
+          "tagname-lowercase": true,
+          "tag-pair": true,
+          "title-require": true
+        }
+      }
+      ```
+  
+  </details>
 
 - Расширение [stylelint
 ](https://marketplace.visualstudio.com/items?itemName=shinnn.stylelint) 
-будет проверять ваш CSS код. Описание настроек расширения можно посмотреть 
-[здесь](https://stylelint.io/user-guide/rules). Настройки:
+будет проверять ваш CSS код:
+  
+  <details>
+  <summary>Настройка stylelint</summary>
+  
+  1. Ознакомьтесь со
+  [списком правил](https://stylelint.io/user-guide/rules).
 
-<details>
-<summary>Настройки stylelint</summary>
+  2. Добавьте следующий JSON-текст в файл настроек:
+  
+      ```json
+      {
+        "css.validate": false,
+        "stylelint.config": {
+          "defaultSeverity": "warning",
+          "rules": {
+            "at-rule-name-case": "lower",
+            "at-rule-name-space-after": "always",
+            "at-rule-no-unknown": [true, {
+              "severity": "error"
+            }],
+            "at-rule-no-vendor-prefix": [true, {
+              "severity": "error"
+            }],
+            "at-rule-semicolon-newline-after": "always",
+            "at-rule-semicolon-space-before": "never",
+            "block-closing-brace-empty-line-before": "never",
+            "block-closing-brace-newline-after": "always",
+            "block-closing-brace-newline-before": "always",
+            "block-no-empty": true,
+            "block-opening-brace-newline-after": "always",
+            "block-opening-brace-space-before": "always",
+            "color-hex-case": "lower",
+            "color-hex-length": "short",
+            "color-named": "always-where-possible",
+            "color-no-invalid-hex": [true, {
+              "severity": "error"
+            }],
+            "comment-no-empty": true,
+            "comment-whitespace-inside": "always",
+            "comment-empty-line-before": ["always", {
+              "except": "first-nested"
+            }],
+            "custom-property-empty-line-before": ["never", {
+              "except": "after-comment"
+            }],
+            "declaration-block-no-duplicate-properties": [true, {
+              "severity": "error"
+            }],
+            "declaration-block-no-redundant-longhand-properties": [true, {
+              "severity": "error"
+            }],
+            "declaration-block-no-shorthand-property-overrides": [true, {
+              "severity": "error"
+            }],
+            "declaration-block-semicolon-newline-after": "always",
+            "declaration-block-semicolon-newline-before": "never-multi-line",
+            "declaration-block-semicolon-space-before": "never",
+            "declaration-block-trailing-semicolon": "always",
+            "declaration-colon-newline-after": "always-multi-line",
+            "declaration-colon-space-after": "always-single-line",
+            "declaration-colon-space-before": "never",
+            "declaration-empty-line-before": "never",
+            "declaration-no-important": [true, {
+              "severity": "error"
+            }],
+            "font-family-name-quotes": ["always-where-recommended", {
+              "severity": "error"
+            }],
+            "font-family-no-duplicate-names": [true, {
+              "severity": "error"
+            }],
+            "font-family-no-missing-generic-family-keyword": [true, {
+              "severity": "error"
+            }],
+            "font-weight-notation": "named-where-possible",
+            "function-calc-no-unspaced-operator": true,
+            "function-comma-newline-after": "always-multi-line",
+            "function-comma-newline-before": "never-multi-line",
+            "function-comma-space-after": "always-single-line",
+            "function-comma-space-before": "never",
+            "function-linear-gradient-no-nonstandard-direction": [true, {
+              "severity": "error"
+            }],
+            "function-max-empty-lines": 0,
+            "function-name-case": "lower",
+            "function-parentheses-newline-inside": "always-multi-line",
+            "function-parentheses-space-inside": "never",
+            "function-url-no-scheme-relative": [true, {
+              "severity": "error"
+            }],
+            "function-url-quotes": ["always", {
+              "severity": "error",
+              "except": "empty"
+            }],
+            "function-whitespace-after": "always",
+            "indentation": 2,
+            "keyframe-declaration-no-important": [true, {
+              "severity": "error"
+            }],
+            "length-zero-no-unit": true,
+            "max-empty-lines": 1,
+            "max-line-length": 80,
+            "media-feature-colon-space-after": "always",
+            "media-feature-colon-space-before": "never",
+            "media-feature-name-case": "lower",
+            "media-feature-name-no-unknown": [true, {
+              "severity": "error"
+            }],
+            "media-feature-name-no-vendor-prefix": [true, {
+              "severity": "error"
+            }],
+            "media-feature-parentheses-space-inside": "never",
+            "media-feature-range-operator-space-after": "always",
+            "media-feature-range-operator-space-before": "always",
+            "media-query-list-comma-newline-after": "always-multi-line",
+            "media-query-list-comma-newline-before": "never-multi-line",
+            "media-query-list-comma-space-after": "always-single-line",
+            "media-query-list-comma-space-before": "never",
+            "no-descending-specificity": [true, {
+              "severity": "error"
+            }],
+            "no-duplicate-at-import-rules": [true, {
+              "severity": "error"
+            }],
+            "no-duplicate-selectors": [true, {
+              "severity": "error"
+            }],
+            "no-empty-first-line": true,
+            "no-empty-source": true,
+            "no-eol-whitespace": true,
+            "no-extra-semicolons": true,
+            "no-invalid-double-slash-comments": [true, {
+              "severity": "error"
+            }],
+            "no-unknown-animations": [true, {
+              "severity": "error"
+            }],
+            "number-leading-zero": "always",
+            "number-max-precision": 2,
+            "number-no-trailing-zeros": true,
+            "property-case": "lower",
+            "property-no-unknown": [true, {
+              "severity": "error"
+            }],
+            "property-no-vendor-prefix": [true, {
+              "severity": "error"
+            }],
+            "rule-empty-line-before": ["always", {
+              "except": ["after-single-line-comment", "first-nested"]
+            }],
+            "selector-attribute-brackets-space-inside": "never",
+            "selector-attribute-operator-space-after": "never",
+            "selector-attribute-operator-space-before": "never",
+            "selector-attribute-quotes": "always",
+            "selector-combinator-space-after": "always",
+            "selector-combinator-space-before": "always",
+            "selector-descendant-combinator-no-non-space": true,
+            "selector-list-comma-newline-after": "always-multi-line",
+            "selector-list-comma-newline-before": "never-multi-line",
+            "selector-list-comma-space-after": "always-single-line",
+            "selector-list-comma-space-before": "never",
+            "selector-max-attribute": [1, {
+              "severity": "error"
+            }],
+            "selector-max-class": [3, {
+              "severity": "error"
+            }],
+            "selector-max-combinators": [1, {
+              "severity": "error"
+            }],
+            "selector-max-compound-selectors": [2, {
+              "severity": "error"
+            }],
+            "selector-max-empty-lines": 0,
+            "selector-max-id": [1, {
+              "severity": "error"
+            }],
+            "selector-max-pseudo-class": [2, {
+              "severity": "error"
+            }],
+            "selector-max-specificity": ["1,3,2", {
+              "severity": "error"
+            }],
+            "selector-max-type": [2, {
+              "severity": "error"
+            }],
+            "selector-max-universal": [1, {
+              "severity": "error"
+            }],
+            "selector-no-qualifying-type": [true, {
+              "severity": "error",
+              "ignore": ["attribute"]
+            }],
+            "selector-no-vendor-prefix": [true, {
+              "severity": "error"
+            }],
+            "selector-pseudo-class-case": "lower",
+            "selector-pseudo-class-no-unknown": [true, {
+              "severity": "error"
+            }],
+            "selector-pseudo-class-parentheses-space-inside": "never",
+            "selector-pseudo-element-case": "lower",
+            "selector-pseudo-element-colon-notation": ["double", {
+              "severity": "error"
+            }],
+            "selector-pseudo-element-no-unknown": [true, {
+              "severity": "error"
+            }],
+            "selector-type-case": "lower",
+            "selector-type-no-unknown": [true, {
+              "severity": "error"
+            }],
+            "shorthand-property-no-redundant-values": [true, {
+              "severity": "error"
+            }],
+            "string-no-newline": [true, {
+              "severity": "error"
+            }],
+            "string-quotes": "double",
+            "time-min-milliseconds": 100,
+            "unit-case": "lower",
+            "unit-no-unknown": [true, {
+              "severity": "error"
+            }],
+            "value-keyword-case": "lower",
+            "value-list-comma-newline-after": "always-multi-line",
+            "value-list-comma-newline-before": "never-multi-line",
+            "value-list-comma-space-after": "always-single-line",
+            "value-list-comma-space-before": "never",
+            "value-list-max-empty-lines": 0,
+            "value-no-vendor-prefix": [true, {
+              "severity": "error"
+            }]
+          }
+        }
+      }
+      ```
+  
+  </details>
 
-```json
-{
-  "css.validate": false,
-  "stylelint.config": {
-    "defaultSeverity": "warning",
-    "rules": {
-      "at-rule-name-case": "lower",
-      "at-rule-name-space-after": "always",
-      "at-rule-no-unknown": [true, {
-        "severity": "error"
-      }],
-      "at-rule-no-vendor-prefix": [true, {
-        "severity": "error"
-      }],
-      "at-rule-semicolon-newline-after": "always",
-      "at-rule-semicolon-space-before": "never",
-      "block-closing-brace-empty-line-before": "never",
-      "block-closing-brace-newline-after": "always",
-      "block-closing-brace-newline-before": "always",
-      "block-no-empty": true,
-      "block-opening-brace-newline-after": "always",
-      "block-opening-brace-space-before": "always",
-      "color-hex-case": "lower",
-      "color-hex-length": "short",
-      "color-named": "always-where-possible",
-      "color-no-invalid-hex": [true, {
-        "severity": "error"
-      }],
-      "comment-no-empty": true,
-      "comment-whitespace-inside": "always",
-      "comment-empty-line-before": ["always", {
-        "except": "first-nested"
-      }],
-      "custom-property-empty-line-before": ["never", {
-        "except": "after-comment"
-      }],
-      "declaration-block-no-duplicate-properties": [true, {
-        "severity": "error"
-      }],
-      "declaration-block-no-redundant-longhand-properties": [true, {
-        "severity": "error"
-      }],
-      "declaration-block-no-shorthand-property-overrides": [true, {
-        "severity": "error"
-      }],
-      "declaration-block-semicolon-newline-after": "always",
-      "declaration-block-semicolon-newline-before": "never-multi-line",
-      "declaration-block-semicolon-space-before": "never",
-      "declaration-block-trailing-semicolon": "always",
-      "declaration-colon-newline-after": "always-multi-line",
-      "declaration-colon-space-after": "always-single-line",
-      "declaration-colon-space-before": "never",
-      "declaration-empty-line-before": "never",
-      "declaration-no-important": [true, {
-        "severity": "error"
-      }],
-      "font-family-name-quotes": ["always-where-recommended", {
-        "severity": "error"
-      }],
-      "font-family-no-duplicate-names": [true, {
-        "severity": "error"
-      }],
-      "font-family-no-missing-generic-family-keyword": [true, {
-        "severity": "error"
-      }],
-      "font-weight-notation": "named-where-possible",
-      "function-calc-no-unspaced-operator": true,
-      "function-comma-newline-after": "always-multi-line",
-      "function-comma-newline-before": "never-multi-line",
-      "function-comma-space-after": "always-single-line",
-      "function-comma-space-before": "never",
-      "function-linear-gradient-no-nonstandard-direction": [true, {
-        "severity": "error"
-      }],
-      "function-max-empty-lines": 0,
-      "function-name-case": "lower",
-      "function-parentheses-newline-inside": "always-multi-line",
-      "function-parentheses-space-inside": "never",
-      "function-url-no-scheme-relative": [true, {
-        "severity": "error"
-      }],
-      "function-url-quotes": ["always", {
-        "severity": "error",
-        "except": "empty"
-      }],
-      "function-whitespace-after": "always",
-      "indentation": 2,
-      "keyframe-declaration-no-important": [true, {
-        "severity": "error"
-      }],
-      "length-zero-no-unit": true,
-      "max-empty-lines": 1,
-      "max-line-length": 80,
-      "media-feature-colon-space-after": "always",
-      "media-feature-colon-space-before": "never",
-      "media-feature-name-case": "lower",
-      "media-feature-name-no-unknown": [true, {
-        "severity": "error"
-      }],
-      "media-feature-name-no-vendor-prefix": [true, {
-        "severity": "error"
-      }],
-      "media-feature-parentheses-space-inside": "never",
-      "media-feature-range-operator-space-after": "always",
-      "media-feature-range-operator-space-before": "always",
-      "media-query-list-comma-newline-after": "always-multi-line",
-      "media-query-list-comma-newline-before": "never-multi-line",
-      "media-query-list-comma-space-after": "always-single-line",
-      "media-query-list-comma-space-before": "never",
-      "no-descending-specificity": [true, {
-        "severity": "error"
-      }],
-      "no-duplicate-at-import-rules": [true, {
-        "severity": "error"
-      }],
-      "no-duplicate-selectors": [true, {
-        "severity": "error"
-      }],
-      "no-empty-source": true,
-      "no-empty-first-line": true,
-      "no-eol-whitespace": true,
-      "no-extra-semicolons": true,
-      "no-invalid-double-slash-comments": [true, {
-        "severity": "error"
-      }],
-      "no-unknown-animations": [true, {
-        "severity": "error"
-      }],
-      "number-leading-zero": "always",
-      "number-max-precision": 2,
-      "number-no-trailing-zeros": true,
-      "property-case": "lower",
-      "property-no-unknown": [true, {
-        "severity": "error"
-      }],
-      "property-no-vendor-prefix": [true, {
-        "severity": "error"
-      }],
-      "rule-empty-line-before": ["always", {
-        "except": ["after-single-line-comment", "first-nested"]
-      }],
-      "selector-attribute-brackets-space-inside": "never",
-      "selector-attribute-operator-space-after": "never",
-      "selector-attribute-operator-space-before": "never",
-      "selector-attribute-quotes": "always",
-      "selector-combinator-space-after": "always",
-      "selector-combinator-space-before": "always",
-      "selector-descendant-combinator-no-non-space": true,
-      "selector-list-comma-newline-after": "always-multi-line",
-      "selector-list-comma-newline-before": "never-multi-line",
-      "selector-list-comma-space-after": "always-single-line",
-      "selector-list-comma-space-before": "never",
-      "selector-max-attribute": [1, {
-        "severity": "error"
-      }],
-      "selector-max-class": [3, {
-        "severity": "error"
-      }],
-      "selector-max-combinators": [1, {
-        "severity": "error"
-      }],
-      "selector-max-compound-selectors": [2, {
-        "severity": "error"
-      }],
-      "selector-max-empty-lines": 0,
-      "selector-max-id": [1, {
-        "severity": "error"
-      }],
-      "selector-max-pseudo-class": [2, {
-        "severity": "error"
-      }],
-      "selector-max-specificity": ["1,3,2", {
-        "severity": "error"
-      }],
-      "selector-max-type": [2, {
-        "severity": "error"
-      }],
-      "selector-max-universal": [1, {
-        "severity": "error"
-      }],
-      "selector-no-qualifying-type": [true, {
-        "severity": "error",
-        "ignore": ["attribute"]
-      }],
-      "selector-no-vendor-prefix": [true, {
-        "severity": "error"
-      }],
-      "selector-pseudo-class-case": "lower",
-      "selector-pseudo-class-no-unknown": [true, {
-        "severity": "error"
-      }],
-      "selector-pseudo-class-parentheses-space-inside": "never",
-      "selector-pseudo-element-case": "lower",
-      "selector-pseudo-element-colon-notation": ["double", {
-        "severity": "error"
-      }],
-      "selector-pseudo-element-no-unknown": [true, {
-        "severity": "error"
-      }],
-      "selector-type-case": "lower",
-      "selector-type-no-unknown": [true, {
-        "severity": "error"
-      }],
-      "shorthand-property-no-redundant-values": [true, {
-        "severity": "error"
-      }],
-      "string-no-newline": [true, {
-        "severity": "error"
-      }],
-      "string-quotes": "double",
-      "time-min-milliseconds": 100,
-      "unit-case": "lower",
-      "unit-no-unknown": [true, {
-        "severity": "error"
-      }],
-      "value-keyword-case": "lower",
-      "value-list-comma-newline-after": "always-multi-line",
-      "value-list-comma-newline-before": "never-multi-line",
-      "value-list-comma-space-after": "always-single-line",
-      "value-list-comma-space-before": "never",
-      "value-list-max-empty-lines": 0,
-      "value-no-vendor-prefix": [true, {
-        "severity": "error"
-      }]
-    }
-  }
-}
-```
-
-</details>
-
-- Расширение [ESLint
+- Расширения [ESLint
 ](https://marketplace.visualstudio.com/items?itemName=dbaeumer.vscode-eslint)
-будет проверять ваш JavaScript код. Настройки:
+и [Vetur](https://marketplace.visualstudio.com/items?itemName=octref.vetur)
+будут проверять ваш JavaScript код:
 
-<details>
-<summary>Настройки ESLint</summary>
+  <details>
+  <summary>Настройка ESLint</summary>
+  
+  1. Ознакомьтесь со списками правил для
+  [ESLint](https://eslint.org/docs/rules) и
+  [Vetur](https://vuejs.github.io/eslint-plugin-vue/rules).
+  
+  2. Добавьте следующий JSON-текст в файл настроек:
+  
+      ```json
+      { 
+        "eslint.autoFixOnSave": true,
+        "eslint.validate": [
+          "javascript",
+          "javascriptreact",
+          {
+            "language": "vue",
+            "autoFix": true
+          }
+        ]
+      }
+      ```
+  
+  3. Убедитесь, что корне проекта у вас присутствует файл `package.json`
+  c минимальным содержимым.
+  
+  4. Установите необходимые пакеты в проект c помощью следующей команды:
+  
+      ```
+      npm install --save-dev eslint eslint-plugin-vue
+      ```
+  
+  5. Создайте в корне проекта файл `.eslintrc.json` со следующим содержимым:
+  
+      ```json
+      {
+        "env": {
+          "browser": true,
+          "es6": true,
+          "node": true
+        },
+        "parserOptions": {
+          "ecmaVersion": 9,
+          "sourceType": "module"
+        },
+        "plugins": ["vue"],
+        "extends": [
+          "eslint:recommended",
+          "plugin:vue/recommended"
+        ],
+        "rules": {
+          "accessor-pairs": "error",
+          "array-bracket-newline": ["warn", "consistent"],
+          "array-bracket-spacing": ["warn", "never"],
+          "array-callback-return": "error",
+          "array-element-newline": ["warn", "consistent"],
+          "arrow-body-style": "error",
+          "arrow-parens": "warn",
+          "arrow-spacing": "warn",
+          "block-spacing": "warn",
+          "brace-style": ["warn", "stroustrup"],
+          "camelcase": "warn",
+          "capitalized-comments": "warn",
+          "class-methods-use-this": "error",
+          "comma-dangle": "warn",
+          "comma-spacing": "warn",
+          "comma-style": "warn",
+          "complexity": ["error", 5],
+          "computed-property-spacing": "warn",
+          "consistent-return": "error",
+          "curly": ["warn", "multi-or-nest", "consistent"],
+          "default-case": "error",
+          "dot-location": ["warn", "property"],
+          "dot-notation": ["warn"],
+          "eol-last": ["warn", "never"],
+          "eqeqeq": ["error", "smart"],
+          "func-call-spacing": "warn",
+          "function-paren-newline": ["warn", "never"],
+          "generator-star-spacing": ["warn", "after"],
+          "global-require": "error",
+          "implicit-arrow-linebreak": "warn",
+          "indent": ["warn", 2],
+          "key-spacing": "warn",
+          "keyword-spacing": "warn",
+          "line-comment-position": "warn",
+          "lines-around-comment": ["warn", {
+            "beforeLineComment": true,
+            "allowBlockStart": true,
+            "allowClassStart": true,
+            "allowObjectStart": true,
+            "allowArrayStart": true
+          }],
+          "lines-between-class-members": "warn",
+          "max-classes-per-file": ["error", 1],
+          "max-depth": "error",
+          "max-len": "warn",
+          "max-params": "error",
+          "max-statements-per-line": "warn",
+          "multiline-ternary": ["warn", "always-multiline"],
+          "new-cap": "error",
+          "new-parens": "warn",
+          "newline-per-chained-call": ["warn", {
+            "ignoreChainWithDepth": 1
+          }],
+          "no-alert": "error",
+          "no-array-constructor": "error",
+          "no-bitwise": "error",
+          "no-buffer-constructor": "error",
+          "no-else-return": "warn",
+          "no-empty-function": "error",
+          "no-eval": "error",
+          "no-extra-bind": "error",
+          "no-extra-parens": "warn",
+          "no-floating-decimal": "warn",
+          "no-implicit-coercion": "error",
+          "no-implicit-globals": "error",
+          "no-invalid-this": "error",
+          "no-labels": "error",
+          "no-lone-blocks": "error",
+          "no-lonely-if": "error",
+          "no-loop-func": "error",
+          "no-magic-numbers": "error",
+          "no-mixed-requires": ["warn", {
+            "grouping": true,
+            "allowCall": false
+          }],
+          "no-multi-assign": "error",
+          "no-multi-spaces": "warn",
+          "no-multi-str": "error",
+          "no-multiple-empty-lines": ["warn", {
+            "max": 2,
+            "maxBOF": 0,
+            "maxEOF": 0
+          }],
+          "no-negated-condition": "error",
+          "no-nested-ternary": "error",
+          "no-new": "error",
+          "no-new-func": "error",
+          "no-new-object": "error",
+          "no-new-require": "error",
+          "no-new-wrappers": "error",
+          "no-param-reassign": "error",
+          "no-path-concat": "error",
+          "no-process-env": "warn",
+          "no-process-exit": "error",
+          "no-return-assign": "error",
+          "no-return-await": "error",
+          "no-script-url": "error",
+          "no-self-compare": "error",
+          "no-sequences": "error",
+          "no-shadow-restricted-names": "error",
+          "no-sync": ["error", {
+            "allowAtRootLevel": true
+          }],
+          "no-template-curly-in-string": "error",
+          "no-throw-literal": "error",
+          "no-trailing-spaces": "warn",
+          "no-undef-init": "warn",
+          "no-underscore-dangle": "error",
+          "no-unmodified-loop-condition": "error",
+          "no-unneeded-ternary": "error",
+          "no-unused-expressions": "error",
+          "no-use-before-define": "error",
+          "no-useless-call": "error",
+          "no-useless-catch": "error",
+          "no-useless-computed-key": "error",
+          "no-useless-concat": "warn",
+          "no-useless-constructor": "warn",
+          "no-useless-rename": "error",
+          "no-useless-return": "warn",
+          "no-void": "error",
+          "no-whitespace-before-property": "warn",
+          "no-with": "error",
+          "object-curly-newline": "warn",
+          "object-curly-spacing": "warn",
+          "object-shorthand": "error",
+          "one-var": ["error", "never"],
+          "operator-assignment": "error",
+          "operator-linebreak": ["warn", "before"],
+          "prefer-arrow-callback": "error",
+          "prefer-const": "error",
+          "prefer-destructuring": "warn",
+          "prefer-named-capture-group": "warn",
+          "prefer-numeric-literals": "error",
+          "prefer-object-spread": "error",
+          "prefer-promise-reject-errors": "error",
+          "prefer-rest-params": "error",
+          "prefer-spread": "error",
+          "prefer-template": "error",
+          "quote-props": ["warn", "as-needed"],
+          "require-await": "error",
+          "rest-spread-spacing": "warn",
+          "semi": "error",
+          "semi-spacing": "warn",
+          "semi-style": "warn",
+          "space-before-blocks": "warn",
+          "space-before-function-paren": ["warn", {
+            "anonymous": "always",
+            "named": "never",
+            "asyncArrow": "always"
+          }],
+          "space-in-parens": "warn",
+          "space-infix-ops": "warn",
+          "space-unary-ops": "warn",
+          "spaced-comment": "warn",
+          "switch-colon-spacing": "warn",
+          "symbol-description": "error",
+          "template-curly-spacing": "warn",
+          "template-tag-spacing": "warn",
+          "vars-on-top": "warn",
+          "wrap-iife": ["warn", "inside"],
+          "yield-star-spacing": ["warn", "after"],
+          "yoda": "warn"
+        }
+      }
+      ```
 
-```json
-{
-}
-```
-
-</details>
+  </details>
 
 Результаты работы расширений вы можете посмотреть в панели `Проблемы`, 
 которую можно открыть через меню `Вид → Проблемы`. На этой панели будут 
@@ -362,16 +580,32 @@ HTML, CSS и JavaScript.
 
 1. Для стилизации элементов используйте преимущественно
 [селекторы класса](https://webref.ru/css/selector/class).
-2. При создании веб-сайта обязательно используйте **семантические элементы** в 
-тех местах, где они подходят по смыслу.
+
+2. Используйте **семантические элементы** в тех местах,
+где они подходят по смыслу.
+
+3. **Указывайте кодировку** у всех файлов HTML и CSS.
+
+4. Указывайте заголовок, иконку, имя автора, описание и список ключевых слов
+у всех страниц веб-сайта.
+
+5. При использовании Node.js указывайте описание, лицензию, информацию об 
+авторе и репозитории, сценарии и зависимости проекта в файле `package.json`.
+
+::: tip На заметку
+В [Visual Studio Code](https://code.visualstudio.com)
+файл [настроек](https://code.visualstudio.com/docs/getstarted/settings)
+`settings.json` можно открыть с помощью комбинации клавиш `Ctrl+,`
+либо через меню `Файл → Параметры → Параметры → {} (Открыть параметры (JSON))`.
+:::
 
 ### Оформление кода
 
 Ко всем лабораторным работам применяются требования к структуре каталогов. 
-Подробное описание структуры каталогов смотрите в разделе **Дополнительные 
-требования** на страницах лабораторных работ.
+Подробное описание структуры каталогов смотрите на страницах лабораторных работ.
 
-Общее требование: называйте все файлы веб-сайта **человекочитаемыми именами**.
+Общее правило оформления: называйте все файлы проекта
+**человекочитаемыми именами**.
 
 ### Хранение кода
 
