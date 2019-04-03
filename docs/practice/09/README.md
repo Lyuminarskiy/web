@@ -135,7 +135,10 @@
   - Оператор [`if..else`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else).
   - Оператор [`switch`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch).  
+  - [`break`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/break) -
+  прерывает выполнение текущего оператора `switch`.
   
 ### Прочее
 
