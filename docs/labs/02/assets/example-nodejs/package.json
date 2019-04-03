@@ -1,0 +1,24 @@
+{
+  "description": "Лабораторная работа №2",
+  "license": "MIT",
+  "author": {
+    "name": "Люминарский Владислав",
+    "email": "Vladislav.Lyuminarskiy@gmail.com",
+    "url": "https://github.com/Vladislav-Lyuminarskiy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Web-courses/Web-course-lab2-template.git"
+  },
+  "scripts": {
+    "start": "node server/scripts/server.js 80",
+    "dev:server": "nodemon server/scripts/server.js 30000",
+    "dev:client": "browser-sync start --proxy localhost:30000 --port 30001 --files client --no-notify --no-ui"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.26.3",
+    "eslint": "^5.15.3",
+    "eslint-plugin-vue": "^5.2.2",
+    "nodemon": "^1.18.10"
+  }
+}
