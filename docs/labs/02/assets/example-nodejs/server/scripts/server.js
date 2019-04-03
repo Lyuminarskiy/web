@@ -8,37 +8,39 @@ const loader = require("./loader.js");
  * @param response Ответ сервера.
  */
 function listener(request, response) {
-  // Вывести в консоль сервера информацию о текущем запросе.
   console.log(`${Date()} | ${request.method} ${request.url}`);
 
-  // Поместите сюда обработку запроса клиента.
+  // Получение статических ресурсов.
   if (request.url.startsWith("/client/")) {
-    loader.getClientResource(request.url, response);
+    loader.getClientResource(response, request.url);
   }
+
+  // Получение страницы поста.
   else if (request.url.startsWith("/post/")) {
     const postId = parseInt(request.url
       .split("/post/")
       .pop());
 
-    loader.getPostPage(postId, response);
+    loader.getPostPage(response, postId);
   }
-  else if (request.url.startsWith("/") || request.url.startsWith("/index.html")) {
+
+  // Получение главной страницы.
+  else if (request.url.startsWith("/")
+    || request.url.startsWith("/index.html")) {
     loader.getIndexPage(response);
   }
+
+  // Обработка некорректного запроса.
   else {
     response.statusCode = 404;
-    response.end("...");
+    response.end();
   }
 }
 
-// Порт по умолчанию.
-const DEFAULT_PORT = 80;
-
-// Номер параметра командной строки со значением порта.
-const PORT_PARAMETER_NUMBER = 2;
-
 // Получаем номер порта через параметр командной строки.
 // Если параметр не был указан, то выбираем порт по умолчанию.
+const DEFAULT_PORT = 80;
+const PORT_PARAMETER_NUMBER = 2;
 const PORT = parseInt(process.argv[PORT_PARAMETER_NUMBER]) || DEFAULT_PORT;
 
 http

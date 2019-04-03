@@ -3,7 +3,13 @@ const fs = require("fs");
 const data = require("./data.js");
 
 module.exports = {
-  getClientResource(url, response) {
+  /**
+   * Отправляет клиенту статический ресурс по указанному адресу.
+   *
+   * @param {http.ServerResponse} response - Объект ответа сервера.
+   * @param {string} url - Адрес статического ресурса.
+   */
+  getClientResource(response, url) {
     const resourcePath = path.resolve(__dirname, `../../${url}`);
     console.log(resourcePath);
     fs.readFile(resourcePath, (err, data) => {
@@ -16,14 +22,23 @@ module.exports = {
       }
     });
   },
-  getPostPage(id, response) {
+
+  /**
+   * Отправляет клиенту страницу поста по указанному идентификатору.
+   *
+   * @param {http.ServerResponse} response - Объект ответа сервера.
+   * @param {number} id - Идентификатор поста.
+   */
+  getPostPage(response, id) {
     const post = data.getPost(id);
     if (post === undefined) {
       response.statusCode = 404;
       response.end();
     }
     else {
-      const postPath = path.resolve(__dirname, "../../client/pages/post/post.html");
+      const postPath = path.resolve(__dirname,
+        "../../client/pages/post/post.html");
+
       fs.readFile(postPath, "utf8", (err, data) => {
         if (err) {
           response.statusCode = 404;
@@ -41,8 +56,16 @@ module.exports = {
       });
     }
   },
+
+  /**
+   * Отправляет клиенту главную страницу.
+   *
+   * @param {http.ServerResponse} response - Объект ответа сервера.
+   */
   getIndexPage(response) {
-    const indexPath = path.resolve(__dirname, "../../client/pages/index/index.html");
+    const indexPath = path.resolve(__dirname,
+      "../../client/pages/index/index.html");
+
     fs.readFile(indexPath, "utf8", (err, data) => {
       if (err) {
         response.statusCode = 404;
