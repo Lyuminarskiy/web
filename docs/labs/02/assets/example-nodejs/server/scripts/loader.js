@@ -50,8 +50,6 @@ module.exports = {
           .replace("{{ title }}", post.title)
           .replace("{{ body }}", post.body);
 
-        console.log(renderedData);
-
         response.end(renderedData);
       });
     }

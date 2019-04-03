@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <link rel="stylesheet" href="client/shared/styles/main.css">
+  <link rel="stylesheet" href="client/pages/index/index.css">
+
+  <script async src="client/shared/scripts/main.js"></script>
+  <script async src="client/pages/index/index.js"></script>
+
+  <!-- Заполните своими данными -->
+  <meta name="author" content="">
+  <meta name="description" content="">
+  <meta name="keywords" content="">
+  <link rel="icon" href="client/shared/assets/icon.png">
+  <title></title>
+</head>
+
+<body>
+  <!-- Подставьте сюда список постов -->
+  <p>Посты:</p>
+  <ul>
+    {{#each posts}}
+      <li>{{this}}</li>
+    {{/each}}
+  </ul>
+</body>
+
+</html>
