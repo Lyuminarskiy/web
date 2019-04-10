@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js</title>
+
+  <style>
+    .blog-post {
+      padding: 5px;
+      border: 1px solid black;
+      margin: 2px;
+    }
+
+    label {
+      display: block;
+    }
+
+    input, textarea {
+      box-sizing: border-box;
+      width: 100%;
+    }
+  </style>
+
+  <!-- Загрузка Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+  <div id="app">
+    <fieldset>
+      <legend>Добавить новый пост</legend>
+      <label>
+        Заголовок поста:
+        <input
+          type="text"
+          v-model="header">
+      </label>
+
+      <label>
+        Тело поста:
+        <textarea
+          type="text"
+          v-model="body"></textarea>
+      </label>
+
+      <button @click="addPost" :disabled="!canAddPost">
+        Добавить
+      </button>
+    </fieldset>
+
+    <blog-post
+      class="blog-post"
+      v-for="post of posts"
+      :key="post.id"
+      :header="post.header"
+      @delete-post="deletePost($event, post.id)">
+      {{ post.body }}
+    </blog-post>
+  </div>
+
+  <script>
+    Vue.component("blog-post", {
+      props: ["header"],
+      template: `
+        <div>
+          <h2>{{ header }}</h2>
+          <p>
+            <slot></slot>
+          </p>
+          <button @click="$emit('delete-post')">
+            Удалить
+          </button>
+        </div>
+      `
+    });
+
+    new Vue({
+      el: "#app",
+      data: {
+        header: "",
+        body: "",
+        posts: [
+          {
+            id: 1,
+            header: "Заголовок №1",
+            body: "Тело поста №1."
+          },
+          {
+            id: 2,
+            header: "Заголовок №2",
+            body: "Тело поста №2."
+          },
+          {
+            id: 3,
+            header: "Заголовок №3",
+            body: "Тело поста №3."
+          }
+        ]
+      },
+      computed: {
+        /**
+         * Определяет, можно ли добавить новый пост.
+         * Пост можно добавить, только если оба поля ввода непустые.
+         *
+         * @return {boolean} Можно ли добавить новый пост.
+         */
+        canAddPost() {
+          return this.header.length !== 0 && this.body.length !== 0;
+        },
+      },
+      methods: {
+        /**
+         * Добавляет новый пост.
+         */
+        addPost() {
+          // Получаем значение нового идентификатора, на единицу большее
+          // максимального значения среди идентификаторов на данный момент.
+          const id = Math.max(...this.posts.map((post) => post.id)) + 1;
+
+          this.posts.push({
+            id,
+            header: this.header,
+            body: this.body
+          });
+
+          this.header = "";
+          this.body = "";
+        },
+
+        /**
+         * Удаляет пост с указанным идентификатором.
+         *
+         * @param {number} id - Идентификатор поста.
+         * @return {object} Пост.
+         */
+        deletePost(event, id) {
+          this.posts = this.posts
+            .filter((post) => post.id !== id);
+        }
+      }
+    });
+  </script>
+</body>
+
+</html>

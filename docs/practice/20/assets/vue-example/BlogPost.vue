@@ -1,29 +1,26 @@
 <template>
-  <div class="block-post">
-    <button @click="$emit('increase-size')">
-      Увеличить
+  <div>
+    <h2>{{ header }}</h2>
+    <p>
+      <slot></slot>
+    </p>
+    <button @click="$emit('delete-post')">
+      Удалить
     </button>
-    <button @click="$emit('decrease-size')">
-      Уменьшить
-    </button>
-
-    <h2>{{ title }}</h2>
-
-    <slot></slot>
   </div>
 </template>
 
 <script>
   export default {
-    props: ["title"]
+    props: ["header"]
   }
 </script>
 
 <style scoped>
-  .block-post {
-    border: 1px solid black;
+  .blog-post {
     padding: 5px;
-    margin: 5px;
+    border: 1px solid black;
+    margin: 2px;
   }
 </style>
 

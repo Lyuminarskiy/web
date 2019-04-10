@@ -11,23 +11,27 @@
 </head>
 
 <body>
-
   <div id="app">
     <button-counter></button-counter>
     <button-counter></button-counter>
-    <button-counter></button-counter>
+
+    <!--
+    <button @click="count++">
+      Количество нажатий: {{ count }}
+    </button>
+    -->
   </div>
 
   <script>
+    //const obj = {count: 0}
+
     Vue.component("button-counter", {
       data() {
-        return {
-          count: 0
-        }
+        return {count: 0};
       },
       template: `
         <button @click="count++">
-          Счётчик нажатий: {{ count }}
+          Количество нажатий: {{ count }}
         </button>
       `
     });
