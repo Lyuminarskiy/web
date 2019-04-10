@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+
+<html lang="ru">
+
+<head>
+  <meta charset="utf-8">
+  <title>Vue.js</title>
+
+  <!-- Загрузка Vue.js -->
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+</head>
+
+<body>
+
+  <div id="app">
+    <button-counter></button-counter>
+    <button-counter></button-counter>
+    <button-counter></button-counter>
+  </div>
+
+  <script>
+    Vue.component("button-counter", {
+      data() {
+        return {
+          count: 0
+        }
+      },
+      template: `
+        <button @click="count++">
+          Счётчик нажатий: {{ count }}
+        </button>
+      `
+    });
+
+    new Vue({el: "#app"});
+  </script>
+</body>
+
+</html>
