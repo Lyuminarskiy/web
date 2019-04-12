@@ -91,6 +91,11 @@
 
 ### Объект `Console`
 
+Ссылки по теме:
+
+- [Команды для работы с JavaScript-консолью в браузерах и повышение производительности труда программиста
+](https://habr.com/ru/company/ruvds/blog/414375/).
+
 ### Циклы
 
 Ссылки по теме:
@@ -103,7 +108,20 @@
 
 ### Функции
 
+Ссылки по теме:
+
+- [Функции](https://learn.javascript.ru/function-basics).
+- [Функциональные выражения
+](https://learn.javascript.ru/function-declaration-expression).
+- [Именованные функциональные выражения
+](https://learn.javascript.ru/named-function-expression).
+- [Функции](https://learn.javascript.ru/es-function).
+
 ### Методы объектов
+
+Ссылки по теме:
+
+- [Методы объектов, this](https://learn.javascript.ru/object-methods).
 
 ### Отложенный вызов функций
 
@@ -114,4 +132,13 @@
 
 ### Элемент `<script>`
 
+Ссылки по теме:
+
+- [Внешние скрипты, порядок исполнения
+](https://learn.javascript.ru/external-script).
+
 ### Отладка кода в браузере
+
+Ссылки по теме:
+
+- [Отладка в браузере Chrome](https://learn.javascript.ru/debugging-chrome).
