@@ -1,11 +1,11 @@
-# 10. Циклы. Функции. Элемент `<script>`. Отладка кода в браузере
+# 10. Циклы. Функции и методы объектов. Внешние скрипты. Отладка кода в браузере
 
 ## Темы занятия
 
 ### HTML
 
-Элемент [`<script>`](https://webref.ru/html/script) и его атрибут
-[`src`](https://webref.ru/html/script/src).
+[`<script>`](https://webref.ru/html/script) - описание скриптов, используемых
+на странице и его атрибут [`src`](https://webref.ru/html/script/src).
 
 ### JavaScript
 
@@ -136,7 +136,7 @@
 - [Отложенный вызов функций
 ](https://learn.javascript.ru/settimeout-setinterval).
 
-### Элемент `<script>`
+### Внешние скрипты
 
 Ссылки по теме:
 
@@ -148,3 +148,8 @@
 Ссылки по теме:
 
 - [Отладка в браузере Chrome](https://learn.javascript.ru/debugging-chrome).
+
+<disqus-comments
+  page-uuid="8bc55875-eaaf-43b1-a013-d9d84e05568c"
+  page-title="10. Циклы. Функции и методы объектов. Внешние скрипты.
+    Отладка кода в браузере | Практические занятия"/>
