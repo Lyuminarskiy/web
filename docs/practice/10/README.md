@@ -61,9 +61,20 @@
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/continue) -
   прерывает выполнение текущей итерации цикла и переходит к следующей итерации.
 
-- Функции, функциональные выражения.
-  
-- Методы объектов и this.
+- Функции и методы объектов:
+
+  - [`function`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function) -
+  определяет функцию с указанным именем, аргументами и телом.
+  - [Функциональное выражение
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/function) -
+  определяет функцию внутри выражения.
+  - [`(...) => {...}`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions) -
+  определяет стрелочную функцию.
+  - [`this`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this) -
+  ссылка на объект, который является текущим контекстом исполнения.
 
 - Отложенный вызов функций:
 
@@ -106,7 +117,7 @@
 - [Циклы и итерации
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Циклы_и_итерации).
 
-### Функции
+### Функции и методы объектов
 
 Ссылки по теме:
 
@@ -116,11 +127,6 @@
 - [Именованные функциональные выражения
 ](https://learn.javascript.ru/named-function-expression).
 - [Функции](https://learn.javascript.ru/es-function).
-
-### Методы объектов
-
-Ссылки по теме:
-
 - [Методы объектов, this](https://learn.javascript.ru/object-methods).
 
 ### Отложенный вызов функций
