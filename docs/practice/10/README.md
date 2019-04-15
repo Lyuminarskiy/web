@@ -231,10 +231,10 @@ function filter(arr, callback) { /* ... */ }
 
 ```js
 let arr = [-5, 4, 1, 2, 0, -4, -3];
-filter(arr, item => item % 2 === 0); // [4, 2, 0, -4]
+filter(arr, (item) => item % 2 === 0); // [4, 2, 0, -4]
 
 arr = ["Иван", "Алексей", "Дмитрий", "Алиса"];    
-filter(arr, name => name.length > 6); // ["Алексей", "Дмитрий"]
+filter(arr, (name) => name.length > 6); // ["Алексей", "Дмитрий"]
 ```
 
 Продемонстрируйте работу функции.
