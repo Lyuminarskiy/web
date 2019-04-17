@@ -13,16 +13,13 @@
 
   - [`console.log()`
   ](https://developer.mozilla.org/ru/docs/Web/API/Console/log) -
-  выводит сообщение на консоль браузера.
-  
+  выводит сообщение на консоль браузера.  
   - [`console.info()`
   ](https://developer.mozilla.org/ru/docs/Web/API/Console/info) -
-  выводит на консоль браузера информационное сообщение.
-  
+  выводит на консоль браузера информационное сообщение.  
   - [`console.warn()`
   ](https://developer.mozilla.org/ru/docs/Web/API/Console/warn) -
-  выводит на консоль браузера предупреждение.
-  
+  выводит на консоль браузера предупреждение.  
   - [`console.error()`
   ](https://developer.mozilla.org/ru/docs/Web/API/Console/error) -
   выводит на консоль браузера сообщение об ошибке.
@@ -31,32 +28,26 @@
 
   - [`while`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/while) -
-  выполняет указанное выражение до тех пор, пока истинно проверяемое условие.
-  
+  выполняет указанное выражение до тех пор, пока истинно проверяемое условие.  
   - [`do...while`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/do...while) -
   выполняет указанное выражение (как минимум один раз) до тех пор,
-  пока истинно проверяемое условие.
-  
+  пока истинно проверяемое условие.  
   - [`for`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for) -
   выполняет указанное выражение до тех пор, пока истинно проверяемое условие;
   позволяет выполнить _выражение инициализации_ перед началом цикли и 
-  _финальное выражение_ в конце каждой итерации цикла.
-  
+  _финальное выражение_ в конце каждой итерации цикла.  
   - [`for...of`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...of) -
   выполняет указанное выражение над каждым элементом массива (или любого 
-  другого _итерируемого_ объекта).
-  
+  другого _итерируемого_ объекта).  
   - [`for...in`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...in) -
-  выполняет указанное выражение над каждым перечислимым свойством объекта.
-  
+  выполняет указанное выражение над каждым перечислимым свойством объекта.  
   - [`break`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/break) -
-  прерывает выполнение текущего цикла.
-  
+  прерывает выполнение текущего цикла.  
   - [`continue`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/continue) -
   прерывает выполнение текущей итерации цикла и переходит к следующей итерации.
