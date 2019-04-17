@@ -1,26 +1,29 @@
-# 11. Встроенные объекты и их свойства
+# 11. Оператор `...`. Стандартные встроенные объекты. Отладка кода в редакторе
 
 ## Темы занятия
 
-- [Стандартные встроенные объекты
-](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects),
-их свойства и методы.
-
-- Деструктуризация:
-
-  - [Оператор `...`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
-  
-- Отладка кода с помощью [Visual Studio Code](https://code.visualstudio.com).
-
-## Теоретические сведения
-
 ### JavaScript
+  
+- Оператор `...`:
+
+  - [Выражение оставшихся параметров
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Rest_parameters) -
+  позволяет передавать неограниченное количество аргументов в функцию
+  в виде массива.
+  
+  - [Выражение распространения
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax) -
+  позволяет извлекать данные из массивов или объектов (или любых других 
+  итерируемых объектах) при вызове функций, при создании массивом или объектов.
+  
+  - [Деструктурирующее присваивание
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment) -
+  позволяет извлекать данные из массивов или объектов (или любых других 
+  итерируемых объектов) при присваивании.
 
 - [Стандартные встроенные объекты
-](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects),
-их свойства и методы:
-
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects):
+  
   - Объект `Number` и числа:
   
   - Объект `String` и строки:
@@ -32,11 +35,31 @@
   - Объект `Math`:
   
   - Объект `Date`:
-
-- [Оператор `...`
-](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
   
-### Visual Studio Code
+  - `Set` и `Map`
+  
+  - `JSON`
+
+### Прочее
+
+Отладка кода с помощью [Visual Studio Code](https://code.visualstudio.com).
+
+## Теоретические сведения
+
+### Оператор `...`
+
+Ссылки по теме:
+
+- [Функции](https://learn.javascript.ru/es-function).
+- [Деструктуризация](https://learn.javascript.ru/destructuring).
+
+### Стандартные встроенные объекты
+
+Ссылки по теме:
+
+- []().
+  
+### Отладка кода в редакторе
 
 #### Настройка отладки
 
@@ -85,3 +108,44 @@
 Live Server`. В результате откроется окно Google Chrome с вкладкой в 
 режиме инкогнито.
 3. Выберите пункт меню `Отладка → Запустить отладку` для запуска отладки.
+
+## 11.1. Оператор `...`
+
+Задачи:
+
+1. Используя выражение оставшихся параметров создайте следующую функцию:  
+
+    ```js
+    /**
+    * Возвращает наименьшее и наибольшее из нуля или более чисел в виде
+    * массива из двух чисел.
+    * 
+    * @param {...number} numbers - Числа.
+    * @return {array} Наименьшее и наибольшее числа.
+    */
+    function minMax(...numbers) { /* ... */ }
+    ```
+    
+    Примеры работы функции:
+    
+    ```js
+    minMax(1, 2, 3); // [1, 3]
+    minMax(-1, -2, -3); // [-3, -1]
+    ```
+
+2. Продемонстрируйте работу функции.
+
+3. Создайте массив чисел и, используя выражение распространения, найдите
+наибольшее и наименьшее значения массива с помощью функции `minMax()`.
+
+4. Создайте переменные `min` и `max` и инициализируйте их возвращаемым
+значением функции `minMax()` с помощью деструктурирующего присваивания.
+
+## 11.2. Стандартные встроенные объекты
+
+## 11.3. Отладка кода в редакторе
+
+<disqus-comments
+  page-uuid="9686daea-fb22-4972-a00b-21e8dcbac8dd"
+  page-title="11. Оператор '...'. Стандартные встроенные объекты.
+    Отладка кода в редакторе | Практические занятия"/>

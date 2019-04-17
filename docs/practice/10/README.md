@@ -72,10 +72,6 @@
   - [`(...) => {...}`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions) -
   определяет _стрелочную функцию_.
-  - [`(...)`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Rest_parameters) -
-  оператор _оставшихся параметров_, позволяет передавать неограниченное 
-  количество аргументов в функцию в виде массива.
   - [`this`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this) -
   ссылка на объект, который является текущим контекстом исполнения.
@@ -268,29 +264,6 @@ power(2, 1); // 2
 power(2, 0); // 1
 power(2, -1); // 0.5
 power(2, -4); // 0.0625
-```
-
-Продемонстрируйте работу функции.
-
-### Наибольшее число
-
-Создайте следующую функцию:  
-
-```js
-/**
-* Возвращает наибольшее из нуля или более чисел.
-* 
-* @param {...number} numbers - Числа.
-* @return {number} Максимальное число.
-*/
-function max(...numbers) { /* ... */ }
-```
-
-Примеры работы функции:
-
-```js
-max(1, 2, 3); // 3
-max(-1, -2, -3); // -1
 ```
 
 Продемонстрируйте работу функции.
