@@ -24,13 +24,102 @@
 - [Стандартные встроенные объекты
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects):
   
-  - Объект `Number` и числа:
+  - [`Object`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object):
+    
+    - [`keys()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) -
+    возвращает массив, содержащий имена свойств переданного объекта.
+    - [`freeze()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) -
+    возвращает _"замороженный объект"_ на основе переданного объекта,
+    т.е. объект, у которого нельзя удалить или изменить никакое свойство.    
+    - [`obj.toString()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) -
+    возвращает строку, представляющую объект.
+    
+  - [`Number`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number):
   
-  - Объект `String` и строки:
+    - [`MAX_VALUE`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE) -
+    наибольшее представимое положительное число.
+    - [`MIN_VALUE`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE) -
+    наименьшее представимое положительное число.
+    - [`EPSILON`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON) -
+    наименьший интервал между двумя представимыми числами.
+    - [`number.toFixed()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) -
+    возвращает строку, представляющую число в записи с фиксированной запятой.
+    - [`number.toPrecision()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision) -
+    возвращает строку, представляющую число с указанной точностью.
+    - [`number.toString()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) -
+    возвращает строковое представление числа в указанной системе счисления.
+    
+  - [`String`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String):
   
+    - [`str.length`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/length) -
+    длина строки.
+    - [`str.charAt()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/charAt) -
+    возвращает символ строки по указанному индексу.
+    - [`str.includes()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/includes) -
+    проверяет, содержит ли строка заданную подстроку.
+    - [`str.starts​With()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/starts​With) -
+    определяет, начинается ли строка с символов указанной подстроки.
+    - [`str.endsWith()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/endsWith​) -
+    определяет, заканчивается ли строка с символов указанной подстроки.
+    - [`str.indexOf()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/indexOf) -
+    возвращает индекс первого вхождения указанной подстроки в строке.
+    - [`str.lastIndexOf()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/lastIndexOf) -
+    возвращает индекс последнего вхождения указанной подстроки в строке.
+    - [`str.match()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/match) -
+    возвращает получившиеся совпадения при сопоставлении строки с указанным
+    _регулярным выражением_.
+    - [`str.search()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/search) -
+    возвращает индекс первого сопоставления с указанным регулярным выражением 
+    внутри строки.
+    - [`str.replace()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/replace) -
+    возвращает новую строку, полученную из исходной строки, в которой 
+    совпавшие с указанным шаблоном подстроки заменены на указанный заменитель.
+    - [`str.repeat()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/repeat) -
+    возвращает строку, полученную при повторении исходной строки указанное 
+    количество раз.
+    - [`str.slice()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/slice) -
+    извлекает часть строки в указанном диапазоне и возвращает новую строку.
+    - [`str.substr()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/substr) -
+    возвращает указанное количество символов из строки, начиная с указанной
+    позиции.
+    - [`str.split()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/split) -
+    возвращает массив строк путём разделения строки указанной подстрокой.
+    - [`str.toLowerCase()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase) -
+    возвращает значение строки, преобразованное в нижний регистр.
+    - [`str.toUpperCase()`
+    ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) -
+    возвращает значение строки, преобразованное в верхний регистр.
+    
+    
   - Массивы:
   
-  - Объект `Object`:
     
   - Объект `Math`:
   
@@ -39,6 +128,8 @@
   - `Set` и `Map`
   
   - `JSON`
+  
+  - `RegExp`
 
 ### Прочее
 
@@ -54,6 +145,23 @@
 - [Деструктуризация](https://learn.javascript.ru/destructuring).
 
 ### Стандартные встроенные объекты
+
+#### `Number`
+
+Описание некоторых свойств и методов:
+
+Имя | Описание
+--- | --------
+
+#### `Object`
+
+Описание некоторых свойств и методов:
+
+Имя | Описание
+--- | --------
+[`keys()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) | Возвращает массив, содержащий имена свойств переданного объекта.
+[`freeze()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) | Возвращает _"замороженный объект"_ на основе переданного объекта, т.е. объект, у которого нельзя удалить или изменить никакое свойство.
+[`obj.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) | Возвращает строку, представляющую объект.
 
 Ссылки по теме:
 
