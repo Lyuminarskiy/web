@@ -5,8 +5,12 @@
 - [Стандартные встроенные объекты
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects),
 их свойства и методы.
-- [Оператор `...`
-](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+
+- Деструктуризация:
+
+  - [Оператор `...`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
+  
 - Отладка кода с помощью [Visual Studio Code](https://code.visualstudio.com).
 
 ## Теоретические сведения
