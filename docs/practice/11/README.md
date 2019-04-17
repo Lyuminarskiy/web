@@ -7,8 +7,6 @@
 их свойства и методы.
 - [Оператор `...`
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
-- [Оператор `new`
-](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new).
 - Отладка кода с помощью [Visual Studio Code](https://code.visualstudio.com).
 
 ## Теоретические сведения
@@ -33,9 +31,6 @@
 
 - [Оператор `...`
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax).
-
-- [Оператор `new`
-](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new).
   
 ### Visual Studio Code
 
