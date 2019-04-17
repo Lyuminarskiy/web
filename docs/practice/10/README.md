@@ -61,20 +61,23 @@
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/continue) -
   прерывает выполнение текущей итерации цикла и переходит к следующей итерации.
 
-- Функции и методы объектов:
+- Функции, конструкторы и методы объектов:
 
   - [`function`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/function) -
   определяет функцию с указанным именем, аргументами и телом.
   - [Функциональное выражение
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/function) -
-  определяет функцию внутри выражения.
+  определяет функцию внутри выражения, может быть _именованным_.
   - [`(...) => {...}`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Arrow_functions) -
   определяет стрелочную функцию.
   - [`this`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/this) -
   ссылка на объект, который является текущим контекстом исполнения.
+  - [`new`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/new) -
+  оператор, создаёт новый экземпляр объекта с помощью _функции-конструктора_.
 
 - Отложенный вызов функций:
 
@@ -117,7 +120,7 @@
 - [Циклы и итерации
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Циклы_и_итерации).
 
-### Функции и методы объектов
+### Функции, конструкторы и методы объектов
 
 Ссылки по теме:
 
@@ -128,6 +131,7 @@
 ](https://learn.javascript.ru/named-function-expression).
 - [Функции](https://learn.javascript.ru/es-function).
 - [Методы объектов, this](https://learn.javascript.ru/object-methods).
+- [Создание объектов через "new"](https://learn.javascript.ru/constructor-new).
 
 ### Отложенный вызов функций
 
@@ -235,7 +239,7 @@
     Пользователь ввёл значение "...".
     ```
 
-## 10.2. Функции и методы объектов
+## 10.2. Функции, конструкторы и методы объектов
 
 ### Возведение числа в степень
 
@@ -360,7 +364,7 @@ filter(arr, (name) => name.length > 6); // ["Алексей", "Дмитрий"]
     Примеры работы функции:
     
     ```js
-    // Свойства объекта: name="Иван", surname="Иванов", age=21
+    // {name: "Иван", surname: "Иванов", age: 21, toString: f}
     let person = { /* ... */ };
  
     person.toString(); // "Иванов Иван"
@@ -368,6 +372,45 @@ filter(arr, (name) => name.length > 6); // ["Алексей", "Дмитрий"]
     ```
     
 5. Продемонстрируйте работу функции.
+
+### Конструктор человека
+
+Задачи:
+
+1. Создайте функцию-конструктор для создания объектов того же вида, что и в 
+предыдущем подзадании
+[строковое представление объекта](#строковое-представnение-объекта):
+
+```js
+/**
+* Создаёт объект человека следующего вида:
+* 
+* {
+*   name: "Иван",
+*   surname: "Иванов",
+*   age: 21,
+*   toString(showAge) { ... }
+* }
+* 
+* @param name - Имя человека.
+* @param surname - Фамилия человека.
+* @param age - Возраст человека
+* @constructor
+*/
+function Person(name, surname, age) { /* ... */ }
+```
+
+Примеры работы функции:
+
+```js
+// {name: "Иван", surname: "Иванов", age: 21, toString: f} 
+let person = new Person("Иван", "Иванов", 21);
+
+person.toString(); // "Иванов Иван"
+person.toString(showAge=true); // "Иванов Иван, 21"
+```
+
+Продемонстрируйте работу функции.
 
 ## 10.3. Отложенный вызов функций
 
