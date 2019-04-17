@@ -1,6 +1,7 @@
 const path = require("path");
 
 module.exports = {
+  ga: "UA-138493396-1",
   evergreen: true,
   serviceWorker: true,
   configureWebpack: {
