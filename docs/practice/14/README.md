@@ -2,7 +2,8 @@
 
 ## Темы занятия
 
-- [Формат JSON](https://learn.javascript.ru/json).
+- [Формат JSON](https://learn.javascript.ru/json). !!!
+- Web API
 - [Хранение данных в браузере
 ](https://developer.mozilla.org/ru/docs/Web/API/Web_Storage_API).
 - [Node.js](https://nodejs.org/api).

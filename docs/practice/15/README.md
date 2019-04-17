@@ -1,4 +1,4 @@
-# 15. HTTP
+# 15. HTTP. Fetch и Promise
 
 ## Темы занятия
 
