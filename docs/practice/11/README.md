@@ -32,11 +32,18 @@
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array).
   - [`Object`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object).
-  - Объект `Math`.
-  - Объект `Date`.
-  - `Set` и `Map`.
-  - `JSON`.
-  - `RegExp`.
+  - [`Math`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math).
+  - [`Date`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date).
+  - [`JSON`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON).
+  - [`RegExp`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
+  - [`Map`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map).
+  - [`Set`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set).
 
 ### Прочее
 
@@ -53,9 +60,10 @@
 
 ### Стандартные встроенные объекты
 
-#### `Number`
+Ниже представлено описание некоторых свойств и методов стандартных встроенных 
+объектов.
 
-Описание некоторых свойств и методов:
+#### `Number`
 
  Имя | Описание
 :---:| --------
@@ -67,8 +75,6 @@
 [`num.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) | Возвращает строковое представление числа в указанной системе счисления.
 
 #### `String`
-
-Описание некоторых свойств и методов:
 
  Имя | Описание
 :---:| --------
@@ -92,8 +98,6 @@
 
 #### `Array`
 
-Описание некоторых свойств и методов:
-
  Имя | Описание
 :---:| --------
 [`isArray()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) | Определяет, является ли переданный объект массивом.
@@ -105,13 +109,41 @@
 
 #### `Object`
 
-Описание некоторых свойств и методов:
-
  Имя | Описание
 :---:| --------
 [`keys()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/keys) | Возвращает массив, содержащий имена свойств переданного объекта.
 [`freeze()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) | Возвращает _"замороженный объект"_ на основе переданного объекта, т.е. объект, у которого нельзя удалить или изменить никакое свойство.
 [`obj.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) | Возвращает строку, представляющую объект.
+
+#### `Math`
+
+ Имя | Описание
+:---:| --------
+
+#### `Date`
+
+ Имя | Описание
+:---:| --------
+
+#### `JSON`
+
+ Имя | Описание
+:---:| --------
+
+#### `RegExp`
+
+ Имя | Описание
+:---:| --------
+
+#### `Map`
+
+ Имя | Описание
+:---:| --------
+
+#### `Set`
+
+ Имя | Описание
+:---:| --------
 
 ### Отладка кода в редакторе
 
