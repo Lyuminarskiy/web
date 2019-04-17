@@ -43,15 +43,7 @@
   </div>
 
   <script>
-    const HomePage = {
-      template: `
-        <div>
-          <h1>Главная страница</h1>
-        </div>
-      `
-    };
-
-    const BlogPost = {
+    Vue.component("blog-post", {
       props: ["header"],
       template: `
         <div>
@@ -64,11 +56,60 @@
           </button>
         </div>
       `
+    });
+
+    const HomePage = {
+      computed: {
+        posts() {
+          return this.$store.state.posts;
+        }
+      },
+      template: `
+        <div>
+          <h1>Главная страница</h1>
+          <div
+            class="blog-post"
+            v-for="post of posts"
+            :key="post.id">
+            <h2>{{ post.header }}</h2>
+            <p>{{ post.body }}</p>
+          </div>
+        </div>
+      `
     };
 
     const EditPage = {
+      data() {
+        return {
+          header: "",
+          body: ""
+        };
+      },
+      computed: {
+        posts() {
+          return this.$store.state.posts;
+        },
+        canAddPost() {
+          return this.header.length !== 0 && this.body.length !== 0;
+        },
+      },
+      methods: {
+        addPost() {
+          this.$store.commit("addPost", {
+            header: this.header,
+            body: this.body
+          });
+
+          this.header = "";
+          this.body = "";
+        },
+        deletePost(event, id) {
+          this.$store.commit("deletePost", id);
+        }
+      },
       template: `
         <div>
+          <h1>Редактирование</h1>
           <fieldset>
             <legend>Добавить новый пост</legend>
             <label>
@@ -155,33 +196,7 @@
     new Vue({
       el: "#app",
       store,
-      router,
-      data: {
-        header: "",
-        body: ""
-      },
-      computed: {
-        posts() {
-          return this.$store.state.posts;
-        },
-        canAddPost() {
-          return this.header.length !== 0 && this.body.length !== 0;
-        },
-      },
-      methods: {
-        addPost() {
-          this.$store.commit("addPost", {
-            header: this.header,
-            body: this.body
-          });
-
-          this.header = "";
-          this.body = "";
-        },
-        deletePost(event, id) {
-          this.$store.commit("deletePost", id);
-        }
-      }
+      router
     });
   </script>
 </body>
