@@ -24,13 +24,14 @@
 - [Стандартные встроенные объекты
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects):
   
-  - [`Object`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object).    
   - [`Number`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number).
   - [`String`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String).
-  - Массивы.
+  - [`Array`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array).
+  - [`Object`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object).
   - Объект `Math`.
   - Объект `Date`.
   - `Set` и `Map`.
@@ -88,6 +89,19 @@
 [`str.toLowerCase()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase) | Возвращает значение строки, преобразованное в нижний регистр.
 [`str.toUpperCase()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) | Возвращает значение строки, преобразованное в верхний регистр.
 [`str.trim()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/trim) | Возвращает строку с вырезанными пробельными символами с её концов. 
+
+#### `Array`
+
+Описание некоторых свойств и методов:
+
+ Имя | Описание
+:---:| --------
+[`isArray()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) | Определяет, является ли переданный объект массивом.
+[`arr.length`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/length ) | Количество элементов в массиве.
+[`arr.fill()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/fill ) | Возвращает новый массив, полученный из исходного, заполненного от начального до конечного индексов одним значением.
+[`arr.pop()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) | Удаляет последний элемент из массива и возвращает его.
+[`arr.push()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/push) | Добавляет один или более элементов в конец массива и возвращает новую длину массива.
+[`arr.reverse()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) | Возвращает новый массив, полученный из исходного путём обращения порядка элементов.
 
 #### `Object`
 
