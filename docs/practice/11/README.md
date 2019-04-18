@@ -53,6 +53,12 @@
 
 ### Оператор `...`
 
+#### Выражение оставшихся параметров
+
+#### Выражение распространения
+
+#### Деструктурирующее присваивание
+
 Ссылки по теме:
 
 - [Функции](https://learn.javascript.ru/es-function).
@@ -63,7 +69,7 @@
 Ниже представлено описание некоторых свойств и методов стандартных встроенных 
 объектов.
 
-#### `Number`
+#### [`Number`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number)
 
  Имя | Описание
 :---:| --------
@@ -74,7 +80,7 @@
 [`num.toPrecision()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision) | Возвращает строку, представляющую число с указанной точностью.
 [`num.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) | Возвращает строковое представление числа в указанной системе счисления.
 
-#### `String`
+#### [`String`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String)
 
  Имя | Описание
 :---:| --------
@@ -96,7 +102,7 @@
 [`str.toUpperCase()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) | Возвращает значение строки, преобразованное в верхний регистр.
 [`str.trim()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/trim) | Возвращает строку с вырезанными пробельными символами с её концов. 
 
-#### `Array`
+#### [`Array`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array)
 
  Имя | Описание
 :---:| --------
@@ -121,7 +127,7 @@
 [`arr.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/toString) | Возвращает строковое представление массива и его элементов.
 [`arr.unshift()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) | Добавляет один или более элементов в начало массива и возвращает новую длину массива.
 
-#### `Object`
+#### [`Object`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
 
  Имя | Описание
 :---:| --------
@@ -129,32 +135,32 @@
 [`freeze()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) | Возвращает _"замороженный объект"_ на основе переданного объекта, т.е. объект, у которого нельзя удалить или изменить никакое свойство.
 [`obj.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) | Возвращает строку, представляющую объект.
 
-#### `Math`
+#### [`Math`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
 
  Имя | Описание
 :---:| --------
 
-#### `Date`
+#### [`Date`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
  Имя | Описание
 :---:| --------
 
-#### `JSON`
+#### [`JSON`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
  Имя | Описание
 :---:| --------
 
-#### `RegExp`
+#### [`RegExp`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
  Имя | Описание
 :---:| --------
 
-#### `Map`
+#### [`Map`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
  Имя | Описание
 :---:| --------
 
-#### `Set`
+#### [`Set`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
  Имя | Описание
 :---:| --------
