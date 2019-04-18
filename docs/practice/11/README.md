@@ -149,11 +149,30 @@
 
  Имя | Описание
 :---:| --------
+[`abs()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/abs) | Возвращает абсолютное значение числа.
+[`ceil()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/ceil) | Возвращает наименьшее целое число, большее, либо равное указанному числу.
+[`floor()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/floor) | Возвращает наибольшее целое число, меньшее, либо равное указанному числу.
+[`max()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/max) | Возвращает наибольшее число из своих аргументов.
+[`min()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/min) | Возвращает наименьшее число из своих аргументов.
+[`random()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/random) | Возвращает псевдослучайное число в диапазоне от 0 до 1.
+[`round()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/round) | Возвращает значение числа, округлённое до ближайшего целого.
+[`trunc()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc) | Возвращает целую часть числа, убирая дробные цифры.
 
 #### [`Date`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date)
 
  Имя | Описание
 :---:| --------
+[`now()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/now) | Возвращает числовое значение, соответствующее текущему времени.
+[`parse()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/parse) | Разбирает строковое представление даты и возвращает соответствующее числовое значение.
+[`date.getDate()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getDate) [`date.setDate()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/setDate) | Возвращает/устанавливает день месяца указанной даты.
+[`date.getDay()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getDay) | Возвращает день недели указанной даты.
+[`date.getFullYear()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getFullYear) [`date.setFullYear()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/setFullYear) | Возвращает/устанавливает год указанной даты.
+[`date.getHours()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getHours) [`date.setHours()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/setHours) | Возвращает/устанавливает часы указанной даты.
+[`date.getMilliseconds()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getMilliseconds) [`date.setMilliseconds()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/setMilliseconds) | Возвращает/устанавливает миллисекунды указанной даты.
+[`date.getMinutes()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getMinutes) [`date.setMinutes()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/setMinutes) | Возвращает/устанавливает минуты указанной даты.
+[`date.getMonth()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getMonth) [`date.setMonth()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/setMonth) | Возвращает/устанавливает месяц указанной даты.
+[`date.getTime()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) [`date.setTime()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime) | Возвращает/устанавливает числовое значение указанной даты.
+[`date.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/toString) | Возвращает строковое представление указанной даты.
 
 #### [`JSON`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON)
 
