@@ -178,11 +178,16 @@
 
  Имя | Описание
 :---:| --------
+[`parse()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) | Разбирает строку JSON и возвращает разобранное значение.
+[`stringify()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) | Возвращает строку JSON, соответствующую указанному значению.
 
 #### [`RegExp`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
 
  Имя | Описание
 :---:| --------
+[`regex.exec()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) | Выполняет поиск сопоставлений регулярного выражения в переданной строке.
+[`regex.test()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) | Пытается сопоставить регулярное выражение с переданной строкой.
+[`regex.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/toString) | Возвращает строковое представление регулярного выражения.
 
 #### [`Map`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
@@ -206,6 +211,7 @@
 - [Массивы: методы](https://learn.javascript.ru/array-methods).
 - [Массив: перебирающие методы](https://learn.javascript.ru/array-iteration).
 - [Дата и Время](https://learn.javascript.ru/datetime).
+- [Формат JSON, метод toJSON](https://learn.javascript.ru/json).
 - [Паттерны и флаги](https://learn.javascript.ru/regexp-introduction).
 - [Методы RegExp и String](https://learn.javascript.ru/regexp-methods).
 - [Классы и спецсимволы](https://learn.javascript.ru/regexp-character-classes).
