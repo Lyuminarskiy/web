@@ -113,12 +113,16 @@
 [`arr.fill()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) | Возвращает новый массив, полученный из исходного, заполненного от начального до конечного индексов одним значением.
 [`arr.filter()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) | Создаёт новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции.
 [`arr.forEach()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) | Вызывает функцию для каждого элемента в массиве.
+[`arr.find()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/find) | Возвращает искомое значение в массиве, если элемент в массиве удовлетворяет условию проверяющей функции.
+[`arr.findIndex()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex) | Возвращает искомый индекс в массиве, если элемент в массиве удовлетворяет условию проверяющей функции.
 [`arr.includes()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) | Определяет, содержится ли в массиве указанный элемент.
 [`arr.indexOf()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) | Возвращает первый индекс элемента внутри массива, равный указанному значению.
 [`arr.join()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/join) | Объединяет все элементы массива в строку.
 [`arr.lastIndexOf()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf) | Возвращает последний индекс элемента внутри массива, равный указанному значению.
+[`arr.map()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map) | Создаёт новый массив с результатами вызова указанной функции на каждом элементе данного массива.
 [`arr.pop()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) | Удаляет последний элемент из массива и возвращает его.
 [`arr.push()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/push) | Добавляет один или более элементов в конец массива и возвращает новую длину массива.
+[`arr.reduce()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) | Применяет функцию к каждому значению массива, сводя его к одному значению.
 [`arr.reverse()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/reverse) | Возвращает новый массив, полученный из исходного путём обращения порядка элементов.
 [`arr.shift()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) | Удаляет первый элемент из массива и возвращает его.
 [`arr.slice()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) | Извлекает диапазон значений и возвращает его в виде нового массива.
