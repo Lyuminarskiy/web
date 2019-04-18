@@ -59,8 +59,14 @@
 
 #### Деструктурирующее присваивание
 
-Ссылки по теме:
+#### Ссылки по теме
 
+- [Оставшиеся параметры (rest parameters)
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Functions/Rest_parameters).  
+- [Spread syntax
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Spread_syntax).  
+- [Деструктурирующее присваивание
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Destructuring_assignment)
 - [Функции](https://learn.javascript.ru/es-function).
 - [Деструктуризация](https://learn.javascript.ru/destructuring).
 
@@ -168,6 +174,27 @@
 
  Имя | Описание
 :---:| --------
+
+#### Ссылки по теме
+
+- [Стандартные встроенные объекты
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects).
+- [Введение в методы и свойства
+](https://learn.javascript.ru/properties-and-methods).
+- [Числа](https://learn.javascript.ru/number).
+- [Строки](https://learn.javascript.ru/string).
+- [Массивы с числовыми индексами](https://learn.javascript.ru/array).
+- [Массивы: методы](https://learn.javascript.ru/array-methods).
+- [Массив: перебирающие методы](https://learn.javascript.ru/array-iteration).
+- [Дата и Время](https://learn.javascript.ru/datetime).
+- [Паттерны и флаги](https://learn.javascript.ru/regexp-introduction).
+- [Методы RegExp и String](https://learn.javascript.ru/regexp-methods).
+- [Классы и спецсимволы](https://learn.javascript.ru/regexp-character-classes).
+- [Наборы и диапазоны [...]
+](https://learn.javascript.ru/regexp-character-sets-and-ranges).
+- [Квантификаторы +, *, ? и {n}
+](https://learn.javascript.ru/regexp-quantifiers).
+- [Set, Map, WeakSet и WeakMap](https://learn.javascript.ru/set-map).
 
 ### Отладка кода в редакторе
 
