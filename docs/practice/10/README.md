@@ -5,7 +5,13 @@
 ### HTML
 
 [`<script>`](https://webref.ru/html/script) - описание скриптов, используемых
-на странице и его атрибут [`src`](https://webref.ru/html/script/src).
+на странице и его атрибуты:
+
+- [`src`](https://webref.ru/html/script/src) - адрес скрипта из внешнего 
+файла для импорта в текущий документ.
+- [`defer`](https://webref.ru/html/script/defer) - откладывает выполнение 
+скрипта до тех пор, пока вся страница не будет загружена полностью.
+- [`async`](https://webref.ru/html/script/async) - загружает скрипт асинхронно.
 
 ### JavaScript
 
