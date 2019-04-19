@@ -25,25 +25,35 @@
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects):
   
   - [`Number`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number) -
+  число.
   - [`String`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String) -
+  строка.
   - [`Array`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array) -
+  массив.
   - [`Object`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object) -
+  объект.
   - [`Math`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math) -
+  математические вычисления.
   - [`Date`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date) -
+  дата и время.
   - [`JSON`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON) -
+  объектная нотация JavaScript.
   - [`RegExp`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp) -
+  регулярное выражение.
   - [`Map`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map) -
+  словарь.
   - [`Set`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set).
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set) -
+  множество.
 
 ### Прочее
 
