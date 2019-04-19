@@ -85,7 +85,7 @@
   ](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/clearTimeout) -
   отменяет вызов функции по задержке по идентификатору `timeoutId`.
   - [`setInterval(func, delay)`
-  ](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) -
+  ](https://developer.mozilla.org/ru/docs/Web/API/WindowOrWorkerGlobalScope/setInterval) -
   циклически вызывает функции `func` с паузой в `delay` миллисекунд
   между вызывами.
   - [`clearInterval(intervalId)`
