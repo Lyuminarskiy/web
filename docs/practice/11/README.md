@@ -44,7 +44,7 @@
   дата и время.
   - [`JSON`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON) -
-  объектная нотация JavaScript.
+  функционал работы объектной нотацией JavaScript.
   - [`RegExp`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp) -
   регулярное выражение.
@@ -85,7 +85,7 @@
 Ниже представлено описание некоторых свойств и методов стандартных встроенных 
 объектов.
 
-#### [`Number`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number)
+#### Number
 
  Имя | Описание
 :---:| --------
@@ -96,7 +96,7 @@
 [`num.toPrecision()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision) | Возвращает строку, представляющую число с указанной точностью.
 [`num.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) | Возвращает строковое представление числа в указанной системе счисления.
 
-#### [`String`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String)
+#### String
 
  Имя | Описание
 :---:| --------
@@ -118,7 +118,7 @@
 [`str.toUpperCase()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) | Возвращает значение строки, преобразованное в верхний регистр.
 [`str.trim()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/trim) | Возвращает строку с вырезанными пробельными символами с её концов. 
 
-#### [`Array`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array)
+#### Array
 
  Имя | Описание
 :---:| --------
@@ -147,7 +147,7 @@
 [`arr.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/toString) | Возвращает строковое представление массива и его элементов.
 [`arr.unshift()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) | Добавляет один или более элементов в начало массива и возвращает новую длину массива.
 
-#### [`Object`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object)
+#### Object
 
  Имя | Описание
 :---:| --------
@@ -155,7 +155,7 @@
 [`freeze()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/freeze) | Возвращает _"замороженный объект"_ на основе переданного объекта, т.е. объект, у которого нельзя удалить или изменить никакое свойство.
 [`obj.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/toString) | Возвращает строку, представляющую объект.
 
-#### [`Math`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math)
+#### Math
 
  Имя | Описание
 :---:| --------
@@ -168,7 +168,7 @@
 [`round()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/round) | Возвращает значение числа, округлённое до ближайшего целого.
 [`trunc()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math/trunc) | Возвращает целую часть числа, убирая дробные цифры.
 
-#### [`Date`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date)
+#### Date
 
  Имя | Описание
 :---:| --------
@@ -184,14 +184,36 @@
 [`date.getTime()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/getTime) [`date.setTime()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/setTime) | Возвращает/устанавливает числовое значение указанной даты.
 [`date.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date/toString) | Возвращает строковое представление указанной даты.
 
-#### [`JSON`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON)
+#### JSON
+
+_JSON (англ. JavaScript Object Notation - объектная нотация JavaScript)_ - 
+текстовый формат представления данных, основанный на JavaScript.
+
+Данные в формате JSON представляют собой:
+
+- объекты `{...}`,
+- массивы `[...]`,
+- значения одного из типов:
+  - строка `"..."` (в двойных кавычках),
+  - число,
+  - логическое значение `true` или `false`,
+  - специальное значение `null`.
+  
+Примеры представления данных в формате JSON:
+
+JavaScript | JSON
+---------- | ----
+`[true, 3.14, 'Привет, мир!']` | `[true, 3.14, "Привет, мир!"]`
+`{arr: [1, 2, 3], obj: null}` | `{"arr": [1, 2, 3], "obj": null}`
+
+Описание методов работы с JSON:
 
  Имя | Описание
 :---:| --------
 [`parse()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) | Разбирает строку JSON и возвращает разобранное значение.
 [`stringify()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) | Возвращает строку JSON, соответствующую указанному значению.
 
-#### [`RegExp`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp)
+#### RegExp
 
  Имя | Описание
 :---:| --------
@@ -199,7 +221,7 @@
 [`regex.test()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) | Пытается сопоставить регулярное выражение с переданной строкой.
 [`regex.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/toString) | Возвращает строковое представление регулярного выражения.
 
-#### [`Map`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map)
+#### Map
 
 Словари, как и массивы, можно использовать совместно с циклом [`for...of`
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...of):
@@ -207,7 +229,7 @@
 ```js
 let map = new Map([
   [true, [1, 2, 3]],
-  [3.14, "Здесь могла быть ваша реклама."],
+  [3.14, "Я есть Грут!"],
   ["Привет, мир!", {a: 1, b: 2}],
 ]);
 
@@ -229,7 +251,7 @@ for (const [key, value] of map) {
 [`map.set()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set) | Добавляет или изменяет пару с указанным ключом и значением в словаре.
 
 
-#### [`Set`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set)
+#### Set
 
 Множества, как и массивы, можно использовать совместно с циклом [`for...of`
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...of):
@@ -263,6 +285,26 @@ for (const item of set) {
 
 - [Стандартные встроенные объекты
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects).
+- [Number
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number).
+- [String
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String).
+- [Array
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array).
+- [Object
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object).
+- [Math
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Math).
+- [Date
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Date).
+- [JSON
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON).
+- [RegExp
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp).
+- [Map
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map).
+- [Set
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set).
 - [Введение в методы и свойства
 ](https://learn.javascript.ru/properties-and-methods).
 - [Числа](https://learn.javascript.ru/number).
@@ -403,14 +445,7 @@ Live Server`. В результате откроется окно Google Chrome 
 
 Задачи:
 
-1. Создайте объект, содержащий все допустимые для формата JSON значения:
-
-    - число,
-    - строка,
-    - логическое значение,
-    - объект,
-    - массив,
-    - `null`.
+1. Создайте объект, содержащий все допустимые для формата JSON значения.
     
 2. Преобразуйте объект в строку формата JSON. Строка должна быть 
 отформатирована так, чтобы каждый последующий уровень вложенности внутри строки
