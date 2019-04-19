@@ -118,7 +118,7 @@
 [`arr.every()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/every) | Проверяет, удовлетворяют ли все элементы массива условию, заданному в передаваемой функции.
 [`arr.fill()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) | Возвращает новый массив, полученный из исходного, заполненного от начального до конечного индексов одним значением.
 [`arr.filter()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) | Создаёт новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции.
-[`arr.forEach()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) | Вызывает функцию для каждого элемента в массиве.
+[`arr.forEach()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/forEach) | Вызывает переданную функцию для каждого элемента в массиве.
 [`arr.find()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/find) | Возвращает искомое значение в массиве, если элемент в массиве удовлетворяет условию проверяющей функции.
 [`arr.findIndex()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/findIndex) | Возвращает искомый индекс в массиве, если элемент в массиве удовлетворяет условию проверяющей функции.
 [`arr.includes()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/includes) | Определяет, содержится ли в массиве указанный элемент.
@@ -191,13 +191,63 @@
 
 #### [`Map`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map)
 
+Словари, как и массивы, можно использовать совместно с циклом [`for...of`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...of):
+
+```js
+let map = new Map([
+  [true, [1, 2, 3]],
+  [3.14, "Здесь могла быть ваша реклама."],
+  ["Привет, мир!", {a: 1, b: 2}],
+]);
+
+for (const [key, value] of map) {
+  console.log(`(key=${key}; value=${value})`);
+}
+```
+
+Описание некоторых свойств и методов словаря:
+
  Имя | Описание
 :---:| --------
+[`map.size`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size) | Количество пар ключ-значение в словаре.
+[`map.clear()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear) | Удаляет все пары ключ-значение из словаря.
+[`map.delete()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/delete) | Удаляет элемент с указанным ключом из словаря.
+[`map.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/forEach) | Вызывает переданную функцию для каждой пары ключ-значение в словаре.
+[`map.get()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get) | Возвращает ассоциированное с указанным ключом значение из словаря.
+[`map.has()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/has) | Проверяет, присутствует ли в словаре элемент с указанным ключом.
+[`map.set()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set) | Добавляет или изменяет пару с указанным ключом и значением в словаре.
+
 
 #### [`Set`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set)
 
+Множества, как и массивы, можно использовать совместно с циклом [`for...of`
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/for...of):
+
+```js
+let set = new Set([
+  "Привет, мир!",
+  true,
+  3.14,
+  [1, 2, 3],
+  {a: 1, b: 2}
+]);
+
+for (const item of set) {
+  console.log(`item: ${item}\ntype: ${typeof item}`);
+}
+```
+
+Описание некоторых свойств и методов множества:
+
  Имя | Описание
 :---:| --------
+[`set.size`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/size) | Количество элементов в множестве.
+[`set.add()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add) | Добавляет новый элемент с заданным значением в множество.
+[`set.clear()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear) | Удаляет все элементы из множества.
+[`set.delete()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete) | Удаляет элемент с указанным значением из множества.
+[`set.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/forEach) | Вызывает переданную функцию для каждого элемента множества.
+[`set.has()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has) | Проверяет, присутствует ли в множестве элемент с указанным значением.
 
 #### Ссылки по теме
 
