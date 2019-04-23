@@ -44,89 +44,89 @@
 
 ## Макеты
 
-### 1. Glint
+### 1. BizPro
 
-![Внешний вид](./assets/Glint.jpg)
-[Страница макета](https://colorlib.com/wp/template/glint) |
-[Демонстрация](https://colorlib.com/demo?theme=glint) |
-[Исходный код](https://colorlib.com/download/81)
-
-### 2. Ultim8
-
-![Внешний вид](./assets/Ultim8.jpg)
-[Страница макета](https://colorlib.com/wp/template/ultim8) |
-[Демонстрация](https://colorlib.com/wp/template/ultim8) |
-[Исходный код](https://colorlib.com/download/1703)
-
-### 3. Unapp
-
-![Внешний вид](./assets/Unapp.jpg)
-[Страница макета](https://colorlib.com/wp/template/unapp) |
-[Демонстрация](https://colorlib.com/preview/#unapp) |
-[Исходный код](https://colorlib.com/download/1059)
-
-### 4. Transcend
-
-![Внешний вид](./assets/Transcend.jpg)
-[Страница макета](https://colorlib.com/wp/template/transcend) |
-[Демонстрация](https://colorlib.com/preview/#transcend) |
-[Исходный код](https://colorlib.com/download/888)
-
-### 5. CVPortfolio
-
-![Внешний вид](./assets/CVPortfolio.jpg)
-[Страница макета](https://colorlib.com/wp/template/cvportfolio) |
-[Демонстрация](https://colorlib.com/preview/#cvportfolio) |
-[Исходный код](https://colorlib.com/download/526)
-
-### 6. CA App Landing
-
-![Внешний вид](./assets/CA_App_Landing.jpg)
-[Страница макета](https://colorlib.com/wp/template/ca-app) |
-[Демонстрация](https://colorlib.com/demo?theme=ca-app) |
-[Исходный код](https://colorlib.com/download/55)
-
-### 7. BizPro
-
-![Внешний вид](./assets/BizPro.jpg)
+![Внешний вид](./assets/templates/BizPro/preview.jpg)
 [Страница макета](https://colorlib.com/wp/template/bizpro) |
-[Демонстрация](https://colorlib.com/demo?theme=bizpro) |
-[Исходный код](https://colorlib.com/download/125)
+[Демонстрация](https://colorlib.com/etc/bizpro/index.html) |
+<a href="assets/templates/BizPro/src.zip" download>Исходный код</a>
 
-### 8. Boxus
+### 2. Bobsled
 
-![Внешний вид](./assets/Boxus.jpg)
-[Страница макета](https://colorlib.com/wp/template/boxus) |
-[Демонстрация](https://colorlib.com/demo?theme=boxus) |
-[Исходный код](https://colorlib.com/download/67)
-
-### 9. Creative Agency
-
-![Внешний вид](./assets/Creative_Agency.jpg)
-[Страница макета](https://colorlib.com/wp/template/creative-agency) |
-[Демонстрация](https://colorlib.com/demo?theme=creative-agency) |
-[Исходный код](https://colorlib.com/download/63)
-
-### 10. Bobsled
-
-![Внешний вид](./assets/Bobsled.jpg)
+![Внешний вид](./assets/templates/Bobsled/preview.jpg)
 [Страница макета](https://colorlib.com/wp/template/bobsled) |
-[Демонстрация](https://colorlib.com/demo?theme=bobsled) |
-[Исходный код](https://colorlib.com/download/49)
+[Демонстрация](https://colorlib.com/etc/bobsled/index.html) |
+<a href="assets/templates/Bobsled/src.zip" download>Исходный код</a>
 
-### 11. Datarc
+### 3. Boxus
 
-![Внешний вид](./assets/Datarc.jpg)
-[Страница макета](https://colorlib.com/wp/template/datarc) |
-[Демонстрация](https://colorlib.com/demo?theme=datarc) |
-[Исходный код](https://colorlib.com/download/83)
+![Внешний вид](./assets/templates/Boxus/preview.jpg)
+[Страница макета](https://colorlib.com/wp/template/boxus) |
+[Демонстрация](https://colorlib.com/etc/boxus/index.html) |
+<a href="assets/templates/Boxus/src.zip" download>Исходный код</a>
 
-### 12. Celt
+### 4. CA App Landing
 
-![Внешний вид](./assets/Celt.jpg)
+![Внешний вид](./assets/templates/CA_App_Landing/preview.jpg)
+[Страница макета](https://colorlib.com/wp/template/ca-app) |
+[Демонстрация](https://colorlib.com/etc/ca/index.html) |
+<a href="assets/templates/CA_App_Landing/src.zip" download>Исходный код</a>
+
+### 5. Celt
+
+![Внешний вид](./assets/templates/Celt/preview.jpg)
 [Страница макета](https://colorlib.com/wp/template/celt) |
-[Демонстрация](https://colorlib.com/demo?theme=Celt) |
-[Исходный код](https://colorlib.com/download/23)
+[Демонстрация](https://colorlib.com/etc/celt/index.html) |
+<a href="assets/templates/Celt/src.zip" download>Исходный код</a>
+
+### 6. Creative Agency
+
+![Внешний вид](./assets/templates/Creative_Agency/preview.jpg)
+[Страница макета](https://colorlib.com/wp/template/creative-agency) |
+[Демонстрация](https://colorlib.com/etc/creative-agency/index.html) |
+<a href="assets/templates/Creative_Agency/src.zip" download>Исходный код</a>
+
+### 7. CVPortfolio
+
+![Внешний вид](./assets/templates/CVPortfolio/preview.jpg)
+[Страница макета](https://colorlib.com/wp/template/cvportfolio) |
+[Демонстрация](https://colorlib.com/preview/theme/cvportfolio) |
+<a href="assets/templates/CVPortfolio/src.zip" download>Исходный код</a>
+
+### 8. Datarc
+
+![Внешний вид](./assets/templates/Datarc/preview.jpg)
+[Страница макета](https://colorlib.com/wp/template/datarc) |
+[Демонстрация](https://colorlib.com/etc/datarc/index.html) |
+<a href="assets/templates/Datarc/src.zip" download>Исходный код</a>
+
+### 9. Glint
+
+![Внешний вид](./assets/templates/Glint/preview.jpg)
+[Страница макета](https://colorlib.com/wp/template/glint) |
+[Демонстрация](https://colorlib.com/etc/glint/index.html) |
+<a href="assets/templates/Glint/src.zip" download>Исходный код</a>
+
+### 10. Transcend
+
+![Внешний вид](./assets/templates/Transcend/preview.jpg)
+[Страница макета](https://colorlib.com/wp/template/transcend) |
+[Демонстрация](https://colorlib.com/preview/theme/transcend) |
+<a href="assets/templates/Transcend/src.zip" download>Исходный код</a>
+
+### 11. Ultim8
+
+![Внешний вид](./assets/templates/Ultim8/preview.jpg)
+[Страница макета](https://colorlib.com/wp/template/ultim8) |
+[Демонстрация](https://colorlib.com/preview/theme/ultim8) |
+<a href="assets/templates/Ultim8/src.zip" download>Исходный код</a>
+
+### 12. Unapp
+
+![Внешний вид](./assets/templates/Unapp/preview.jpg)
+[Страница макета](https://colorlib.com/wp/template/unapp) |
+[Демонстрация](https://colorlib.com/preview/theme/unapp/) |
+<a href="assets/templates/Unapp/src.zip" download>Исходный код</a>
 
 <disqus-comments
   page-uuid="149fa661-6e05-4d4c-8525-521ec95711e8"
