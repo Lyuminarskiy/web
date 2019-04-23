@@ -36,3 +36,13 @@
 ](https://habr.com/ru/company/dataart/blog/262817).
 
 ### Тестирование REST API с помощью Postman
+
+Ссылки по теме:
+
+- [Postman](https://www.getpostman.com/products).
+- [Postman Learning Center](https://learning.getpostman.com/docs).
+
+<disqus-comments
+  page-uuid="56ab4f6e-c4ff-4d9f-9de7-680def1d7927"
+  page-title="22. Аутентификация и авторизация.
+    Тестирование REST API с помощью Postman | Практические занятия"/>
