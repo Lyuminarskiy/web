@@ -155,12 +155,10 @@ _универсальный атрибут_.
 
 Скачайте файлы по следующим ссылкам:
 
-- <a :href="$withBase('/assets/audio.mp3')" download>Аудиозапись</a>
-- <a :href="$withBase('/assets/video.mp4')" download>Видеоролик</a>
-- <a :href="$withBase('/assets/subtitles.ru.vtt')" download>Русские 
-субтитры</a>
-- <a :href="$withBase('/assets/subtitles.en.vtt')" download>Английские 
-субтитры</a>
+- <a :href="$withBase('/assets/practice/03/audio.mp3')" download>Аудиозапись</a>
+- <a :href="$withBase('/assets/practice/03/video.mp4')" download>Видеоролик</a>
+- <a :href="$withBase('/assets/practice/03/subtitles.ru.vtt')" download>Русские субтитры</a>
+- <a :href="$withBase('/assets/practice/03/subtitles.en.vtt')" download>Английские субтитры</a>
 
 Затем выполните следующие задачи:
 
