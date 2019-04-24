@@ -1,3 +1,25 @@
+---
+Макеты взяты отсюда: https://colorlib.com/wp/cat/blog
+
+Требования к макету:
+  - (1) На главной странице должен быть список последних постов, разбитый по 
+    страницам.
+  - (2) Должна быть страница поста, и желательно, чтобы на эту страницу можно 
+    было перейти с главной страницы.
+  - (3) У каждого поста должно быть изображение, автор, дата публикации, 
+    тэги, категории и комментарии (в том числе вложенные).
+  - (4) Содержимое постов должно быть представляемо элементами `<img>`, `<h2>`,
+    `<ul>`, `<ol>`, `<li>`, `<p>` и `<q>`.
+  - (5) Должен хорошо выглядеть.
+  
+Из списка были исключены макеты, не соответствующие следующим требованиям:
+  - (1): World
+  - (1,2): Bona, Juli
+  - (1,3): Katt, Suppablog, Droppler, Magazine, Newsbit, Original, Blogger, Yummy
+  - (3): Article, Blanca, Stuff
+  - (3,5): Sasha
+---
+
 # 2. JavaScript и Node.js
 
 ## Общая информация
@@ -184,9 +206,8 @@ client/                (файлы клиентской части)
 
 2. _Динамическое содержимое_ - формируется веб-сервером по запросу клиента:
 
-    - На **главной странице** динамически формируются страницы с ссылками на 
-    посты по шесть постов на страницу. У каждого поста в зависимости от макета 
-    отображаются:
+    - На **главной странице** динамически формируется список доступных постов.
+    У каждого поста в списке в зависимости от макета могут отображаться:
     
       - изображение поста,
       - автор поста,    
@@ -196,7 +217,8 @@ client/                (файлы клиентской части)
       - заголовок поста,
       - количество комментариев.
     
-    - На **странице поста** динамически формируется её содержимое:
+    - На **странице поста** динамически формируется её содержимое.
+    У каждого поста в зависимости от макета могут отображаться:
     
       - изображение поста,
       - автор поста,
@@ -234,6 +256,8 @@ client/                (файлы клиентской части)
 
 ### Конечные точки
 
+В этой лабораторной работы мы будем использовать только метод HTTP `GET`.
+
 Пусть `/` - это часть URL, на котором расположена серверная часть,
 до указания пути (протокол, доменное имя и номер порта), например:
 
@@ -244,49 +268,46 @@ https://lab2.azurewebsites.net/
 Тогда ресуры серверной части должны быть доступны по следующим
 _конечным точкам_:
   
-1. `/?page=number`, `/index.html?page=number` - **главная страница**,
-где значение параметра запроса `page` - номер страницы постов, например:
+1. `/` или `/index.html` - **главная страница**, например:
   
     ```    
-    https://lab2.azurewebsites.net/    
-    https://lab2.azurewebsites.net/?page=2
-    https://lab2.azurewebsites.net/?page=15
+    https://lab2.github.io/
+    https://lab2.github.io/index.html
     ```
-    ```
-    https://lab2.azurewebsites.net/index.html
-    https://lab2.azurewebsites.net/index.html?page=3
-    https://lab2.azurewebsites.net/index.html?page=10
-    ```
-    
-    Клиентская часть может не указывать параметр запроса `page`.
-    В этом случае серверная часть должна считать его значение равным `1`,
-    т.е. возвращать главную страницу с первой страницей постов.
   
-2. `/post/id` - **страница поста**, где `id` - идентификатор поста, например:
+2. `/post/:id` - **страница поста**, где `:id` - идентификатор поста, например:
   
     ```
-    https://lab2.azurewebsites.net/post/5
-    https://lab2.azurewebsites.net/post/27
+    https://lab2.github.io/post/5
+    https://lab2.github.io/post/27
     ```
  
-3. `/client/path-to-file` - [файлы клиентской части](#описание-файnов),
-где `path-to-file` - путь к файлу относительно директории `client`, например:
+3. `/client/{path}` - [файлы клиентской части](#описание-файnов),
+где `{path}` - путь к файлу относительно директории `client`, например:
 
-    ```
-    https://lab2.azurewebsites.net/client/shared/assets/icon.png
-    https://lab2.azurewebsites.net/client/shared/styles/main.css
-    https://lab2.azurewebsites.net/client/shared/scripts/main.js
-    ```
-    ```
-    https://lab2.azurewebsites.net/client/pages/index/index.css
-    https://lab2.azurewebsites.net/client/pages/index/index.js
-    https://lab2.azurewebsites.net/client/pages/index/assets/image.png
-    ```
-    ```
-    https://lab2.azurewebsites.net/client/pages/post/post.css
-    https://lab2.azurewebsites.net/client/pages/post/post.js
-    https://lab2.azurewebsites.net/client/pages/post/assets/image.png
-    ```
+    - файлы общих ресурсов:
+
+      ```
+      https://lab2.github.io/client/shared/assets/icon.png
+      https://lab2.github.io/client/shared/styles/main.css
+      https://lab2.github.io/client/shared/scripts/main.js
+      ```
+    
+    - файлы гланой страницы:
+    
+      ```
+      https://lab2.github.io/client/pages/index/index.css
+      https://lab2.github.io/client/pages/index/index.js
+      https://lab2.github.io/client/pages/index/assets/image.png
+      ```
+      
+    - файлы страницы поста:
+    
+      ```
+      https://lab2.github.io/client/pages/post/post.css
+      https://lab2.github.io/client/pages/post/post.js
+      https://lab2.github.io/client/pages/post/assets/image.png
+      ```
   
 4. По всем остальным адресам серверная часть должна возвращать
 код ошибки HTTP `404 Not Found`.
