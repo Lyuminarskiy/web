@@ -19,22 +19,22 @@
 
 ![Внешний вид](./assets/Aroma.jpg)
 [Страница макета](https://colorlib.com/wp/template/aroma) |
-[Демонстрация](https://colorlib.com/preview/#aroma) |
-[Исходный код](https://colorlib.com/download/2585)
+[Демонстрация](https://colorlib.com/preview/theme/aroma) |
+<a :href="$withBase('/assets/labs/02/Aroma.zip')" download>Исходный код</a>
 
 ### 2. Fashiop
 
 ![Внешний вид](./assets/Fashiop.jpg)
 [Страница макета](https://colorlib.com/wp/template/fashiop) |
-[Демонстрация](https://colorlib.com/preview/#fashiop) |
-[Исходный код](https://colorlib.com/download/1529)
+[Демонстрация](https://colorlib.com/preview/theme/fashiop) |
+<a :href="$withBase('/assets/labs/02/Fashiop.zip')" download>Исходный код</a>
 
 ### 3. Listashop
 
 ![Внешний вид](./assets/Listashop.jpg)
 [Страница макета](https://colorlib.com/wp/template/listashop) |
-[Демонстрация](https://colorlib.com/preview/#listashop) |
-[Исходный код](https://colorlib.com/download/1268)
+[Демонстрация](https://colorlib.com/preview/theme/listashop) |
+<a :href="$withBase('/assets/labs/02/Fashiop.zip')" download>Исходный код</a>
 
 <disqus-comments
   page-uuid="d1f8203c-bafd-4e17-a9b8-be32d1c53373"
