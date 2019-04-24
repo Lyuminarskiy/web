@@ -73,7 +73,7 @@ function вычислить_ограничение(количество_учащ
 будет автоматически форматировать ваш HTML, CSS и JavaScript код:
 
   <details>
-  <summary>Настройка Beautify (нажмите, чтобы раскрыть):</summary>
+  <summary>Настройка Beautify (нажмите, чтобы раскрыть)</summary>
 
   1. Ознакомьтесь со [списком правил
   ](https://github.com/HookyQR/VSCodeBeautify/blob/master/Settings.md).
@@ -106,7 +106,7 @@ function вычислить_ограничение(количество_учащ
 будет проверять ваш HTML код:
 
   <details>
-  <summary>Настройка HTMLHint</summary>
+  <summary>Настройка HTMLHint (нажмите, чтобы раскрыть)</summary>
 
   1. Ознакомьтесь со
   [списком правил](https://github.com/htmlhint/HTMLHint/wiki).
@@ -144,7 +144,7 @@ function вычислить_ограничение(количество_учащ
 будет проверять ваш CSS код:
 
   <details>
-  <summary>Настройка stylelint</summary>
+  <summary>Настройка stylelint (нажмите, чтобы раскрыть)</summary>
 
   1. Ознакомьтесь со
   [списком правил](https://stylelint.io/user-guide/rules).
@@ -388,7 +388,7 @@ function вычислить_ограничение(количество_учащ
 будут проверять ваш JavaScript код:
 
   <details>
-  <summary>Настройка ESLint и Vetur</summary>
+  <summary>Настройка ESLint и Vetur (нажмите, чтобы раскрыть)</summary>
 
   1. Ознакомьтесь со списками правил для
   [ESLint](https://eslint.org/docs/rules) и
@@ -619,8 +619,8 @@ function вычислить_ограничение(количество_учащ
 1. Называйте ваши файлы именами, по которым можно определить их назначение,
 например:
 
-    - Правильно: `icon.png`, `background.jpg`, `theme.css`, `helpers.js`.
-    - Неправильно: `b6c07eee0c424eb0.jpg`, `dcde7632138481f5c.png`.
+    - правильно: `icon.png`, `background.jpg`, `theme.css`, `helpers.js`,
+    - неправильно: `b6c07eee0c424eb0.jpg`, `dcde7632138481f5c.png`.
 
 2. Указывайте кодировку у всех файлов HTML и CSS.
 
