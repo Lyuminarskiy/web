@@ -42,75 +42,75 @@
 
 ## Макеты
 
-### 1. Vizew
+### 1. Avision
 
-![Внешний вид](./assets/Vizew.jpg)
-[Страница макета](https://colorlib.com/wp/template/vizew) |
-[Демонстрация](https://colorlib.com/preview/#vizew) |
-[Исходный код](https://colorlib.com/download/2232)
-
-### 2. Wordify
-
-![Внешний вид](./assets/Wordify.jpg)
-[Страница макета](https://colorlib.com/wp/template/wordify) |
-[Демонстрация](https://colorlib.com/preview/#wordify) |
-[Исходный код](https://colorlib.com/download/2210)
-
-### 3. Ruft
-
-![Внешний вид](./assets/Ruft.jpg)
-[Страница макета](https://colorlib.com/wp/template/ruft) |
-[Демонстрация](https://colorlib.com/preview/#ruft) |
-[Исходный код](https://colorlib.com/download/2203)
-
-### 4. Wordsmith
-
-![Внешний вид](./assets/Wordsmith.jpg)
-[Страница макета](https://colorlib.com/wp/template/wordsmith) |
-[Демонстрация](https://colorlib.com/preview/#wordsmith) |
-[Исходный код](https://colorlib.com/download/1361)
-
-### 5. Fantom
-
-![Внешний вид](./assets/Fantom.jpg)
-[Страница макета](https://colorlib.com/wp/template/fantom) |
-[Демонстрация](https://colorlib.com/preview/#fantom) |
-[Исходный код](https://colorlib.com/download/1266)
-
-### 6. Callie
-
-![Внешний вид](./assets/Callie.jpg)
-[Страница макета](https://colorlib.com/wp/template/callie) |
-[Демонстрация](https://colorlib.com/preview/#callie) |
-[Исходный код](https://colorlib.com/download/1020)
-
-### 7. WebMag
-
-![Внешний вид](./assets/WebMag.jpg)
-[Страница макета](https://colorlib.com/wp/template/webmag) |
-[Демонстрация](https://colorlib.com/preview/#webmag) |
-[Исходный код](https://colorlib.com/download/959)
-
-### 8. Balita
-
-![Внешний вид](./assets/Balita.jpg)
-[Страница макета](https://colorlib.com/wp/template/balita) |
-[Демонстрация](https://colorlib.com/preview/#balita) |
-[Исходный код](https://colorlib.com/download/941)
-
-### 9. Avision
-
-![Внешний вид](./assets/Avision.jpg)
+![Внешний вид](./assets/templates/Avision.jpg)
 [Страница макета](https://colorlib.com/wp/template/avision) |
-[Демонстрация](https://colorlib.com/preview/#avision) |
-[Исходный код](https://colorlib.com/download/932)
+[Демонстрация](https://colorlib.com/preview/theme/avision) |
+<a :href="$withBase('/assets/labs/02/Avision.zip')" download>Исходный код</a>
 
-### 10. Philosophy
+### 2. Balita
 
-![Внешний вид](./assets/Philosophy.jpg)
+![Внешний вид](./assets/templates/Balita.jpg)
+[Страница макета](https://colorlib.com/wp/template/balita) |
+[Демонстрация](https://colorlib.com/preview/theme/balita) |
+<a :href="$withBase('/assets/labs/02/Balita.zip')" download>Исходный код</a>
+
+### 3. Callie
+
+![Внешний вид](./assets/templates/Callie.jpg)
+[Страница макета](https://colorlib.com/wp/template/callie) |
+[Демонстрация](https://colorlib.com/preview/theme/callie) |
+<a :href="$withBase('/assets/labs/02/Callie.zip')" download>Исходный код</a>
+
+### 4. Fantom
+
+![Внешний вид](./assets/templates/Fantom.jpg)
+[Страница макета](https://colorlib.com/wp/template/fantom) |
+[Демонстрация](https://colorlib.com/preview/theme/fantom) |
+<a :href="$withBase('/assets/labs/02/Fantom.zip')" download>Исходный код</a>
+
+### 5. Philosophy
+
+![Внешний вид](./assets/templates/Philosophy.jpg)
 [Страница макета](https://colorlib.com/wp/template/philosophy) |
-[Демонстрация](https://colorlib.com/demo?theme=philosophy) |
-[Исходный код](https://colorlib.com/download/339)
+[Демонстрация](https://colorlib.com/etc/philosophy/index.html) |
+<a :href="$withBase('/assets/labs/02/Philosophy.zip')" download>Исходный код</a>
+
+### 6. Ruft
+
+![Внешний вид](./assets/templates/Ruft.jpg)
+[Страница макета](https://colorlib.com/wp/template/ruft) |
+[Демонстрация](https://colorlib.com/preview/theme/ruft) |
+<a :href="$withBase('/assets/labs/02/Ruft.zip')" download>Исходный код</a>
+
+### 7. Vizew
+
+![Внешний вид](./assets/templates/Vizew.jpg)
+[Страница макета](https://colorlib.com/wp/template/vizew) |
+[Демонстрация](https://colorlib.com/preview/theme/vizew) |
+<a :href="$withBase('/assets/labs/02/Vizew.zip')" download>Исходный код</a>
+
+### 8. WebMag
+
+![Внешний вид](./assets/templates/WebMag.jpg)
+[Страница макета](https://colorlib.com/wp/template/webmag) |
+[Демонстрация](https://colorlib.com/preview/theme/webmag) |
+<a :href="$withBase('/assets/labs/02/WebMag.zip')" download>Исходный код</a>
+
+### 9. Wordify
+
+![Внешний вид](./assets/templates/Wordify.jpg)
+[Страница макета](https://colorlib.com/wp/template/wordify) |
+[Демонстрация](https://colorlib.com/preview/theme/wordify) |
+<a :href="$withBase('/assets/labs/02/Wordify.zip')" download>Исходный код</a>
+
+### 10. Wordsmith
+
+![Внешний вид](./assets/templates/Wordsmith.jpg)
+[Страница макета](https://colorlib.com/wp/template/wordsmith) |
+[Демонстрация](https://colorlib.com/preview/theme/wordsmith) |
+<a :href="$withBase('/assets/labs/02/Wordsmith.zip')" download>Исходный код</a>
 
 ## Клиентская часть
 
