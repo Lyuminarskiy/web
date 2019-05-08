@@ -243,13 +243,13 @@ for (const [key, value] of map) {
 
  Имя | Описание
 :---:| --------
-[`map.size`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/size) | Количество пар ключ-значение в словаре.
-[`map.clear()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/clear) | Удаляет все пары ключ-значение из словаря.
-[`map.delete()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/delete) | Удаляет элемент с указанным ключом из словаря.
-[`map.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/forEach) | Вызывает переданную функцию для каждой пары ключ-значение в словаре.
-[`map.get()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get) | Возвращает ассоциированное с указанным ключом значение из словаря.
-[`map.has()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/has) | Проверяет, присутствует ли в словаре элемент с указанным ключом.
-[`map.set()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/set) | Добавляет или изменяет пару с указанным ключом и значением в словаре.
+[`map.size`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map/size) | Количество пар ключ-значение в словаре.
+[`map.clear()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map/clear) | Удаляет все пары ключ-значение из словаря.
+[`map.delete()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map/delete) | Удаляет элемент с указанным ключом из словаря.
+[`map.forEach()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map/forEach) | Вызывает переданную функцию для каждой пары ключ-значение в словаре.
+[`map.get()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map/get) | Возвращает ассоциированное с указанным ключом значение из словаря.
+[`map.has()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map/has) | Проверяет, присутствует ли в словаре элемент с указанным ключом.
+[`map.set()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map/set) | Добавляет или изменяет пару с указанным ключом и значением в словаре.
 
 
 #### Set
@@ -275,12 +275,12 @@ for (const item of set) {
 
  Имя | Описание
 :---:| --------
-[`set.size`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/size) | Количество элементов в множестве.
-[`set.add()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/add) | Добавляет новый элемент с заданным значением в множество.
-[`set.clear()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/clear) | Удаляет все элементы из множества.
-[`set.delete()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/delete) | Удаляет элемент с указанным значением из множества.
-[`set.forEach()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/forEach) | Вызывает переданную функцию для каждого элемента множества.
-[`set.has()`](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Set/has) | Проверяет, присутствует ли в множестве элемент с указанным значением.
+[`set.size`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set/size) | Количество элементов в множестве.
+[`set.add()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set/add) | Добавляет новый элемент с заданным значением в множество.
+[`set.clear()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set/clear) | Удаляет все элементы из множества.
+[`set.delete()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set/delete) | Удаляет элемент с указанным значением из множества.
+[`set.forEach()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set/forEach) | Вызывает переданную функцию для каждого элемента множества.
+[`set.has()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Set/has) | Проверяет, присутствует ли в множестве элемент с указанным значением.
 
 #### Ссылки по теме
 
@@ -563,6 +563,33 @@ Live Server`. В результате откроется окно Google Chrome 
 4. Преобразуйте строку в объект.
 
 ### Работа со словарями
+
+Задачи:
+
+1. Создайте константу `text` и сохраните в неё текст рассказа из задания
+[1.2. Базовые элементы HTML](/practice/01/#_1-2-базовые-эnементы-html).
+
+2. Создайте новый словарь и сохраните его в константу `symbols`.
+
+3. Подсчитайте и запишите в словарь количество вхождений каждого символа в 
+текте независимо от его регистра.
+
+4. Выведите на консоль статистику символов в следующем виде:
+
+    ```
+    ...
+    'о': 1624
+    'к': 474
+    'т': 726
+    'р': 626
+    'а': 1022
+    'ь': 246
+    'п': 361
+    'в': 635
+    ...
+    ```
+    
+5. Определите наиболее и наименее часто встречающиеся символы в тексте.
 
 ### Работа с множествами
 
