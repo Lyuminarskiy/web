@@ -1009,7 +1009,8 @@ JavaScript поддерживает три оператора ветвления
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Operators/Условный_оператор):
 
 ```js
-var a = 2, b = 3, result;
+let a = 2, b = 3;
+let result;
 
 if (a + b < 4) {
   result = "Верно";
@@ -1027,7 +1028,8 @@ else {
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/switch):
 
 ```js
-var login = prompt("Введите логин", ""), message;
+let login = prompt("Введите логин");
+let message;
 
 if (login === "Сотрудник") {
   message = "Привет";
@@ -1051,7 +1053,8 @@ alert(message);
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Statements/if...else):
 
 ```js
-var browser = prompt("Какой у вас браузер?", ""), message;
+let browser = prompt("Какой у вас браузер?");
+let message;
 
 switch (browser) {
   case "IE":
