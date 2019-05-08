@@ -82,27 +82,27 @@
     ](https://developer.mozilla.org/ru/docs/Web/API/ParentNode/lastElementChild) -
     последний дочерний элемент.     
     - [`table.caption`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/caption) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLTableElement/caption) -
     элемент [`<caption>`](https://webref.ru/html/caption) внутри таблицы.
     - [`table.tHead`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/tHead) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLTableElement/tHead) -
     элемент [`<thead>`](https://webref.ru/html/thead) внутри таблицы.
     - [`table.tFoot`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/tFoot) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLTableElement/tFoot) -
     элемент [`<tfoot>`](https://webref.ru/html/tfoot) внутри таблицы.
     - [`table.tBodies`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/tBodies) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLTableElement/tBodies) -
     _коллекция_ элементов [`<tbody>`](https://webref.ru/html/tbody) внутри 
     таблицы.
     - [`table.rows`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableElement/rows) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLTableElement/rows) -
     _коллекция_ строк [`<tr>`](https://webref.ru/html/tr) внутри таблицы.
     - [`tableSection.rows`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableSectionElement) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLTableSectionElement) -
     _коллекция_ строк [`<tr>`](https://webref.ru/html/tr) внутри секции
     таблицы.
     - [`tableRow.cells`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLTableRowElement) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLTableRowElement) -
     _коллекция_ ячеек [`<td>`](https://webref.ru/html/td) и 
     [`<th>`](https://webref.ru/html/th) внутри строки таблицы.
     
@@ -113,7 +113,7 @@
     ](https://developer.mozilla.org/ru/docs/Web/API/Document/getElementById) -
     выполняет поиск элемента по его идентификатору `id` по всему документу.
     - [`element.getElementsByTagName(type)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/Document/getElementsByName) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/Document/getElementsByName) -
     возвращает _коллекцию_ всех элементов типа `type` внутри элемента.
     - [`element.getElementsByClassName(class)`
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/getElementsByClassName) -
@@ -134,7 +134,7 @@
   ](https://learn.javascript.ru/compare-document-position):
   
     - [`element.matches(selector)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/Element/matches) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/matches) -
     проверяет, соответствует ли элемент селектору CSS `selector`.  
     - [`parent.contains(element)`
     ](https://developer.mozilla.org/ru/docs/Web/API/Node/contains) -
@@ -158,19 +158,19 @@
   ](https://learn.javascript.ru/multi-insert):
   
     - [`element.append(...childs)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/append) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/ParentNode/append) -
     вставляет элементы `childs` после последнего дочернего элемента.
     - [`element.prepend(...childs)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/ParentNode/prepend) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/ParentNode/prepend) -
     вставляет элементы `childs` перед первым дочерним элементом.
     - [`element.after(...siblings)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/after) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/ChildNode/after) -
     вставляет элементы `siblings` после элемента.
     - [`element.before(...siblings)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/before) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/ChildNode/before) -
     вставляет элементы `siblings` перед элементом.
     - [`element.replaceWith(...substitutes)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/ChildNode/before) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/ChildNode/before) -
     заменяет элемент на элементы `substitutes`.
   
   - [Основные свойства объектного представления элементов
@@ -183,7 +183,7 @@
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/innerHTML) -
     внутреннее содержимое элемента в виде HTML.
     - [`element.innerText`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/HTMLElement/innerText) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/HTMLElement/innerText) -
     текстовое содержимое элемента.
   
   - [Работа с атрибутами элементов через DOM
@@ -203,7 +203,7 @@
     устанавливает значение `value` для атрибута `attribute` элемента, либо 
     добавляет новый атрибут.
     - [`element.toggleAttribute(attribute)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/Element/toggleAttribute) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/Element/toggleAttribute) -
     переключает атрибут `attribute` ([логический тип
     ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Boolean))
     элемента.
@@ -224,13 +224,13 @@
     ](https://developer.mozilla.org/ru/docs/Web/API/Element/classList) - 
     _коллекция_ классов элемента.
     - [`element.classList.contains(class)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/contains) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/DOMTokenList/contains) -
     проверяет наличие класса `class` у элемента.
     - [`element.classList.add(...classes)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/add) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/DOMTokenList/add) -
     добавляет классы `classes` для элемента.
     - [`element.classList.remove(...classes)`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/DOMTokenList/remove) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/DOMTokenList/remove) -
     удаляет классы `classes` у элемента.
   
   - [Работа со свойствами CSS элементов через DOM
@@ -241,7 +241,7 @@
     объект, позволяющий изменять _большинство_ свойств CSS у элемента через 
     атрибут [`style`](https://webref.ru/html/attr/style).
     - [`element.style.cssText`
-    ](https://developer.mozilla.org/en-US/docs/Web/API/CSSStyleDeclaration/cssText) -
+    ](https://developer.mozilla.org/ru/docs/Web/API/CSSStyleDeclaration/cssText) -
     содержимое атрибута [`style`](https://webref.ru/html/attr/style) элемента.
     - [`getComputedStyle(element)`
     ](https://developer.mozilla.org/ru/docs/Web/API/Window/getComputedStyle) -

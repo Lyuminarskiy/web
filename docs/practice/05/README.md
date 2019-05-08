@@ -67,26 +67,26 @@
 - CSS Grid Layout:
 
   - [`grid-template-rows`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-rows),
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-rows),
   [`grid-template-columns`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-columns) и
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-columns) и
   [`grid-template`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template) - 
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template) - 
   количество и размер строк и столбцов сетки и комбинированное свойство 
   соответственно.
   - Функция [`repeat()`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Grid_Layout) и
-  единица [`fr`](https://developer.mozilla.org/en-US/docs/Web/CSS/flex_value).
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_Grid_Layout) и
+  единица [`fr`](https://developer.mozilla.org/ru/docs/Web/CSS/flex_value).
   - [`grid-template-areas`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-template-areas) -
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/grid-template-areas) -
   макет сетки.
   - [`grid-area`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/grid-area) -
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/grid-area) -
   привязка элемента в области сетки.
-  - [`grid-row-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/row-gap),
+  - [`grid-row-gap`](https://developer.mozilla.org/ru/docs/Web/CSS/row-gap),
   [`grid-column-gap`
-  ](https://developer.mozilla.org/en-US/docs/Web/CSS/column-gap) и
-  [`grid-gap`](https://developer.mozilla.org/en-US/docs/Web/CSS/gap) -
+  ](https://developer.mozilla.org/ru/docs/Web/CSS/column-gap) и
+  [`grid-gap`](https://developer.mozilla.org/ru/docs/Web/CSS/gap) -
   промежуток между строками и столбцами сетки и комбинированное свойство 
   соответственно.
 

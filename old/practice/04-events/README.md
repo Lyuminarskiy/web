@@ -43,7 +43,7 @@ clearTimeout(timerId);
 ### 1.1. Ссылки
 
 - [Метод `WindowTimers.setTimeout()`](https://developer.mozilla.org/ru/docs/Web/API/WindowTimers/setTimeout)
-- [Метод `WindowOrWorkerGlobalScope.setInterval()`](https://developer.mozilla.org/en-US/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
+- [Метод `WindowOrWorkerGlobalScope.setInterval()`](https://developer.mozilla.org/ru/docs/Web/API/WindowOrWorkerGlobalScope/setInterval)
 
 ### 1.2. Задачи
 

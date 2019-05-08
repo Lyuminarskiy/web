@@ -157,8 +157,8 @@ CSS-свойство `animation` представляет собой сокра�
 
 ### 1.4. Ссылки
 
-- [Свойство `transform`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform)
-- [Свойство `transform-origin`](https://developer.mozilla.org/en-US/docs/Web/CSS/transform-origin)
+- [Свойство `transform`](https://developer.mozilla.org/ru/docs/Web/CSS/transform)
+- [Свойство `transform-origin`](https://developer.mozilla.org/ru/docs/Web/CSS/transform-origin)
 - [Свойство `transition`](https://developer.mozilla.org/ru/docs/Web/CSS/transition)
 - [Свойство `animation`](https://developer.mozilla.org/ru/docs/Web/CSS/animation)
-- [Перечень анимируемых CSS-свойств](https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_animated_properties)
+- [Перечень анимируемых CSS-свойств](https://developer.mozilla.org/ru/docs/Web/CSS/CSS_animated_properties)

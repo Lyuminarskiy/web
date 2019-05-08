@@ -200,5 +200,5 @@ fetch('https://jsonplaceholder.typicode.com/users')
 ## Ссылки
 
 - [JSONPlaceholder](https://jsonplaceholder.typicode.com)
-- [Working with `JSON`](https://developer.mozilla.org/en-US/docs/Learn/JavaScript/Objects/JSON)
+- [Working with `JSON`](https://developer.mozilla.org/ru/docs/Learn/JavaScript/Objects/JSON)
 - [Использование `Fetch`](https://developer.mozilla.org/ru/docs/Web/API/Fetch_API/Using_Fetch)

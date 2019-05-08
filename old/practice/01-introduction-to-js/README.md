@@ -112,7 +112,7 @@
 
 ### 1.1. Ссылки
 
-- [Элемент `<script>`](https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script)
+- [Элемент `<script>`](https://developer.mozilla.org/ru/docs/Web/HTML/Element/script)
 - [Встроенная функция `alert()`](https://developer.mozilla.org/ru/docs/Web/API/Window/alert)
 
 ### 1.2. Задачи

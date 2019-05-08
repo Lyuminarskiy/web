@@ -438,7 +438,7 @@ _универсальный атрибут_.
 
 ::: tip На заметку
 Полный список цветов можно посмотреть в [веб-документации MDN
-](https://developer.mozilla.org/en-US/docs/Web/CSS/color_value).
+](https://developer.mozilla.org/ru/docs/Web/CSS/color_value).
 :::
 
 ::: warning Обратите внимание!
