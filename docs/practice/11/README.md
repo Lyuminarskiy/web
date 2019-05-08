@@ -90,8 +90,9 @@
  Имя | Описание
 :---:| --------
 [`EPSILON`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/EPSILON) | Наименьший интервал между двумя представимыми числами.
-[`MAX_VALUE`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE) | Наибольшее представимое положительное число.
-[`MIN_VALUE`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE) | Наименьшее представимое положительное число.
+[`MAX_VALUE`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_VALUE) [`MIN_VALUE`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_VALUE) | Наибольшее/наименьшее представимое положительное число.
+[`MAX_SAFE_INTEGER`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/MAX_SAFE_INTEGER) [`MIN_SAFE_INTEGER`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/MIN_SAFE_INTEGER) | Наибольшее/наименьшее безопасное (без округления) целое число.
+[`isSafe​Integer()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/isSafeInteger) | Определяет, является ли переданное значение представимым целым числом.
 [`num.toFixed()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) | Возвращает строку, представляющую число в записи с фиксированной запятой.
 [`num.toPrecision()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toPrecision) | Возвращает строку, представляющую число с указанной точностью.
 [`num.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Number/toFixed) | Возвращает строковое представление числа в указанной системе счисления.
@@ -409,6 +410,44 @@ Live Server`. В результате откроется окно Google Chrome 
 
 ### Работа с числами
 
+Задачи:
+
+1. Выведите на консоль наибольшее и наименьшее представимые положительные числа.
+
+2. Создайте число, которое не является безопасным целым числом.
+
+3. Создайте произвольное число и отобразите его в двоичной, восьмеричной и
+шестнадцатеричной системах счисления.
+
+4. Создайте произвольное число с плавающей запятой и продемонстрируйте на нём 
+известные вам способы представления чисел с указанной точностью.
+
+5. Создайте следующую функцию:
+
+    ```js
+    /**
+    * Возвращает результат сравнения чисел с учётом допустимой погрешности
+    * (EPSILON) в операциях округления арифметики с плавающей запятой.
+    * 
+    * @param {number} first - Первое число.
+    * @param {number} second - Второе число.
+    * @return {boolean} Результат сравнения чисел.
+    */
+    function equals(first, second) { /* ... */ }
+    ```
+    
+    Примеры работы функции:
+    
+    ```js
+    0.1 + 0.2 === 0.3; // false, т.к. (0.1 + 0.2) = 0.30000000000000004
+    equals(0.1 + 0.2, 0.3); // true
+ 
+    0.1 * 6 === 0.6; // false, т.к. (0.1 * 6) = 0.6000000000000001
+    equals(0.1 * 6, 0.6); // true
+    ```
+    
+6. Продемонстрируйте работу функции.
+
 ### Работа со строками
 
 ### Работа с массивами
@@ -489,7 +528,7 @@ Live Server`. В результате откроется окно Google Chrome 
       }
     }
     ```
-    
+
 4. Преобразуйте строку в объект.
 
 ### Работа с регулярными выражениями
