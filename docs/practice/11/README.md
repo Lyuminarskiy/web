@@ -30,6 +30,9 @@
   - [`String`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String) -
   строка.
+  - [`RegExp`
+  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp) -
+  регулярное выражение.
   - [`Array`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array) -
   массив.
@@ -45,9 +48,6 @@
   - [`JSON`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON) -
   функционал работы объектной нотацией JavaScript.
-  - [`RegExp`
-  ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp) -
-  регулярное выражение.
   - [`Map`
   ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Map) -
   словарь.
@@ -117,7 +117,15 @@
 [`str.substr()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/substr) | Возвращает указанное количество символов из строки, начиная с указанной позиции.
 [`str.toLowerCase()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toLowerCase) | Возвращает значение строки, преобразованное в нижний регистр.
 [`str.toUpperCase()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/toUpperCase) | Возвращает значение строки, преобразованное в верхний регистр.
-[`str.trim()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/trim) | Возвращает строку с вырезанными пробельными символами с её концов. 
+[`str.trim()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/String/trim) | Возвращает строку с вырезанными пробельными символами с её концов.
+
+#### RegExp
+
+ Имя | Описание
+:---:| --------
+[`regex.exec()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) | Выполняет поиск сопоставлений регулярного выражения в переданной строке.
+[`regex.test()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) | Пытается сопоставить регулярное выражение с переданной строкой.
+[`regex.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/toString) | Возвращает строковое представление регулярного выражения.
 
 #### Array
 
@@ -214,14 +222,6 @@ JavaScript | JSON
 [`parse()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/parse) | Разбирает строку JSON и возвращает разобранное значение.
 [`stringify()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/JSON/stringify) | Возвращает строку JSON, соответствующую указанному значению.
 
-#### RegExp
-
- Имя | Описание
-:---:| --------
-[`regex.exec()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/exec) | Выполняет поиск сопоставлений регулярного выражения в переданной строке.
-[`regex.test()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/test) | Пытается сопоставить регулярное выражение с переданной строкой.
-[`regex.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/RegExp/toString) | Возвращает строковое представление регулярного выражения.
-
 #### Map
 
 Словари, как и массивы, можно использовать совместно с циклом [`for...of`
@@ -310,11 +310,6 @@ for (const item of set) {
 ](https://learn.javascript.ru/properties-and-methods).
 - [Числа](https://learn.javascript.ru/number).
 - [Строки](https://learn.javascript.ru/string).
-- [Массивы с числовыми индексами](https://learn.javascript.ru/array).
-- [Массивы: методы](https://learn.javascript.ru/array-methods).
-- [Массив: перебирающие методы](https://learn.javascript.ru/array-iteration).
-- [Дата и Время](https://learn.javascript.ru/datetime).
-- [Формат JSON, метод toJSON](https://learn.javascript.ru/json).
 - [Паттерны и флаги](https://learn.javascript.ru/regexp-introduction).
 - [Методы RegExp и String](https://learn.javascript.ru/regexp-methods).
 - [Классы и спецсимволы](https://learn.javascript.ru/regexp-character-classes).
@@ -322,6 +317,11 @@ for (const item of set) {
 ](https://learn.javascript.ru/regexp-character-sets-and-ranges).
 - [Квантификаторы +, *, ? и {n}
 ](https://learn.javascript.ru/regexp-quantifiers).
+- [Массивы с числовыми индексами](https://learn.javascript.ru/array).
+- [Массивы: методы](https://learn.javascript.ru/array-methods).
+- [Массив: перебирающие методы](https://learn.javascript.ru/array-iteration).
+- [Дата и Время](https://learn.javascript.ru/datetime).
+- [Формат JSON, метод toJSON](https://learn.javascript.ru/json).
 - [Set, Map, WeakSet и WeakMap](https://learn.javascript.ru/set-map).
 
 ### Отладка кода в редакторе
@@ -448,7 +448,30 @@ Live Server`. В результате откроется окно Google Chrome 
     
 6. Продемонстрируйте работу функции.
 
-### Работа со строками
+### Работа со строками и регулярными выражениями
+
+Задачи:
+
+1. Создайте константу `text` и сохраните в неё текст рассказа из задания
+[1.2. Базовые элементы HTML](/practice/01/#_1-2-базовые-эnементы-html).
+
+2. Проверьте, есть ли в тексте слово `"ребенок"`.
+
+3. Найдите в тексте индекс вхождения подстроки `"Весь сегодняшний день"`.
+
+4. На основе найденного индекса извлеките из строки полное предложение:
+
+    ```js
+    "Весь сегодняшний день был занят тем, чтобы посредством нечеловеческих усилий выжать откуда-нибудь хоть несколько копеек на лекарство Машутке."
+    ```
+    
+5. Найдите количество слов в предложении.
+    
+6. С помощью регулярного выражения получите массив заголовков частей рассказа:
+
+    ```js
+    ["Часть первая", "Часть вторая", "Часть третья"]
+    ```
 
 ### Работа с массивами
 
@@ -530,8 +553,6 @@ Live Server`. В результате откроется окно Google Chrome 
     ```
 
 4. Преобразуйте строку в объект.
-
-### Работа с регулярными выражениями
 
 ### Работа со словарями
 
