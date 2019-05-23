@@ -449,7 +449,6 @@ function вычислить_ограничение(количество_учащ
           "block-spacing": "warn",
           "brace-style": ["warn", "stroustrup"],
           "camelcase": "warn",
-          "capitalized-comments": "warn",
           "class-methods-use-this": "error",
           "comma-dangle": "warn",
           "comma-spacing": "warn",
@@ -472,13 +471,6 @@ function вычислить_ограничение(количество_учащ
           "key-spacing": "warn",
           "keyword-spacing": "warn",
           "line-comment-position": "warn",
-          "lines-around-comment": ["warn", {
-            "beforeLineComment": true,
-            "allowBlockStart": true,
-            "allowClassStart": true,
-            "allowObjectStart": true,
-            "allowArrayStart": true
-          }],
           "lines-between-class-members": "warn",
           "max-classes-per-file": ["error", 1],
           "max-depth": "error",
