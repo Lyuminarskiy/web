@@ -69,16 +69,25 @@ module.exports = {
         link: "/about/"
       },
       {
-        text: "Практика",
-        link: "/practice/"
-      },
-      {
-        text: "Лабораторные",
-        link: "/labs/"
-      },
-      {
-        text: "Экзамен",
-        link: "/exam/"
+        text: "Учебный процесс",
+        items: [
+          {
+            text: "Практические занятия",
+            link: "/practice/"
+          },
+          {
+            text: "Лабораторные работы",
+            link: "/labs/"
+          },
+          {
+            text: "Экзамен",
+            link: "/exam/"
+          },
+          {
+            text: "Производственная практика",
+            link: "/final/"
+          }
+        ]
       }
     ],
     sidebar: {
