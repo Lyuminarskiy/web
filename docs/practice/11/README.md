@@ -138,7 +138,7 @@
 :---:| --------
 [`isArray()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/isArray) | Определяет, является ли переданный объект массивом.
 [`arr.length`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/length ) | Количество элементов в массиве.
-[`arr.concat()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/concat) | Возвращает новый массив, состоящий из данного массива, соединённого с другим массивом и/или значением.
+[`arr.concat()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/concat) | Возвращает новый массив, созданный путём объединени элементов исходного массива с элементами другого массива и/или значением.
 [`arr.every()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/every) | Проверяет, удовлетворяют ли все элементы массива условию, заданному в передаваемой функции.
 [`arr.fill()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/fill) | Возвращает новый массив, полученный из исходного, заполненного от начального до конечного индексов одним значением.
 [`arr.filter()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/filter) | Создаёт новый массив со всеми элементами, прошедшими проверку, задаваемую в передаваемой функции.
@@ -149,7 +149,7 @@
 [`arr.indexOf()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/indexOf) | Возвращает первый индекс элемента внутри массива, равный указанному значению.
 [`arr.join()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/join) | Объединяет все элементы массива в строку.
 [`arr.lastIndexOf()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/lastIndexOf) | Возвращает последний индекс элемента внутри массива, равный указанному значению.
-[`arr.map()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map) | Создаёт новый массив с результатами вызова указанной функции на каждом элементе данного массива.
+[`arr.map()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/map) | Возвращает копию исходного массива, элементы которого были преобразованы с помощью указанной функции.
 [`arr.pop()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/pop) | Удаляет последний элемент из массива и возвращает его.
 [`arr.push()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/push) | Добавляет один или более элементов в конец массива и возвращает новую длину массива.
 [`arr.reduce()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce) | Применяет функцию к каждому значению массива, сводя его к одному значению.
@@ -157,6 +157,7 @@
 [`arr.shift()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/shift) | Удаляет первый элемент из массива и возвращает его.
 [`arr.slice()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/slice) | Извлекает диапазон значений и возвращает его в виде нового массива.
 [`arr.some()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/some) | Проверяет, удовлетворяет ли хоть какой-нибудь элемент массива условию, заданному в передаваемой функции.
+[`arr.sort()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/sort) | Возвращает копию исходного массива с отсортированными элементами.
 [`arr.splice()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/splice) | Добавляет и/или удаляет элементы из массива.
 [`arr.toString()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/toString) | Возвращает строковое представление массива и его элементов.
 [`arr.unshift()`](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Array/unshift) | Добавляет один или более элементов в начало массива и возвращает новую длину массива.
@@ -482,7 +483,7 @@ Live Server`. В результате откроется окно Google Chrome 
 
 Задачи:
 
-1. Создайте константу `users` и сохраните в неё следующий массив пользователей:
+1. Создайте переменную `users` и сохраните в неё следующий массив пользователей:
 
     <details>    
     <summary>Массив пользователей (нажмите, чтобы раскрыть)</summary>
@@ -723,9 +724,8 @@ Live Server`. В результате откроется окно Google Chrome 
     ```
     
     </details>
-   
-2. На основе исходного массива создайте новый массив, приводя элементы 
-исходного массива к следующему виду:
+
+2. Преобразуйте объекты пользователей так, чтобы они приняли следующий вид:
 
     ```json
     {
@@ -737,9 +737,11 @@ Live Server`. В результате откроется окно Google Chrome 
       "address": "92998-3874, Gwenborough, Kulas Light, Apt. 556"
     }
     ```
+
+3. Отсортируйте пользователей по возрастанию длин их имён.
     
-3. Найдите сумму длин имён пользователей, у которых длина имени больше `15`
-символов _(правильный ответ - `110` символов)_.
+4. Найдите сумму длин имён пользователей, у которых длина имени больше
+`15` символов.
 
 ### Работа с объектами
 
