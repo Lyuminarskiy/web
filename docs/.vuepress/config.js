@@ -1,13 +1,23 @@
 const path = require("path");
 
 module.exports = {
-  ga: "UA-138493396-1",
   evergreen: true,
-  serviceWorker: true,
   configureWebpack: {
     resolve: {
       alias: {
         practice: path.resolve(".", "docs/practice")
+      }
+    }
+  },
+  plugins: {
+    "@vuepress/google-analytics": {
+      ga: "UA-138493396-1"
+    },
+    "@vuepress/pwa": {
+      serviceWorker: true,
+      updatePopup: {
+        message: "Доступно новое содержимое.",
+        buttonText: "Обновить"
       }
     }
   },
@@ -47,12 +57,6 @@ module.exports = {
     logo: "/icons/icon512.png",
     lastUpdated: "Последнее обновление",
     editLinkText: "Редактировать эту страницу",
-    serviceWorker: {
-      updatePopup: {
-        message: "Доступно новое содержимое.",
-        buttonText: "Обновить"
-      }
-    },
     algolia: {
       apiKey: "892ad28dc056e1eb225c126678ef1c09",
       indexName: "c_vladislav",
