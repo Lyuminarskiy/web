@@ -35,7 +35,7 @@ module.exports = {
     }],
     ["meta", {
       name: "theme-color",
-      content: "#3eaf7c"
+      content: "#e04f5f"
     }],
     ["link", {
       rel: "icon",

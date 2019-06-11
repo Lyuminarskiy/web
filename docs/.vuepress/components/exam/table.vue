@@ -3,7 +3,7 @@
     <input type="text" placeholder="Введите Ф.И.О. студента" class="add-input"
            v-model="name" @keypress.enter="add">
     <button class="wide-button" @click="add">Выдать задание</button>
-    
+
     <table v-if="rows.length">
       <thead>
         <tr>
@@ -14,7 +14,7 @@
           <th>Времени осталось</th>
         </tr>
       </thead>
-      
+
       <tbody>
         <tr v-for="(row, index) of rows" :key="row.id">
           <td>{{ index + 1 }}</td>
@@ -28,7 +28,7 @@
             </button>
           </td>
         </tr>
-  
+
         <tr>
           <td colspan="5">
             <button class="small-button" @click="clear">
@@ -46,7 +46,7 @@
   const examTime = 2 * 60 * 60;
   // Количество вариантов заданий.
   const numberOfVariants = 4;
-  
+
   /**
    * Возвращает случайный вариант задания.
    *
@@ -54,7 +54,7 @@
    */
   const getRandomVariant = () =>
     Math.floor(Math.random() * numberOfVariants + 1);
-  
+
   /**
    * Возвращает текущее время в виде строки формата HH:MM.
    *
@@ -67,10 +67,10 @@
       minute: "2-digit"
     });
   }
-  
+
   export default {
     name: "exam-table",
-    
+
     data() {
       return {
         intervalId: 0,
@@ -78,7 +78,7 @@
         rows: []
       };
     },
-    
+
     methods: {
       add() {
         if(this.name.length) {
@@ -88,7 +88,7 @@
             timeSince: getCurrentTime(),
             timeLeft: examTime
           });
-          
+
           this.name = "";
         }
       },
@@ -98,7 +98,7 @@
       clear() {
         this.rows = [];
       },
-      
+
       /**
        * Возвращает время в виде строки формата HH:MM:SS на основе секунд.
        *
@@ -107,7 +107,7 @@
        */
       formatTime(seconds) {
         if(!seconds) return "-";
-        
+
         const timeLeft = new Date(0, 0, 0, 0, 0, seconds);
         return timeLeft.toLocaleString([], {
           hour: "2-digit",
@@ -116,7 +116,7 @@
         });
       }
     },
-    
+
     mounted() {
       this.intervalId = setInterval(() => {
         for(let row of this.rows) {
@@ -124,7 +124,7 @@
         }
       }, 1000);
     },
-    
+
     beforeDestroy() {
       clearInterval(this.intervalId);
     }
@@ -135,19 +135,19 @@
   .root {
     margin: 1.5rem 0 3rem;
   }
-  
+
   .add-input {
     display: block;
     box-sizing: border-box;
     width: 100%;
     padding: 0.5rem;
     border: 1px solid black;
-    
+
     text-align: center;
     font-size: inherit;
     font-family: inherit;
   }
-  
+
   .wide-button {
     display: block;
     width: 100%;
@@ -155,37 +155,37 @@
     border-radius: 4px;
     border: none;
     margin: 0.5rem 0;
-    
+
     color: white;
-    background: #3eaf7c;
-    
+    background: #e04f5f;
+
     font-weight: bold;
-  
+
     transition: background-color 0.1s ease;
   }
-  
+
   .wide-button:hover {
-    background: #4abf8a;
+    background: #d04f5f;
   }
-  
+
   .small-button {
     border: none;
-    
-    color: #3eaf7c;
+
+    color: #e04f5f;
     background: none;
   }
-  
+
   .small-button:hover {
-    text-decoration: underline #3eaf7c;
+    text-decoration: underline #e04f5f;
   }
-  
+
   .wide-button, .small-button {
     cursor: pointer;
-    
+
     font-size: 16px;
     font-family: inherit;
   }
-  
+
   th, td {
     text-align: center;
   }
