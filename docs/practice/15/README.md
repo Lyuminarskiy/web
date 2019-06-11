@@ -13,5 +13,3 @@
 ## Теоретические сведения
 
 ### JavaScript
-
-<script-button/>

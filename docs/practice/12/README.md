@@ -277,8 +277,6 @@
 
 ![Навигация по дереву элементов документа](./assets/dom_navigation.png)
 
-<script-button/>
-
 <disqus-comments
   page-uuid="1d93cc8f-ce65-4db6-9361-cc926003f57e"
   page-title="12. Объектная модель документа. Программные модули

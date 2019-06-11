@@ -55,5 +55,3 @@
   количество элементов, которые хранятся в `storage` на данный момент.
   
 - [Node.js](https://nodejs.org/api).
-
-<script-button/>

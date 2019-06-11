@@ -219,8 +219,6 @@ Git-репозиториями.
 [Git](https://git-scm.com/book/ru/v2) следуюет использовать командную строку.
 :::
 
-<script-button/>
-
 <disqus-comments
   page-uuid="80cb6410-3bf8-404e-b423-54a9f8d7ba98"
   page-title="8. Обтекание, контуры и прокрутка содержимого элементов.
