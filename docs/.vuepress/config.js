@@ -15,7 +15,6 @@ module.exports = {
       ga: "UA-138493396-1"
     },
     "@vuepress/pwa": {
-      serviceWorker: true,
       updatePopup: {
         message: "Доступно новое содержимое.",
         buttonText: "Обновить"

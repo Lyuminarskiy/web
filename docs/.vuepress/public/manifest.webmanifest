@@ -3,6 +3,7 @@
   "name": "Веб-программирование",
   "short_name": "Веб-программирование",
   "description": "Учебные материалы по курсу \"Веб-программирование\".",
+  "start_url": "/",
   "theme_color": "#e04f5f",
   "background_color": "white",
   "display": "standalone",
