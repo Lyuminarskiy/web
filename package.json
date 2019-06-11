@@ -1,5 +1,17 @@
 {
+  "license": "MIT",
   "version": "2.0.0",
+  "description": "Учебные материалы по курсу \"Веб-программирование\".",
+  "homepage": "https://web-courses.github.io",
+  "author": {
+    "name": "Люминарский Владислав",
+    "email": "Vladislav.Lyuminarskiy@gmail.com",
+    "url": "https://github.com/Vladislav-Lyuminarskiy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Web-courses/Web-course.git"
+  },
   "scripts": {
     "docs:dev": "vuepress dev docs",
     "docs:build": "vuepress build docs"

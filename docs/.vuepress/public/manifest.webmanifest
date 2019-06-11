@@ -1,8 +1,8 @@
 {
   "lang": "ru-RU",
-  "name": "Web-программирование",
-  "short_name": "Web-программирование",
-  "description": "Учебные материалы по курсу \"Web-программирование\".",
+  "name": "Веб-программирование",
+  "short_name": "Веб-программирование",
+  "description": "Учебные материалы по курсу \"Веб-программирование\".",
   "theme_color": "#3eaf7c",
   "background_color": "#3eaf7c",
   "display": "standalone",
