@@ -20,6 +20,12 @@ module.exports = {
         message: "Доступно новое содержимое.",
         buttonText: "Обновить"
       }
+    },
+    "@vuepress/medium-zoom": {
+      selector: ".theme-default-content img",
+      options: {
+        margin: 16
+      }
     }
   },
   head: [
