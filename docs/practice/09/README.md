@@ -626,7 +626,7 @@ _приоритетом операторов_.
   +undefined; // NaN
   true / false; // Infinity
   
-  // Сравнение разных типов приводит к численному преобразованию
+  // Сравнение разных типов чаще всего приводит к численному преобразованию.
   "" == false; // true
   "1" == true; // true
   ```
@@ -657,6 +657,8 @@ _приоритетом операторов_.
 ](https://learn.javascript.ru/types-conversion).
 - [Грамматика и типы
 ](https://developer.mozilla.org/ru/docs/Web/JavaScript/Guide/Grammar_and_types#Преобразование_типов_данных).
+- [Операторы сравнения
+](https://developer.mozilla.org/ru/docs/Web/JavaScript/Equality_comparisons_and_sameness).
 
 ### Объект `window`
 
