@@ -22,7 +22,7 @@ jobs:
         github-token: $GITHUB_TOKEN
         repo: Web-courses/web-courses.github.io
         target-branch: master
-        commiter_from_gh: true
+        committer_from_gh: true
         local-dir: docs/.vuepress/dist
         on:
           branch: master
