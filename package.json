@@ -5,8 +5,9 @@
     "docs:build": "vuepress build docs"
   },
   "devDependencies": {
-    "vuepress": "^1.0.1",
+    "@vuepress/plugin-back-to-top": "^1.0.1",
     "@vuepress/plugin-google-analytics": "^1.0.1",
-    "@vuepress/plugin-pwa": "^1.0.1"
+    "@vuepress/plugin-pwa": "^1.0.1",
+    "vuepress": "^1.0.1"
   }
 }

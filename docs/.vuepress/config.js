@@ -10,6 +10,7 @@ module.exports = {
     }
   },
   plugins: {
+    "@vuepress/back-to-top": {},
     "@vuepress/google-analytics": {
       ga: "UA-138493396-1"
     },
