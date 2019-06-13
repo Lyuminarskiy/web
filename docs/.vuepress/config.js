@@ -14,16 +14,16 @@ module.exports = {
     "@vuepress/google-analytics": {
       ga: "UA-138493396-1"
     },
+    "@vuepress/medium-zoom": {
+      selector: ".theme-default-content img",
+      options: {
+        scrollOffset: 0
+      }
+    },
     "@vuepress/pwa": {
       updatePopup: {
         message: "Доступно новое содержимое.",
         buttonText: "Обновить"
-      }
-    },
-    "@vuepress/medium-zoom": {
-      selector: ".theme-default-content img",
-      options: {
-        margin: 16
       }
     }
   },
